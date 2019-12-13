@@ -1,0 +1,43 @@
+.btn-outline {
+  padding: 13px 17px;
+  color: #e52b2b;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  border-radius: 6px;
+}
+
+.btn-whats-app,
+.btn-vk {
+  min-width: 115px;
+  padding: 4px 14px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity .4s;
+
+  &:hover {
+    opacity: .8;
+    color: #fff;
+  }
+}
+
+.btn-whats-app__icon,
+.btn-vk__icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+  fill: #fff;
+}
+
+.btn-whats-app {
+  background-color: #00a600;
+}
+
+.btn-vk {
+  background-color: #2d81bb;
+}
