@@ -43,12 +43,9 @@
 }
 
 .btn-main {
-  padding: 13px 49px;
-  letter-spacing: 0.02rem;
   color: #fff;
   box-shadow: 0 3px #e62b2b;
   border-radius: 7px;
-  font-size: 27px;
   font-weight: 700;
   background: #e72d2d;
   background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
@@ -58,5 +55,21 @@
 
   &:hover {
     color: #fff;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-main {
+    padding: 13px 49px;
+    letter-spacing: 0.02rem;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn-main {
+    width: 100%;
+    padding: 9px 15px;
+    font-size: 20px
   }
 }

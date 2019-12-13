@@ -152,6 +152,12 @@
   }
 }
 
+@media (max-width: 766px) {
+  .menu-toggle {
+    order: 1;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-menu {
     width: calc(100% + 150px);
