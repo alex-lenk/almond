@@ -41,3 +41,22 @@
 .btn-vk {
   background-color: #2d81bb;
 }
+
+.btn-main {
+  padding: 13px 49px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  box-shadow: 0 3px #e62b2b;
+  border-radius: 7px;
+  font-size: 27px;
+  font-weight: 700;
+  background: #e72d2d;
+  background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
+  background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
+  background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
+
+  &:hover {
+    color: #fff;
+  }
+}

@@ -23,8 +23,25 @@
 }
 
 
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
+  url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-BlackItalic.woff') format('woff'),
+  url('../fonts/PFDinDisplayPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
 body {
   background-color: #fff;
+  position: relative;
 }
 
 a:hover {
@@ -32,7 +49,6 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Nunito, sans-serif;
   font-weight: 700;
   line-height: 1.4;
 }

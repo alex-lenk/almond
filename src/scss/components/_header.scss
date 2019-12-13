@@ -1,23 +1,20 @@
 .header__inner {
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: flex;
 }
 
 .header-logo {
   width: 150px;
-  margin-right: 45px;
   flex: none;
 }
 
 .header-info {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
 .header-support {
   padding-bottom: 5px;
-  margin-right: auto;
   display: flex;
   align-items: center;
   align-self: flex-end;
@@ -36,6 +33,8 @@
 }
 
 .header-info__contacts {
+  padding-left: 50px;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -57,4 +56,30 @@
   height: 27px;
   margin-right: 4px;
   fill: $body-color;
+}
+
+@media (max-width: 1199px) {
+  .header__inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header-info__contacts {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .header-support {
+    margin-bottom: 15px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header-logo {
+    margin-right: 45px;
+  }
 }

@@ -1,9 +1,6 @@
 .menu {
-  width: 100%;
-  margin-top: 25px;
   line-height: 1;
   display: flex;
-  justify-content: space-between;
 }
 
 .menu-link {
@@ -36,10 +33,9 @@
   width: 23px;
   height: 23px;
   margin-right: 9px;
-  fill: $body-color;
 }
 
-.menu-link__active {
+.menu-link.active {
   color: $red;
 
   &:hover {
@@ -48,5 +44,118 @@
 
   &::after {
     width: 100%;
+  }
+}
+
+.menu-toggle {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  display: none;
+  transition: 0.2s ease-in-out;
+  position: relative;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::before,
+  &::after {
+    width: 100%;
+    height: 4px;
+    background-color: $primary;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    will-change: transform, box-shadow;
+  }
+
+  &::before {
+    box-shadow: 0 8px #f85c70, 0 -8px #f85c70;
+  }
+}
+
+.is-active.menu-toggle {
+  transform: rotate(-45deg);
+
+  &::before {
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: translateX(0) rotate(-90deg);
+  }
+}
+
+.is-active.menu {
+  visibility: visible;
+  opacity: 1;
+  transition: 0s linear;
+}
+
+.is-active.nav-menu {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .nav-menu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+  .menu-calc__icon {
+    fill: $body-color;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-toggle {
+    margin-left: 30px;
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: $body-color;
+    transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    will-change: width;
+    z-index: 99;
+  }
+
+  .menu {
+    height: 100%;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3.75rem 1rem 2.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s linear 0.25s;
+  }
+  .menu-item {
+    margin-bottom: 30px;
+  }
+
+  .menu-calc__icon {
+    fill: #fff;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-menu {
+    width: calc(100% + 150px);
+    flex: none;
+    margin-left: -150px;
   }
 }
