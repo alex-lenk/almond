@@ -1,0 +1,68 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-base: 'PFDinDisplayPro', -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$body-color: #333;
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width: 20px;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$red: #e62b2b;
+$pink: #f85c70;
+$primary: $pink;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $red;
+
+// Badges
+
+$badge-font-weight: 400;
+$badge-padding-y: .45em;
+$badge-padding-x: .65em;
+
+// Navs
+
+$nav-tabs-link-active-color: #fff;
+$nav-tabs-link-active-bg: $pink;
+$nav-tabs-link-hover-border-color: transparent;
+
+// Forms
+
+$input-height: 45px;
+$input-color: #222;
+$input-bg: #f9f9f9;
+$input-border-width: 0;
+$input-border-radius: 0;
+$input-box-shadow: none;
+$enable-shadows: true;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-font-weight: 500;
+$btn-font-size: 15px;
+$btn-padding-y: .43rem;
+$btn-padding-x: 1.6rem;
+$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+$btn-focus-box-shadow: none;
+$btn-box-shadow: none;

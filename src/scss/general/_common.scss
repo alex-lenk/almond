@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Regular.woff') format('woff'),
+  url('../fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Medium.woff') format('woff'),
+  url('../fonts/PFDinDisplayPro-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'),
+  url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}

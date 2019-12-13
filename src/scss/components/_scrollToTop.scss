@@ -1,0 +1,27 @@
+.scrollToTop {
+  bottom: 5px;
+  display: block;
+  font-size: 18px;
+  height: 44px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 44px;
+  z-index: 5;
+  border: 2px solid #f85c70;
+  border-radius: 50%;
+  background-color: rgba(248, 92, 112, .3);
+  color: #f85c70;
+
+  @media (min-width: 992px) {
+    cursor: pointer;
+    transition: all 1s ease-out;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #f85c70;
+    }
+  }
+}

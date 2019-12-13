@@ -1,0 +1,97 @@
+/*!
+ *  Bootstrap 4.4.1
+ */
+@import "bootstrap-4.4.1/functions";
+@import "bootstrap-4.4.1/variables";
+@import "bootstrap-4.4.1/mixins";
+@import "bootstrap-4.4.1/mixins/breakpoints";
+@import "bootstrap-4.4.1/mixins/grid-framework";
+@import "bootstrap-4.4.1/mixins/grid";
+@import "bootstrap-4.4.1/reboot";
+//@import "bootstrap-4.4.1/utilities";
+@import "bootstrap-4.4.1/transitions";
+//@import "bootstrap-4.4.1/popover";
+//@import "bootstrap-4.4.1/tooltip";
+//@import "bootstrap-4.4.1/badge";
+//@import "bootstrap-4.4.1/nav";
+//@import "bootstrap-4.4.1/type";
+@import "bootstrap-4.4.1/modal";
+@import "bootstrap-4.4.1/forms";
+//@import "bootstrap-4.4.1/utilities/flex";
+@import "bootstrap-4.4.1/buttons";
+@import "bootstrap-4.4.1/close";
+
+//@import "bootstrap-4.4.1/grid";
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+  // Single container class with breakpoint max-widths
+  .container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  // 100% wide container at all breakpoints
+  .container-fluid {
+    @include make-container();
+  }
+}
+
+
+// Row
+//
+// Rows contain your columns.
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+  }
+}
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
+
+
+//
+// Lists
+//
+
+.list-unstyled {
+  margin-bottom: 0;
+  @include list-unstyled();
+}
+
+
+.nav-link {
+  background-color: #f2f2f2;
+  color: #111;
+  font-weight: 600;
+  padding: .438rem 2.133rem;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.tab-content {
+  padding-top: 25px;
+}
+
+
+@media (max-width: 575px) {
+  .nav-link {
+    font-size: 15px;
+    background-color: #f2f2f2;
+    color: #111;
+    font-weight: 600;
+    padding: 5px 15px;
+  }
+  .single-action .list-inline-item {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+  }
+}
