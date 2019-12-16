@@ -10,14 +10,12 @@
 
 .btn-whats-app,
 .btn-vk {
-  min-width: 115px;
-  padding: 4px 14px;
-  color: #fff;
-  font-size: 14px;
-  border-radius: 15px;
+  width: 48px;
+  height: 48px;
   line-height: 1;
-  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  display: inline-flex;
   transition: opacity .4s;
 
   &:hover {
@@ -28,17 +26,30 @@
 
 .btn-whats-app__icon,
 .btn-vk__icon {
-  width: 17px;
-  height: 17px;
-  margin-right: 6px;
   fill: #fff;
 }
 
+.btn-whats-app__icon {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 4px;
+}
+
+.btn-vk__icon {
+  width: 22px;
+  height: 22px;
+}
+
 .btn-whats-app {
+  color: #fff;
+  font-size: 10px;
+  border-radius: 10px;
   background-color: #00a600;
+  flex-direction: column;
 }
 
 .btn-vk {
+  border-radius: 50%;
   background-color: #2d81bb;
 }
 

@@ -39,6 +39,39 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url('../fonts/PFDinTextCondPro-Medium.woff') format('woff'),
+  url('../fonts/PFDinTextCondPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url('../fonts/PFDinTextCondPro-Light.woff') format('woff'),
+  url('../fonts/PFDinTextCondPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.woff') format('woff'),
+  url('../fonts/OpenSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.woff') format('woff'),
+  url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   background-color: #fff;
   position: relative;
