@@ -1,59 +1,5 @@
 @@include('./includes/header.html')
 
-<header class="header" id="home">
-    <div class="header__inner container">
-        <div class="header-logo">
-            <a href="/"><img src="img/logo.svg" alt="алмонд"></a>
-        </div>
-        <div class="header-info">
-            <div class="header-support">
-                <a href="#" class="header-support__item btn-whats-app">
-                    <svg class="btn-whats-app__icon">
-                        <use xlink:href="img/icons.svg#whatsapp"></use>
-                    </svg>
-                    <span>whatsApp</span>
-                </a>
-                <a href="#" class="header-support__item btn-vk">
-                    <svg class="btn-vk__icon">
-                        <use xlink:href="img/icons.svg#vk"></use>
-                    </svg>
-                </a>
-                <a href="#" class="header-support__write-us">Напишите нам</a>
-            </div>
-
-            <button type="button" class="menu-toggle"></button>
-
-            <div class="header-info__contacts">
-                <a href="#" class="header-phone">
-                    <svg class="header-phone__icon">
-                        <use xlink:href="img/icons.svg#phone"></use>
-                    </svg>
-                    8 (495) 999 99 99
-                </a>
-                <button class="btn-outline btn">Заказать обратный звонок</button>
-            </div>
-
-            <nav class="nav-menu">
-                <ul class="menu list-unstyled" id="navbar-example2">
-                    <li class="menu-item nav-item"><a href="#home" class="menu-link nav-link active">Главная</a></li>
-                    <li class="menu-item nav-item"><a href="#two" class="menu-link nav-link">Ремонт квартиры</a></li>
-                    <li class="menu-item nav-item"><a href="#three" class="menu-link nav-link">Ремонт под ключ</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Ремонт новостройки</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Наши работы</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Вопросы</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Стоимость</a></li>
-                    <li class="menu-item nav-item"><a href="#" class="menu-link nav-link menu-calc">
-                        <svg class="menu-calc__icon">
-                            <use xlink:href="img/icons.svg#calc"></use>
-                        </svg>
-                        Калькулятор</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
 <section class="main-section">
     <div class="container">
         <h1 class="main-section-title">
@@ -141,29 +87,70 @@
     </div>
 </section>
 
-<section id="three" class="main-section">
+<section id="three" class="section-cost">
     <div class="container">
-        <h1 class="main-section-title">
-            ремонт
-            <span class="main-section-title__text">квартир</span>
-        </h1>
-        <div class="main-section-price">
-            <div class="main-section-price__text">
-                всего<br>
-                за
-            </div>
-            <div class="main-section-price__cost">
-                4800
-            </div>
-            <div class="main-section-price__sup">
-                Р/М2
-            </div>
-        </div>
-        <div class="main-section-paint">
-            Начните ремонт<br>
-            без предоплат и авансов!
-        </div>
-        <button class="btn btn-main">Рассчитать стоимость ремонта</button>
+        <h2 class="section-cost-title">
+            <span class="section-cost-title__inner">СТОИМОСТЬ РЕМОНТА КВАРТИРЫ «ПОД КЛЮЧ»</span>
+        </h2>
+
+        <ul class="section-cost-list list-unstyled">
+            <li class="section-cost-item">
+                <div class="section-cost-media">
+                    <img src="img/room/01.jpg" class="section-cost-media__image" alt="">
+                </div>
+                <div class="section-cost-type">Квартира-студия</div>
+                <div class="section-cost-price">
+                    <div class="section-cost-price__decor">
+                        <svg class="section-cost-price__decor--icon">
+                            <use xlink:href="img/icons.svg#label"></use>
+                        </svg>
+                    </div>
+                    150 000 – 200 000 р.
+                </div>
+            </li>
+            <li class="section-cost-item">
+                <div class="section-cost-media">
+                    <img src="img/room/02.jpg" class="section-cost-media__image" alt="">
+                </div>
+                <div class="section-cost-type">1-комнатная квартира</div>
+                <div class="section-cost-price">
+                    <div class="section-cost-price__decor">
+                        <svg class="section-cost-price__decor--icon">
+                            <use xlink:href="img/icons.svg#label"></use>
+                        </svg>
+                    </div>
+                    200 000 – 250 000 р.
+                </div>
+            </li>
+            <li class="section-cost-item">
+                <div class="section-cost-media">
+                    <img src="img/room/03.jpg" class="section-cost-media__image" alt="">
+                </div>
+                <div class="section-cost-type">2-х комнатная квартира</div>
+                <div class="section-cost-price">
+                    <div class="section-cost-price__decor">
+                        <svg class="section-cost-price__decor--icon">
+                            <use xlink:href="img/icons.svg#label"></use>
+                        </svg>
+                    </div>
+                    250 000 – 300 000 р.
+                </div>
+            </li>
+            <li class="section-cost-item">
+                <div class="section-cost-media">
+                    <img src="img/room/04.jpg" class="section-cost-media__image" alt="">
+                </div>
+                <div class="section-cost-type">3-х комнатная квартира</div>
+                <div class="section-cost-price">
+                    <div class="section-cost-price__decor">
+                        <svg class="section-cost-price__decor--icon">
+                            <use xlink:href="img/icons.svg#label"></use>
+                        </svg>
+                    </div>
+                    300 000 – 400 000 р.
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 

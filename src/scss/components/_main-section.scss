@@ -3,11 +3,11 @@
 }
 
 .main-section-title {
+  margin-bottom: 0;
   font-size: 106px;
   line-height: 103px;
   letter-spacing: 1px;
   font-weight: 900;
-  font-style: italic;
   text-transform: uppercase;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .main-section-price {
-  margin-bottom: 58px;
+  margin-bottom: 37px;
   text-transform: uppercase;
   display: flex;
   align-items: flex-start;
@@ -26,13 +26,12 @@
   margin-right: 14px;
   text-align: right;
   font-weight: 700;
-  font-style: italic;
 }
 
 .main-section-price__cost {
-  margin-right: 13px;
+  margin-right: 7px;
+  letter-spacing: -2px;
   font-weight: 900;
-  font-style: italic;
   color: #fdca00;
   text-shadow: 3px 0 0 $body-color,
   0 3px 0 $body-color,
@@ -42,7 +41,6 @@
 
 .main-section-price__sup {
   font-weight: 700;
-  font-style: italic;
   line-height: 1;
 }
 
@@ -52,7 +50,6 @@
   max-width: 536px;
   font-size: 28px;
   font-weight: 700;
-  font-style: italic;
   line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
@@ -61,19 +58,19 @@
 
 @media (min-width: 576px) {
   .main-section {
-    height: 850px;
-    padding-top: 50px;
+    height: 697px;
+    padding-top: 105px;
   }
 }
 
 @media (min-width: 767px) {
   .main-section-title {
-    font-size: 106px;
-    line-height: 103px;
+    font-size: 116px;
+    line-height: 95px;
   }
   .main-section-title__text {
-    margin-left: 112px;
-    font-size: 73px;
+    margin-left: 124px;
+    font-size: 84px;
   }
   .main-section-price__text {
     font-size: 48px;

@@ -4,7 +4,8 @@
 }
 
 .menu-link {
-  font-size: 18px;
+  font-size: 21px;
+  font-weight: 300;
   position: relative;
   color: inherit;
 
@@ -12,7 +13,7 @@
     width: 0;
     height: 2px;
     position: absolute;
-    bottom: -16px;
+    bottom: -8px;
     display: block;
     background-color: $red;
     content: '';
@@ -105,8 +106,8 @@
 @media (min-width: 992px) {
   .nav-menu {
     width: 100%;
-    margin-top: 10px;
-    padding-top: 12px;
+    margin-top: 12px;
+    padding-top: 10px;
     border-top: 1px solid #a7a7a7;
   }
   .menu {
