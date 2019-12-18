@@ -1,0 +1,87 @@
+.call-technologist {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  background-color: #ebebeb;
+}
+
+.call-technologist-title {
+  margin-bottom: 0;
+  font-size: 52px;
+  font-weight: 600;
+  position: relative;
+
+  &::before {
+    width: 11px;
+    height: 38px;
+    top: 18px;
+    left: -28px;
+    position: absolute;
+    background-color: #f3d535;
+    content: '';
+  }
+}
+
+.call-technologist-title__bold {
+  font-weight: 900;
+}
+
+.call-technologist-text {
+  margin-bottom: 48px;
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.call-technologist-container {
+  position: relative;
+  display: flex;
+
+  &::after {
+    width: 531px;
+    height: 597px;
+    bottom: -75px;
+    right: -55px;
+    position: absolute;
+    background: url(../img/decor/guy.png) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.call-technologist-form {
+  max-width: 485px;
+  width: 100%;
+  margin-right: 25px;
+  padding: 32px 20px 15px;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(#dbdcdd, .75);
+}
+
+.call-technologist-form__title {
+  margin-bottom: 28px;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.call-technologist-form__btn {
+  margin-bottom: 20px;
+}
+
+.call-technologist-form__terms {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.call-technologist-content {
+  max-width: 285px;
+}
+
+.call-technologist-content__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}

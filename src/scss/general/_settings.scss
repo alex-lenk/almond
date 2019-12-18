@@ -47,13 +47,18 @@ $nav-tabs-link-hover-border-color: transparent;
 
 // Forms
 
-$input-height: 45px;
-$input-color: #222;
-$input-bg: #f9f9f9;
-$input-border-width: 0;
-$input-border-radius: 0;
+$input-height: 72px;
+$input-color: #333;
+$input-bg: #fff;
+$input-border-width: 2px;
+$input-border-radius: 6px;
 $input-box-shadow: none;
 $enable-shadows: true;
+$input-border-color: #c9c8c8;
+$form-group-margin-bottom: 25px;
+$input-placeholder-color: #333;
+$input-focus-border-color: #999;
+
 
 // Buttons
 //
