@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /* BEGIN mobile device definition  */
 var isMobile = {
@@ -25,10 +25,17 @@ var isMobile = {
 
 
 $(document).ready(function () {
+    var menuToggle = '.menu-toggle';
+    $('.nav-menu').stickUp();
+    $('.logo').clone().prependTo('.nav-menu__inner').removeClass('header-logo');
+    $(menuToggle).clone().appendTo('.nav-menu__inner');
+
+
     /* BEGIN Actions on opening menus on mobile devices  */
-    /*    $('.menu-toggle').click(function () {
-            $('body').toggleClass('menu-is-active');
-        });*/
+
+    $(menuToggle).click(function () {
+        $('body').toggleClass('menu-opened');
+    });
     /* END Actions on opening menus on mobile devices  */
 
 
@@ -57,15 +64,16 @@ $(document).ready(function () {
     /* END Script scroll to top  */
 
 
-    $("body").on('click', '[href*="#"]', function (e) {
+    $('body').on('click', '[href*="#"]', function (e) {
         var fixed_offset = 0;
-        $('html,body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
+        $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
         e.preventDefault();
     });
 
 
     $('.portfolio-content__text').customScroll();
 });
+/*
 
 var navigation = {
     // Variables
@@ -123,3 +131,4 @@ var navigation = {
     }
 };
 navigation.init();
+*/

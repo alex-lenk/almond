@@ -60,7 +60,7 @@ gulp.task('scripts', function () {
         './src/js/*.js'
     ])
         .pipe(rigger())
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(gulp.dest('./build/js'))
         .pipe(browserSync.reload({stream: true}))

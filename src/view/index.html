@@ -1,4 +1,59 @@
 @@include('./includes/header.html')
+<header class="header">
+    <div class="header__inner container">
+        <div class="header-logo logo">
+            <a href="#home"><img src="img/logo.svg" alt="алмонд"></a>
+        </div>
+        <div class="header-info">
+            <div class="header-support__left">
+                <a href="#" class="header-support__item btn-whats-app">
+                    <svg class="btn-whats-app__icon">
+                        <use xlink:href="img/icons.svg#whatsapp"></use>
+                    </svg>
+                    <span>whatsApp</span>
+                </a>
+                <a href="#" class="header-support__item btn-vk">
+                    <svg class="btn-vk__icon">
+                        <use xlink:href="img/icons.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header-support__write-us">Напишите нам</a>
+            </div>
+
+            <button type="button" class="menu-toggle"></button>
+
+            <div class="header-support__right">
+                <a href="#" class="header-phone">
+                    <svg class="header-phone__icon">
+                        <use xlink:href="img/icons.svg#phone"></use>
+                    </svg>
+                    8 (495) 999 99 99
+                </a>
+                <button class="header-request btn-outline btn">Заказать обратный звонок</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="nav-menu">
+    <div class="nav-menu__inner container">
+        <ul class="menu list-unstyled" id="navbar-example2">
+            <li class="menu-item nav-item"><a href="#home" class="menu-link nav-link active">Главная</a></li>
+            <li class="menu-item nav-item"><a href="#two" class="menu-link nav-link">Ремонт квартиры</a></li>
+            <li class="menu-item nav-item"><a href="#three" class="menu-link nav-link">Ремонт под ключ</a></li>
+            <li class="menu-item nav-item"><a href="#fourth" class="menu-link nav-link">Ремонт новостройки</a></li>
+            <li class="menu-item nav-item"><a href="#fifth" class="menu-link nav-link">Наши работы</a></li>
+            <li class="menu-item nav-item"><a href="#six" class="menu-link nav-link">Вопросы</a></li>
+            <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Стоимость</a></li>
+            <li class="menu-item nav-item"><a href="#" class="menu-link nav-link menu-calc">
+                <svg class="menu-calc__icon">
+                    <use xlink:href="img/icons.svg#calc"></use>
+                </svg>
+                Калькулятор</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <section class="main-section">
     <div class="container">
@@ -25,6 +80,7 @@
         <button class="btn btn-main">Рассчитать стоимость ремонта</button>
     </div>
 </section>
+
 
 <section id="two" class="staff">
     <div class="staff-inner container">
@@ -86,6 +142,7 @@
         </aside>
     </div>
 </section>
+
 
 <section id="three" class="section-cost">
     <div class="container">
@@ -154,6 +211,7 @@
     </div>
 </section>
 
+
 <section id="fourth" class="call-technologist">
     <div class="container">
         <h2 class="call-technologist-title">
@@ -206,7 +264,8 @@
     </div>
 </section>
 
-<section class="portfolio">
+
+<section class="portfolio" id="fifth">
     <h2 class="portfolio-title">НЕБОЛЬШАЯ ЧАСТЬ наших РАБОТ</h2>
 
     <div class="container">
@@ -317,7 +376,7 @@
 </section>
 
 
-<section class="get-estimate" id="fifth">
+<section class="get-estimate" id="six">
     <div class="get-estimate-container container">
         <div class="get-estimate-wrap">
             <form action="/" class="get-estimate-form call-form">
@@ -342,5 +401,14 @@
         </div>
     </div>
 </section>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 @@include('./includes/footer.html')
