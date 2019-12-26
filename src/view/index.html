@@ -1,4 +1,5 @@
 @@include('./includes/header.html')
+
 <header class="header">
     <div class="header__inner container">
         <div class="header-logo logo">
@@ -270,6 +271,11 @@
 
     <div class="container">
         <div class="portfolio-wrapper">
+            <div class="portfolio-head">
+                <h3 class="portfolio-head__title">ЕВРО РЕМОНТ 2-х КОМНАТНОЙ КВАРТИРЫ</h3>
+                <div class="portfolio-head__pre-title">ЖК Солнечный город</div>
+            </div>
+
             <div class="portfolio-gallery">
                 <ul class="portfolio-gallery__list">
                     <li class="portfolio-gallery__item" data-fancybox="portfolio-gallery__images" data-src="img/example/01.jpg">
@@ -302,10 +308,7 @@
                 </ul>
             </div>
 
-            <article class="portfolio-content">
-                <h3 class="portfolio-content__title">ЕВРО РЕМОНТ 2-х КОМНАТНОЙ КВАРТИРЫ</h3>
-                <p class="portfolio-content__pre-title">ЖК Солнечный город</p>
-
+            <div class="portfolio-content">
                 <div class="portfolio-content__description">
                     <div class="portfolio-content__text">
                         <p>
@@ -370,7 +373,7 @@
                 </ul>
 
                 <button type="button" class="portfolio-btn btn btn-yellow">Получить расчет своего ремонта</button>
-            </article>
+            </div>
         </div>
     </div>
 </section>
@@ -381,9 +384,7 @@
         <div class="get-estimate-wrap">
             <form action="/" class="get-estimate-form call-form">
                 <h2 class="call-form__title">
-                    Получите расчет сметы с учетом
-                    стоимости работ и материалов
-                    через 30 минут
+                    Получите расчет сметы с&nbsp;учетом стоимости работ и&nbsp;материалов через 30&nbsp;минут
                 </h2>
 
                 <div class="form-group">
@@ -402,13 +403,10 @@
     </div>
 </section>
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="scroll-to-top">
+    <svg class="scroll-to-top__icon">
+        <use xlink:href="img/icons.svg#arrow"></use>
+    </svg>
+</div>
 
 @@include('./includes/footer.html')

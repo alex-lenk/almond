@@ -107,23 +107,6 @@ img {
   padding-right: 15px;
 }
 
-.btn-yellow {
-  width: 100%;
-  height: 72px;
-  border-radius: 10px;
-  font-size: 27px;
-  font-weight: 700;
-  box-shadow: 0 3px #dbb536;
-  background: #efd233;
-  background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: -webkit-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: linear-gradient(to bottom, #efd233 0%, #f5de35 50%, #efd233 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efd233', endColorstr='#efd233', GradientType=0);
-
-  &:hover {
-    box-shadow: 0 1px #dbb536;
-  }
-}
 
 .hide-placeholder {
   @include hidePlaceholder {
@@ -143,6 +126,8 @@ img {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  position: relative;
+  z-index: 2;
 }
 
 .check-list__item {
@@ -151,6 +136,7 @@ img {
   font-weight: 300;
   line-height: 1.2;
   font-size: 21px;
+  background-color: #ebebeb;
 
   &::before {
     width: 18px;

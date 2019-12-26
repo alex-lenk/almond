@@ -1,47 +1,14 @@
 .staff {
-  padding-top: 75px;
-  padding-bottom: 120px;
   overflow: hidden;
 }
 
-.staff-inner {
-  display: flex;
-}
-
-.staff-content {
-  max-width: 800px;
-  flex-basis: 800px;
-  position: relative;
-
-  &::after {
-    width: 259px;
-    height: 799px;
-    right: 13%;
-    top: 13%;
-    position: absolute;
-    background: url(../img/decor/man.png) no-repeat center;
-    content: '';
-  }
-}
-
 .staff-title {
-  margin-bottom: 60px;
-  max-width: 600px;
-  font-size: 52px;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 1.2;
 }
 
 .staff-title__bold {
   font-weight: 900;
-}
-
-.staff-card {
-  max-width: 485px;
-  padding: 20px 47px 25px;
-  margin-bottom: 60px;
-  border: 10px solid #e5e6e6;
 }
 
 .staff-card__name {
@@ -65,9 +32,6 @@
 }
 
 .card-experience {
-  max-width: 470px;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
   display: flex;
 }
@@ -103,49 +67,19 @@
 }
 
 .staff-side {
-  max-width: 445px;
-  flex-basis: 445px;
-  padding-top: 45px;
-  padding-bottom: 45px;
   background-color: #fff;
   position: relative;
   box-shadow: 0 0 15px rgba(#333, .5);
 
   &::after {
-    width: 725px;
-    height: 250px;
-    left: -84px;
-    bottom: -41px;
     z-index: -1;
     position: absolute;
     background: url(../img/decor/interior.jpg) no-repeat center;
+    background-size: contain;
     content: '';
   }
 }
 
-.staff-advantages {
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.staff-advantages__item {
-  padding-left: 45px;
-  position: relative;
-
-  &:not(:last-child) {
-    margin-bottom: 45px;
-  }
-
-  &::before {
-    font-size: 45px;
-    color: $yellowColor;
-    top: -7px;
-    left: 4px;
-    line-height: 1;
-    position: absolute;
-    content: '+';
-  }
-}
 
 .staff-advantages__title {
   margin-bottom: 12px;
@@ -159,4 +93,169 @@
   font-size: 1.13rem;
   font-weight: 300;
   line-height: 1.4;
+}
+
+@media (min-width: 576px) {
+  .staff {
+    padding-top: 75px;
+    padding-bottom: 120px;
+  }
+  .staff-title {
+    margin-bottom: 60px;
+    max-width: 600px;
+    font-size: 52px;
+    line-height: 1.2;
+  }
+  .staff-card {
+    padding: 20px 47px 25px;
+    margin-bottom: 60px;
+    border: 10px solid #e5e6e6;
+  }
+  .card-experience {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .staff-side {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .staff-advantages {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .staff-advantages__item {
+    padding-left: 45px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
+    &::before {
+      font-size: 45px;
+      color: $yellowColor;
+      top: -7px;
+      left: 4px;
+      line-height: 1;
+      position: absolute;
+      content: '+';
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .staff-content {
+    position: relative;
+
+    &::after {
+      width: 259px;
+      height: 799px;
+      top: 13%;
+      z-index: 2;
+      position: absolute;
+      background: url(../img/decor/man.png) no-repeat center;
+      content: '';
+    }
+  }
+  .staff-card {
+    max-width: 485px;
+  }
+  .card-experience {
+    max-width: 470px;
+  }
+}
+
+@media (min-width: 992px) {
+  .staff-inner {
+    display: flex;
+  }
+
+  .staff-content {
+    max-width: 800px;
+    flex-basis: 800px;
+  }
+
+  .staff-side {
+    max-width: 445px;
+    flex-basis: 445px;
+
+    &::after {
+      width: 725px;
+      height: 250px;
+      left: -84px;
+      bottom: -41px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .staff-content::after {
+    left: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .staff-content {
+    margin-bottom: 45px;
+  }
+  .staff-side::after {
+    width: 652px;
+    height: 155px;
+    left: 0;
+    bottom: -105px;
+  }
+  .staff-advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 766px) {
+  .card-experience {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .staff {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .staff-title {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+  .staff-card {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 5px solid #e5e6e6;
+  }
+  .staff-side {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .staff-advantages {
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+  .staff-advantages__item:not(:last-child) {
+    margin-bottom:30px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .staff-content::after {
+    right: 0;;
+    top: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .staff-content::after {
+    width: 200px;
+    height: 590px;
+    right: -5%;
+    background-size: contain;
+  }
 }

@@ -4,33 +4,6 @@
   background-color: #fef5ea;
 }
 
-.get-estimate-container {
-  position: relative;
-
-  &::before,
-  &::after {
-    z-index: 5;
-    position: absolute;
-    content: '';
-  }
-
-  &::before {
-    width: 38%;
-    height: 60%;
-    top: 15%;
-    left: 12%;
-    background: url(../img/decor/estimate.jpg) no-repeat center;
-  }
-
-  &::after {
-    width: 26%;
-    height: 32%;
-    bottom: 0;
-    left: 37%;
-    background: url(../img/decor/arrow-arc.svg) no-repeat center;
-  }
-}
-
 .get-estimate-wrap {
   padding-top: 30px;
   padding-bottom: 100px;
@@ -42,6 +15,64 @@
   justify-content: flex-end;
 }
 
-.get-estimate-form {
-  margin-right: 9%;
+
+@media (min-width: 767px) {
+  .get-estimate-container {
+    position: relative;
+
+    &::before,
+    &::after {
+      z-index: 5;
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      width: 38%;
+      height: 60%;
+      top: 15%;
+      left: 12%;
+      background: url(../img/decor/estimate.jpg) no-repeat center;
+      background-size: contain;
+    }
+
+    &::after {
+      width: 26%;
+      height: 32%;
+      bottom: 0;
+      left: 37%;
+      background: url(../img/decor/arrow-arc.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .get-estimate-form {
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .get-estimate-container::before {
+    left: 12%;
+  }
+}
+
+@media (max-width: 766px) {
+  .get-estimate-form {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1279px) {
+  .get-estimate-container::before {
+    left: 3%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .get-estimate-form {
+    max-width: 51%;
+  }
 }

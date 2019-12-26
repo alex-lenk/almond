@@ -31,10 +31,15 @@ $(document).ready(function () {
     $(menuToggle).clone().appendTo('.nav-menu__inner');
 
 
+    if ($(window).width() > 1099) {
+        $('.portfolio-head').prependTo('.portfolio-content');
+    }
+
+
     /* BEGIN Actions on opening menus on mobile devices  */
 
     $(menuToggle).click(function () {
-        $('body').toggleClass('menu-opened');
+        $('html').toggleClass('menu-opened');
     });
     /* END Actions on opening menus on mobile devices  */
 
@@ -45,7 +50,7 @@ $(document).ready(function () {
 
 
     /* BEGIN Script scroll to top  */
-    var scrollToTop = $('.scrollToTop');
+    var scrollToTop = $('.scroll-to-top');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 250) {
             scrollToTop.fadeIn();

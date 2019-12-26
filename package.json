@@ -9,6 +9,9 @@
 	"author": "Alex Lenk",
 	"license": "ISC",
 	"devDependencies": {
+		"@fancyapps/fancybox": "^3.5.7",
+		"autoprefixer": "^9.7.3",
+		"bootstrap": "^4.4.1",
 		"browser-sync": "^2.26.7",
 		"del": "^5.1.0",
 		"gulp": "^4.0.2",
@@ -18,6 +21,7 @@
 		"gulp-image-resize": "^0.13.1",
 		"gulp-imagemin": "^6.2.0",
 		"gulp-notify": "^3.2.0",
+		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-rigger": "^0.5.8",
 		"gulp-rsync": "0.0.8",
@@ -25,10 +29,8 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
 		"jquery": "^3.4.1",
-		"slick-slider": "^1.8.2",
-		"bootstrap": "^4.4.1",
 		"jquery-zoom": "^1.7.21",
-		"@fancyapps/fancybox": "^3.5.7"
+		"slick-slider": "^1.8.2"
 	},
 	"dependencies": {
 		"gulp-ex-file-include": "^2.0.2",

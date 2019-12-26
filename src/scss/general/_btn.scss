@@ -1,3 +1,26 @@
+.btn-yellow {
+  width: 100%;
+  height: 72px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 3px #dbb536;
+  background: #efd233;
+  background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
+  background: -webkit-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
+  background: linear-gradient(to bottom, #efd233 0%, #f5de35 50%, #efd233 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efd233', endColorstr='#efd233', GradientType=0);
+
+  &:hover {
+    box-shadow: 0 1px #dbb536;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 27px;
+  }
+}
+
 .btn-outline {
   padding: 13px 26px;
   color: #e52b2b;

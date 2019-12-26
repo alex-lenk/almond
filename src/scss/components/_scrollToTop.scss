@@ -1,27 +1,20 @@
-.scrollToTop {
-  bottom: 5px;
+.scroll-to-top {
+  width: 31px;
+  height: 31px;
+  right: 15px;
+  bottom: 45px;
   display: block;
-  font-size: 18px;
-  height: 44px;
-  line-height: 40px;
-  position: fixed;
-  right: 20px;
+  line-height: 31px;
   text-align: center;
-  width: 44px;
+  border-radius: 5px;
   z-index: 5;
-  border: 2px solid #f85c70;
-  border-radius: 50%;
-  background-color: rgba(248, 92, 112, .3);
-  color: #f85c70;
+  position: fixed;
+  background: linear-gradient(180deg, #fed308 0%, #feb008 100%);
+}
 
-  @media (min-width: 992px) {
-    cursor: pointer;
-    transition: all 1s ease-out;
-
-    &:hover,
-    &:focus {
-      color: #fff;
-      background-color: #f85c70;
-    }
-  }
+.scroll-to-top__icon {
+  width: 11px;
+  height: 11px;
+  fill: #fff;
+  transform: rotate(90deg);
 }

@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     fileinclude = require('gulp-ex-file-include'),
     cleancss = require('gulp-clean-css'),
     rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
+    postcss = require('gulp-postcss'),
     notify = require('gulp-notify'),
     rsync = require('gulp-rsync'),
     basePath = require('path'),
@@ -48,7 +49,7 @@ gulp.task('styles', function () {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(autoprefixer(['last 2 versions']))
+        .pipe(postcss([autoprefixer()]))
         .pipe(cleancss({level: {1: {specialComments: 0}}})) // Opt., comment out when debugging
         .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.stream())
@@ -56,9 +57,7 @@ gulp.task('styles', function () {
 
 // JS
 gulp.task('scripts', function () {
-    return gulp.src([
-        './src/js/*.js'
-    ])
+    return gulp.src(['./src/js/*.js'])
         .pipe(rigger())
         //.pipe(uglify())
         .pipe(rename({suffix: '.min', prefix: ''}))

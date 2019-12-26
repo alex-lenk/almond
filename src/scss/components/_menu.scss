@@ -1,0 +1,223 @@
+.nav-menu .logo {
+  overflow: hidden;
+}
+
+.nav-menu__inner {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 100%;
+  left: 0;
+}
+
+.menu {
+  line-height: 1;
+  background-color: #fff;
+}
+
+.menu-link {
+  font-size: 21px;
+  font-weight: 300;
+  position: relative;
+  color: inherit;
+
+  &::after {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    background-color: $red;
+    content: '';
+    transition: width .4s;
+  }
+}
+
+.menu-calc {
+  display: inline-flex;
+  align-items: center;
+
+  &:hover .menu-calc__icon {
+    fill: $red;
+  }
+}
+
+.menu-calc__icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 9px;
+}
+
+.menu-link.active {
+  color: $red;
+
+  &:hover {
+    color: $red;
+  }
+
+  &::after {
+    width: 100%;
+  }
+}
+
+.menu-toggle {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  order: 3;
+  background-color: transparent;
+  border: 0;
+  display: none;
+  transition: 0.2s ease-in-out;
+  position: relative;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::before,
+  &::after {
+    width: 100%;
+    height: 4px;
+    background-color: $primary;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    will-change: transform, box-shadow;
+  }
+
+  &::before {
+    box-shadow: 0 8px #f85c70, 0 -8px #f85c70;
+  }
+}
+
+.menu-opened {
+}
+
+@media (min-width: 992px) {
+  .is-stuck {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 7px #a7a7a7;
+
+    .logo {
+      margin-right: 30px;
+    }
+  }
+
+  .nav-menu {
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .menu-calc__icon {
+    fill: $body-color;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-menu .logo {
+    height: 0;
+    width: 70px;
+    margin-right: 130px;
+    transition: height .5s, margin-right .5s;
+  }
+
+  .nav-menu {
+    transform: translateY(-26px);
+    transition: transform .5s, background-color .5s;
+  }
+  .is-stuck {
+    transform: translateY(0);
+
+    .logo {
+      height: 43px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-toggle {
+    margin-left: 30px;
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 1px 7px #a7a7a7;
+
+    .logo {
+      width: 70px;
+      margin-right: auto;
+    }
+  }
+
+  .menu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6rem 3.75rem 1rem 2.75rem;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 500ms ease;
+  }
+  .menu-item {
+    margin-bottom: 30px;
+  }
+
+  .menu-opened .menu {
+    transform: translate3d(0, 0, 0);
+    transition: transform 500ms ease;
+  }
+}
+
+@media (max-width: 766px) {
+  .menu-toggle {
+    order: 1;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .menu-link {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-menu:not(.is-stuck) .menu {
+    border-top: 1px solid #a7a7a7;
+  }
+  .nav-menu .logo {
+    width: 0;
+    height: 42px;
+    margin-right: 0;
+    transition: width .5s, margin-right .5s;
+  }
+
+  .is-stuck .logo {
+    width: 70px;
+    margin-right: 30px;
+  }
+  .menu {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}

@@ -1,5 +1,5 @@
 .main-section {
-  background: url(../img/bg/bg-header.jpg) no-repeat top center #f8d3ae;
+  background: url(../img/bg/bg-header.jpg) no-repeat bottom center #f8d3ae;
 }
 
 .main-section-title {
@@ -120,5 +120,12 @@
   }
   .main-section-paint {
     background-size: 100%;
+  }
+}
+
+@media (min-width: 766px) and(max-width: 991px) {
+  .main-section {
+    background-position: 50% 0;
+    background-size: cover;
   }
 }

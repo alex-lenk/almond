@@ -1,13 +1,9 @@
 .call-technologist {
-  padding-top: 50px;
-  padding-bottom: 75px;
   background-color: #ebebeb;
   overflow: hidden;
 }
 
 .call-technologist-title {
-  margin-bottom: 0;
-  font-size: 52px;
   font-weight: 600;
   position: relative;
 
@@ -27,34 +23,12 @@
 }
 
 .call-technologist-text {
-  margin-bottom: 48px;
-  font-size: 28px;
   line-height: 1.25;
-}
-
-.call-technologist-container {
-  position: relative;
-  display: flex;
-
-  &::after {
-    width: 531px;
-    height: 597px;
-    bottom: -75px;
-    right: -55px;
-    position: absolute;
-    background: url(../img/decor/guy.png) no-repeat center;
-    background-size: contain;
-    content: '';
-  }
 }
 
 .call-technologist-form {
   margin-right: 25px;
   box-shadow: 0 0 16px rgba(#dbdcdd, .75);
-}
-
-.call-technologist-content {
-  max-width: 285px;
 }
 
 .call-technologist-content__title {
@@ -63,4 +37,67 @@
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .call-technologist {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+  .call-technologist-title {
+    margin-bottom: 0;
+    font-size: 52px;
+  }
+  .call-technologist-text {
+    margin-bottom: 48px;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 767px) {
+  .call-technologist-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .call-technologist-container {
+    position: relative;
+
+    &::after {
+      width: 531px;
+      height: 597px;
+      bottom: -75px;
+      right: -55px;
+      position: absolute;
+      background: url(../img/decor/guy.png) no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+  }
+
+  .call-technologist-content {
+    max-width: 285px;
+  }
+}
+
+@media (max-width: 766px) {
+  .call-technologist {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .call-technologist-form {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .call-technologist-title {
+    font-size: 26px;
+  }
+  .call-technologist-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
 }
