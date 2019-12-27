@@ -98,7 +98,16 @@
   }
 }
 
-.menu-opened {
+.menu-opened .menu-toggle {
+  transform: rotate(-45deg);
+
+  &::before {
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: translateX(0) rotate(-90deg);
+  }
 }
 
 @media (min-width: 992px) {

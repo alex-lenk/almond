@@ -1,12 +1,10 @@
 .get-estimate {
-  padding-top: 65px;
-  padding-bottom: 65px;
   background-color: #fef5ea;
 }
 
 .get-estimate-wrap {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   border: 10px solid #fed60c;
   position: relative;
   background-color: #fff;
@@ -15,6 +13,12 @@
   justify-content: flex-end;
 }
 
+@media (min-width: 576px) {
+  .get-estimate {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
 
 @media (min-width: 767px) {
   .get-estimate-container {
@@ -45,6 +49,9 @@
       background-size: contain;
     }
   }
+  .get-estimate-wrap {
+    padding-bottom: 100px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -62,6 +69,13 @@
 @media (max-width: 766px) {
   .get-estimate-form {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .get-estimate {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 

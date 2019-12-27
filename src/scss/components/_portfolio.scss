@@ -71,17 +71,10 @@
   font-weight: 300;
 }
 
-.portfolio-content__text {
-  height: 390px;
-  padding-right: 20px;
-}
-
 .portfolio-price {
   margin-bottom: 30px;
   padding-left: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .portfolio-price__label {
@@ -108,6 +101,13 @@
   padding-right: 10px;
 }
 
+@media (min-width: 360px) {
+  .portfolio-price {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 576px) {
   .portfolio {
     padding-top: 50px;
@@ -127,6 +127,10 @@
 
   .portfolio-head__pre-title {
     font-size: 23px;
+  }
+  .portfolio-content__text {
+    height: 390px;
+    padding-right: 20px;
   }
 }
 
@@ -182,6 +186,16 @@
     padding-right: 15px;
     margin-bottom: 30px;
     font-size: 28px;
+  }
+}
+
+@media (max-width: 359px) {
+  .portfolio-price__cost {
+    display: inline-block;
+  }
+
+  .portfolio-btn {
+    font-size: 18px;
   }
 }
 

@@ -44,10 +44,6 @@ $(document).ready(function () {
     /* END Actions on opening menus on mobile devices  */
 
 
-    /* BEGIN Transfer "widget-about" on mobile */
-    //if ((isMobile.any())) $(".widget-about").appendTo(".single-block__location");
-    /* END Transfer "widget-about" on mobile */
-
 
     /* BEGIN Script scroll to top  */
     var scrollToTop = $('.scroll-to-top');
@@ -59,7 +55,6 @@ $(document).ready(function () {
         }
     });
 
-    // scroll body to 0px on click
     scrollToTop.click(function () {
         $('body,html').animate({
             scrollTop: 0
@@ -76,64 +71,7 @@ $(document).ready(function () {
     });
 
 
-    $('.portfolio-content__text').customScroll();
+    $('.portfolio-content__text').customScroll({
+        horizontal: false
+    });
 });
-/*
-
-var navigation = {
-    // Variables
-    $nav: document.querySelector('.nav-menu'),
-    $navTrigger: document.querySelector('.menu-toggle'),
-    $navContent: document.querySelector('.menu'),
-    $navList: document.querySelector('.menu'),
-    transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-    init: function init() {
-        var self = this; // Handle the transitions
-
-        self.$navTrigger.addEventListener('click', function () {
-            if (!self.$navTrigger.classList.contains('is-active')) {
-                // .nav--trigger active
-                self.$navTrigger.classList.add('is-active'); // .nav active
-
-                if (!self.$nav.classList.contains('is-active')) {
-                    self.$nav.classList.add('is-active');
-                    self.$nav.addEventListener('transitionend', function (e) {
-                        if (e.propertyName === 'width' && self.$navTrigger.classList.contains('is-active')) {
-                            // .nav__content active
-                            self.$navContent.classList.add('is-active');
-                        }
-                    });
-                } else {
-                    self.$navContent.classList.add('is-active');
-                } // no-csstransitions fallback
-
-
-                if (document.documentElement.classList.contains('no-csstransitions')) {
-                    self.$navContent.classList.add('is-active');
-                }
-            } else {
-                // .nav--trigger inactive
-                self.$navTrigger.classList.remove('is-active'); // .nav__content inactive
-
-                if (self.$navContent.classList.contains('is-active')) {
-                    self.$navContent.classList.remove('is-active');
-                    self.$navContent.addEventListener('transitionend', function (e) {
-                        if (e.propertyName === 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
-                            // .nav inactive
-                            self.$nav.classList.remove('is-active');
-                        }
-                    });
-                } else {
-                    self.$nav.classList.remove('is-active');
-                } // no-csstransitions fallback
-
-
-                if (document.documentElement.classList.contains('no-csstransitions')) {
-                    self.$nav.classList.remove('is-active');
-                }
-            }
-        });
-    }
-};
-navigation.init();
-*/
