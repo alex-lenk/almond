@@ -59,7 +59,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
     return gulp.src(['./src/js/*.js'])
         .pipe(rigger())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(gulp.dest('./build/js'))
         .pipe(browserSync.reload({stream: true}))

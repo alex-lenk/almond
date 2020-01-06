@@ -29,17 +29,15 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
-@if $enable-grid-classes {
-  // Single container class with breakpoint max-widths
-  .container {
-    @include make-container();
-    @include make-container-max-widths();
-  }
+// Single container class with breakpoint max-widths
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+}
 
-  // 100% wide container at all breakpoints
-  .container-fluid {
-    @include make-container();
-  }
+// 100% wide container at all breakpoints
+.container-fluid {
+  @include make-container();
 }
 
 
@@ -47,15 +45,12 @@
 //
 // Rows contain your columns.
 
-@if $enable-grid-classes {
-  .row {
-    @include make-row();
-  }
+
+.row {
+  @include make-row();
 }
 
-@if $enable-grid-classes {
-  @include make-grid-columns();
-}
+@include make-grid-columns();
 
 
 //

@@ -20,8 +20,7 @@
 }
 
 .menu-link {
-  font-size: 21px;
-  font-weight: 300;
+  font-size: 19px;
   position: relative;
   color: inherit;
 
@@ -37,6 +36,7 @@
   }
 }
 
+/*
 .menu-calc {
   display: inline-flex;
   align-items: center;
@@ -51,6 +51,7 @@
   height: 23px;
   margin-right: 9px;
 }
+*/
 
 .menu-link.active {
   color: $red;
@@ -134,9 +135,9 @@
     flex-grow: 1;
     justify-content: space-between;
   }
-  .menu-calc__icon {
+/*  .menu-calc__icon {
     fill: $body-color;
-  }
+  }*/
 }
 
 @media (min-width: 1200px) {

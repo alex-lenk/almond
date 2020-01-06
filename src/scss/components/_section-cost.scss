@@ -1,29 +1,19 @@
 .section-cost {
-  background-color: #fef5ea;
+  background: url(../img/bg/bg-third.jpg) no-repeat center top #fff;
+  background-size: cover;
 }
 
 .section-cost-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
+  color: #fff;
 }
 
-.section-cost-title__inner {
-  display: inline-block;
-
-  &::after {
-    width: 90%;
-    height: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: $yellowColor;
-    content: '';
-  }
+.section-cost-title__key {
+  color: $yellowColor;
 }
 
 .section-cost-item {
   background-color: #fff;
+  font-family: $font-family-head;
   display: flex;
   align-items: center;
 
@@ -45,11 +35,12 @@
 
 .section-cost-type {
   font-weight: 700;
+  text-transform: uppercase;
   flex-grow: 1;
 }
 
 .section-cost-price {
-  padding: 14px 25px;
+  padding: 14px 4%;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -82,46 +73,39 @@
 
 @media (min-width: 576px) {
   .section-cost-title {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 767px) {
   .section-cost {
-    padding-top: 100px;
-    padding-bottom: 110px;
+    padding-top: 65px;
+    padding-bottom: 130px;
+  }
+  .section-cost-item {
+    font-size: 25px;
   }
   .section-cost-price {
     border-left: 1px solid #e5e5e5;
   }
-  .section-cost-media {
-    padding-left: 10px;
-  }
 }
 
 @media (min-width: 1280px) {
-  .section-cost-title {
-    font-size: 52px;
+  .section-cost-item {
+    padding-left: 4%;
   }
   .section-cost-media {
-    width: 222px;
+    width: 13%;
   }
   .section-cost-type {
-    max-width: 508px;
-    flex-basis: 508px;
-    padding-left: 55px;
-    font-size: 40px;
-  }
-  .section-cost-price {
-    font-size: 38px;
+    max-width: 44%;
+    flex-basis: 44%;
+    padding-left: 5%;
   }
 }
 
 @media (max-width: 991px) {
-  .section-cost-price {
-    font-size: 21px;
-  }
-  .section-cost-type {
+  .section-cost-item {
     font-size: 22px;
   }
 }

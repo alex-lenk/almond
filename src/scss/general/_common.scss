@@ -1,77 +1,3 @@
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro-Regular.woff') format('woff'),
-  url('../fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro-Medium.woff') format('woff'),
-  url('../fonts/PFDinDisplayPro-Medium.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'),
-  url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
-  url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro-BlackItalic.woff') format('woff'),
-  url('../fonts/PFDinDisplayPro-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinTextCondPro-Medium.woff') format('woff'),
-  url('../fonts/PFDinTextCondPro-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinTextCondPro-Light.woff') format('woff'),
-  url('../fonts/PFDinTextCondPro-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans.woff') format('woff'),
-  url('../fonts/OpenSans.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Light.woff') format('woff'),
-  url('../fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-
 body {
   background-color: #fff;
   position: relative;
@@ -84,10 +10,22 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.4;
+  font-family: $font-family-head;
 }
 
 h1 {
   font-size: 36px;
+}
+
+h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: 576px) {
+    font-size: 52px;
+    text-align: center;
+    line-height: 1.2;
+  };
 }
 
 h3 {
@@ -131,17 +69,14 @@ img {
 }
 
 .check-list__item {
-  padding-left: 28px;
+  padding-left: 31px;
   position: relative;
-  font-weight: 300;
   line-height: 1.2;
-  font-size: 21px;
-  background-color: #ebebeb;
 
   &::before {
     width: 18px;
     height: 14px;
-    top: 6px;
+    top: 2px;
     left: 2px;
     background: url(../img/icons/check.svg) no-repeat center;
     background-size: contain;
@@ -150,6 +85,28 @@ img {
   }
 
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 19px;
+  }
+}
+
+.title-block {
+  &::after {
+    width: 15%;
+    height: 10px;
+    margin: 15px auto 0;
+    display: block;
+    content: '';
+  }
+
+  &-blue::after {
+    background-color: $blueColor;
+  }
+
+  &-yellow::after {
+    background-color: $yellowColor;
+  }
+
+  &-bold {
+    font-weight: 900;
   }
 }

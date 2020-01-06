@@ -1,25 +1,11 @@
 .call-technologist {
-  background-color: #ebebeb;
   overflow: hidden;
-}
+  background: #f7d49a;
+  background: -moz-linear-gradient(left, #f7d49a 0%, #f9e4b9 50%, #f7d49a 100%);
+  background: -webkit-linear-gradient(left, #f7d49a 0%, #f9e4b9 50%, #f7d49a 100%);
+  background: linear-gradient(to right, #f7d49a 0%, #f9e4b9 50%, #f7d49a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7d49a', endColorstr='#f7d49a', GradientType=1);
 
-.call-technologist-title {
-  font-weight: 600;
-  position: relative;
-
-  &::before {
-    width: 11px;
-    height: 38px;
-    top: 18px;
-    left: -28px;
-    position: absolute;
-    background-color: #f3d535;
-    content: '';
-  }
-}
-
-.call-technologist-title__bold {
-  font-weight: 900;
 }
 
 .call-technologist-text {
@@ -28,56 +14,65 @@
 
 .call-technologist-form {
   margin-right: 25px;
-  box-shadow: 0 0 16px rgba(#dbdcdd, .75);
 }
 
 .call-technologist-content__title {
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
+.call-technologist-list {
+  max-width: 67%;
+  font-size: 15px;
+}
+
 @media (min-width: 576px) {
   .call-technologist {
-    padding-top: 50px;
-    padding-bottom: 75px;
+    padding-top: 30px;
+    padding-bottom: 45px;
   }
   .call-technologist-title {
-    margin-bottom: 0;
-    font-size: 52px;
+    margin-bottom: 40px;
   }
   .call-technologist-text {
-    margin-bottom: 48px;
-    font-size: 28px;
+    margin-bottom: 33px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 767px) {
   .call-technologist-container {
+    position: relative;
+    z-index: 1;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .call-technologist-title {
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
-  .call-technologist-container {
+  .call-technologist {
     position: relative;
 
     &::after {
-      width: 510px;
-      height: 570px;
-      bottom: -75px;
-      right: -55px;
+      width: 55%;
+      height: 100%;
+      bottom: 0;
+      right: 2%;
       position: absolute;
-      background: url(../img/decor/guy.png) no-repeat center;
+      background: url(../img/decor/guy.png) no-repeat right bottom;
       background-size: contain;
       content: '';
     }
   }
 
   .call-technologist-content {
-    max-width: 285px;
+    max-width: 42%;
   }
 }
 

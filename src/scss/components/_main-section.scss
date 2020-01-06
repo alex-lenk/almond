@@ -1,4 +1,5 @@
 .main-section {
+  font-family: $font-family-head;
   background: url(../img/bg/bg-header.jpg) no-repeat bottom center #f8d3ae;
 }
 
@@ -16,27 +17,25 @@
 }
 
 .main-section-price {
-  margin-bottom: 37px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .main-section-price__text {
-  margin-right: 14px;
+  margin-right: 6px;
   text-align: right;
   font-weight: 700;
 }
 
 .main-section-price__cost {
-  margin-right: 7px;
-  letter-spacing: -2px;
-  font-weight: 900;
-  color: #fdca00;
-  text-shadow: 3px 0 0 $body-color,
-  0 3px 0 $body-color,
-  -3px 0 0 $body-color,
-  0 -3px 0 $body-color;
+  padding: 25px 14px 25px 25px;
+  position: relative;
+  background: url(../img/bg/bg-cost.svg) no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
 }
 
 .main-section-price__sup {
@@ -45,12 +44,14 @@
 }
 
 .main-section-paint {
-  padding: 10px 54px 18px 2px;
-  margin-bottom: 34px;
-  max-width: 536px;
-  font-size: 28px;
+  padding: 19px 2px 20px 2px;
+  margin-bottom: 37px;
+  margin-left: 10px;
+  height: 98px;
+  max-width: 464px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
   background: url(../img/bg/bg-paint.png) center no-repeat;
@@ -58,38 +59,32 @@
 
 @media (min-width: 576px) {
   .main-section {
-    height: 697px;
-    padding-top: 105px;
+    height: 630px;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (min-width: 767px) {
   .main-section-title {
-    font-size: 116px;
-    line-height: 95px;
+    font-size: 80px;
+    line-height: 65px;
   }
   .main-section-title__text {
-    margin-left: 124px;
-    font-size: 84px;
+    margin-left: 195px;
+    font-size: 65px;
   }
   .main-section-price__text {
-    font-size: 48px;
-    line-height: 46px;
-  }
-
-  .main-section-price__cost {
-    font-size: 115px;
-    line-height: 92px;
+    font-size: 45px;
+    line-height: 45px;
   }
 
   .main-section-price__sup {
-    font-size: 46px;
-  }
-}
-
-@media (min-width: 767px) and (max-height: 760px) {
-  .main-section {
-    padding-top: 3%
+    font-size: 45px;
+    margin-left: 8px;
+    sup {
+      font-size: 64%;
+    }
   }
 }
 

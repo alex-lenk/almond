@@ -46,12 +46,6 @@
             <li class="menu-item nav-item"><a href="#fifth" class="menu-link nav-link">Наши работы</a></li>
             <li class="menu-item nav-item"><a href="#six" class="menu-link nav-link">Вопросы</a></li>
             <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Стоимость</a></li>
-            <li class="menu-item nav-item"><a href="#" class="menu-link nav-link menu-calc">
-                <svg class="menu-calc__icon">
-                    <use xlink:href="img/icons.svg#calc"></use>
-                </svg>
-                Калькулятор</a>
-            </li>
         </ul>
     </div>
 </nav>
@@ -68,10 +62,8 @@
                 за
             </div>
             <div class="main-section-price__cost">
-                4800
-            </div>
-            <div class="main-section-price__sup">
-                Р/М2
+                <img src="img/4800.png" alt="цена от 4800">
+                <div class="main-section-price__sup">Р/М<sup>2</sup></div>
             </div>
         </div>
         <div class="main-section-paint">
@@ -85,11 +77,11 @@
 
 <section id="two" class="staff">
     <div class="staff-inner container">
+        <h2 class="staff-title title-block title-block-yellow">
+            <span class="title-block-bold">СОТРУДНИКИ</span> КОТОРЫМ
+            МОЖНО ДОВЕРЯТЬ
+        </h2>
         <div class="staff-content">
-            <h2 class="staff-title">
-                <span class="staff-title__bold">СОТРУДНИКИ</span> КОТОРЫМ
-                МОЖНО ДОВЕРЯТЬ
-            </h2>
             <div class="staff-card">
                 <div class="staff-card__name">Алексей</div>
                 <div class="staff-card__career">ПЛИТОЧНИК, 9 ЛЕТ СТАЖА</div>
@@ -147,8 +139,8 @@
 
 <section id="three" class="section-cost">
     <div class="container">
-        <h2 class="section-cost-title">
-            <span class="section-cost-title__inner">СТОИМОСТЬ РЕМОНТА КВАРТИРЫ «ПОД КЛЮЧ»</span>
+        <h2 class="section-cost-title title-block title-block-yellow">
+            СТОИМОСТЬ РЕМОНТА КВАРТИРЫ <span class="section-cost-title__key title-block-bold">«ПОД КЛЮЧ»</span>
         </h2>
 
         <ul class="section-cost-list list-unstyled">
@@ -214,53 +206,61 @@
 
 
 <section id="fourth" class="call-technologist">
-    <div class="container">
-        <h2 class="call-technologist-title">
-            ПЛАНИРУЕМ РЕМОНТ <span class="call-technologist-title__bold">ПРАВИЛЬНО</span>
+    <div class="call-technologist-container container">
+        <h2 class="call-technologist-title title-block title-block-blue">
+            ПЛАНИРУЕМ РЕМОНТ <span class="title-block-bold">ПРАВИЛЬНО</span>
         </h2>
 
-        <p class="call-technologist-text">
-            Получите полное представление о будущем ремонте<br>
-            «ДО»  начало работ прямо в день обращения
-        </p>
-
-        <div class="call-technologist-container">
-            <form action="/" class="call-technologist-form call-form">
-                <div class="call-form__title">вызовите технолога-сметчика</div>
-
-                <div class="form-group">
-                    <label class="sr-only" for="call-form__name">Ваше имя</label>
-                    <input type="text" class="form-control hide-placeholder" id="call-form__name" placeholder="Ваше имя">
-                </div>
-
-                <div class="form-group">
-                    <label class="sr-only" for="call-form__tel">Контактный телефон*</label>
-                    <input type="tel" class="form-control hide-placeholder"  id="call-form__tel" placeholder="Контактный телефон*">
-                </div>
-
-                <button type="submit" class="call-form__btn btn btn-yellow">Получить детальную смету</button>
-
-                <div class="call-form__terms">
-                    Нажимая кнопку, вы даете согласие на обработку<br>
-                    персональных данных
-                </div>
-            </form>
-
-            <div class="call-technologist-content">
-                <div class="call-technologist-content__title">
-                    ПО ИТОГАМ ВСТРЕЧИ<br>
-                    ВЫ ПОЛУЧАЕТЕ:
-                </div>
-
-                <ul class="check-list">
-                    <li class="check-list__item">Детально просчитанная смета
-                    <li class="check-list__item">Просчет стоимости черновых материалов</li>
-                    <li class="check-list__item">Анализ планировки, технических возможностей для ремонта</li>
-                    <li class="check-list__item">Рекомендации по оптимальному использованию пространства</li>
-                    <li class="check-list__item">Советы по выбору материалов<br> для отделки</li>
-                    <li class="check-list__item">Расчетное время ремонтных<br> работ</li>
-                </ul>
+        <form action="/" class="call-technologist-form call-form">
+            <div class="call-form__title">Заполните форму</div>
+            <div class="call-form__text">
+                и&nbsp;наш специалист свяжется с&nbsp;вами
+                в&nbsp;ближайшее время
             </div>
+
+            <div class="form-group call-form__group">
+                <label class="sr-only" for="call-form__name">Ваше имя</label>
+                <svg class="call-form__icon">
+                    <use xlink:href="img/icons.svg#user"></use>
+                </svg>
+                <input type="text" class="call-form__field form-control hide-placeholder" id="call-form__name" placeholder="Ваше имя">
+            </div>
+
+            <div class="form-group call-form__group">
+                <label class="sr-only" for="call-form__tel">Контактный телефон*</label>
+                <svg class="call-form__icon">
+                    <use xlink:href="img/icons.svg#phone"></use>
+                </svg>
+                <input type="tel" class="call-form__field form-control hide-placeholder"  id="call-form__tel" placeholder="Контактный телефон*">
+            </div>
+
+            <button type="submit" class="call-form__btn btn btn-yellow">Получить детальную смету</button>
+
+            <div class="call-form__terms">
+                Нажимая кнопку, вы даете согласие на обработку<br>
+                персональных данных
+            </div>
+        </form>
+
+        <div class="call-technologist-content">
+            <p class="call-technologist-text">
+                Получите полное представление о будущем ремонте<br>
+                <strong>«ДО»  начало работ</strong> прямо в день обращения
+            </p>
+
+            <div class="call-technologist-content__title">
+                ПО ИТОГАМ ВСТРЕЧИ<br>
+                ВЫ ПОЛУЧАЕТЕ:
+            </div>
+
+            <ul class="check-list call-technologist-list">
+                <li class="check-list__item">Детально просчитанная смета
+                <li class="check-list__item">Просчет стоимости черновых материалов</li>
+                <li class="check-list__item">Анализ планировки, технических возможностей для ремонта</li>
+                <li class="check-list__item">Рекомендации по оптимальному использованию пространства</li>
+                <li class="check-list__item">Советы по выбору материалов<br> для отделки</li>
+                <li class="check-list__item">Расчетное время ремонтных<br> работ</li>
+            </ul>
         </div>
     </div>
 </section>

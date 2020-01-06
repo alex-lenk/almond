@@ -3,7 +3,8 @@
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-base: 'PFDinDisplayPro', -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$font-family-base: 'OpenSans', 'PFDinDisplayPro', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+$font-family-head: 'PFDinDisplayPro', 'OpenSans', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 $body-color: #333;
 // Grid containers
 //
@@ -13,7 +14,7 @@ $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1200px
+        xl: 1170px
 );
 
 // Grid columns
@@ -26,6 +27,8 @@ $grid-gutter-width: 20px;
 $red: #e62b2b;
 $pink: #f85c70;
 $primary: $pink;
+$yellowColor: #fed60c;
+$blueColor: #0066b2;
 
 // Links
 //
@@ -50,14 +53,16 @@ $nav-tabs-link-hover-border-color: transparent;
 $input-height: 72px;
 $input-color: #333;
 $input-bg: #fff;
-$input-border-width: 2px;
-$input-border-radius: 6px;
-$input-box-shadow: none;
+$input-border-width: 1px;
+$input-border-radius: 8px;
+$input-box-shadow: inset 0 5px 5px 0 #c8c8c8;
+$input-font-size: 14px;
 $enable-shadows: true;
-$input-border-color: #c9c8c8;
-$form-group-margin-bottom: 25px;
+$input-border-color: #727071;
+$form-group-margin-bottom: 21px;
 $input-placeholder-color: #333;
 $input-focus-border-color: #999;
+$input-focus-box-shadow: none;
 
 
 // Buttons
