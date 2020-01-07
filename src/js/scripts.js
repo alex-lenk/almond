@@ -32,7 +32,12 @@ $(document).ready(function () {
 
 
     if ($(window).width() > 1099) {
-        $('.portfolio-head').prependTo('.portfolio-content');
+        $('.portfolio-wrapper').each(function () {
+            var Q = $(this).find('.portfolio-head').html();
+            $(this).find('.portfolio-head').hide();
+            $(this).find('.portfolio-content').prepend(Q);
+            console.log(Q);
+        });
     }
 
 
@@ -42,7 +47,6 @@ $(document).ready(function () {
         $('html').toggleClass('menu-opened');
     });
     /* END Actions on opening menus on mobile devices  */
-
 
 
     /* BEGIN Script scroll to top  */
@@ -65,7 +69,7 @@ $(document).ready(function () {
 
 
     $('body').on('click', '[href*="#"]', function (e) {
-        var fixed_offset = 50;
+        var fixed_offset = 0;
         $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
         e.preventDefault();
     });
