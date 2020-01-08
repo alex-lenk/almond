@@ -1,0 +1,48 @@
+.section-schedule {
+  padding-bottom: 25px;
+  border-top: 70px solid #fff;
+  background: url(../img/bg/bg-fifth.jpg) no-repeat top center;
+}
+
+.section-schedule-inner {
+  display: flex;
+  align-items: center;
+}
+
+.section-schedule-text {
+  margin-right: 32px;
+  font-weight: 500;
+  font-size: 58px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: $font-family-head;
+}
+
+.section-schedule-text__big {
+  font-size: 78px;
+}
+
+.section-schedule-operator {
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+}
+
+.section-schedule-operator__name {
+  margin-top: 17px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: $font-family-head;
+}
+
+.section-schedule-operator__special {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.section-schedule-form {
+  margin-top: -45px;
+  margin-left: auto;
+}
