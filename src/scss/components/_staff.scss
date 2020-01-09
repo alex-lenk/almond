@@ -64,7 +64,7 @@
 }
 
 .staff-advantages__title {
-  margin-bottom: 12px;
+  margin-bottom: 0;
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
@@ -73,7 +73,6 @@
 }
 
 .staff-advantages__text {
-  font-size: 1.13rem;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -93,7 +92,7 @@
     margin-bottom: 60px;
   }
   .staff-card {
-    padding: 20px 47px 25px;
+    padding: 25px 40px;
     margin-bottom: 60px;
     border: 10px solid #e5e6e6;
   }
@@ -102,8 +101,8 @@
     padding-right: 15px;
   }
   .staff-side {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #fff;
     position: relative;
 
@@ -117,8 +116,8 @@
   }
 
   .staff-advantages {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .staff-advantages__item {
@@ -126,7 +125,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: 45px;
+      margin-bottom: 23px;
     }
 
     &::before {
@@ -148,7 +147,7 @@
     &::after {
       width: 259px;
       height: 799px;
-      top: 13%;
+      bottom: -17%;
       z-index: 2;
       position: absolute;
       background: url(../img/decor/man.png) no-repeat center;
@@ -170,13 +169,14 @@
   }
 
   .staff-content {
-    max-width: 800px;
-    flex-basis: 800px;
+    max-width: 40%;
+    flex-basis: 40%;
   }
 
   .staff-side {
-    max-width: 445px;
-    flex-basis: 445px;
+    max-width: 38%;
+    flex-basis: 38%;
+    margin-left: auto;
 
     &::after {
       width: 725px;
@@ -189,7 +189,7 @@
 
 @media (min-width: 1200px) {
   .staff-content::after {
-    left: 55%;
+    left: 88%;
   }
 }
 

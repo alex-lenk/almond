@@ -3,5 +3,5 @@
 //= lib/bootstrap-4.4.1/util.js
 //= lib/bootstrap-4.4.1/scrollspy.js
 //= ../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js
-//= lib/jquery.custom-scroll.min.js
+// = lib/jquery.custom-scroll.min.js
 //= lib/stickUp.js

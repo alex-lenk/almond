@@ -121,21 +121,22 @@
     font-size: 22px;
   }
   .portfolio-content__text {
-    height: 390px;
+    height: 370px;
     padding-right: 20px;
+    overflow-y: scroll;
   }
 }
 
 @media (min-width: 992px) {
   .portfolio-wrapper {
-    padding-top: 55px;
-    padding-bottom: 32px;
+    padding-top: 45px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
   }
   .portfolio-gallery {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 45px;
+    padding-right: 45px;
     max-width: 61%;
     flex-basis: 61%;
   }
@@ -148,7 +149,7 @@
 
 @media (min-width: 1200px) {
   .portfolio-price__cost {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 

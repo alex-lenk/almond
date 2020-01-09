@@ -20,7 +20,7 @@
 }
 
 .menu-link {
-  font-size: 19px;
+  //font-size: 17px;
   position: relative;
   color: inherit;
 
@@ -135,9 +135,6 @@
     flex-grow: 1;
     justify-content: space-between;
   }
-/*  .menu-calc__icon {
-    fill: $body-color;
-  }*/
 }
 
 @media (min-width: 1200px) {
@@ -149,7 +146,7 @@
   }
 
   .nav-menu {
-    transform: translateY(-26px);
+    transform: translateY(-20px);
     transition: transform .5s, background-color .5s;
   }
   .is-stuck {

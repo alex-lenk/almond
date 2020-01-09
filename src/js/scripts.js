@@ -36,7 +36,6 @@ $(document).ready(function () {
             var Q = $(this).find('.portfolio-head').html();
             $(this).find('.portfolio-head').hide();
             $(this).find('.portfolio-content').prepend(Q);
-            console.log(Q);
         });
     }
 
@@ -75,7 +74,7 @@ $(document).ready(function () {
     });
 
 
-    $('.portfolio-content__text').customScroll({
+/*    $('.portfolio-content__text').customScroll({
         horizontal: false
-    });
+    });*/
 });

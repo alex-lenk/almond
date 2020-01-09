@@ -25,18 +25,6 @@
   font-family: $font-family-head;
 }
 
-.header-phone {
-  font-weight: 700;
-  color: inherit;
-  line-height: 1;
-  font-family: $font-family-head;
-}
-
-.header-phone__icon {
-  margin-right: 4px;
-  fill: $body-color;
-}
-
 .header-support__left {
   margin-right: auto;
   display: flex;
@@ -88,10 +76,6 @@
   .header-phone {
     font-size: 20px;
   }
-  .header-phone__icon {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -131,18 +115,9 @@
   }
 }
 
-@media (min-width: 1100px) {
-  .header-phone:hover .header-phone__icon {
-    fill: #b01515;
-  }
-  .header-phone__icon {
-    transition: fill .3s;
-  }
-}
-
 @media (min-width: 1200px) {
   .header__inner {
-    padding-top: 30px;
+    padding-top: 20px;
     align-items: flex-start;
   }
   .header-logo {

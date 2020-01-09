@@ -22,7 +22,7 @@ h2 {
   text-transform: uppercase;
 
   @media (min-width: 576px) {
-    font-size: 52px;
+    font-size: 50px;
     text-align: center;
     line-height: 1.2;
   };
@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1150px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -57,6 +57,37 @@ img {
       opacity: 0;
       transition: opacity 0.3s ease;
     }
+  }
+}
+
+.list-boolean {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.list-boolean-item {
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.2;
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    border-radius: 50%;
+    background: url(../img/icons/bool.svg) no-repeat center;
+    background-size: contain;
+    box-shadow: 0 0 05px #a7a7a7;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
   }
 }
 
@@ -108,5 +139,27 @@ img {
 
   &-bold {
     font-weight: 900;
+  }
+}
+
+.phone-block {
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
+  font-family: $font-family-head;
+}
+
+.phone-block-icon {
+  width: 27px;
+  height: 27px;
+  fill: $body-color;
+}
+
+@media (min-width: 1100px) {
+  .phone-block:hover .phone-block-icon {
+    fill: #b01515;
+  }
+  .phone-block-icon {
+    transition: fill .3s;
   }
 }

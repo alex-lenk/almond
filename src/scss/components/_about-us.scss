@@ -1,0 +1,124 @@
+.about-us {
+  padding-bottom: 24px;
+}
+
+.about-us-title {
+  margin-bottom: 50px;
+}
+
+.about-us-wrap {
+  margin-bottom: 49px;
+  position: relative;
+  display: flex;
+
+  &::after {
+    width: 358px;
+    height: 715px;
+    bottom: -143px;
+    left: 38%;
+    z-index: 2;
+    position: absolute;
+    background: url(../img/decor/prorab.png) no-repeat center bottom;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about-us-content {
+  max-width: 38%;
+  margin-right: auto;
+  padding: 10px 30px 0;
+  font-weight: 300;
+  line-height: 1.4;
+  border: 10px solid #edeeee;
+  position: relative;
+
+  &::after {
+    width: 38px;
+    height: 63px;
+    border-right: 10px solid #edeeee;
+    border-bottom: 10px solid #edeeee;
+    top: 15%;
+    right: -27px;
+    background-color: #fff;
+    transform: rotate(-23deg) skew(10deg, 15deg);
+    position: absolute;
+    content: '';
+  }
+}
+
+.about-us-director {
+  border-top: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-director__name {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: $font-family-head;
+}
+
+.about-us-director__post {
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.about-us-certificate {
+  padding-top: 8%;
+  padding-right: 7%;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+
+  &::after {
+    width: 254px;
+    height: 268px;
+    top: 70px;
+    right: -78px;
+    z-index: -1;
+    position: absolute;
+    background: url(../img/decor/simbol.png) no-repeat center;
+    content: '';
+  }
+}
+
+.about-us-certificate__media {
+  cursor: pointer;
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.about-us-quote {
+  max-width: 47%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $yellowColor;
+  background-color: #fff;
+  font-family: $font-family-head;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    width: 36px;
+    height: 32px;
+    border-top: 6px solid #fff;
+    border-left: 6px solid #fff;
+    top: -2px;
+    left: -2px;
+    background: url(../img/decor/quotation.svg) no-repeat right bottom #fff;
+    background-size: contain;
+    position: absolute;
+    content: '';
+  }
+}

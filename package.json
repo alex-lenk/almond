@@ -29,7 +29,6 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
 		"jquery": "^3.4.1",
-		"jquery-zoom": "^1.7.21",
 		"slick-slider": "^1.8.2"
 	},
 	"dependencies": {

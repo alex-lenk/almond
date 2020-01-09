@@ -22,7 +22,7 @@
 @media (min-width: 767px) {
   .get-estimate-wrap {
     padding-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     position: relative;
 
     &::before,
@@ -31,20 +31,21 @@
     }
 
     &::before {
-      width: 626px;
-      height: 427px;
-      top: 15%;
-      left: 12%;
+      width: 600px;
+      height: 410px;
+      left: 1%;
+      position: relative;
       display: block;
       background: url(../img/decor/estimate.jpg) no-repeat center;
       background-size: contain;
     }
 
     &::after {
-      width: 26%;
-      height: 32%;
-      bottom: 0;
-      left: 37%;
+      width: 14%;
+      height: 7%;
+      bottom: 53px;
+      left: 42%;
+      opacity: .5;
       z-index: 5;
       position: absolute;
       background: url(../img/decor/arrow-arc.svg) no-repeat center;
