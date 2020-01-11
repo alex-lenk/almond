@@ -1,5 +1,7 @@
 .new-building {
   height: 96vh;
+  min-height: 875px;
+  border-top: 30px solid #fff;
   background: url(../img/bg/bg-new-building.jpg) no-repeat center bottom;
   display: flex;
   flex-direction: column;
@@ -64,27 +66,14 @@
 
 .new-building-list {
   max-width: 48%;
-  font-size: 18px;
   font-weight: 700;
-
-  .check-list__item {
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
-
-    &::before {
-      width: 24px;
-      height: 20px;
-      top: 0;
-    }
-  }
 }
 
 .new-building-info {
   margin-top: auto;
   padding: 5px 15px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
   color: #006fc9;
   text-align: center;

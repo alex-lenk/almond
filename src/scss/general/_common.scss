@@ -82,7 +82,6 @@ img {
     border-radius: 50%;
     background: url(../img/icons/bool.svg) no-repeat center;
     background-size: contain;
-    box-shadow: 0 0 05px #a7a7a7;
     content: '';
   }
 
@@ -161,5 +160,20 @@ img {
   }
   .phone-block-icon {
     transition: fill .3s;
+  }
+}
+
+@keyframes animatePlay {
+  0% {
+    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 0 rgba($yellowColor, 0.5)
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba($yellowColor, 0), 0 0 0 20px rgba($yellowColor, 0.5)
+  }
+  50.0001% {
+    box-shadow: 0 0 0 0 rgba($yellowColor, 0.5), 0 0 0 20px rgba($yellowColor, 0.5)
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 40px rgba($yellowColor, 0)
   }
 }
