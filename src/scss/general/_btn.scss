@@ -1,15 +1,12 @@
-.btn {
-  font-family: $font-family-head;
-}
-
 .btn-yellow {
   width: 100%;
-  height: 72px;
-  border-radius: 10px;
+  height: 60px;
+  border-radius: 7px;
   font-size: 20px;
   font-weight: 700;
   white-space: nowrap;
-  box-shadow: 0 3px #dbb536, 0 7px 18px #a7a7a7;
+  font-family: $font-family-head;
+  box-shadow: 0 3px #dbb536, 0 5px 12px #a7a7a7;
   background: #efd233;
   background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
   background: -webkit-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
@@ -21,7 +18,7 @@
   }
 
   @media (min-width: 767px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (max-width: 359px) {
@@ -32,19 +29,19 @@
 }
 
 .btn-outline {
-  padding: 13px 26px;
+  padding: 12px 20px;
   color: #e52b2b;
   border: 1px solid;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 15px;
   line-height: 1;
   border-radius: 6px;
 }
 
 .btn-whats-app,
 .btn-vk {
-  width: 48px;
-  height: 48px;
+  width: 33px;
+  height: 33px;
   line-height: 1;
   color: #fff;
   align-items: center;
@@ -58,20 +55,20 @@
 }
 
 .btn-whats-app__icon {
-  width: 17px;
-  height: 17px;
-  margin-bottom: 4px;
+  width: 14px;
+  height: 14px;
+  margin-bottom: 3px;
 }
 
 .btn-vk__icon {
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
 }
 
 .btn-whats-app {
   color: #fff;
-  font-size: 10px;
-  border-radius: 10px;
+  font-size: 6px;
+  border-radius: 6px;
   background-color: #00a600;
   flex-direction: column;
   font-family: $font-family-head;
@@ -92,12 +89,14 @@
   background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
   background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
+  font-family: $font-family-head;
 }
 
 @media (min-width: 576px) {
   .btn-main {
-    padding: 15px 35px;
-    font-size: 27px;
+    min-width: 429px;
+    padding: 14px 35px;
+    font-size: 22px;
   }
 }
 

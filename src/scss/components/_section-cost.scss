@@ -18,7 +18,7 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 
 .section-cost-price {
-  padding: 14px 4%;
+  padding: 14px 5%;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -60,30 +60,30 @@
 
 @media (min-width: 360px) {
   .section-cost-price__decor {
-    width: 72px;
-    height: 72px;
-    margin-right: 25px;
+    width: 59px;
+    height: 59px;
+    margin-right: 50px;
   }
 
   .section-cost-price__decor--icon {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (min-width: 576px) {
   .section-cost-title {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 }
 
 @media (min-width: 767px) {
   .section-cost {
     padding-top: 65px;
-    padding-bottom: 130px;
+    padding-bottom: 71px;
   }
   .section-cost-item {
-    font-size: 25px;
+    font-size: 24px;
   }
   .section-cost-price {
     border-left: 1px solid #e5e5e5;
@@ -92,14 +92,14 @@
 
 @media (min-width: 1280px) {
   .section-cost-item {
-    padding-left: 4%;
+    padding-left: 6%;
   }
   .section-cost-media {
-    width: 13%;
+    width: 12%;
   }
   .section-cost-type {
-    max-width: 44%;
-    flex-basis: 44%;
+    max-width: 45%;
+    flex-basis: 45%;
     padding-left: 5%;
   }
 }

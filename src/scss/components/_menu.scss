@@ -1,7 +1,3 @@
-.nav-menu .logo {
-  overflow: hidden;
-}
-
 .nav-menu__inner {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -12,15 +8,19 @@
 .nav-menu {
   width: 100%;
   left: 0;
+
+  .logo {
+    overflow: hidden;
+  }
 }
 
 .menu {
+  font-size: 15px;
   line-height: 1;
   background-color: #fff;
 }
 
 .menu-link {
-  //font-size: 17px;
   position: relative;
   color: inherit;
 
@@ -28,30 +28,13 @@
     width: 0;
     height: 2px;
     position: absolute;
-    bottom: -8px;
+    bottom: -5px;
     display: block;
     background-color: $red;
     content: '';
     transition: width .4s;
   }
 }
-
-/*
-.menu-calc {
-  display: inline-flex;
-  align-items: center;
-
-  &:hover .menu-calc__icon {
-    fill: $red;
-  }
-}
-
-.menu-calc__icon {
-  width: 23px;
-  height: 23px;
-  margin-right: 9px;
-}
-*/
 
 .menu-link.active {
   color: $red;
@@ -141,15 +124,17 @@
   .nav-menu .logo {
     height: 0;
     width: 70px;
-    margin-right: 130px;
+    margin-right: 84px;
     transition: height .5s, margin-right .5s;
   }
 
   .nav-menu {
-    transform: translateY(-20px);
-    transition: transform .5s, background-color .5s;
+    margin-top: -8px;
+    transform: translateY(-12px);
+    transition: transform .5s, background-color .5s, transform .5s, margin-top .5s;
   }
   .is-stuck {
+    margin-top: 0;
     transform: translateY(0);
 
     .logo {

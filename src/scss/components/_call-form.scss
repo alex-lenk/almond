@@ -1,17 +1,17 @@
 .call-form {
-  max-width: 437px;
+  max-width: 365px;
   width: 100%;
-  padding: 33px 28px;
+  padding: 29px 24px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   outline: 1px solid #508dc5;
-  outline-offset: -12px;
+  outline-offset: -11px;
   box-shadow: 0 0 16px rgba(#dcddde, .75);
 }
 
 .call-form__title {
   margin-bottom: 4px;
-  font-size: 29px;
+  font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -19,8 +19,8 @@
 }
 
 .call-form__text {
-  margin-bottom: 23px;
-  font-size: 18px;
+  margin-bottom: 24px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -29,16 +29,16 @@
 }
 
 .call-form__icon {
-  width: 37px;
-  height: 37px;
+  width: 32px;
+  height: 32px;
   fill: #a8a8a8;
-  top: 19px;
-  left: 12px;
+  top: 18px;
+  left: 9px;
   position: absolute;
 }
 
 .call-form__field {
-  padding-left: 60px;
+  padding-left: 50px;
 
   &:focus {
     box-shadow: none;
@@ -50,8 +50,8 @@
 }
 
 .call-form__terms {
-  margin-top: 35px;
-  font-size: 13px;
+  margin-top: 30px;
+  font-size: 10px;
   text-align: center;
   line-height: 1.2;
 }

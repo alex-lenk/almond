@@ -13,33 +13,45 @@
 }
 
 .call-technologist-form {
-  margin-right: 25px;
+  margin-right: 48px;
+}
+
+.call-technologist-content {
+  margin-top: -7px;
 }
 
 .call-technologist-content__title {
-  margin-bottom: 12px;
-  font-size: 25px;
+  margin-bottom: 15px;
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .call-technologist-list {
-  max-width: 67%;
-  font-size: 15px;
+  max-width: 73%;
+  font-size: 14px;
+
+  .check-list__item {
+    padding-left: 24px;
+
+    &::before {
+      width: 13px;
+      left: 1px;
+    }
+  }
 }
 
 @media (min-width: 576px) {
-  .call-technologist {
+  .call-technologist-container {
     padding-top: 50px;
     padding-bottom: 45px;
   }
   .call-technologist-title {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
   .call-technologist-text {
-    margin-bottom: 33px;
-    font-size: 18px;
+    margin-bottom: 50px;
   }
 }
 
@@ -56,16 +68,17 @@
 }
 
 @media (min-width: 992px) {
-  .call-technologist {
+  .call-technologist-container {
     position: relative;
 
     &::after {
-      width: 26%;
-      height: 76%;
+      width: 861px;
+      height: 622px;
       bottom: 0;
-      left: 60%;
+      right: -192px;
+      z-index: -1;
       position: absolute;
-      background: url(../img/decor/guy.png) no-repeat right bottom;
+      background: url(../img/decor/guy-bg.png.jpg) no-repeat right bottom;
       background-size: contain;
       content: '';
     }

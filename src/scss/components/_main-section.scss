@@ -3,8 +3,28 @@
   background: url(../img/bg/bg-header.jpg) no-repeat bottom center #f8d3ae;
 }
 
+.main-section-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &::after {
+    width: 563px;
+    height: 515px;
+    bottom: 0;
+    right: 6%;
+    position: absolute;
+    background: url(../img/decor/couple.png) no-repeat center bottom;
+    background-size: contain;
+    content: ''
+  }
+}
+
 .main-section-title {
-  margin-bottom: 0;
+  margin-bottom: 8px;
   font-size: 106px;
   line-height: 103px;
   letter-spacing: 1px;
@@ -17,41 +37,25 @@
 }
 
 .main-section-price {
-  margin-bottom: 26px;
+  margin-bottom: 44px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
 }
 
 .main-section-price__text {
-  margin-right: 6px;
+  margin-right: 19px;
   text-align: right;
   font-weight: 700;
 }
 
-.main-section-price__cost {
-  padding: 22px 14px 22px 20px;
-  position: relative;
-  background: url(../img/bg/bg-cost.svg) no-repeat center;
-  background-size: contain;
-  display: flex;
-  align-items: center;
-  img {
-    width: 175px;
-  }
-}
-
-.main-section-price__sup {
-  font-weight: 700;
-  line-height: 1;
-}
-
 .main-section-paint {
   padding: 19px 0;
-  margin-bottom: 37px;
-  height: 93px;
-  max-width: 440px;
-  font-size: 24px;
+  margin-bottom: 35px;
+  height: 87px;
+  margin-left: 39px;
+  width: 359px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -62,32 +66,22 @@
 
 @media (min-width: 576px) {
   .main-section {
-    height: 630px;
-    display: flex;
-    align-items: center;
+    height: 565px;
   }
 }
 
 @media (min-width: 767px) {
   .main-section-title {
-    font-size: 75px;
-    line-height: 65px;
+    font-size: 64px;
+    line-height: 60px;
   }
   .main-section-title__text {
-    margin-left: 165px;
-    font-size: 60px;
+    margin-left: 194px;
+    font-size: 54px;
   }
   .main-section-price__text {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1;
-  }
-
-  .main-section-price__sup {
-    font-size: 45px;
-    margin-left: 8px;
-    sup {
-      font-size: 64%;
-    }
   }
 }
 
@@ -103,13 +97,6 @@
   .main-section-price__text {
     font-size: 24px;
     line-height: 24px;
-  }
-  .main-section-price__cost {
-    font-size: 55px;
-    line-height: 50px;
-  }
-  .main-section-price__sup {
-    font-size: 23px;
   }
   .main-section-paint {
     font-size: 18px;
