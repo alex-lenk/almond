@@ -7,7 +7,8 @@
 }
 
 .portfolio-head__title {
-  margin-bottom: 12px;
+  margin-top: -5px;
+  margin-bottom: 9px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -53,24 +54,24 @@
 
 
 .portfolio-content__description {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 3px solid #d6d6d6;
   border-bottom: 3px solid #d6d6d6;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
 }
 
 .portfolio-price {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   padding-left: 0;
   list-style: none;
 }
 
 .portfolio-price__label {
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 7px;
+  font-size: 12px;
 }
 
 .portfolio-price__cost {
@@ -82,6 +83,7 @@
   background-color: #a7a7a7;
   display: flex;
   align-items: center;
+  font-family: $font-family-head;
 }
 
 .portfolio-price__cost-red {
@@ -106,7 +108,7 @@
     padding-bottom: 30px;
   }
   .portfolio-title {
-    margin-bottom: 47px;
+    margin-bottom: 37px;
   }
 
   .portfolio-wrapper {
@@ -114,14 +116,15 @@
     border: 2px solid $yellowColor;
   }
   .portfolio-head__title {
-    font-size: 25px;
+    font-size: 21px;
   }
 
   .portfolio-head__pre-title {
-    font-size: 22px;
+    margin-bottom: 21px;
+    font-size: 18px;
   }
   .portfolio-content__text {
-    height: 370px;
+    height: 404px;
     padding-right: 20px;
     overflow-y: scroll;
   }
@@ -129,27 +132,27 @@
 
 @media (min-width: 992px) {
   .portfolio-wrapper {
-    padding-top: 45px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 8px;
     display: flex;
     flex-wrap: wrap;
   }
   .portfolio-gallery {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 22px;
+    padding-right: 43px;
     max-width: 61%;
     flex-basis: 61%;
   }
   .portfolio-content {
     max-width: 39%;
     flex-basis: 40%;
-    padding-right: 45px;
+    padding-right: 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .portfolio-price__cost {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 

@@ -1,13 +1,23 @@
 .new-building {
-  height: 96vh;
-  min-height: 875px;
   border-top: 30px solid #fff;
-  background: url(../img/bg/bg-new-building.jpg) no-repeat center bottom;
+}
+
+.new-building-inner {
+  padding-top: 15px;
+  height: 671px;
+  background: url(../img/bg/bg-building.jpg) no-repeat center bottom;
+  //background-size: contain;
+}
+
+.new-building-content {
+  padding-top: 13px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .new-building-title {
+  margin-bottom: 0;
   padding: 26px 15px;
   letter-spacing: 1px;
   color: #fff;
@@ -19,7 +29,7 @@
 }
 
 .new-building-head {
-  font-size: 49px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
   font-family: $font-family-head;
@@ -32,7 +42,7 @@
 }
 
 .new-building-price__text {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -40,38 +50,17 @@
 }
 
 .new-building-price__cost {
-  width: 222px;
-  height: 67px;
-  margin-left: 5px;
-  padding: 14px 0 13px 18px;
-  position: relative;
-  background: url(../img/bg/bg-cost.svg) no-repeat center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.new-building-price__sup {
-  font-size: 40px;
-  margin-left: 4px;
-  font-weight: 700;
-  line-height: 1;
-  font-family: $font-family-head;
-
-  sup {
-    top: -.4em;
-    font-size: 65%;
-  }
+  margin-left: 8px;
 }
 
 .new-building-list {
-  max-width: 48%;
+  max-width: 37%;
   font-weight: 700;
 }
 
 .new-building-info {
   margin-top: auto;
-  padding: 5px 15px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 35px;
   text-transform: uppercase;
