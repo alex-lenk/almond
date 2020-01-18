@@ -123,6 +123,10 @@ img {
   color: #d82323;
 }
 
+.text-yellow {
+  color: $yellowColor;
+}
+
 .title-block {
   &::after {
     width: 14%;
