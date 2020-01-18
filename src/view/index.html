@@ -63,15 +63,12 @@
                 за
             </div>
             <img src="img/cost-4800.png" alt="цена от 4800">
-<!--            <div class="main-section-price__cost">
-                <div class="main-section-price__sup">Р/М<sup>2</sup></div>
-            </div>-->
         </div>
         <div class="main-section-paint">
             Начните ремонт<br>
             без предоплат и авансов!
         </div>
-        <button class="btn btn-main">Рассчитать стоимость ремонта</button>
+        <button class="btn btn-main btn-red">Рассчитать стоимость ремонта</button>
     </div>
 </section>
 
@@ -1563,6 +1560,37 @@
 </section>
 
 
-<section class=""></section>
+<section class="discount-section">
+    <div class="container">
+        <div class="discount-section-inner">
+            <div class="discount-section-title">
+                Скидки от <span class="text-red">5%</span> до <span class="text-red">10%</span>
+                на ремонт<span class="discount-section-stroke">вторичного жилья</span>
+            </div>
+
+            <div class="discount-section-text">
+                Скидка зависит от типа дома и его расположения, узнайте свою!
+            </div>
+
+            <form action="/" class="discount-section-form">
+                <div class="form-group call-form__group">
+                    <label class="sr-only" for="call-form__tel2">Контактный телефон*</label>
+                    <svg class="call-form__icon">
+                        <use xlink:href="img/icons.svg#phone"></use>
+                    </svg>
+                    <input type="tel" class="call-form__field form-control hide-placeholder"  id="call-form__tel3" placeholder="Контактный телефон*">
+                </div>
+
+                <button type="submit" class="btn btn-red">Узнай свою скидку</button>
+
+                <div class="call-form__terms">
+                    Нажимая кнопку, вы даете согласие на обработку<br>
+                    персональных данных
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
 
 @@include('./includes/footer.html')

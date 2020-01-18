@@ -1,11 +1,8 @@
 .btn-yellow {
   width: 100%;
   height: 60px;
-  border-radius: 7px;
   font-size: 20px;
-  font-weight: 700;
   white-space: nowrap;
-  font-family: $font-family-head;
   box-shadow: 0 3px #dbb536, 0 5px 12px #a7a7a7;
   background: #efd233;
   background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
@@ -28,6 +25,17 @@
   }
 }
 
+.btn-red {
+  font-size: 22px;
+  color: #fff;
+  box-shadow: 0 3px #e62b2b;
+  background: #e72d2d;
+  background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
+  background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
+  background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
+}
+
 .btn-outline {
   padding: 12px 20px;
   color: #e52b2b;
@@ -47,22 +55,11 @@
   align-items: center;
   justify-content: center;
   display: inline-flex;
-}
 
-.btn-whats-app__icon,
-.btn-vk__icon {
-  fill: #fff;
-}
-
-.btn-whats-app__icon {
-  width: 14px;
-  height: 14px;
-  margin-bottom: 3px;
-}
-
-.btn-vk__icon {
-  width: 19px;
-  height: 19px;
+  &__icon,
+  &__icon {
+    fill: #fff;
+  }
 }
 
 .btn-whats-app {
@@ -72,42 +69,35 @@
   background-color: #00a600;
   flex-direction: column;
   font-family: $font-family-head;
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 3px;
+  }
 }
 
 .btn-vk {
   border-radius: 50%;
   background-color: #2d81bb;
-}
 
-.btn-main {
-  color: #fff;
-  box-shadow: 0 3px #e62b2b;
-  border-radius: 7px;
-  font-weight: 700;
-  background: #e72d2d;
-  background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
-  font-family: $font-family-head;
+  &__icon {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 @media (min-width: 576px) {
   .btn-main {
     min-width: 429px;
     padding: 14px 35px;
-    font-size: 22px;
   }
 }
 
 @media (min-width: 1100px) {
-  .btn-main {
-    transition: box-shadow .3s;
-
-    &:hover {
-      color: #fff;
-      box-shadow: 0 0 #e62b2b;
-    }
+  .btn-red:hover {
+    color: #fff;
+    box-shadow: 0 0 #e62b2b;
   }
   .btn-whats-app,
   .btn-vk {

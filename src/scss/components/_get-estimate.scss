@@ -21,10 +21,6 @@
 
 @media (min-width: 767px) {
   .get-estimate-wrap {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    position: relative;
-
     &::before,
     &::after {
       content: '';
