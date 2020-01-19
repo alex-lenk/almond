@@ -74,7 +74,8 @@ $(document).ready(function () {
     });
 
 
-/*    $('.portfolio-content__text').customScroll({
-        horizontal: false
-    });*/
+    $('.masters-slider').slick({
+        arrows: true,
+        infinite: false
+    });
 });

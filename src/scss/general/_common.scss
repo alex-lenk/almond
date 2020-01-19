@@ -127,6 +127,10 @@ img {
   color: $yellowColor;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .title-block {
   &::after {
     width: 14%;
