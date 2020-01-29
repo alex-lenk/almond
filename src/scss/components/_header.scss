@@ -36,6 +36,22 @@
   align-items: center;
 }
 
+.header-stick {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  position: fixed;
+  z-index: 10;
+  transform: translateY(-100%);
+  transition: transform .4s ease-out;
+}
+
+.header-stick__current .header-stick {
+  transform: translateY(0);
+}
+
 @media (max-width: 1199px) {
   .header-logo {
     width: 80px;
@@ -124,7 +140,7 @@
     width: 122px;
   }
   .header-info {
-    border-bottom: 1px solid #a7a7a7;
+    border-bottom: 1px solid #d6d6d6;
   }
 }
 

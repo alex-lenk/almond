@@ -11,16 +11,11 @@
   margin: 0 -3px 35px;
   padding-left: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
 .masters-list__item {
-  margin-bottom: 6px;
-  padding-left: 3px;
-  padding-right: 3px;
-  max-width: calc(100% / 7);
-  flex-basis: calc(100% / 7);
+  padding: 0 3px 6px;
 }
 
 .masters-list__item-media {

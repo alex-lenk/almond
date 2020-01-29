@@ -1,5 +1,6 @@
 .services {
   padding-top: 50px;
+  background-color: #fdf4e6;
 }
 
 .services-title {
@@ -29,6 +30,13 @@
   padding-right: 30px;
   max-width: 50%;
   flex-basis: 50%;
+
+  &:last-child,
+  &:nth-last-child(2) {
+    .services-item__text {
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .services-item__title {
@@ -48,6 +56,7 @@
 .services-item__media {
   padding-right: 10px;
   position: relative;
+  z-index: 1;
 
   &::after {
     width: 10px;

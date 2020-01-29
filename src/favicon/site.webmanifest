@@ -1,19 +1,19 @@
 {
-    "name": "\u0410\u043b\u043c\u043e\u043d\u0434",
-    "short_name": "\u0410\u043b\u043c\u043e\u043d\u0434",
+    "name": "Almond",
+    "short_name": "Almond",
     "icons": [
         {
-            "src": "android-chrome-192x192.png",
+            "src": "/favicon/android-chrome-192x192.png?v=NmbNwk2o4n",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "android-chrome-512x512.png",
+            "src": "/favicon/android-chrome-512x512.png?v=NmbNwk2o4n",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffaf50",
-    "background_color": "#ffaf50",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }

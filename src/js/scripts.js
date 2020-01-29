@@ -1,6 +1,6 @@
 'use strict';
 
-/* BEGIN mobile device definition  */
+/* BEGIN mobile device definition
 var isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -21,27 +21,21 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-/* END mobile device definition  */
+ END mobile device definition  */
 
 
 $(document).ready(function () {
-    var menuToggle = '.menu-toggle';
-    $('.nav-menu').stickUp();
-    $('.logo').clone().prependTo('.nav-menu__inner').removeClass('header-logo');
-    $(menuToggle).clone().appendTo('.nav-menu__inner');
-
-
     if ($(window).width() > 1099) {
         $('.portfolio-wrapper').each(function () {
-            var Q = $(this).find('.portfolio-head').html();
+            var portfolioHead = $(this).find('.portfolio-head').html();
             $(this).find('.portfolio-head').hide();
-            $(this).find('.portfolio-content').prepend(Q);
+            $(this).find('.portfolio-content').prepend(portfolioHead);
         });
     }
 
 
     /* BEGIN Actions on opening menus on mobile devices  */
-
+    var menuToggle = '.menu-toggle';
     $(menuToggle).click(function () {
         $('html').toggleClass('menu-opened');
     });
@@ -67,6 +61,20 @@ $(document).ready(function () {
     /* END Script scroll to top  */
 
 
+    var headerStick = '.header-stick';
+    var headerStickCurrent = 'header-stick__current';
+    $('.header').clone().appendTo(headerStick);
+    $('.nav-menu').clone().appendTo(headerStick);
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            $('html').addClass(headerStickCurrent)
+        } else {
+            $('html').removeClass(headerStickCurrent)
+        }
+    });
+
+
     $('body').on('click', '[href*="#"]', function (e) {
         var fixed_offset = 0;
         $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
@@ -74,8 +82,28 @@ $(document).ready(function () {
     });
 
 
-    $('.masters-slider').slick({
+    $('.reviews-carousel').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
         arrows: true,
         infinite: false
+    });
+
+    $('.masters-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        asNavFor: '.masters-list'
+    });
+    $('.masters-list').slick({
+        asNavFor: '.masters-slider',
+        infinite: false,
+        arrows: false,
+        focusOnSelect: true,
+        slidesToShow: 1,
+        slidesPerRow: 7,
+        slidesToScroll: 1,
+        rows: 3
     });
 });
