@@ -5,4 +5,4 @@
 //= ../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js
 //= lib/stickUp.js
 //= lib/slick-1.8.1/slick.min.js
-// = lib/jquery.custom-scroll.min.js
+//= lib/theta-carousel.min.js

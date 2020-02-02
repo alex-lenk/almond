@@ -1,6 +1,6 @@
 .motivation {
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 50px;
   position: relative;
 
   &::before {
@@ -9,7 +9,7 @@
     background: url(../img/decor/notebook.jpg) no-repeat center;
     background-size: contain;
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: -105px;
     content: '';
   }
