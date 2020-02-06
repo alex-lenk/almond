@@ -12,6 +12,24 @@
   padding-left: 0;
   list-style: none;
 
+  .slick-track {
+    width: 100% !important;
+    transform: none !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .slick-slide {
+    float: none;
+    max-width: calc(100% / 7);
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-current .masters-list__item-media {
+    border-color: $yellowColor;
+  }
 }
 
 .masters-list__item {

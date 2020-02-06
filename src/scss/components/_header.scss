@@ -64,7 +64,8 @@
   font-size: 25px;
 }
 
-.header-mob__text {
+.header-request {
+  font-family: OpenSans, Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
 @media (max-width: 1199px) {
@@ -126,15 +127,6 @@
   }
 }
 
-@media (max-width: 575px) {
-}
-
-@media (max-width: 374px) {
-  /*  .header-phone {
-      display: none
-    }*/
-}
-
 @media (min-width: 767px) {
   .header-mob {
     display: none;
@@ -165,8 +157,11 @@
 
 @media (min-width: 1200px) {
   .header__inner {
-    padding-top: 20px;
+    padding-top: 15px;
     align-items: flex-start;
+  }
+  .header-request {
+    min-width: 230px;
   }
   .header-logo {
     width: 122px;

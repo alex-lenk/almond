@@ -38,4 +38,17 @@
   text-align: center;
 }
 
-/* what */
+.reviews-slick__item {
+  background-size: 0 0;
+
+  &::before {
+    width: 386px;
+    height: 562px;
+    margin: 0 auto;
+    display: block;
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}

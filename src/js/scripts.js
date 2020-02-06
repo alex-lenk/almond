@@ -82,41 +82,41 @@ $(document).ready(function () {
     });
 
 
-    $('.reviews-slick').slick({
+
+    $(".masters-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        infinite: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: ".masters-list",
+        infinite: false
+    });
+    $(".masters-list").slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: ".masters-slider",
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false
     });
 
-    $('.slider-nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.reviews-slick',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
-    });
 
 
     $('.masters-slider').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: ".masters-list",
+        dots: false,
+        focusOnSelect: true,
+        infinite: false
+    });
+    $('.masters-list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        infinite: false,
-        asNavFor: '.masters-list'
-    });
-    $('.masters-list').slick({
-        asNavFor: '.masters-slider',
-        infinite: false,
-        arrows: false,
-        focusOnSelect: true,
-        slidesToShow: 1,
-        slidesPerRow: 7,
-        slidesToScroll: 1,
-        rows: 3
+        fade: true,
+        asNavFor: ".masters-slider",
+        infinite: false
     });
 });
 
