@@ -1,31 +1,31 @@
 $(document).ready(function() {
-    var container = $('#container');
+    var reviewsCarousel = $('.what-carousel');
 
-    $('.nextbutton').click(function () {
-        container.theta_carousel('moveForward');
+    $('.what-next').click(function () {
+        reviewsCarousel.theta_carousel('moveForward');
     });
 
-    $('.prevtbutton').click(function () {
-        container.theta_carousel('moveBack');
+    $('.what-prev').click(function () {
+        reviewsCarousel.theta_carousel('moveBack');
     });
 
 
     // fade in effect
-    container.css({
+    reviewsCarousel.css({
         opacity: 0
     });
-    container.delay(500).animate({
+    reviewsCarousel.delay(500).animate({
         opacity: 1
     }, 500);
 
-    container.theta_carousel({
-        "filter": ".ex-item",
+    reviewsCarousel.theta_carousel({
+        "filter": ".what-item",
         "selectedIndex": 15,
         "distance": 90,
         "numberOfElementsToDisplayRight": 3,
         "numberOfElementsToDisplayLeft": 3,
         "designedForWidth": 1350,
-        "designedForHeight": 500,
+        "designedForHeight": 562,
         "distanceInFallbackMode": 820,
         "path": {
             "settings": {
@@ -95,7 +95,7 @@ $(document).ready(function() {
         "allignElementsWithPath": true,
         "allignElementsWithPathCoefficient": -2,
         "shadow": false,
-        "mousewheelEnabled": true,
+        "mousewheelEnabled": false,
         "fadeAway": true,
         "fadeAwayBezierPoints": {
             "p1": {

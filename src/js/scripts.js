@@ -82,12 +82,24 @@ $(document).ready(function () {
     });
 
 
-    $('.reviews-carousel').slick({
-        slidesToShow: 7,
+    $('.reviews-slick').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        infinite: false
+        infinite: false,
+        fade: true,
+        asNavFor: '.slider-nav'
     });
+
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.reviews-slick',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
 
     $('.masters-slider').slick({
         slidesToShow: 1,
@@ -106,4 +118,83 @@ $(document).ready(function () {
         slidesToScroll: 1,
         rows: 3
     });
+});
+
+jQuery(function () {
+    setTimeout(function () {
+        jQuery("#allinone_carousel_1").allinone_carousel({
+            skin: "sweet",
+            width: 1120,
+            height: 510,
+            width100Proc: false,
+            height100Proc: false,
+            autoPlay: 0,
+            numberOfVisibleItems: 7,
+            elementsHorizontalSpacing: 110,
+            elementsVerticalSpacing: 20,
+            verticalAdjustment: 50,
+            animationTime: 0.4,
+            easing: "easeOutQuad",
+            resizeImages: true,
+            target: "_blank",
+            showElementTitle: false,
+            showAllControllers: true,
+            showNavArrows: true,
+            showOnInitNavArrows: true,
+            autoHideNavArrows: false,
+            showBottomNav: true,
+            showOnInitBottomNav: true,
+            autoHideBottomNav: false,
+            showPreviewThumbs: false,
+            nextPrevMarginTop: 23,
+            playMovieMarginTop: 0,
+            bottomNavMarginBottom: 0,
+            enableTouchScreen: false,
+            absUrl: "",
+            showCircleTimer: false,
+            showCircleTimerIE8IE7: false,
+            responsive: true,
+            responsiveRelativeToBrowser: false,
+            circleLeftPositionCorrection: 20,
+            circleTopPositionCorrection: 20,
+            activeItemClass: ""
+        });
+        jQuery("#allinone_carousel_what").allinone_carousel({
+            skin: "sweet",
+            width: 1120,
+            height: 650,
+            width100Proc: false,
+            height100Proc: false,
+            autoPlay: 0,
+            numberOfVisibleItems: 7,
+            elementsHorizontalSpacing: 110,
+            elementsVerticalSpacing: 20,
+            verticalAdjustment: 50,
+            animationTime: 0.4,
+            easing: "easeOutQuad",
+            resizeImages: true,
+            target: "_blank",
+            showElementTitle: false,
+            showAllControllers: true,
+            showNavArrows: true,
+            showOnInitNavArrows: true,
+            autoHideNavArrows: false,
+            showBottomNav: true,
+            showOnInitBottomNav: true,
+            autoHideBottomNav: false,
+            showPreviewThumbs: false,
+            nextPrevMarginTop: 23,
+            playMovieMarginTop: 0,
+            bottomNavMarginBottom: 0,
+            enableTouchScreen: false,
+            absUrl: "",
+            showCircleTimer: false,
+            showCircleTimerIE8IE7: false,
+            responsive: true,
+            responsiveRelativeToBrowser: false,
+            circleLeftPositionCorrection: 20,
+            circleTopPositionCorrection: 20,
+            activeItemClass: ""
+        });
+    }, 1000);
 });
