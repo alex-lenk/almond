@@ -17,7 +17,7 @@
     bottom: 0;
     right: 6%;
     position: absolute;
-    background: url(../img/decor/couple.png) no-repeat center bottom;
+    background: url(../img/decor/couple-2.png) no-repeat center bottom;
     background-size: contain;
     content: ''
   }
@@ -44,7 +44,6 @@
 }
 
 .main-section-price__text {
-  margin-right: 19px;
   text-align: right;
   font-weight: 700;
 }
@@ -80,6 +79,7 @@
     font-size: 54px;
   }
   .main-section-price__text {
+      margin-right: 19px;
     font-size: 36px;
     line-height: 1;
   }
@@ -87,16 +87,26 @@
 
 @media (max-width: 766px) {
   .main-section-title {
-    font-size: 50px;
-    line-height: 47px
+    font-size: 37px;
+    line-height: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .main-section-title__text {
-    margin-left: 56px;
-    font-size: 36px;
+    margin-left: 75px;
+    font-size: 31px;
+  }
+  .main-section-price {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-section-price__cost {
+    width: 155px;
   }
   .main-section-price__text {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 2px;
   }
   .main-section-paint {
     font-size: 18px;
@@ -105,10 +115,19 @@
 
 @media (max-width: 575px) {
   .main-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 7px;
+    padding-bottom: 10px;
     background-size: cover;
   }
+
+  .main-section-inner {
+    &::after {
+      width: 305px;
+      height: 280px;
+      bottom: -10px;
+    }
+  }
+
   .main-section-paint {
     background-size: 100%;
   }

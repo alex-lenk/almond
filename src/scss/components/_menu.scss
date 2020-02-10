@@ -49,15 +49,17 @@
 }
 
 .menu-toggle {
-  width: 28px;
   height: 28px;
-  padding: 0;
+  padding: 0 0 0 39px;
   order: 3;
   background-color: transparent;
   border: 0;
   display: none;
   transition: 0.2s ease-in-out;
   position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
 
   &:focus {
     outline: 0;
@@ -65,32 +67,32 @@
 
   &::before,
   &::after {
-    width: 100%;
+    width: 27px;
     height: 4px;
-    background-color: $primary;
+    background-color: #f3d535;
     border-radius: 4px;
     content: "";
     display: block;
     position: absolute;
     top: 11px;
+    left: 0;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     will-change: transform, box-shadow;
   }
 
   &::before {
-    box-shadow: 0 8px #f85c70, 0 -8px #f85c70;
+    box-shadow: 0 8px #f3d535, 0 -8px #f3d535;
   }
 }
 
 .menu-opened .menu-toggle {
-  transform: rotate(-45deg);
-
   &::before {
+    transform: rotate(-45deg);
     box-shadow: none;
   }
 
   &::after {
-    transform: translateX(0) rotate(-90deg);
+    transform: translateX(0) rotate(-135deg);
   }
 }
 
@@ -145,7 +147,6 @@
 
 @media (max-width: 991px) {
   .menu-toggle {
-    margin-left: 30px;
     display: block;
   }
 
@@ -155,6 +156,7 @@
     background-color: #fff;
     z-index: 10;
     box-shadow: 0 1px 7px #a7a7a7;
+    transform: translateX(-105%);
 
     .logo {
       width: 70px;
@@ -183,6 +185,7 @@
 
 @media (max-width: 766px) {
   .menu-toggle {
+    color: #fff;
     order: 1;
   }
 }

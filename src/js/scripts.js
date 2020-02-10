@@ -61,18 +61,20 @@ $(document).ready(function () {
     /* END Script scroll to top  */
 
 
-    var headerStick = '.header-stick';
-    var headerStickCurrent = 'header-stick__current';
-    $('.header').clone().appendTo(headerStick);
-    $('.nav-menu').clone().appendTo(headerStick);
+    if ($(window).width() > 1099) {
+        var headerStick = '.header-stick';
+        var headerStickCurrent = 'header-stick__current';
+        $('.header').clone().appendTo(headerStick);
+        $('.nav-menu').clone().appendTo(headerStick);
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            $('html').addClass(headerStickCurrent)
-        } else {
-            $('html').removeClass(headerStickCurrent)
-        }
-    });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('html').addClass(headerStickCurrent)
+            } else {
+                $('html').removeClass(headerStickCurrent)
+            }
+        });
+    }
 
 
     $('body').on('click', '[href*="#"]', function (e) {
@@ -80,7 +82,6 @@ $(document).ready(function () {
         $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
         e.preventDefault();
     });
-
 
 
     $(".masters-slider").slick({
@@ -101,28 +102,8 @@ $(document).ready(function () {
     });
 
 
-
-    $('.masters-slider').slick({
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        asNavFor: ".masters-list",
-        dots: false,
-        focusOnSelect: true,
-        infinite: false
-    });
-    $('.masters-list').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: ".masters-slider",
-        infinite: false
-    });
-});
-
-jQuery(function () {
     setTimeout(function () {
-        jQuery("#allinone_carousel_1").allinone_carousel({
+        $("#allinone_carousel_1").allinone_carousel({
             skin: "sweet",
             width: 1120,
             height: 510,
@@ -133,7 +114,7 @@ jQuery(function () {
             elementsHorizontalSpacing: 110,
             elementsVerticalSpacing: 20,
             verticalAdjustment: 50,
-            animationTime: 0.4,
+            animationTime: 0.1,
             easing: "easeOutQuad",
             resizeImages: true,
             target: "_blank",
@@ -159,7 +140,7 @@ jQuery(function () {
             circleTopPositionCorrection: 20,
             activeItemClass: ""
         });
-        jQuery("#allinone_carousel_what").allinone_carousel({
+        $("#allinone_carousel_what").allinone_carousel({
             skin: "sweet",
             width: 1120,
             height: 650,
@@ -170,7 +151,7 @@ jQuery(function () {
             elementsHorizontalSpacing: 110,
             elementsVerticalSpacing: 20,
             verticalAdjustment: 50,
-            animationTime: 0.4,
+            animationTime: 0.2,
             easing: "easeOutQuad",
             resizeImages: true,
             target: "_blank",
