@@ -1,0 +1,67 @@
+/*!
+ *  Bootstrap 4.4.1
+ */
+@import "bootstrap-4.4.1/functions";
+@import "bootstrap-4.4.1/variables";
+@import "bootstrap-4.4.1/mixins";
+@import "bootstrap-4.4.1/mixins/breakpoints";
+@import "bootstrap-4.4.1/mixins/grid-framework";
+@import "bootstrap-4.4.1/mixins/grid";
+@import "bootstrap-4.4.1/reboot";
+//@import "bootstrap-4.4.1/utilities";
+@import "bootstrap-4.4.1/utilities/screenreaders";
+@import "bootstrap-4.4.1/utilities/embed";
+
+@import "bootstrap-4.4.1/transitions";
+//@import "bootstrap-4.4.1/popover";
+//@import "bootstrap-4.4.1/tooltip";
+//@import "bootstrap-4.4.1/badge";
+//@import "bootstrap-4.4.1/nav";
+//@import "bootstrap-4.4.1/type";
+@import "bootstrap-4.4.1/modal";
+@import "bootstrap-4.4.1/forms";
+//@import "bootstrap-4.4.1/utilities/flex";
+@import "bootstrap-4.4.1/buttons";
+@import "bootstrap-4.4.1/close";
+
+//@import "bootstrap-4.4.1/grid";
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+// Single container class with breakpoint max-widths
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+// 100% wide container at all breakpoints
+.container-fluid {
+  @include make-container();
+}
+
+
+// Row
+//
+// Rows contain your columns.
+
+
+.row {
+  @include make-row();
+}
+
+@include make-grid-columns();
+
+
+//
+// Lists
+//
+
+.list-unstyled {
+  margin-bottom: 0;
+  @include list-unstyled();
+}
+
+.tab-content {
+  padding-top: 25px;
+}

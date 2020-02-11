@@ -1,0 +1,70 @@
+.new-building {
+  border-top: 30px solid #fff;
+}
+
+.new-building-inner {
+  padding-top: 15px;
+  height: 671px;
+  background: url(../img/bg/bg-building.jpg) no-repeat center bottom;
+  //background-size: contain;
+}
+
+.new-building-content {
+  padding-top: 13px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-building-title {
+  margin-bottom: 0;
+  padding: 26px 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #0066b2;
+
+  &::after {
+    display: none;
+  }
+}
+
+.new-building-head {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: $font-family-head;
+}
+
+.new-building-price {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.new-building-price__text {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $font-family-head;
+}
+
+.new-building-price__cost {
+  margin-left: 8px;
+}
+
+.new-building-list {
+  max-width: 37%;
+  font-weight: 700;
+}
+
+.new-building-info {
+  margin-top: auto;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #006fc9;
+  text-align: center;
+  font-family: $font-family-head;
+}

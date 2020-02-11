@@ -1,0 +1,74 @@
+.section-schedule {
+  padding-bottom: 25px;
+  border-top: 70px solid #fff;
+  background: url(../img/bg/bg-fifth.jpg) no-repeat top center;
+}
+
+.section-schedule-inner {
+  display: flex;
+  align-items: center;
+}
+
+.section-schedule-text {
+  margin-right: 43px;
+  font-weight: 500;
+  font-size: 61px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: $font-family-head;
+}
+
+.section-schedule-text__big {
+  font-size: 81px;
+}
+
+.section-schedule-operator {
+  max-width: 156px;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+}
+
+.section-schedule-operator__name {
+  margin-top: 11px;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-family: $font-family-head;
+}
+
+.section-schedule-operator__special {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.section-schedule-form {
+  max-width: 395px;
+  padding: 30px 35px;
+  margin-top: -35px;
+  margin-left: 5%;
+
+  .list-boolean {
+    font-size: 14px;
+  }
+
+  .list-boolean-item {
+    line-height: 1.4;
+  }
+
+  .call-form__btn {
+    margin-top: 15px;
+  }
+
+  .header-phone__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.section-schedule-phone {
+  margin-top: 22px;
+  font-size: 36px;
+  display: block;
+}

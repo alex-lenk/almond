@@ -1,0 +1,75 @@
+.supply-materials {
+  padding-top: 28px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+.supply-materials-title {
+  margin-bottom: 8px;
+}
+
+.supply-materials-info {
+  margin-bottom: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-family: $font-family-head;
+}
+
+.supply-materials-info__num {
+  margin-right: 10px;
+  font-weight: 900;
+  font-size: 54px;
+}
+
+.supply-materials-info__text {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.supply-materials-list {
+  padding-left: 0;
+  margin-bottom: 33px;
+  counter-reset: myCounter;
+  display: flex;
+  justify-content: space-between;
+}
+
+.supply-materials-item {
+  list-style: none;
+  max-width: 33%;
+  flex-basis: 33%;
+}
+
+.supply-materials-item__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1;
+  color: $blueColor;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $blueColor;
+  }
+}
+
+.supply-materials-item__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.supply-materials-media {
+  margin-left: 1%;
+  display: inline-block;
+  vertical-align: bottom;
+}

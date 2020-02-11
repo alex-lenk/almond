@@ -1,0 +1,33 @@
+@mixin hidePlaceholder {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+//$size: 16;
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+//@include font-size(16px);
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+  line-height: calculateRem($size);
+}
+
+@function rem($size) {
+  @return ($size/16)+rem;
+}

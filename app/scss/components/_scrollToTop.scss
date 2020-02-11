@@ -1,0 +1,20 @@
+.scroll-to-top {
+  width: 31px;
+  height: 31px;
+  right: 15px;
+  bottom: 45px;
+  display: block;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 5;
+  position: fixed;
+  background: linear-gradient(180deg, #fed308 0%, #feb008 100%);
+}
+
+.scroll-to-top__icon {
+  width: 11px;
+  height: 11px;
+  fill: #fff;
+  transform: rotate(90deg);
+}

@@ -1,0 +1,169 @@
+body {
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.4;
+  //font-family: $font-family-head;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: 576px) {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+  };
+}
+
+h3 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.hide-placeholder {
+  @include hidePlaceholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.list-boolean {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.list-boolean-item {
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.2;
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    border-radius: 50%;
+    background: url(../img/icons/bool.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.check-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+
+.check-list__item {
+  padding-left: 31px;
+  position: relative;
+  line-height: 1.2;
+
+  &::before {
+    width: 18px;
+    height: 14px;
+    top: 2px;
+    left: 2px;
+    background: url(../img/icons/check.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.text-red {
+  color: #d82323;
+}
+
+.text-yellow {
+  color: $yellowColor;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.title-block {
+  &::after {
+    width: 14%;
+    height: 6px;
+    margin: 14px auto 0;
+    display: block;
+    content: '';
+  }
+
+  &-blue::after {
+    background-color: $blueColor;
+  }
+
+  &-yellow::after {
+    background-color: $yellowColor;
+  }
+
+  &-bold {
+    font-weight: 900;
+  }
+}
+
+
+@keyframes animatePlay {
+  0% {
+    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 0 rgba($yellowColor, 0.5)
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba($yellowColor, 0), 0 0 0 20px rgba($yellowColor, 0.5)
+  }
+  50.0001% {
+    box-shadow: 0 0 0 0 rgba($yellowColor, 0.5), 0 0 0 20px rgba($yellowColor, 0.5)
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 40px rgba($yellowColor, 0)
+  }
+}
