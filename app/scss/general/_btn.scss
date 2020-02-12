@@ -1,120 +1,37 @@
-.btn-yellow {
-  width: 100%;
-  height: 60px;
+.btn {
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .43rem 1.6rem;
+  font-size: .9375rem;
+  line-height: 1.5;
+  border-radius: 35px;
+  text-transform: uppercase;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  height: 68px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 20px;
   white-space: nowrap;
-  box-shadow: 0 3px #dbb536, 0 5px 12px #a7a7a7;
-  background: #efd233;
-  background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: -webkit-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: linear-gradient(to bottom, #efd233 0%, #f5de35 50%, #efd233 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efd233', endColorstr='#efd233', GradientType=0);
+  box-shadow: 0 3px #c5501f, 0 5px 12px #a7a7a7;
+  background: #fdbd10;
+  background: -moz-linear-gradient(top, #fdbd10 0%, #f37428 100%);
+  background: -webkit-linear-gradient(top, #fdbd10 0%, #f37428 100%);
+  background: linear-gradient(to bottom, #fdbd10 0%, #f37428 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdbd10', endColorstr='#f37428', GradientType=0);
 
   &:hover {
     box-shadow: 0 1px #dbb536;
-  }
-
-  @media (min-width: 767px) {
-    font-size: 22px;
-  }
-
-  @media (max-width: 359px) {
-    padding-left: .8rem;
-    padding-right: .8rem;
-    font-size: 18px;
-  }
-}
-
-.btn-red {
-  font-size: 22px;
-  color: #fff;
-  box-shadow: 0 3px #e62b2b;
-  background: #e72d2d;
-  background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
-}
-
-.btn-outline {
-  padding: 12px 20px;
-  color: #e52b2b;
-  border: 1px solid;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1;
-  border-radius: 6px;
-}
-
-.btn-whats-app,
-.btn-vk {
-  width: 33px;
-  height: 33px;
-  line-height: 1;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-
-  &__icon,
-  &__icon {
-    fill: #fff;
-  }
-}
-
-.btn-whats-app {
-  color: #fff;
-  font-size: 6px;
-  border-radius: 6px;
-  background-color: #00a600;
-  flex-direction: column;
-  font-family: $font-family-head;
-
-  &__icon {
-    width: 14px;
-    height: 14px;
-    margin-bottom: 3px;
-  }
-}
-
-.btn-vk {
-  border-radius: 50%;
-  background-color: #2d81bb;
-
-  &__icon {
-    width: 19px;
-    height: 19px;
-  }
-}
-
-@media (min-width: 576px) {
-  .btn-main {
-    min-width: 429px;
-    padding: 14px 35px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .btn-red:hover {
-    color: #fff;
-    box-shadow: 0 0 #e62b2b;
-  }
-  .btn-whats-app,
-  .btn-vk {
-    transition: opacity .4s;
-
-    &:hover {
-      opacity: .8;
-      color: #fff;
-    }
-  }
-}
-
-@media (max-width: 575px) {
-  .btn-main {
-    width: 100%;
-    padding: 9px 15px;
-    font-size: 16px;
-    z-index: 1;
   }
 }

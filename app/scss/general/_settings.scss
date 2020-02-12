@@ -4,7 +4,6 @@
 
 // stylelint-disable value-keyword-case
 $font-family-base: 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-$body-color: #000;
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -23,11 +22,14 @@ $container-max-widths: (
 $grid-gutter-width: 20px;
 
 // stylelint-disable-next-line scss/dollar-variable-default
+$body-color: #000;
+$gray-900: #333;
+$blueColor: #264387;
+$orangeColor: #ff6000;
 $red: #e62b2b;
 $pink: #f85c70;
 $primary: $pink;
 $yellowColor: #fed60c;
-$blueColor: #264387;
 
 // Links
 //
@@ -50,7 +52,7 @@ $nav-tabs-link-hover-border-color: transparent;
 // Forms
 
 $input-height: 62px;
-$input-color: #333;
+$input-color: $gray-900;
 $input-bg: #fff;
 $input-border-width: 1px;
 $input-border-radius: 8px;
@@ -59,7 +61,7 @@ $input-font-size: 13px;
 $enable-shadows: true;
 $input-border-color: #727071;
 $form-group-margin-bottom: 17px;
-$input-placeholder-color: #333;
+$input-placeholder-color: $gray-900;
 $input-focus-border-color: #999;
 $input-focus-box-shadow: none;
 
