@@ -16,6 +16,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn-primary {

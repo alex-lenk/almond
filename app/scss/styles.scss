@@ -1,7 +1,10 @@
+@import "lib/bootstrap-4.4.1/mixins/clearfix";
 @import "general/mixin";
 @import "general/settings";
 @import "general/common";
 @import "general/btn";
+@import "components/scrollToTop";
 @import "components/nav-bar";
 @import "components/header";
+@import "components/presentation";
 

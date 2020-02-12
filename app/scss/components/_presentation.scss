@@ -1,0 +1,68 @@
+.presentation {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    width: 154px;
+    height: 185px;
+    margin-left: 15%;
+    background: url(../img/decor/airpods-01.png) no-repeat center;
+    content: '';
+  }
+}
+
+.presentation-title {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 45px;
+  color: $blueColor;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.presentation-text {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.presentation-list {
+  width: 100%;
+  max-width: 62%;
+  margin-left: auto;
+  padding-top: 26px;
+  font-size: 24px;
+  order: 1;
+  counter-reset: myCounter;
+}
+
+.presentation-item {
+  line-height: 1.2;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 31px;
+    font-weight: 300;
+    border-radius: 50%;
+    border: 1px solid $orangeColor;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  @include clearfix;
+}
