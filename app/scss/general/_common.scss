@@ -15,6 +15,10 @@ h1 {
   font-size: 36px;
 }
 
+h2 {
+  font-size: 45px;
+}
+
 h3 {
   font-size: 22px;
 }
@@ -24,7 +28,7 @@ img {
 }
 
 .container {
-  max-width: 1050px;
+  max-width: 1047px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -45,6 +49,14 @@ img {
       transition: opacity 0.3s ease;
     }
   }
+}
+
+.dash {
+  width: 12px;
+  height: 1px;
+  background-color: #333;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .list-boolean {
