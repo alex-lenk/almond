@@ -1,0 +1,94 @@
+.call-form {
+  max-width: 396px;
+  width: 100%;
+  padding: 26px 32px 30px;
+  border-radius: 6px;
+  outline: 3px solid $orangeColor;
+  outline-offset: -9px;
+  box-shadow: 12px 12px 16px 0 rgba(#888888, .37);
+  background: #e3e4e4;
+  background: -moz-linear-gradient(left, #e3e4e4 0%, #ffffff 50%, #e3e4e4 100%);
+  background: -webkit-linear-gradient(left, #e3e4e4 0%, #ffffff 50%, #e3e4e4 100%);
+  background: linear-gradient(to right, #e3e4e4 0%, #ffffff 50%, #e3e4e4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e4e4', endColorstr='#e3e4e4', GradientType=1);
+
+}
+
+.call-form__title {
+  margin-bottom: 6px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: $orangeColor;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.call-form__text {
+  margin-bottom: 6px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.call-form__text-small {
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.call-form__text-2 {
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+}
+
+.call-form__price {
+  margin-bottom: 28px;
+  font-size: 17px;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.call-form__price-cost {
+  font-size: 36px;
+  color: $orangeColor;
+}
+
+.call-form__group {
+  position: relative;
+}
+
+.call-form__icon {
+  width: 27px;
+  height: 27px;
+  fill: #a8a8a8;
+  top: 13px;
+  left: 12px;
+  position: absolute;
+}
+
+.call-form__field {
+  padding-left: 46px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.call-form__terms {
+  margin-bottom: 14px;
+  font-size: 10px;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+}

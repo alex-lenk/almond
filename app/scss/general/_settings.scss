@@ -51,19 +51,20 @@ $nav-tabs-link-hover-border-color: transparent;
 
 // Forms
 
-$input-height: 62px;
+$input-height: 55px;
 $input-color: $gray-900;
 $input-bg: #fff;
 $input-border-width: 1px;
 $input-border-radius: 8px;
-$input-box-shadow: inset 0 5px 5px 0 rgba(#c8c8c8, 0.6);
+$input-box-shadow: inset 3px 3px 6px 0 #c8c8c8;
 $input-font-size: 13px;
 $enable-shadows: true;
 $input-border-color: #727071;
-$form-group-margin-bottom: 17px;
+$form-group-margin-bottom: 10px;
 $input-placeholder-color: $gray-900;
 $input-focus-border-color: #999;
 $input-focus-box-shadow: none;
+$input-font-size: 13px;
 
 
 // Buttons
