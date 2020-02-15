@@ -1,0 +1,42 @@
+.complete {
+  padding-top: 23px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.complete-title {
+  margin-bottom: 30px;
+}
+
+.complete-list {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.complete-item {
+}
+
+.complete-media {
+  min-height: 173px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.complete-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.complete-info {
+  max-width: 515px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 9px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid $orangeColor;
+}
