@@ -1,0 +1,101 @@
+.synchronization {
+  padding-top: 29px;
+  padding-bottom: 40px;
+  background-color: #e2e5e9;
+}
+
+.synchronization-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &::before {
+    width: 211px;
+    height: 423px;
+    order: 1;
+    background: url(../img/decor/iphone.png) no-repeat center;
+    content: '';
+  }
+
+  &::after {
+    width: 210px;
+    height: 422px;
+    order: 3;
+    background: url(../img/decor/samsung.png) no-repeat center;
+    content: '';
+  }
+}
+
+.synchronization-title {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.synchronization-info {
+  padding-top: 22px;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  text-align: center;
+  order: 2;
+}
+
+.synchronization-media {
+  margin-bottom: 17px;
+}
+
+.synchronization-content {
+  padding-top: 16px;
+  font-size: 14px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 40%;
+  }
+
+  &::before {
+    left: 17px;
+  }
+
+  &::after {
+    width: 37px;
+    height: 35px;
+    display: block;
+    right: 18px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -332px -229px;
+    content: '';
+  }
+}
+
+.synchronization-order {
+  max-width: 947px;
+  width: 100%;
+  margin-top: 47px;
+  padding: 23px 26px;
+  border-radius: 8px;
+  border: 2px solid $orangeColor;
+  order: 4;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 19px;
+  }
+}
+
+.synchronization-order__content {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+.synchronization-order__content-head {
+  margin-bottom: 5px;
+  color: $orangeColor;
+  font-size: 30px;
+  text-transform: uppercase;
+}
