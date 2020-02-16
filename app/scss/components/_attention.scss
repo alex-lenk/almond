@@ -1,0 +1,69 @@
+.attention {
+  padding: 30px 0 40px;
+  color: #fff;
+  background: url(../img/bg/bg-attention.jpg) no-repeat center;
+}
+
+.attention-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.attention-text {
+  padding: 0 56px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.attention-media {
+  width: 682px;
+  height: 385px;
+  margin-bottom: 50px;
+  border: 7px solid #000;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after,
+  &::before {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    content: '';
+  }
+
+  &::before {
+    width: 66px;
+    height: 66px;
+    margin-top: -33px;
+    margin-left: -33px;
+    background: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #c8c8c8;
+    animation: animatePlay 1.5s linear infinite;
+  }
+
+  &::after {
+    margin-top: -9px;
+    margin-left: -6px;
+    border-top: 10px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 19px solid $orangeColor;
+  }
+}
+
+.attention-box {
+  max-width: 726px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 2px solid $orangeColor;
+}
