@@ -32,4 +32,44 @@ $(document).ready(function () {
         $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
         e.preventDefault();
     });
+
+    setTimeout(function () {
+        $('#allinone_carousel_what').allinone_carousel({
+            skin: "sweet",
+            width: 1127,
+            height: 650,
+            width100Proc: false,
+            height100Proc: false,
+            autoPlay: 0,
+            numberOfVisibleItems: 7,
+            elementsHorizontalSpacing: 110,
+            elementsVerticalSpacing: 20,
+            verticalAdjustment: 50,
+            animationTime: 0.2,
+            easing: "easeOutQuad",
+            resizeImages: true,
+            target: "_blank",
+            showElementTitle: false,
+            showAllControllers: true,
+            showNavArrows: true,
+            showOnInitNavArrows: true,
+            autoHideNavArrows: false,
+            showBottomNav: true,
+            showOnInitBottomNav: true,
+            autoHideBottomNav: false,
+            showPreviewThumbs: false,
+            nextPrevMarginTop: 23,
+            playMovieMarginTop: 0,
+            bottomNavMarginBottom: 0,
+            enableTouchScreen: false,
+            absUrl: "",
+            showCircleTimer: false,
+            showCircleTimerIE8IE7: false,
+            responsive: true,
+            responsiveRelativeToBrowser: false,
+            circleLeftPositionCorrection: 20,
+            circleTopPositionCorrection: 20,
+            activeItemClass: ""
+        });
+    }, 1000);
 });

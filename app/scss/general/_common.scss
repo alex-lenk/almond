@@ -1,7 +1,3 @@
-body {
-  position: relative;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -118,52 +114,21 @@ img {
   }
 }
 
-.text-red {
-  color: #d82323;
-}
-
-.text-yellow {
-  color: $yellowColor;
-}
-
 .text-bold {
   font-weight: 700;
 }
 
-.title-block {
-  &::after {
-    width: 14%;
-    height: 6px;
-    margin: 14px auto 0;
-    display: block;
-    content: '';
-  }
-
-  &-blue::after {
-    background-color: $blueColor;
-  }
-
-  &-yellow::after {
-    background-color: $yellowColor;
-  }
-
-  &-bold {
-    font-weight: 900;
-  }
-}
-
-
 @keyframes animatePlay {
   0% {
-    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 0 rgba($yellowColor, 0.5)
+    box-shadow: 0 0 0 10px rgba($orangeColor, 0.5), 0 0 0 0 rgba($orangeColor, 0.5)
   }
   50% {
-    box-shadow: 0 0 0 20px rgba($yellowColor, 0), 0 0 0 20px rgba($yellowColor, 0.5)
+    box-shadow: 0 0 0 20px rgba($orangeColor, 0), 0 0 0 20px rgba($orangeColor, 0.5)
   }
   50.0001% {
-    box-shadow: 0 0 0 0 rgba($yellowColor, 0.5), 0 0 0 20px rgba($yellowColor, 0.5)
+    box-shadow: 0 0 0 0 rgba($orangeColor, 0.5), 0 0 0 20px rgba($orangeColor, 0.5)
   }
   100% {
-    box-shadow: 0 0 0 10px rgba($yellowColor, 0.5), 0 0 0 40px rgba($yellowColor, 0)
+    box-shadow: 0 0 0 10px rgba($orangeColor, 0.5), 0 0 0 40px rgba($orangeColor, 0)
   }
 }
