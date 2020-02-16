@@ -33,6 +33,11 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+
+
+    $('input[type=tel]').inputmask({"mask": "+7 (999) 999-99-99"});
+
+
     setTimeout(function () {
         $('#allinone_carousel_what').allinone_carousel({
             skin: "sweet",

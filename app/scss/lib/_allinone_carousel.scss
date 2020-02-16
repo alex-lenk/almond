@@ -205,15 +205,6 @@ skins available:
   cursor: pointer;
 }
 
-.reviews-what {
-  padding-top: 50px;
-
-  .allinone_carousel .contentHolderUnit {
-    width: 285px;
-    height: 600px;
-  }
-}
-
 .allinone_carousel.sweet img {
   width: 94% !important;
   height: 92% !important;
@@ -228,7 +219,7 @@ skins available:
 .sweetIframe {
   width: 94% !important;
   height: 92% !important;
-  xposition: relative !important;
+  position: relative !important;
   margin-top: 3% !important;
   margin-left: 3% !important;
 }

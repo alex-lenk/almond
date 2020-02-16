@@ -1,0 +1,53 @@
+.choose {
+  padding-top: 33px;
+  padding-bottom: 42px;
+  background: rgb(214, 218, 224);
+  background: -moz-linear-gradient(top, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
+  background: linear-gradient(to bottom, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6dae0', endColorstr='#dbdee4', GradientType=0);
+}
+
+.choose-inner {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choose-title {
+  width: 100%;
+  margin-bottom: 43px;
+  line-height: 1.1;
+}
+
+.choose-card {
+  width: 340px;
+  margin: 0 75px;
+  line-height: 1;
+}
+
+.choose-card__media {
+  min-height: 339px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.choose-card__price-old {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.choose-card__price {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.choose-card__price-cost {
+  font-size: 32px;
+  color: $orangeColor;
+}
