@@ -1,0 +1,72 @@
+.step {
+  padding-top: 23px;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.step-title {
+  margin-bottom: 30px;
+}
+
+.step-list {
+  display: flex;
+  justify-content: center;
+}
+
+.step-item {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+
+  &:not(:first-child)::after {
+    width: 25px;
+    height: 25px;
+    border-right: 3px solid $orangeColor;
+    border-bottom: 3px solid $orangeColor;
+    top: 96px;
+    left: -47px;
+    position: absolute;
+    transform: rotate(-45deg);
+    content: '';
+  }
+
+  &:last-child::after {
+    left: -95px;
+  }
+
+  &::before {
+    height: 238px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    content: '';
+  }
+}
+
+.step-item__title {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.step-item__text {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.step-order::before {
+  width: 249px;
+  background: url(../img/decor/img-004.png) no-repeat 3px 16px;
+}
+
+.step-consultation::before {
+  width: 100px;
+  background: url(../img/decor/img-005.png) no-repeat 0 7px;
+}
+
+.step-delivery::before {
+  width: 248px;
+  background: url(../img/product/img-007.jpg) no-repeat 6px -3px;
+}
