@@ -4,8 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/bg/bg-line.jpg) no-repeat center;
-  background-size: cover;
+/*  background: url(../img/bg/bg-line.jpg) no-repeat center;
+  background-size: cover;*/
+  background: rgb(71, 87, 110);
+  background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  background: linear-gradient(to right, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#47576e', endColorstr='#47576e', GradientType=1);
 }
 
 .questions-title {

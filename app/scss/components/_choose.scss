@@ -1,11 +1,11 @@
 .choose {
   padding-top: 33px;
   padding-bottom: 42px;
-  background: rgb(214, 218, 224);
-  background: -moz-linear-gradient(top, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
-  background: -webkit-linear-gradient(top, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
-  background: linear-gradient(to bottom, rgba(214, 218, 224, 1) 0%, rgba(219, 222, 228, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6dae0', endColorstr='#dbdee4', GradientType=0);
+  background: rgb(227, 230, 234);
+  background: -moz-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
+  background: linear-gradient(to right, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e6ea', endColorstr='#e3e6ea', GradientType=1);
 }
 
 .choose-inner {
