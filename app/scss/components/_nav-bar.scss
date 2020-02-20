@@ -1,11 +1,9 @@
 .nav-bar {
-  height: 88px;
   color: $gray-900;
 }
 
 .nav-bar-stick {
   width: 100%;
-  height: inherit;
   background-color: #fff;
   border-bottom: 1px solid #ededee;
   position: fixed;
@@ -16,12 +14,11 @@
 
 .nav-bar-section {
   height: inherit;
-  padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
-  width: 280px;
   color: inherit;
   line-height: 1;
   display: flex;
@@ -34,9 +31,7 @@
 }
 
 .logo-icon {
-  width: 41px;
-  height: 41px;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 .logo-name {
@@ -48,13 +43,10 @@
 }
 
 .logo-discount {
-  padding: 6px 10px;
-  font-size: 14px;
   font-weight: 300;
   position: relative;
   background-color: $orangeColor;
   color: #fff;
-  align-self: flex-start;
 
   &::before {
     top: 100%;
@@ -69,23 +61,19 @@
 
 .logo-signature {
   width: 100%;
-  padding-top: 4px;
   font-weight: 500;
 }
 
 .menu {
   max-width: 332px;
   flex-basis: 332px;
+  line-height: 1;
+}
+
+.menu-list {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  line-height: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-item {
-  padding-top: 42px;
 }
 
 .menu-link {
@@ -93,40 +81,14 @@
   color: $blueColor;
   position: relative;
   font-weight: 500;
-  transition: color .3s ease-out;
-
-  &::after {
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-    content: '';
-  }
-
-  &.active::after {
-    background-color: #ff8a44;
-  }
-}
-
-.phone-call {
-  align-self: center;
-  padding-left: 5px;
 }
 
 .phone-call-box {
   color: inherit;
-  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: .03rem;
   transition: color .3s ease-out;
-}
-
-.phone-call-box__icon {
-  width: 24px;
-  height: 24px;
-  fill: $gray-900;
 }
 
 .phone-call-text {
@@ -137,29 +99,285 @@
 }
 
 .call-back {
-  padding: 10px 14px;
-  margin-left: auto;
-  font-size: 14px;
-  line-height: 1;
-  color: #fff;
-  background-color: #47576e;
-  border: 1px solid #47576e;
-  border-radius: 18px;
-  align-self: center;
-  cursor: pointer;
-  transition: background-color .3s ease-out, color .3s ease-out;
+  display: none
+}
 
-  &:hover {
-    color: #47576e;
-    background-color: #fff;
+.menu-toggle {
+  width: 29px;
+  height: 28px;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  align-self: center;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::before,
+  &::after {
+    width: 29px;
+    height: 4px;
+    top: 8px;
+    left: 0;
+    display: block;
+    position: absolute;
+    background-color: $orangeColor;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    will-change: transform, box-shadow;
+    content: "";
+  }
+
+  &::before {
+    box-shadow: 0 9px $orangeColor, 0 -9px $orangeColor;
+  }
+}
+
+.menu-opened {
+  .menu {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    &::before {
+      transform: rotate(-45deg);
+      box-shadow: none;
+      background-color: #fff;
+    }
+
+    &::after {
+      background-color: #fff;
+      transform: translateX(0) rotate(-135deg);
+    }
+  }
+}
+
+
+@media (min-width: 576px) {
+  .phone-call-box {
+    font-size: 20px;
+  }
+  .phone-call-box__icon {
+    width: 24px;
+    height: 24px;
+    fill: $gray-900;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    height: 88px;
+  }
+  .nav-bar-stick {
+    height: inherit;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-item {
+    padding-top: 42px;
+  }
+  .menu-link {
+    transition: color .3s ease-out;
+
+    &::after {
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      content: '';
+    }
+
+    &.active::after {
+      background-color: #ff8a44;
+    }
+  }
+  .phone-call {
+    align-self: center;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-bar-section {
+    padding-top: 10px;
+  }
+  .logo {
+    width: 280px;
+  }
+  .logo-icon {
+    width: 41px;
+    height: 41px;
+  }
+  .logo-name {
+    font-size: 35px;
+  }
+  .logo-discount {
+    padding: 6px 10px;
+    font-size: 14px;
+    align-self: flex-start;
+  }
+  .logo-signature {
+    padding-top: 4px;
   }
 }
 
 @media (min-width: 1100px) {
+  .call-back {
+    padding: 10px 14px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    background-color: #47576e;
+    border: 1px solid #47576e;
+    border-radius: 18px;
+    align-self: center;
+    cursor: pointer;
+    display: block;
+    transition: background-color .3s ease-out, color .3s ease-out;
+
+    &:hover {
+      color: #47576e;
+      background-color: #fff;
+    }
+  }
+
   .phone-call-box:hover .phone-call-box__icon {
     fill: #ff8a44;
   }
   .phone-call-box__icon {
     transition: fill .3s ease-out;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-bar-section {
+    padding-top: 13px;
+  }
+  .logo {
+    width: 245px;
+  }
+  .logo-icon {
+    width: 29px;
+    height: 34px;
+  }
+  .logo-name {
+    font-size: 24px;
+  }
+  .logo-discount {
+    padding: 3px 13px 3px 10px;
+    font-size: 18px;
+    align-self: flex-end;
+  }
+  .logo-signature {
+    font-size: 12px;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-bar-stick {
+    background-color: #252a34;
+    color: #Fff;
+  }
+  .nav-bar-section {
+    border-bottom: 2px solid $orangeColor;
+  }
+  .logo-icon {
+    fill: #fff;
+  }
+  .logo-signature span {
+    display: none;
+  }
+  .menu {
+    height: 100%;
+    width: 84%;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    position: fixed;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-item {
+    padding-left: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .menu-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  .phone-call-box__icon {
+    fill: #fff;
+  }
+  .phone-call-text {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-bar-section {
+    padding-bottom: 13px;
+  }
+  .phone-call {
+    width: 100%;
+    margin-top: 11px;
+    padding-top: 12px;
+    text-align: center;
+    border-top: 1px solid #fff;
+  }
+  .phone-call-box {
+    font-size: 22px;
+  }
+  .phone-call-box__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .nav-bar-section {
+    padding-bottom: 13px;
+    align-items: center;
+  }
+  .menu-toggle {
+    order: 1
+  }
+  .phone-call {
+    margin-left: auto
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 217px;
+  }
+  .logo-discount {
+    padding: 3px 7px 3px 7px;
+    font-size: 14px;
+  }
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone-call-box {
+    font-size: 16px;
+  }
+  .phone-call-box__icon,
+  .phone-call-text {
+    display: none;
   }
 }
