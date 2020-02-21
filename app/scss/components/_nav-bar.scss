@@ -4,8 +4,7 @@
 
 .nav-bar-stick {
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #ededee;
+  height: inherit;
   position: fixed;
   top: 0;
   left: 0;
@@ -65,8 +64,6 @@
 }
 
 .menu {
-  max-width: 332px;
-  flex-basis: 332px;
   line-height: 1;
 }
 
@@ -172,10 +169,15 @@
     height: 88px;
   }
   .nav-bar-stick {
-    height: inherit;
+    background-color: #fff;
+    border-bottom: 1px solid #ededee;
   }
   .menu-toggle {
     display: none;
+  }
+  .menu {
+    max-width: 332px;
+    flex-basis: 332px;
   }
   .menu-list {
     display: flex;
@@ -232,13 +234,12 @@
 
 @media (min-width: 1100px) {
   .call-back {
-    padding: 10px 14px;
+    padding: 11px 15px;
     margin-left: auto;
     font-size: 14px;
     line-height: 1;
     color: #fff;
     background-color: #47576e;
-    border: 1px solid #47576e;
     border-radius: 18px;
     align-self: center;
     cursor: pointer;
@@ -246,8 +247,7 @@
     transition: background-color .3s ease-out, color .3s ease-out;
 
     &:hover {
-      color: #47576e;
-      background-color: #fff;
+      background-color: $orangeColor;
     }
   }
 
@@ -287,11 +287,10 @@
 @media (max-width: 767px) {
   .nav-bar-stick {
     background-color: #252a34;
+    border-bottom: 2px solid $orangeColor;
     color: #Fff;
   }
-  .nav-bar-section {
-    border-bottom: 2px solid $orangeColor;
-  }
+
   .logo-icon {
     fill: #fff;
   }
@@ -329,6 +328,9 @@
 }
 
 @media (max-width: 575px) {
+  .nav-bar {
+    height: 122px;
+  }
   .nav-bar-section {
     padding-bottom: 13px;
   }
@@ -349,6 +351,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .nav-bar {
+    height: 77px;
+  }
   .nav-bar-section {
     padding-bottom: 13px;
     align-items: center;
@@ -356,6 +361,12 @@
   .menu-toggle {
     order: 1
   }
+  .phone-call {
+    margin-left: auto
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
   .phone-call {
     margin-left: auto
   }
