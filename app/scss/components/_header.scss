@@ -82,28 +82,25 @@
 }
 
 .header-call {
+  width: 100%;
   padding: 8px 0 5px;
-  margin-left: -15px;
   font-size: 21px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #fff;
   background-color: $orangeColor;
   order: 4;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 
   &::before {
     margin-right: 5px;
     @include stitches-sprite(-122px, -309px, 25px, 29px);
-  }
-
-  &::after {
-    width: 100vw;
-    height: 1px;
-    display: block;
-    content: '';
   }
 }
 
@@ -233,6 +230,7 @@
 
 @media (max-width: 575px) {
   .header {
+    height: calc(100vh - 166px);
     padding-top: 15px;
     color: #fff;
     background: url(../img/bg/main-bg-mob.jpg) no-repeat top center #2d3d56;
@@ -244,6 +242,9 @@
   }
   .header-price__new {
     margin-left: -5px;
+  }
+  .header-call {
+    z-index: 25;
   }
 }
 

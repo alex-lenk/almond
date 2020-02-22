@@ -1,8 +1,8 @@
 .scroll-to-top {
   width: 31px;
   height: 31px;
-  right: 15px;
-  bottom: 45px;
+  right: 7px;
+  bottom: 53px;
   display: block;
   line-height: 31px;
   text-align: center;
@@ -17,4 +17,11 @@
   height: 11px;
   fill: #fff;
   transform: rotate(90deg);
+}
+
+@media (min-width: 576px) {
+  .scroll-to-top {
+    right: 15px;
+    bottom: 45px;
+  }
 }

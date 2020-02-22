@@ -3,12 +3,7 @@
 }
 
 .nav-bar-stick {
-  width: 100%;
   height: inherit;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 110;
 }
 
 .nav-bar-section {
@@ -154,6 +149,14 @@
 
 
 @media (min-width: 576px) {
+  .nav-bar-stick {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+  }
+
   .phone-call-box {
     font-size: 20px;
   }
@@ -347,6 +350,11 @@
   .phone-call-box__icon {
     width: 20px;
     height: 20px;
+  }
+  .menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 24px;
   }
 }
 
