@@ -12,11 +12,17 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 22px;
 }
 
 h3 {
   font-size: 22px;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 45px;
+  }
 }
 
 img {

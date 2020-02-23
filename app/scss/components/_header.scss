@@ -4,7 +4,7 @@
 
   &::before {
     width: 206px;
-    background: url(../img/decor/gurl.png) no-repeat center bottom;
+    background: url(../img/decor/gurl-3.png) no-repeat center bottom;
     background-size: contain;
     align-self: flex-end;
     content: '';
@@ -107,11 +107,15 @@
 @media (min-width: 576px) {
   .header {
     color: #333;
+    /*
     background: rgb(227, 230, 234);
     background: -moz-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
     background: linear-gradient(to right, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e6ea', endColorstr='#e3e6ea', GradientType=1);
+    */
+
+    background: url(../img/bg/main-bg.jpg) no-repeat top center rgb(227, 230, 234);
   }
   .header__inner {
     &::after {
