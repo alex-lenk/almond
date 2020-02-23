@@ -1,25 +1,19 @@
 .complete {
-  padding-top: 23px;
+  padding-top: 16px;
   padding-bottom: 30px;
   text-align: center;
 }
 
 .complete-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .complete-list {
-  margin-bottom: 39px;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: space-around;
-}
-
-.complete-item {
 }
 
 .complete-media {
-  min-height: 173px;
-  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -27,16 +21,63 @@
 
 .complete-text {
   font-size: 14px;
-  font-weight: 700;
 }
 
 .complete-info {
-  max-width: 515px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 9px 30px;
+  padding: 9px 20px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   border: 2px solid $orangeColor;
+}
+
+@media (min-width: 576px) {
+  .complete {
+    padding-top: 23px;
+  }
+  .complete-title {
+    margin-bottom: 30px;
+  }
+  .complete-list {
+    margin-bottom: 39px;
+    justify-content: space-around;
+  }
+  .complete-media {
+    min-height: 173px;
+    margin-bottom: 25px;
+  }
+  .complete-text {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  .complete-list {
+    flex-wrap: wrap;
+  }
+  .complete-item {
+    margin-bottom: 16px;
+    max-width: 50%;
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .complete-media {
+    height: 140px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .complete-item {
+    padding: 15px
+  }
 }
