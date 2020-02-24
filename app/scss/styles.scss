@@ -27,3 +27,14 @@
 @import "components/pre-footer";
 @import "components/footer";
 
+@media (max-width: 575px) {
+  .hide-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .show-xs {
+    display: none;
+  }
+}

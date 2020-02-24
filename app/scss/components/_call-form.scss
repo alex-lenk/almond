@@ -1,7 +1,6 @@
 .call-form {
   max-width: 396px;
   width: 100%;
-  padding: 26px 32px 30px;
   border-radius: 6px;
   outline: 3px solid $orangeColor;
   outline-offset: -9px;
@@ -16,7 +15,7 @@
 
 .call-form__title {
   margin-bottom: 6px;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
   color: $orangeColor;
@@ -26,7 +25,7 @@
 
 .call-form__text {
   margin-bottom: 6px;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -41,7 +40,7 @@
 .call-form__text-2 {
   margin-bottom: 17px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   line-height: 1;
 }
@@ -56,7 +55,7 @@
 
 .call-form__price {
   margin-bottom: 28px;
-  font-size: 17px;
+  font-size: 14px;
   color: #000;
   text-align: center;
   font-weight: 700;
@@ -64,7 +63,7 @@
 }
 
 .call-form__price-cost {
-  font-size: 36px;
+  font-size: 30px;
   color: $orangeColor;
 }
 
@@ -76,7 +75,7 @@
   width: 27px;
   height: 27px;
   fill: #a8a8a8;
-  top: 13px;
+  top: 10px;
   left: 12px;
   position: absolute;
 }
@@ -98,5 +97,42 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 3px;
+  }
+}
+
+@media (min-width: 576px) {
+  .call-form {
+    padding: 26px 32px 30px;
+  }
+  .call-form__title {
+    font-size: 36px;
+  }
+  .call-form__text {
+    font-size: 27px;
+  }
+  .call-form__text-2 {
+    font-size: 24px;
+  }
+  .call-form__price {
+    font-size: 17px;
+  }
+  .call-form__price-cost {
+    font-size: 36px;
+  }
+  .call-form__icon {
+    top: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .call-form {
+    padding: 23px 32px 30px;
+
+    .main-btn {
+      max-width: 270px;
+      height: 55px;
+      font-size: 18px;
+      background-size: cover;
+    }
   }
 }
