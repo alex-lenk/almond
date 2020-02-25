@@ -1,8 +1,7 @@
 .autonomy {
-  padding-top: 35px;
-  padding-bottom: 28px;
+  padding-top: 13px;
+  padding-bottom: 4px;
   color: #fff;
-  //background: url(../img/bg/bg-small-advantage.jpg) no-repeat center;
   background: rgb(71, 87, 110);
   background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
   background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
@@ -11,29 +10,57 @@
 }
 
 .autonomy-title {
-  margin-bottom: 27px;
-  font-size: 35px;
+  margin-bottom: 4px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
 
-.autonomy-list {
-  margin-left: -10px;
-  margin-right: -10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .autonomy-item {
-  padding-left: 10px;
-  padding-right: 10px;
   font-weight: 500;
   display: flex;
   align-items: center;
 
   &::before {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .autonomy {
+    padding-top: 35px;
+    padding-bottom: 28px;
+  }
+  .autonomy-title {
+    margin-bottom: 27px;
+    font-size: 35px;
+  }
+  .autonomy-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .autonomy-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .autonomy {
+    text-align: center;
+  }
+  .autonomy-list {
+    display: inline-block;
+  }
+  .autonomy-item {
+    font-size: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
