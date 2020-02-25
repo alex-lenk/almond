@@ -260,14 +260,13 @@ skins available:
   width: 100%;
 }
 
-.allinone_carousel.sweet .leftNav {
+.allinone_carousel.sweet .leftNav,
+.allinone_carousel.sweet .rightNav {
   position: absolute;
-  left: -25px;
-  top: -35px;
-  width: 64px;
-  height: 64px;
+}
+
+.allinone_carousel.sweet .leftNav {
   background: url(../skins/sweet/leftNavOFF.png) 0 0 no-repeat;
-  cursor: pointer;
 }
 
 .allinone_carousel.sweet .leftNav:hover {
@@ -275,13 +274,7 @@ skins available:
 }
 
 .allinone_carousel.sweet .rightNav {
-  position: absolute;
-  right: -25px;
-  top: -35px;
-  width: 64px;
-  height: 64px;
   background: url(../skins/sweet/rightNavOFF.png) 0 0 no-repeat;
-  cursor: pointer;
 }
 
 .allinone_carousel.sweet .rightNav:hover {
@@ -291,13 +284,10 @@ skins available:
 .allinone_carousel.sweet .bottomNav {
   position: absolute;
   height: 35px;
-  width: 100%!important;
-  left: 50% !important;
+  width: 100% !important;
   padding-left: 0;
   z-index: 10;
-  max-width: 38%;
-  margin-left: -19%;
-  display: flex!important;
+  display: flex !important;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -307,25 +297,21 @@ skins available:
   }
 }
 
+.allinone_carousel.sweet .bottomNavButtonON,
 .allinone_carousel.sweet .bottomNavButtonOFF {
   float: left;
   display: block;
-  width: 14px;
-  height: 14px;
-  background: #fff;
   padding-left: 9px;
   pointer-events: none;
+}
+
+.allinone_carousel.sweet .bottomNavButtonOFF {
+  background: #fff;
   box-shadow: inset 2px 2px 1px #dbdada;
 }
 
 .allinone_carousel.sweet .bottomNavButtonON {
-  float: left;
-  display: block;
-  width: 14px;
-  height: 14px;
-  padding-left: 9px;
   background: #ff5f07;
-  pointer-events: none;
   box-shadow: inset 2px 2px 1px #ce4d29;
 }
 
@@ -363,8 +349,6 @@ skins available:
 
 .allinone_carousel.powerful .contentHolderUnit {
   position: absolute;
-  /*float:left;
-  display:block;*/
   width: 326px;
   height: 329px;
   overflow: hidden;
@@ -507,4 +491,56 @@ skins available:
 
 .hideElement {
   display: none;
+}
+
+@media (min-width: 576px) {
+  .allinone_carousel.sweet .bottomNav {
+    left: 50% !important;
+    max-width: 38%;
+    margin-left: -19%;
+  }
+  .allinone_carousel.sweet .leftNav,
+  .allinone_carousel.sweet .rightNav {
+    width: 64px;
+    height: 64px;
+    top: -35px;
+    cursor: pointer;
+  }
+  .allinone_carousel.sweet .leftNav {
+    left: -25px;
+  }
+  .allinone_carousel.sweet .rightNav {
+    right: -25px;
+  }
+  .allinone_carousel.sweet .bottomNavButtonON,
+  .allinone_carousel.sweet .bottomNavButtonOFF {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .allinone_carousel.sweet .bottomNav {
+    left: 0 !important;
+  }
+  .allinone_carousel.sweet .leftNav {
+    left: -10px;
+  }
+  .allinone_carousel.sweet .rightNav {
+    right: -10px;
+  }
+
+  .allinone_carousel.sweet .leftNav,
+  .allinone_carousel.sweet .rightNav {
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+
+  .allinone_carousel.sweet .bottomNavButtonON,
+  .allinone_carousel.sweet .bottomNavButtonOFF {
+    width: 7px;
+    height: 8px;
+  }
 }
