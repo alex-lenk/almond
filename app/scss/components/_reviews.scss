@@ -218,6 +218,9 @@
 }
 
 @media (max-width: 575px) {
+  .reviews {
+    overflow: hidden;
+  }
   .reviews-title {
     font-weight: 600;
   }

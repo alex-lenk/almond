@@ -1,7 +1,7 @@
 .trust-us {
   padding-top: 20px;
   padding-bottom: 4px;
-  background-color: #edf1f7;
+  background-color: #e4e1dc;
   border-bottom: 2px solid $orangeColor;
 }
 
@@ -36,6 +36,7 @@
 @media (min-width: 768px) {
   .trust-us {
     padding-bottom: 7px;
+    background-color: #edf1f7;
   }
   .trust-us-title {
     margin-left: -24px;
