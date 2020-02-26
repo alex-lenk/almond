@@ -1,9 +1,8 @@
 .payment-after {
-  height: 195px;
+  height: 103px;
   display: flex;
   align-items: center;
   justify-content: center;
-  //background: url(../img/bg/bg-line.jpg) no-repeat center;
   background: rgb(71, 87, 110);
   background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
   background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
@@ -13,9 +12,19 @@
 
 .payment-after-title {
   margin-left: 19px;
-  font-size: 36px;
+  font-size: 14px;
   font-weight: 700;
   color: #fff;
-  line-height: 1;
+  line-height: 1.4;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .payment-after {
+    height: 195px;
+  }
+  .payment-after-title {
+    font-size: 36px;
+    line-height: 1;
+  }
 }
