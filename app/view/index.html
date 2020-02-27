@@ -29,11 +29,10 @@
                 </a>
                 <div class="phone-call-text">Звонок по России бесплатный</div>
             </div>
-            <div class="call-back">Перезвоните мне</div>
+            <div class="call-back" data-fancybox="" data-src="#modal-01" data-modal="true">Перезвоните мне</div>
         </div>
     </div>
 </div>
-
 
 <header class="header">
     <div class="header__inner container">
@@ -48,7 +47,7 @@
                 <div class="header-price__new-discount">Со скидкой:</div>
                 <div class="header-price__new-cost">3 990 руб.</div>
             </div>
-            <button class="main-btn btn-primary btn">Заказать со скидкой</button>
+            <button class="main-btn btn-primary btn" data-fancybox="" data-src="#modal-02" data-modal="true">Заказать со скидкой</button>
         </div>
     </div>
 </header>
@@ -239,7 +238,9 @@
 <section class="gift">
     <div class="container">
         <h2 class="gift-title">Сделайте себе <span class="hide-xs">шикарный</span> <span class="text-bold">подарок!</span></h2>
-        <p class="gift-text">Закажите сейчас <span class="text-bold">AirPods 2</span> <br class="show-xs"> по&nbsp;лучшей цене  <span class="gift-text__cost">3 990 руб.</span></p>
+        <p class="gift-text">
+            Закажите сейчас <span class="text-bold">AirPods 2</span> <br class="show-xs"> по&nbsp;лучшей цене <span class="gift-text__cost">3 990 руб.</span>
+        </p>
 
         <div class="gift-info">
             <div class="gift-product">
@@ -498,7 +499,7 @@
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>14 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">3 990 руб.</span></div>
-            <button type="button" class="btn btn-primary main-btn">КУПИТЬ AIRPODS 2</button>
+            <button type="button" class="btn btn-primary main-btn" data-fancybox="" data-src="#modal-02" data-modal="true">КУПИТЬ AIRPODS 2</button>
         </div>
 
         <div class="choose-card">
@@ -507,11 +508,10 @@
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>21 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">6 990 руб.</span></div>
-            <button type="button" class="btn btn-primary main-btn">КУПИТЬ AIRPODS PRO</button>
+            <button type="button" class="btn btn-primary main-btn" data-fancybox="" data-src="#modal-03" data-modal="true">КУПИТЬ AIRPODS PRO</button>
         </div>
     </div>
 </section>
-
 
 <section class="autonomy">
     <div class="container">
@@ -531,7 +531,7 @@
 
         <div class="synchronization-info">
             <div class="synchronization-media"><img src="img/product/synchronization-01.png" alt=""></div>
-            <div class="synchronization-media"><img src="img/product/synchronization-02.png" alt=""></div>
+            <div class="synchronization-media synchronization-media-2"><img src="img/product/synchronization-02.png" alt=""></div>
             <div class="synchronization-content sprite-synchronization">
                 Наушники <span class="text-bold">AirPods 2</span> и <span class="text-bold">Airpods Pro</span> синхронизируются
                 <br>
@@ -831,7 +831,7 @@
         </div>
 
         <div class="footer-btn">
-            <button type="submit" class="btn btn-primary">Обратный звонок</button>
+            <button type="submit" class="btn btn-primary" data-fancybox="" data-src="#modal-01" data-modal="true">Обратный звонок</button>
         </div>
 
         <div class="footer-copy">
@@ -843,6 +843,159 @@
         </div>
     </div>
 </footer>
+
+<div id="modal-01" class="modal-view">
+    <div class="modal-view-inner">
+        <div class="modal-view__info">
+            <img src="img/mob/img-03.png" alt="">
+
+            <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
+            <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span></div>
+        </div>
+        <div class="modal-view__order">
+            <div class="modal-view-title">Заказать</div>
+            <div class="modal-view-pre-title">обратный звонок</div>
+            <div class="modal-view-text">
+                Уточните Ваше имя и телефон и мы<br>
+                перезвоним  Вам в течении 10 минут
+            </div>
+            <form action="/" class="modal-view-form">
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-name-1">Ваше имя</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#user"></use>
+                    </svg>
+                    <input type="text" class="modal-view-form__field form-control hide-placeholder" id="form-name-1" placeholder="Ваше имя">
+                </div>
+
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-tel-1">Контактный телефон*</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#phone-2"></use>
+                    </svg>
+                    <input type="tel" class="modal-view-form__field form-control hide-placeholder" id="form-tel-1" placeholder="Контактный телефон*" inputmode="text">
+                </div>
+
+                <button type="submit" class="modal-view-form__button btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+
+                <div class="modal-view-form__lock sprite-lock">
+                    Ваши данные под защитой
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-fancybox-close class="modal-view-close" title="закрыть">
+        <svg class="modal-view-close__icon">
+            <use xlink:href="img/icons.svg#close"></use>
+        </svg>
+    </div>
+</div>
+
+<div id="modal-02" class="modal-view">
+    <div class="modal-view-inner">
+        <div class="modal-view__info">
+            <img src="img/mob/img-03.png" alt="">
+
+            <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
+            <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span></div>
+        </div>
+        <div class="modal-view__order">
+            <div class="modal-view-string">
+                Чтобы заказать<br>
+                <span class="text-nowrap">и проконсультироваться</span><br>
+                по наушникам <span class="text-orange">AirPods 2,</span>
+            </div>
+            <div class="modal-view-data">
+                напишите своё имя<br>
+                и номер телефона
+            </div>
+
+            <form action="/" class="modal-view-form">
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-name-2">Ваше имя</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#user"></use>
+                    </svg>
+                    <input type="text" class="modal-view-form__field form-control hide-placeholder" id="form-name-2" placeholder="Ваше имя">
+                </div>
+
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-tel-2">Контактный телефон*</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#phone-2"></use>
+                    </svg>
+                    <input type="tel" class="modal-view-form__field form-control hide-placeholder" id="form-tel-2" placeholder="Контактный телефон*" inputmode="text">
+                </div>
+
+                <button type="submit" class="modal-view-form__button btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+
+                <div class="modal-view-form__lock sprite-lock">
+                    Ваши данные под защитой
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-fancybox-close class="modal-view-close" title="закрыть">
+        <svg class="modal-view-close__icon">
+            <use xlink:href="img/icons.svg#close"></use>
+        </svg>
+    </div>
+</div>
+
+<div id="modal-03" class="modal-view">
+    <div class="modal-view-inner">
+        <div class="modal-view__info">
+            <br>
+            <br>
+            <img src="img/product/airpods-06.png" alt="">
+
+            <div class="modal-view__price-old">Обычная цена: <del>21 990 руб.</del></div>
+            <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">6 990 руб.</span></div>
+        </div>
+        <div class="modal-view__order">
+            <div class="modal-view-string">
+                Чтобы заказать<br>
+                <span class="text-nowrap">и проконсультироваться</span>
+                <div class="modal-view-string-text text-nowrap">
+                    по наушникам <span class="text-orange">AirPods PRO,</span>
+                </div>
+            </div>
+            <div class="modal-view-data">
+                напишите своё имя<br>
+                и номер телефона
+            </div>
+
+            <form action="/" class="modal-view-form">
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-name-3">Ваше имя</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#user"></use>
+                    </svg>
+                    <input type="text" class="modal-view-form__field form-control hide-placeholder" id="form-name-3" placeholder="Ваше имя">
+                </div>
+
+                <div class="modal-view-form__group">
+                    <label class="sr-only" for="form-tel-3">Контактный телефон*</label>
+                    <svg class="modal-view-form__icon">
+                        <use xlink:href="img/icons.svg#phone-2"></use>
+                    </svg>
+                    <input type="tel" class="modal-view-form__field form-control hide-placeholder" id="form-tel-3" placeholder="Контактный телефон*" inputmode="text">
+                </div>
+
+                <button type="submit" class="modal-view-form__button btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+
+                <div class="modal-view-form__lock sprite-lock">
+                    Ваши данные под защитой
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-fancybox-close class="modal-view-close" title="закрыть">
+        <svg class="modal-view-close__icon">
+            <use xlink:href="img/icons.svg#close"></use>
+        </svg>
+    </div>
+</div>
 
 
 @@include('./includes/footer.html')

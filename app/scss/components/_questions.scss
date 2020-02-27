@@ -26,6 +26,11 @@
   .questions {
     height: 195px;
   }
+  .sprite-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .questions-title {
     margin-left: 19px;
     margin-right: 12px;
@@ -43,7 +48,7 @@
     padding-bottom: 40px;
 
     .sprite-question {
-      min-width:255px;
+      min-width: 255px;
       @include clearfix;
 
       &::before {
