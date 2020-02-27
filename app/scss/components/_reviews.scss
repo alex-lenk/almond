@@ -168,6 +168,14 @@
     margin-top: -25px;
     margin-left: -25px;
   }
+  .video-reviews-item__inner::after {
+    margin-top: -9px;
+    margin-left: -6px;
+    border-top: 10px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 19px solid $orangeColor;
+  }
   .reviews-what .allinone_carousel .contentHolderUnit {
     width: 285px;
     height: 600px;
