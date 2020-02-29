@@ -40,43 +40,57 @@ $(document).ready(function () {
     $('input[type=tel]').inputmask({"mask": "+7 (999) 999-99-99"});
 
 
-    setTimeout(function () {
-        $('#allinone_carousel_what').allinone_carousel({
-            skin: "sweet",
-            width: 1127,
-            height: 650,
-            width100Proc: false,
-            height100Proc: false,
-            autoPlay: 0,
-            numberOfVisibleItems: 7,
-            elementsHorizontalSpacing: 110,
-            elementsVerticalSpacing: 20,
-            verticalAdjustment: 50,
-            animationTime: 0.2,
-            easing: "easeOutQuad",
-            resizeImages: true,
-            target: "_blank",
-            showElementTitle: false,
-            showAllControllers: true,
-            showNavArrows: true,
-            showOnInitNavArrows: true,
-            autoHideNavArrows: false,
-            showBottomNav: true,
-            showOnInitBottomNav: true,
-            autoHideBottomNav: false,
-            showPreviewThumbs: false,
-            nextPrevMarginTop: 23,
-            playMovieMarginTop: 0,
-            bottomNavMarginBottom: 0,
-            enableTouchScreen: false,
-            absUrl: "",
-            showCircleTimer: false,
-            showCircleTimerIE8IE7: false,
-            responsive: true,
-            responsiveRelativeToBrowser: false,
-            circleLeftPositionCorrection: 20,
-            circleTopPositionCorrection: 20,
-            activeItemClass: ""
+    if ($(window).width() > 575) {
+        setTimeout(function () {
+            $('#allinone_carousel_what').allinone_carousel({
+                skin: "sweet",
+                width: 1127,
+                height: 650,
+                width100Proc: false,
+                height100Proc: false,
+                autoPlay: 0,
+                numberOfVisibleItems: 7,
+                elementsHorizontalSpacing: 110,
+                elementsVerticalSpacing: 20,
+                verticalAdjustment: 50,
+                animationTime: 0.2,
+                easing: "easeOutQuad",
+                resizeImages: true,
+                target: "_blank",
+                showElementTitle: false,
+                showAllControllers: true,
+                showNavArrows: true,
+                showOnInitNavArrows: true,
+                autoHideNavArrows: false,
+                showBottomNav: true,
+                showOnInitBottomNav: true,
+                autoHideBottomNav: false,
+                showPreviewThumbs: false,
+                nextPrevMarginTop: 23,
+                playMovieMarginTop: 0,
+                bottomNavMarginBottom: 0,
+                enableTouchScreen: false,
+                absUrl: "",
+                showCircleTimer: false,
+                showCircleTimerIE8IE7: false,
+                responsive: true,
+                responsiveRelativeToBrowser: false,
+                circleLeftPositionCorrection: 20,
+                circleTopPositionCorrection: 20,
+                activeItemClass: ""
+            });
+        }, 1000);
+    } else {
+        $('.video-reviews-item').slice(4).wrapAll('<div class="video-reviews__more-video hide-xs">');
+        $('.reviews-what__item').slice(10).wrapAll('<div class="reviews-what-list hide-xs">');
+
+        $('#video-reviews').click(function () {
+            $('.video-reviews__more-video').fadeToggle();
+            $(this).fadeOut();
         });
-    }, 1000);
+        $('#reviews-what').click(function () {
+            $('.reviews-what-list').toggleClass('reviews-what-list__open');
+            $(this).fadeOut();
+        });
+    }
 });

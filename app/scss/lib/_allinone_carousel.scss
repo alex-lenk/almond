@@ -19,7 +19,6 @@ skins available:
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
 }
 
 .allinone_carousel .contentHolder {
@@ -517,9 +516,15 @@ skins available:
     width: 14px;
     height: 14px;
   }
+  .allinone_carousel_list {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
+  #allinone_carousel_what {
+    display: none;
+  }
   .allinone_carousel.sweet .bottomNav {
     left: 0 !important;
   }
