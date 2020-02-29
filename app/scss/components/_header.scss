@@ -3,7 +3,7 @@
   display: flex;
 
   &::before {
-    width: 206px;
+    width: 216px;
     background: url(../img/decor/gurl-3.png) no-repeat center bottom;
     background-size: contain;
     align-self: flex-end;
@@ -82,21 +82,23 @@
 }
 
 .header-call {
-  width: 100%;
-  padding: 8px 0 5px;
+  padding: 8px 15px 5px;
   font-size: 21px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
   background-color: $orangeColor;
-  order: 4;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  position: fixed;
+/*
+  width: 100%;
+  order: 4;
+   position: fixed;
   bottom: 0;
   left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  */
 
   &::before {
     margin-right: 5px;
@@ -212,13 +214,13 @@
     flex-wrap: wrap;
 
     &::before {
-      height: 261px;
+      height: 260px;
       order: 1;
     }
 
     &::after {
       height: 174px;
-      margin-left: 5px;
+      margin-left: 6px;
       order: 2;
     }
   }
@@ -226,7 +228,7 @@
 
 @media (max-width: 575px) {
   .header {
-    height: calc(100vh - 166px);
+    height: 467px;
     min-height: 467px;
     padding-top: 15px;
     color: #fff;
@@ -237,6 +239,11 @@
       display: none;
     }
   }
+  .header__inner::before {
+    width: 197px;
+    margin-left: 8px;
+    background-image: url(../img/mob/gurl.png);
+  }
   .header-price__new {
     margin-left: -5px;
   }
@@ -245,15 +252,6 @@
   }
   .header-content {
     width: 100%;
-  }
-  .header__inner {
-    &::before {
-      margin-left: auto;
-    }
-
-    &::after {
-      margin-right: auto;
-    }
   }
 }
 
