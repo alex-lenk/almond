@@ -1,7 +1,6 @@
 .reviews {
   padding-top: 22px;
   padding-bottom: 35px;
-  background-color: #edf1f7;
 }
 
 .reviews-container {
@@ -127,6 +126,8 @@
   .reviews {
     padding-top: 30px;
     padding-bottom: 46px;
+    overflow-x: hidden;
+    background-color: #edf1f7;
   }
   .video-reviews {
     margin: 0 -8px 20px;
@@ -228,23 +229,27 @@
 @media (max-width: 575px) {
   .reviews {
     overflow: hidden;
+    background: rgb(217, 206, 192);
+    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
   }
   .reviews-title {
     font-weight: 600;
   }
   .video-reviews {
-    margin: 0 -5px 20px;
+    margin-bottom: 20px;
   }
   .video-reviews-item {
-    width: 50%;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-bottom: 15px;
   }
   .video-reviews__signature {
     display: none;
   }
   .video-reviews-item__inner {
+    border-width: 3px;
+
     &::before {
       width: 38px;
       height: 38px;

@@ -68,13 +68,6 @@
   list-style: none;
 }
 
-.menu-link {
-  font-size: 14px;
-  color: $blueColor;
-  position: relative;
-  font-weight: 500;
-}
-
 .phone-call-box {
   color: inherit;
   font-weight: 600;
@@ -129,8 +122,33 @@
   }
 }
 
+.menu-opened__layer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgba(#000, .4);
+}
+
 .menu-opened {
-  .menu {
+  overflow: hidden;
+
+  .header-call {
+    opacity: 0;
+  }
+
+  .header-call__panel {
+    display: block !important;
+
+    .header-call {
+      opacity: 1;
+    }
+  }
+
+  .menu-mob {
     transform: translateX(0);
   }
 
@@ -138,16 +156,17 @@
     &::before {
       transform: rotate(-45deg);
       box-shadow: none;
-      background-color: #fff;
     }
 
     &::after {
-      background-color: #fff;
       transform: translateX(0) rotate(-135deg);
     }
   }
-}
 
+  .menu-opened__layer {
+    display: block;
+  }
+}
 
 @media (min-width: 576px) {
   .nav-bar-stick {
@@ -191,6 +210,10 @@
     padding-top: 42px;
   }
   .menu-link {
+    font-size: 14px;
+    color: $blueColor;
+    font-weight: 500;
+    position: relative;
     transition: color .3s ease-out;
 
     &::after {
@@ -302,26 +325,34 @@
     display: none;
   }
   .menu {
-    height: 100%;
-    width: 84%;
-    padding: 15px;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    position: fixed;
-    background-color: #fff;
-    border-right: 1px solid #eee;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    display: none;
   }
   .menu-item {
-    padding-left: 15px;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #aaa;
+
+    &:last-child {
+      border-bottom: 1px solid #aaa;
+    }
   }
   .menu-link {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     display: block;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+
+    &::after {
+      border-right: 1px solid #ff6000;
+      border-bottom: 1px solid #ff6000;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 19px;
+      right: 10px;
+      transform: rotate(-45deg);
+      content: '';
+    }
   }
   .phone-call-box__icon {
     fill: #fff;

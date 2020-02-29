@@ -1,8 +1,6 @@
 .footer {
   padding-top: 26px;
-  padding-bottom: 33px;
   color: #fff;
-  background-color: #2b2e37;
 }
 
 .footer-column {
@@ -74,6 +72,8 @@
 @media (min-width: 768px) {
   .footer {
     padding-top: 37px;
+    padding-bottom: 33px;
+    background-color: #2b2e37;
   }
   .footer-inner {
     display: flex;
@@ -101,6 +101,10 @@
 }
 
 @media (max-width: 767px) {
+  .footer {
+    padding-bottom: 60px;
+    background-color: #1e2f50;
+  }
   .footer-column {
     padding-left: 27px;
     margin-bottom: 34px;

@@ -161,11 +161,12 @@
 
 @media (max-width: 575px) {
   .gift {
-    background: rgb(217, 206, 192);
-    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
+    background: url(../img/bg/gift-m.jpg) no-repeat top center rgb(217, 206, 192);
+    /*
+        background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
+        background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
+        background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);*/
   }
   .gift-info {
     flex-direction: column;
@@ -176,6 +177,7 @@
       margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
+      background-image: url(../img/mob/chehli-m.png);
     }
   }
   .gift-product {
@@ -212,5 +214,8 @@
       margin-left: -17px;
       position: absolute;
     }
+  }
+  .gift-text {
+    font-weight: 600;
   }
 }

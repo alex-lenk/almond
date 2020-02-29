@@ -10,12 +10,15 @@ $(document).ready(function () {
 
 
     /* BEGIN Script scroll to top  */
-    var scrollToTop = $('.scroll-to-top');
+    var scrollToTop = $('.scroll-to-top'),
+        headerCallPanel = $('.header-call__panel');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 250) {
             scrollToTop.fadeIn();
+            headerCallPanel.fadeIn();
         } else {
             scrollToTop.fadeOut();
+            headerCallPanel.fadeOut();
         }
     });
 
