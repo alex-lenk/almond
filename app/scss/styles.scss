@@ -7,6 +7,7 @@
 @import "components/scrollToTop";
 @import "components/call-form";
 @import "components/nav-bar";
+@import "components/menu-mob";
 @import "components/header";
 @import "components/presentation";
 @import "components/advantages";
@@ -27,72 +28,6 @@
 @import "components/pre-footer";
 @import "components/footer";
 @import "components/modal-view";
-
-.menu-mob-list {
-  padding-left: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  list-style: none;
-}
-
-.menu-mob {
-  height: 100%;
-  width: 84%;
-  padding: 0 10px 0 20px;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  position: fixed;
-  background-color: #fff;
-  border-right: 1px solid #eee;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-
-  .footer-social {
-    margin-bottom: 70px;
-
-    .footer-link {
-      margin-right: 21px;
-    }
-  }
-}
-
-.menu-mob__item {
-  border-top: 1px solid #aaa;
-
-  &:last-child {
-    border-bottom: 1px solid #aaa;
-  }
-}
-
-.menu-mob__link {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: block;
-  font-size: 20px;
-  color: #000;
-  position: relative;
-
-  &::after {
-    border-right: 1px solid #ff6000;
-    border-bottom: 1px solid #ff6000;
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 19px;
-    right: 10px;
-    transform: rotate(-45deg);
-    content: '';
-  }
-}
-
-@media (max-width: 359px) {
-  .menu-mob .footer-social .footer-link {
-    margin-right: 5%;
-  }
-}
 
 @media (max-width: 575px) {
   .hide-xs {

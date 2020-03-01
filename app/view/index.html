@@ -14,7 +14,7 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item"><a href="#advantages" class="menu-link active">Характеристики</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Обзор</a></li>
+                    <li class="menu-item"><a href="#attention" class="menu-link">Обзор</a></li>
                     <li class="menu-item"><a href="#review" class="menu-link">Отзывы</a></li>
                     <li class="menu-item"><a href="#delivery" class="menu-link">Доставка</a></li>
                 </ul>
@@ -25,7 +25,7 @@
                     <svg class="phone-call-box__icon">
                         <use xlink:href="img/icons.svg#phone"></use>
                     </svg>
-                    +7 (495) 123-00-99
+                    +7 (495) 123-00-98
                 </a>
                 <div class="phone-call-text">Звонок по России бесплатный</div>
             </div>
@@ -33,6 +33,7 @@
         </div>
     </div>
 </div>
+
 
 <header class="header">
     <div class="header__inner container">
@@ -54,12 +55,11 @@
 
 <nav class="header-call__panel">
     <ul class="header-call">
-        <li class="sprite-airpods header-call__item col-4">Заказать</li>
+        <li class="sprite-airpods header-call__item col-4" data-fancybox="" data-src="#modal-03" data-modal="true">Заказать</li>
         <li class="header-call__item col-4"><a href="#" class="sprite-vk" rel="nofollow"><span>VKontakte</span></a></li>
         <li class="header-call__item col-4"><a href="#" class="sprite-what" rel="nofollow">WatsApp</a></li>
     </ul>
 </nav>
-
 
 <section class="presentation container">
     <div class="presentation-text">Наушники AirPods 2 — удивительное&nbsp;сочетание</div>
@@ -201,7 +201,7 @@
     </div>
 </section>
 
-<section class="complete container">
+<section class="complete container" id="complete">
     <h2 class="complete-title">Комплект поставки</h2>
     <ul class="complete-list list-unstyled">
         <li class="complete-item">
@@ -233,7 +233,6 @@
         Наушники точно Вам понравятся и станут отличным дополнением к вашему стилю!
     </div>
 </section>
-
 
 <div class="appeal">
     <div class="container">
@@ -472,6 +471,7 @@
             <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
                 <img src="img/example/what-021.jpg" alt="">
             </div>
+
             <div id="allinone_carousel_what">
                 <ul class="allinone_carousel_list">
                     <li data-video="false" data-link=""><img src="img/example/what-001.png" alt="" data-fancybox="review" data-loop="true" data-src="img/example/what-011.png"></li>
@@ -584,7 +584,7 @@
     </div>
 </section>
 
-<section class="synchronization">
+<section class="synchronization" id="synchronization">
     <div class="synchronization-inner container">
         <h2 class="synchronization-title">Синхронизация</h2>
 
@@ -608,7 +608,7 @@
     </div>
 </section>
 
-<section class="attention">
+<section class="attention" id="attention">
     <div class="container">
         <h2 class="attention-title">Опыт после 6 месяцев эксплуатации</h2>
 
@@ -910,11 +910,15 @@
 
 <div id="modal-01" class="modal-view">
     <div class="modal-view-inner">
-        <div class="modal-view__info">
+        <div class="modal-view__info hide-xs">
             <img src="img/mob/img-03.png" alt="">
 
-            <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
-            <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span></div>
+            <div class="modal-view__price-old">
+                Обычная цена: <del>14 990 руб.</del>
+            </div>
+            <div class="modal-view__price">
+                Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span>
+            </div>
         </div>
         <div class="modal-view__order">
             <div class="modal-view-title">Заказать</div>
@@ -922,6 +926,14 @@
             <div class="modal-view-text">
                 Уточните Ваше имя и телефон и мы<br>
                 перезвоним  Вам в течении 10 минут
+            </div>
+            <div class="show-xs">
+                <div class="modal-view__price-old">
+                    Обычная цена: <del>14 990 руб.</del>
+                </div>
+                <div class="modal-view__price">
+                    Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span>
+                </div>
             </div>
             <form action="/" class="modal-view-form">
                 <div class="modal-view-form__group">
@@ -953,6 +965,8 @@
             <use xlink:href="img/icons.svg#close"></use>
         </svg>
     </div>
+
+
     <div class="modal-view-final">
         <svg class="modal-view-final__icon">
             <use xlink:href="img/icons.svg#check"></use>
@@ -965,11 +979,13 @@
             Менеджер свяжется с Вами в течении 10 минут
         </div>
     </div>
+
+
 </div>
 
 <div id="modal-02" class="modal-view">
     <div class="modal-view-inner">
-        <div class="modal-view__info">
+        <div class="modal-view__info hide-xs">
             <img src="img/mob/img-03.png" alt="">
 
             <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
@@ -984,6 +1000,15 @@
             <div class="modal-view-data">
                 напишите своё имя<br>
                 и номер телефона
+            </div>
+
+            <div class="show-xs">
+                <div class="modal-view__price-old">
+                    Обычная цена: <del>14 990 руб.</del>
+                </div>
+                <div class="modal-view__price">
+                    Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span>
+                </div>
             </div>
 
             <form action="/" class="modal-view-form">
@@ -1020,7 +1045,7 @@
 
 <div id="modal-03" class="modal-view">
     <div class="modal-view-inner">
-        <div class="modal-view__info">
+        <div class="modal-view__info hide-xs">
             <br>
             <br>
             <img src="img/product/airpods-06.png" alt="">
@@ -1039,6 +1064,15 @@
             <div class="modal-view-data">
                 напишите своё имя<br>
                 и номер телефона
+            </div>
+
+            <div class="show-xs">
+                <div class="modal-view__price-old">
+                    Обычная цена: <del>14 990 руб.</del>
+                </div>
+                <div class="modal-view__price">
+                    Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span>
+                </div>
             </div>
 
             <form action="/" class="modal-view-form">
@@ -1076,11 +1110,11 @@
 <nav class="menu-mob">
     <ul class="menu-mob-list">
         <li class="menu-mob__item"><a href="#advantages" class="menu-mob__link">Характеристики</a></li>
-        <li class="menu-mob__item"><a href="#" class="menu-mob__link">Видеообзор</a></li>
+        <li class="menu-mob__item"><a href="#attention" class="menu-mob__link">Видеообзор</a></li>
         <li class="menu-mob__item"><a href="#review" class="menu-mob__link">Отзывы</a></li>
-        <li class="menu-mob__item"><a href="#" class="menu-mob__link">Комлект поставки</a></li>
-        <li class="menu-mob__item"><a href="#" class="menu-mob__link">Синхронизация</a></li>
-        <li class="menu-mob__item"><a href="#" class="menu-mob__link">Обзор</a></li>
+        <li class="menu-mob__item"><a href="#complete" class="menu-mob__link">Комлект поставки</a></li>
+        <li class="menu-mob__item"><a href="#synchronization" class="menu-mob__link">Синхронизация</a></li>
+        <li class="menu-mob__item"><a href="#advantages" class="menu-mob__link">Обзор</a></li>
         <li class="menu-mob__item"><a href="#delivery" class="menu-mob__link">Доставка и оплата</a></li>
     </ul>
 

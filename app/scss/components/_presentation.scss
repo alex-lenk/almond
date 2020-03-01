@@ -34,7 +34,6 @@
 
 .presentation-text {
   width: 100%;
-  //font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
@@ -157,6 +156,32 @@
   }
 }
 
+@media (max-width: 359px) {
+  .presentation {
+    &::before {
+      margin-left: auto;
+    }
+
+    &::after {
+      margin-right: auto;
+    }
+  }
+  .presentation-list {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .presentation {
+    &::before {
+      margin-left: auto;
+    }
+
+    &::after {
+      margin-right: auto;
+    }
+  }
+}
 
 @media (min-width: 576px) and (max-width: 991px) {
   .presentation-list {

@@ -64,3 +64,10 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .questions-go {
+    font-size: 13px;
+    cursor: pointer;
+  }
+}

@@ -29,11 +29,11 @@
   white-space: nowrap;
   border-width: 0;
   box-shadow: 2px 2px 0 #c75021;
-  background: rgb(254, 189, 17);
-  background: -moz-linear-gradient(top, rgba(254, 189, 17, 1) 0%, rgba(243, 116, 41, 1) 100%);
-  background: -webkit-linear-gradient(top, rgba(254, 189, 17, 1) 0%, rgba(243, 116, 41, 1) 100%);
-  background: linear-gradient(to bottom, rgba(254, 189, 17, 1) 0%, rgba(243, 116, 41, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febd11', endColorstr='#f37429', GradientType=0);
+  background: rgb(255,90,0);
+  background: -moz-linear-gradient(top,  rgba(255,90,0,1) 50%, rgba(253,191,15,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,90,0,1) 50%,rgba(253,191,15,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,90,0,1) 50%,rgba(253,191,15,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#fdbf0f',GradientType=0 );
 
 /*  &:hover {
     box-shadow: 0 1px #dbb536;

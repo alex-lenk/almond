@@ -81,16 +81,18 @@ $(document).ready(function () {
             });
         }, 1000);
     } else {
-        $('.video-reviews-item').slice(4).wrapAll('<div class="video-reviews__more-video hide-xs">');
-        $('.reviews-what__item').slice(10).wrapAll('<div class="reviews-what-list hide-xs">');
 
         $('#video-reviews').click(function () {
-            $('.video-reviews__more-video').fadeToggle();
+            $('.video-reviews').css('height', 'auto');
             $(this).fadeOut();
         });
         $('#reviews-what').click(function () {
-            $('.reviews-what-list').toggleClass('reviews-what-list__open');
+            $('.reviews-what').css('height', 'auto');
             $(this).fadeOut();
         });
     }
+
+    $('[data-fancybox=""]').fancybox({
+        autoFocus: false
+    });
 });

@@ -317,8 +317,21 @@
 }
 
 @media (max-width: 359px) {
+  .header__inner::before {
+    width: 65%;
+    margin-left: 0;
+  }
+  .header__inner::after {
+    width: 30%;
+  }
   .header-call {
     font-size: 11px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .header {
+    height: calc(100vh - 192px);
   }
 }
 

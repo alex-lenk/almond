@@ -100,3 +100,10 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .delivery-section__title,
+  .delivery-section__text {
+    font-size: 13px;
+  }
+}

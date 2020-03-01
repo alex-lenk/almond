@@ -162,11 +162,6 @@
 @media (max-width: 575px) {
   .gift {
     background: url(../img/bg/gift-m.jpg) no-repeat top center rgb(217, 206, 192);
-    /*
-        background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-        background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-        background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 99%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);*/
   }
   .gift-info {
     flex-direction: column;
@@ -217,5 +212,11 @@
   }
   .gift-text {
     font-weight: 600;
+  }
+}
+
+@media (max-width: 359px) {
+  .gift-choose {
+    width: 62%;
   }
 }

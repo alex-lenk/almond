@@ -214,3 +214,9 @@
     line-height: 1.3;
   }
 }
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .synchronization-order {
+    justify-content: center;
+  }
+}

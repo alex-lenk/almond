@@ -85,3 +85,9 @@
     margin-right: 10px;
   }
 }
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .small-advantage-list {
+    font-size: 12px;
+  }
+}

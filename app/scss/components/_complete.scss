@@ -83,6 +83,12 @@
   }
 }
 
+@media (max-width: 359px) {
+  .complete-text {
+    font-size: 13px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
   .complete-item {
     padding: 15px
