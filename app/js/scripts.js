@@ -6,6 +6,9 @@ $(document).ready(function () {
     $(menuToggle).click(function () {
         $('html').toggleClass('menu-opened');
     });
+    $('.menu-mob__link').click(function () {
+        $('html').toggleClass('menu-opened');
+    });
     /* END Actions on opening menus on mobile devices  */
 
 
@@ -94,5 +97,21 @@ $(document).ready(function () {
 
     $('[data-fancybox=""]').fancybox({
         autoFocus: false
+    });
+
+
+    $("#form-callback").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "./php/sendmail.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $('.js-step-2').show();
+            $("#form-callback").trigger("reset");
+            setTimeout(function() {
+                $('.js-step-2').hide();
+            }, 5000);
+        });
+        return false;
     });
 });

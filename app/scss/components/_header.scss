@@ -81,89 +81,61 @@
   color: $orangeColor;
 }
 
-.header-call {
-  margin: 0;
-  padding: 13px 15px 13px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #fff;
-  background-color: $orangeColor;
-  list-style: none;
-  display: flex;
-  align-items: center;
-
-  &::before {
-    margin-right: 5px;
-    @include stitches-sprite(-122px, -309px, 25px, 29px);
-  }
-
-  [class*="sprite-"] {
-    display: flex;
-    align-items: center;
-
-    &::before {
-      margin-right: 6px;
-      background-image: url(../img/spritesheet-2.png);
-      flex: none;
-    }
-  }
-}
-
-.header-call__item {
-  padding-left: 0;
-  position: relative;
-  white-space: nowrap;
-
-  &:not(:last-child):not(:first-child) {
-    &::before,
-    &::after {
-      width: 1px;
-      height: 24px;
-      background-color: #fff;
-      position: absolute;
-      top: 1px;
-      content: '';
-    }
-
-    &::before {
-      left: -10px;
-    }
-
-    &::after {
-      right: -7px;
-    }
-  }
-
-  &:last-child {
-    padding-left: 18px;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  &.sprite-airpods {
-    &::before {
-      @include stitches-sprite(-5px, -216px, 25px, 25px);
-    }
-  }
-
-  .sprite-vk::before {
-    @include stitches-sprite(-5px, -308px, 25px, 24px);
-  }
-
-  .sprite-what::before {
-    @include stitches-sprite(-87px, -308px, 25px, 24px);
-  }
-}
-
 .header-call__panel {
-  display: none;
   width: 100%;
+  padding: 0 15px 14px;
+  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 30;
+}
+
+.header-call {
+  margin: 0 -3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-call__item {
+  max-width: 50%;
+  flex-basis: 50%;
+  height: 38px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 4px;
+  padding-left: 0;
+  color: inherit;
+  position: relative;
+  background-color: $orangeColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    width: 28px;
+    height: 29px;
+    margin-right: 6px;
+    display: block;
+    flex: none;
+    content: '';
+  }
+}
+
+.header-call__airpods {
+  &::before {
+    background: url(../img/icons-mob/airpods.png) no-repeat center;
+  }
+}
+
+.header-call__what {
+  &::before {
+    background: url(../img/icons-mob/what-light.png) no-repeat center;
+  }
 }
 
 @media (min-width: 576px) {
@@ -331,7 +303,15 @@
 
 @media (min-width: 375px) and (max-width: 450px) {
   .header {
-    height: calc(100vh - 192px);
+    //height: calc(100vh - 205px);
+  }
+  .header__inner::before {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__inner::after {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

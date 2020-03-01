@@ -137,16 +137,7 @@
   line-height: 1.4;
 }
 
-.modal-view-final__title-lg {
-  font-size: 45px;
-}
-
-.modal-view-final__title-md {
-  font-size: 36px;
-}
-
 .modal-view-final__text {
-  font-size: 20px;
   font-weight: 500;
 }
 
@@ -241,11 +232,20 @@
   .modal-view-form__button {
     height: 69px;
   }
+  .modal-view-final__title-lg {
+    font-size: 45px;
+  }
+  .modal-view-final__title-md {
+    font-size: 36px;
+  }
+  .modal-view-final__text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 575px) {
   .fancybox-slide--html {
-    padding: 15px;
+    padding: 5px 15px 15px;
   }
   .modal-view {
     padding: 10% 15px;
@@ -330,6 +330,17 @@
   .modal-view-data {
     margin-bottom: 20px;
     font-size: 16px;
+  }
+  .modal-view-final__title-lg {
+    font-size: 30px;
+  }
+
+  .modal-view-final__title-md {
+    font-size: 20px;
+  }
+
+  .modal-view-final__text {
+    font-size: 14px;
   }
 }
 

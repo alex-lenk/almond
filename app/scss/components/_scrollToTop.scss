@@ -2,14 +2,18 @@
   width: 31px;
   height: 31px;
   right: 7px;
-  bottom: 53px;
+  bottom: 65px;
   display: none;
   line-height: 31px;
   text-align: center;
   border-radius: 5px;
   z-index: 5;
   position: fixed;
-  background: linear-gradient(180deg, #f47529 0%, #febc12 100%);
+  background: rgb(253,191,15);
+  background: -moz-linear-gradient(top,  rgba(253,191,15,1) 0%, rgba(255,96,0,1) 40%);
+  background: -webkit-linear-gradient(top,  rgba(253,191,15,1) 0%,rgba(255,96,0,1) 40%);
+  background: linear-gradient(to bottom,  rgba(253,191,15,1) 0%,rgba(255,96,0,1) 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdbf0f', endColorstr='#ff6000',GradientType=0 );
 }
 
 .scroll-to-top__icon {

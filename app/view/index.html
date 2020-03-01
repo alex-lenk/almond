@@ -53,14 +53,6 @@
     </div>
 </header>
 
-<nav class="header-call__panel">
-    <ul class="header-call">
-        <li class="sprite-airpods header-call__item col-4" data-fancybox="" data-src="#modal-03" data-modal="true">Заказать</li>
-        <li class="header-call__item col-4"><a href="#" class="sprite-vk" rel="nofollow"><span>VKontakte</span></a></li>
-        <li class="header-call__item col-4"><a href="#" class="sprite-what" rel="nofollow">WatsApp</a></li>
-    </ul>
-</nav>
-
 <section class="presentation container">
     <div class="presentation-text">Наушники AirPods 2 — удивительное&nbsp;сочетание</div>
     <h2 class="presentation-title">минимализма и&nbsp;высоких&nbsp;технологий</h2>
@@ -728,7 +720,6 @@
             Все заказы отправляются посылками с&nbsp;объявленной ценностью.<br>
             Товар упаковывается в&nbsp;воздушно-пузырьковую пленку и&nbsp;отправляется в&nbsp;прочных картонных коробках.<br>
             Мы&nbsp;отправим ваш заказ уже сегодня!
-
         </p>
         <div class="delivery-box">
             <div class="delivery-box__media"><img src="img/box-01.jpg" alt=""></div>
@@ -1025,7 +1016,7 @@
                     <input type="tel" class="modal-view-form__field form-control hide-placeholder" id="form-tel-2" placeholder="Контактный телефон*" inputmode="text">
                 </div>
 
-                <button type="submit" class="modal-view-form__button btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+                <button type="submit" class="modal-view-form__button btn btn-primary">ЗАКАЗАТЬ СО СКИДКОЙ</button>
 
                 <div class="modal-view-form__lock sprite-lock">
                     Ваши данные под защитой
@@ -1041,7 +1032,7 @@
 </div>
 
 <div id="modal-03" class="modal-view">
-    <div class="modal-view-inner">
+    <div class="modal-view-inner js-step-1">
         <div class="modal-view__info hide-xs">
             <br>
             <br>
@@ -1072,13 +1063,14 @@
                 </div>
             </div>
 
-            <form action="/" class="modal-view-form">
+            <form class="modal-view-form" id="form-callback">
+                <input id="formname" type="hidden" name="formname" value="Заказать обратный звонок">
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-3">Ваше имя</label>
                     <svg class="modal-view-form__icon">
                         <use xlink:href="img/icons.svg#user"></use>
                     </svg>
-                    <input type="text" class="modal-view-form__field form-control hide-placeholder" id="form-name-3" placeholder="Ваше имя">
+                    <input type="text" name="name" class="modal-view-form__field form-control hide-placeholder" id="form-name-3" placeholder="Ваше имя">
                 </div>
 
                 <div class="modal-view-form__group">
@@ -1086,10 +1078,10 @@
                     <svg class="modal-view-form__icon">
                         <use xlink:href="img/icons.svg#phone-2"></use>
                     </svg>
-                    <input type="tel" class="modal-view-form__field form-control hide-placeholder" id="form-tel-3" placeholder="Контактный телефон*" inputmode="text">
+                    <input type="tel" name="phone" class="modal-view-form__field form-control hide-placeholder" id="form-tel-3" placeholder="Контактный телефон*" inputmode="text">
                 </div>
 
-                <button type="submit" class="modal-view-form__button btn btn-primary">ПЕРЕЗВОНИТЕ МНЕ</button>
+                <button type="submit" class="modal-view-form__button btn btn-primary">ЗАКАЗАТЬ СО СКИДКОЙ</button>
 
                 <div class="modal-view-form__lock sprite-lock">
                     Ваши данные под защитой
@@ -1097,6 +1089,20 @@
             </form>
         </div>
     </div>
+
+    <div class="modal-view-final js-step-2">
+        <svg class="modal-view-final__icon">
+            <use xlink:href="img/icons.svg#check"></use>
+        </svg>
+        <div class="modal-view-final__title">
+            <div class="modal-view-final__title-lg">Спасибо,</div>
+            <div class="modal-view-final__title-md">ваша заявка принята!</div>
+        </div>
+        <div class="modal-view-final__text">
+            Менеджер свяжется с&nbsp;Вами <br class="show-xs"> в&nbsp;течении 10&nbsp;минут
+        </div>
+    </div>
+
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
             <use xlink:href="img/icons.svg#close"></use>
@@ -1123,6 +1129,15 @@
     </div>
 </nav>
 
+
 <div class="menu-opened__layer"></div>
+
+
+<nav class="header-call__panel">
+    <div class="header-call">
+        <div class="header-call__airpods header-call__item" data-fancybox="" data-src="#modal-03" data-modal="true">Заказать</div>
+        <a href="#" class="header-call__what header-call__item" rel="nofollow">Написать</a>
+    </div>
+</nav>
 
 @@include('./includes/footer.html')
