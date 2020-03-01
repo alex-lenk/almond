@@ -107,6 +107,7 @@
   }
   .footer-column {
     padding-left: 27px;
+    padding-right: 27px;
     margin-bottom: 34px;
   }
   .sprite-phone-3 {
@@ -122,10 +123,14 @@
   .footer-social {
     padding-top: 10px;
     display: flex;
+    justify-content: space-between;
 
     .footer-link {
-      margin-right: 27px;
       margin-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 27px;
+      }
 
       &::before {
         margin-right: 0;
@@ -134,5 +139,10 @@
   }
   .footer-btn {
     padding-left: 27px;
+    padding-right: 30px;
+
+    .btn-primary {
+      width: 99%;
+    }
   }
 }

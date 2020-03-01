@@ -132,12 +132,18 @@
   .call-form {
     padding: 23px 32px 30px;
 
-    .main-btn {
+    .btn-primary {
       width: 99%;
-      height: 55px;
-      font-size: 18px;
-      background-size: cover;
     }
+  }
+  .call-form__terms::before {
+    margin-top: -4px
+  }
+}
+
+@media (max-width: 374px) {
+  .call-form .btn-primary {
+    font-size: 14px;
   }
 }
 
@@ -147,9 +153,5 @@
   }
   .call-form__price-cost {
     font-size: 22px;
-  }
-  .call-form .main-btn {
-    height: 50px;
-    font-size: 14px;
   }
 }

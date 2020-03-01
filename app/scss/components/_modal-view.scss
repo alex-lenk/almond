@@ -22,7 +22,6 @@
 }
 
 .modal-view__price-cost {
-  font-size: 30px;
   color: #ff6000;
 }
 
@@ -52,7 +51,6 @@
   width: 25px;
   height: 25px;
   fill: #a8a8a8;
-  top: 24px;
   left: 19px;
   position: absolute;
 }
@@ -60,13 +58,12 @@
 .modal-view-form__field {
   height: 71px;
   padding-left: 47px;
-  border: 2px solid #ff5f00;
+  border: 1px solid #ff5f00;
   box-shadow: none;
   border-radius: 35px;
 }
 
 .modal-view-form__button {
-  height: 69px;
   margin-top: 17px;
   margin-bottom: 23px;
   background: rgb(253, 191, 15);
@@ -82,6 +79,7 @@
   font-weight: 300;
 
   &::before {
+    margin-top: -4px;
     margin-right: 5px;
     display: inline-block;
     vertical-align: middle;
@@ -96,7 +94,6 @@
 
 .modal-view-string-text {
   position: relative;
-  left: -15px;
 }
 
 .modal-view-data {
@@ -200,6 +197,9 @@
     font-size: 27px;
     margin-bottom: 16px;
   }
+  .modal-view-string-text {
+    left: -15px;
+  }
   .modal-view-text {
     font-size: 18px;
   }
@@ -216,6 +216,13 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .modal-view-form__field {
+    height: 71px;
+    border-width: 2px;
+  }
+  .modal-view-form__icon {
+    top: 24px;
+  }
   .modal-view-close {
     top: -57px;
     right: -57px;
@@ -231,46 +238,59 @@
   .modal-view-data {
     font-size: 22px;
   }
+  .modal-view-form__button {
+    height: 69px;
+  }
 }
 
 @media (max-width: 575px) {
   .fancybox-slide--html {
-    padding: 0;
+    padding: 15px;
   }
   .modal-view {
-    height: 100%;
     padding: 10% 15px;
-    background: rgb(217, 206, 192);
-    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 100%);
-    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(242, 241, 238, 1) 50%, rgba(217, 206, 192, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
+    color: #fff;
+    background: rgb(32, 52, 87);
+    background: -moz-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: linear-gradient(to right, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203457', endColorstr='#203457', GradientType=1);
   }
   .modal-view__order {
     height: inherit;
     justify-content: center;
   }
   .modal-view-title {
-    font-size: 30px;
+    font-size: 26px;
+    color: #fff;
   }
   .modal-view-pre-title {
     margin-bottom: 21px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .modal-view-text {
     margin-bottom: 23px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .modal-view__price-old {
-    font-size: 12px;
+    font-size: 13px;
   }
   .modal-view__price {
     line-height: 1.1;
     margin-bottom: 22px;
+    font-size: 14px;
+  }
+  .modal-view__price-cost {
+    font-size: 26px;
+  }
+  .modal-view-form__field {
+    height: 53px;
+  }
+  .modal-view-form__icon {
+    top: 13px;
   }
   .modal-view-form__button {
     width: 100%;
-    height: 59px;
   }
   .modal-view-close {
     width: 65px;
@@ -294,7 +314,6 @@
 
     &::before {
       transform: rotate(-45deg);
-      box-shadow: 0 9px #ff6000, 0 -9px #ff6000;
       box-shadow: none;
     }
 
@@ -306,10 +325,16 @@
     display: none;
   }
   .modal-view-string {
-    font-size: 18px;
+    font-size: 16px;
   }
   .modal-view-data {
     margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 374px) {
+  .modal-view-string {
     font-size: 16px;
   }
 }
