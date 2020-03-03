@@ -29,6 +29,19 @@
 @import "components/menu-mob";
 @import "components/modal-view";
 
+.social {
+  position: fixed;
+  bottom: 85px;
+  right: 15px;
+  z-index: 30;
+  display: none;
+}
+
+.social-point {
+  margin-bottom: 15px;
+  display: block;
+}
+
 @media (max-width: 575px) {
   .hide-xs {
     display: none;

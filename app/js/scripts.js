@@ -14,14 +14,17 @@ $(document).ready(function () {
 
     /* BEGIN Script scroll to top  */
     var scrollToTop = $('.scroll-to-top'),
-        headerCallPanel = $('.header-call__panel');
+        headerCallPanel = $('.header-call__panel'),
+        social = $('.social');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 250) {
             scrollToTop.fadeIn();
             headerCallPanel.fadeIn();
+            social.fadeIn();
         } else {
             scrollToTop.fadeOut();
             headerCallPanel.fadeOut();
+            social.fadeOut();
         }
     });
 
@@ -43,48 +46,7 @@ $(document).ready(function () {
     $('input[type=tel]').inputmask({"mask": "+7 (999) 999-99-99"});
 
 
-    if ($(window).width() > 575) {
-        setTimeout(function () {
-            $('#allinone_carousel_what').allinone_carousel({
-                skin: "sweet",
-                width: 1127,
-                height: 650,
-                width100Proc: false,
-                height100Proc: false,
-                autoPlay: 0,
-                numberOfVisibleItems: 7,
-                elementsHorizontalSpacing: 110,
-                elementsVerticalSpacing: 20,
-                verticalAdjustment: 50,
-                animationTime: 0.2,
-                easing: "easeOutQuad",
-                resizeImages: true,
-                target: "_blank",
-                showElementTitle: false,
-                showAllControllers: true,
-                showNavArrows: true,
-                showOnInitNavArrows: true,
-                autoHideNavArrows: false,
-                showBottomNav: true,
-                showOnInitBottomNav: true,
-                autoHideBottomNav: false,
-                showPreviewThumbs: false,
-                nextPrevMarginTop: 23,
-                playMovieMarginTop: 0,
-                bottomNavMarginBottom: 0,
-                enableTouchScreen: false,
-                absUrl: "",
-                showCircleTimer: false,
-                showCircleTimerIE8IE7: false,
-                responsive: true,
-                responsiveRelativeToBrowser: false,
-                circleLeftPositionCorrection: 20,
-                circleTopPositionCorrection: 20,
-                activeItemClass: ""
-            });
-        }, 1000);
-    } else {
-
+    if ($(window).width() < 575) {
         $('#video-reviews').click(function () {
             $('.video-reviews').css('height', 'auto');
             $(this).fadeOut();
@@ -100,15 +62,15 @@ $(document).ready(function () {
     });
 
 
-    $("#form-callback").submit(function() {
+    $("#form-callback").submit(function () {
         $.ajax({
             type: "POST",
             url: "./php/sendmail.php",
             data: $(this).serialize()
-        }).done(function() {
+        }).done(function () {
             $('.js-step-2').show();
             $("#form-callback").trigger("reset");
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.js-step-2').hide();
             }, 5000);
         });

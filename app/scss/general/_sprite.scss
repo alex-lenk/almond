@@ -191,7 +191,7 @@
 
 @media (min-width: 992px) {
   [class*="sprite-"]::before {
-    background-image: url(../img/spritesheet.png);
+    background-image: url(../img/spritesheet-3.png);
   }
 
   .sprite-24::before {
@@ -364,5 +364,21 @@
 
   .sprite-what::before {
     @include stitches-sprite(-87px, -308px, 25px, 24px);
+  }
+
+  .sprite-vk-circle::before {
+    @include stitches-sprite(-192px, -307px, 70px, 70px);
+  }
+
+  .sprite-what-circle::before {
+    @include stitches-sprite(-120px, -307px, 68px, 68px);
+  }
+
+  .sprite-tg-circle::before {
+    @include stitches-sprite(-337px, -307px, 69px, 69px);
+  }
+
+  .sprite-insta-circle::before {
+    @include stitches-sprite(-265px, -307px, 70px, 70px);
   }
 }

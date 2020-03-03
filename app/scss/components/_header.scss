@@ -140,15 +140,15 @@
 
 @media (min-width: 576px) {
   .header {
-    color: #333;
-    background: url(../img/bg/main-bg.jpg) no-repeat top center rgb(227, 230, 234);
+    color: #fff;
+    background: url(../img/bg/main-bg-blue.jpg) no-repeat top center rgb(227, 230, 234);
   }
   .header__inner {
     &::after {
       width: 154px;
       height: 298px;
       margin-bottom: 36px;
-      background-image: url(../img/product/airpods.png);
+      background-image: url(../img/product/airpods-2.png);
     }
 
     &::before {
