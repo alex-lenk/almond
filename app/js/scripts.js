@@ -17,7 +17,7 @@ $(document).ready(function () {
         headerCallPanel = $('.header-call__panel'),
         social = $('.social');
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) {
+        if ($(this).scrollTop() > 350) {
             scrollToTop.fadeIn();
             headerCallPanel.fadeIn();
             social.fadeIn();

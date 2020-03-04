@@ -191,7 +191,7 @@
 
 @media (min-width: 992px) {
   [class*="sprite-"]::before {
-    background-image: url(../img/spritesheet-3.png);
+    background-image: url(../img/spritesheet-4.png);
   }
 
   .sprite-24::before {
@@ -371,11 +371,11 @@
   }
 
   .sprite-what-circle::before {
-    @include stitches-sprite(-120px, -307px, 68px, 68px);
+    @include stitches-sprite(-119px, -307px, 69px, 69px);
   }
 
   .sprite-tg-circle::before {
-    @include stitches-sprite(-337px, -307px, 69px, 69px);
+    @include stitches-sprite(-338px, -307px, 70px, 70px);
   }
 
   .sprite-insta-circle::before {
