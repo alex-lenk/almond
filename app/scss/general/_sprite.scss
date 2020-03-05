@@ -367,18 +367,22 @@
   }
 
   .sprite-vk-circle::before {
-    @include stitches-sprite(-192px, -307px, 70px, 70px);
+    background-size: 287px 269px;
+    @include stitches-sprite(-135px, -215px, 48px, 48px);
   }
 
   .sprite-what-circle::before {
-    @include stitches-sprite(-119px, -307px, 69px, 69px);
+    background-size: 287px 269px;
+    @include stitches-sprite(-84px, -214px, 48px, 48px);
   }
 
   .sprite-tg-circle::before {
-    @include stitches-sprite(-338px, -307px, 70px, 70px);
+    background-size: 284px 268px;
+    @include stitches-sprite(-234px, -214px, 49px, 49px);
   }
 
   .sprite-insta-circle::before {
-    @include stitches-sprite(-265px, -307px, 70px, 70px);
+    background-size: 287px 269px;
+    @include stitches-sprite(-186px, -215px, 48px, 48px);
   }
 }

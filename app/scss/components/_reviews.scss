@@ -4,7 +4,7 @@
 }
 
 .reviews-container {
-  max-width: 1157px;
+  max-width: 1085px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -153,13 +153,13 @@
     overflow-x: hidden;
   }
   .video-reviews {
-    margin: 0 -8px 20px;
+    margin: 0 -10px 20px;
   }
   .video-reviews-item {
     width: 50%;
     margin-bottom: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .reviews-text {
     font-size: 24px;
@@ -193,7 +193,7 @@
     margin-top: -50px;
   }
   .reviews-what {
-    margin: 0 -7px 60px;
+    margin: 0 -7px 25px;
     padding-top: 40px;
   }
   .reviews-what__item {
@@ -255,7 +255,7 @@
     left: 25px;
   }
   .reviews-want {
-    display: block;
+    display: flex;
   }
   .reviews-more__video {
     display: none;

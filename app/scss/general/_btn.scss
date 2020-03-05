@@ -54,10 +54,13 @@
 @media (min-width: 576px) {
   .btn-primary {
     width: 333px;
-    height: 70px;
+    height: 69px;
     overflow: hidden;
     font-size: 20px;
-    box-shadow: 2px 2px 0 #c75021;
+    box-shadow: 3px 4px 0 #9f3707;
+    top: 0;
+    right: 0;
+    transition: all .3s;
 
     &::after {
       opacity: 0;
@@ -76,6 +79,11 @@
       &::after {
         opacity: 1
       }
+    }
+    &:active {
+      box-shadow: 0 0 0 transparent;
+      top: 4px;
+      right: -3px;
     }
   }
 }

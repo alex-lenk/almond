@@ -30,7 +30,8 @@
   display: flex;
 
   &::after {
-    background: url(../img/product/img-003.png) no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: contain;
     content: '';
   }
@@ -103,13 +104,15 @@
   .gift {
     padding-top: 33px;
     padding-bottom: 38px;
-    background: rgb(227, 230, 234);
-    background: -moz-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
-    background: linear-gradient(to right, rgba(227, 230, 234, 1) 0%, rgba(241, 242, 244, 1) 50%, rgba(227, 230, 234, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e6ea', endColorstr='#e3e6ea', GradientType=1);
+    background: rgb(217, 206, 192);
+    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
   }
-
+  .gift-info::after {
+    background-image: url(../img/product/img-008.png);
+  }
   .gift-text {
     font-size: 24px;
     line-height: 1;
