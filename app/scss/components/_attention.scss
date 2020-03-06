@@ -15,37 +15,6 @@
 .attention-media {
   width: 100%;
   border: 5px solid #000;
-  position: relative;
-
-  &::after,
-  &::before {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    content: '';
-  }
-
-  &::before {
-    width: 66px;
-    height: 66px;
-    margin-top: -33px;
-    margin-left: -33px;
-    background: #fff;
-    display: block;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #c8c8c8;
-    animation: animatePlay 1.5s linear infinite;
-  }
-
-  &::after {
-    margin-top: -9px;
-    margin-left: -6px;
-    border-top: 10px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 19px solid $orangeColor;
-  }
 }
 
 .attention-box {
@@ -59,11 +28,11 @@
 
 @media (min-width: 576px) {
   .attention {
-    background: rgb(71, 87, 110);
-    background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
-    background: linear-gradient(to right, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#47576e', endColorstr='#47576e', GradientType=1);
+    background: rgb(32,52,87);
+    background: -moz-linear-gradient(left,  rgba(32,52,87,1) 0%, rgba(62,88,130,1) 50%, rgba(32,52,87,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
+    background: linear-gradient(to right,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#203457', endColorstr='#203457',GradientType=1 );
   }
   .attention-title {
     margin-bottom: 24px;

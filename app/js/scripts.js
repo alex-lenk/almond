@@ -1,6 +1,11 @@
 'use strict';
 
 $(document).ready(function () {
+    var windowWidth = $(window).width(),
+        scrollToTop = $('.scroll-to-top'),
+        headerCallPanel = $('.header-call__panel'),
+        social = $('.social');
+
     /* BEGIN Actions on opening menus on mobile devices  */
     var menuToggle = '.menu-toggle';
     $(menuToggle).click(function () {
@@ -13,18 +18,13 @@ $(document).ready(function () {
 
 
     /* BEGIN Script scroll to top  */
-    var scrollToTop = $('.scroll-to-top'),
-        headerCallPanel = $('.header-call__panel'),
-        social = $('.social');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 350) {
             scrollToTop.fadeIn();
             headerCallPanel.fadeIn();
-            social.fadeIn();
         } else {
             scrollToTop.fadeOut();
             headerCallPanel.fadeOut();
-            social.fadeOut();
         }
     });
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
     $('input[type=tel]').inputmask({"mask": "+7 (999) 999-99-99"});
 
 
-    if ($(window).width() < 575) {
+    if (windowWidth < 575) {
         $('#video-reviews').click(function () {
             $('.video-reviews').css('height', 'auto');
             $(this).fadeOut();
@@ -54,6 +54,17 @@ $(document).ready(function () {
         $('#reviews-what').click(function () {
             $('.reviews-what').css('height', 'auto');
             $(this).fadeOut();
+        });
+    } else {
+        $('.nav-bar-stick').css('width', windowWidth);
+        $('.social, .scroll-to-top').css('left', windowWidth);
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 350) {
+                social.fadeIn();
+            } else {
+                social.fadeOut();
+            }
         });
     }
 
