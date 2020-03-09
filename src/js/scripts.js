@@ -25,6 +25,19 @@ var isMobile = {
 
 
 $(document).ready(function () {
+    var windowWidth = $(window).width(),
+        social = $('.social');
+
+    if (windowWidth > 576) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 350) {
+                social.fadeIn();
+            } else {
+                social.fadeOut();
+            }
+        });
+    }
+
     if ($(window).width() > 1099) {
         $('.portfolio-wrapper').each(function () {
             var portfolioHead = $(this).find('.portfolio-head').html();
