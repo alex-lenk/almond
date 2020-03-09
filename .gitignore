@@ -61,3 +61,5 @@ typings/
 .idea
 build
 source
+dist
+apple-source

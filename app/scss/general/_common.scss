@@ -1,0 +1,176 @@
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &[data-path] {
+    opacity: 0;
+  }
+}
+
+.container {
+  max-width: 1047px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.hide-placeholder {
+  @include hidePlaceholder {
+    opacity: 1;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.dash {
+  width: 12px;
+  height: 1px;
+  background-color: #333;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.list-boolean {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.list-boolean-item {
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.2;
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    border-radius: 50%;
+    background: url(../img/icons/bool.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.check-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+
+.check-list__item {
+  padding-left: 31px;
+  position: relative;
+  line-height: 1.2;
+
+  &::before {
+    width: 18px;
+    height: 14px;
+    top: 2px;
+    left: 2px;
+    background: url(../img/icons/check.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-nowrap {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.text-orange {
+  color: $orangeColor;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.video-play {
+  position: relative;
+
+  &::after {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: url(../img/decor/play.png) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+@media (min-width: 576px) {
+  .form-control {
+    height: 50px;
+  }
+
+  .video-play {
+    cursor: pointer;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 45px;
+  }
+}

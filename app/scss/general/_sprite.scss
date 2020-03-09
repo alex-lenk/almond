@@ -1,0 +1,382 @@
+[class*="sprite-"]::before {
+  background-image: url(../img/spritesheet-m.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: '';
+}
+
+@media (max-width: 991px) {
+  .sprite-24::before {
+    @include stitches-sprite(-5px, -5px, 17px, 16px);
+  }
+
+  .sprite-android::before {
+    @include stitches-sprite(-32px, -5px, 16px, 20px);
+  }
+
+  .sprite-animation::before {
+    @include stitches-sprite(-58px, -5px, 20px, 20px);
+  }
+
+  .sprite-apple::before {
+    @include stitches-sprite(-88px, -5px, 16px, 20px);
+  }
+
+  .sprite-attention::before {
+    @include stitches-sprite(-114px, -5px, 36px, 32px);
+  }
+
+  .sprite-battery::before {
+    @include stitches-sprite(-160px, -5px, 20px, 20px);
+  }
+
+  .sprite-boxberry::before {
+    @include stitches-sprite(-5px, -35px, 52px, 14px);
+  }
+
+  .sprite-bullet::before {
+    @include stitches-sprite(-190px, -5px, 16px, 13px);
+  }
+
+  .sprite-cdek::before {
+    @include stitches-sprite(-160px, -35px, 49px, 13px);
+  }
+
+  .sprite-charging::before {
+    @include stitches-sprite(-216px, -5px, 16px, 16px);
+  }
+
+  .sprite-charging-02::before {
+    @include stitches-sprite(-219px, -31px, 17px, 17px);
+  }
+
+  .sprite-clock::before {
+    @include stitches-sprite(-67px, -58px, 33px, 34px);
+  }
+
+  .sprite-clock-sm::before {
+    @include stitches-sprite(-110px, -58px, 13px, 13px);
+  }
+
+  .sprite-courier::before {
+    @include stitches-sprite(-133px, -58px, 32px, 32px);
+  }
+
+  .sprite-detector::before {
+    @include stitches-sprite(-175px, -58px, 21px, 21px);
+  }
+
+  .sprite-dhl::before {
+    @include stitches-sprite(-5px, -89px, 49px, 6px);
+  }
+
+  .sprite-dpd::before {
+    @include stitches-sprite(-175px, -89px, 49px, 22px);
+  }
+
+  .sprite-ems::before {
+    @include stitches-sprite(-5px, -121px, 51px, 22px);
+  }
+
+  .sprite-geo::before {
+    @include stitches-sprite(-206px, -58px, 20px, 20px);
+  }
+
+  .sprite-gift::before {
+    @include stitches-sprite(-66px, -121px, 35px, 40px);
+  }
+
+  .sprite-imei::before {
+    @include stitches-sprite(-111px, -121px, 17px, 17px);
+  }
+
+  .sprite-insta::before {
+    @include stitches-sprite(-138px, -121px, 48px, 49px);
+  }
+
+  .sprite-lock::before {
+    @include stitches-sprite(-110px, -88px, 11px, 16px);
+  }
+
+  .sprite-mail::before {
+    @include stitches-sprite(-196px, -121px, 12px, 13px);
+  }
+
+  .sprite-mail-rf::before {
+    @include stitches-sprite(-5px, -180px, 48px, 24px);
+  }
+
+  .sprite-net::before {
+    @include stitches-sprite(-218px, -121px, 18px, 13px);
+  }
+
+  .sprite-noise::before {
+    @include stitches-sprite(-196px, -144px, 21px, 20px);
+  }
+
+  .sprite-not-pay::before {
+    @include stitches-sprite(-63px, -174px, 32px, 32px);
+  }
+
+  .sprite-note::before {
+    @include stitches-sprite(-105px, -174px, 16px, 17px);
+  }
+
+  .sprite-on::before {
+    @include stitches-sprite(-196px, -174px, 17px, 18px);
+  }
+
+  .sprite-phone-3::before {
+    @include stitches-sprite(-223px, -174px, 13px, 14px);
+  }
+
+  .sprite-pin::before {
+    @include stitches-sprite(-131px, -198px, 13px, 13px);
+  }
+
+  .sprite-point::before {
+    @include stitches-sprite(-105px, -202px, 16px, 19px);
+  }
+
+  .sprite-point-m::before {
+    @include stitches-sprite(-154px, -198px, 25px, 29px);
+  }
+
+  .sprite-qi::before {
+    @include stitches-sprite(-189px, -202px, 20px, 20px);
+  }
+
+  .sprite-quality::before {
+    @include stitches-sprite(-246px, -5px, 34px, 33px);
+  }
+
+  .sprite-question::before {
+    @include stitches-sprite(-236px, -58px, 37px, 32px);
+  }
+
+  .sprite-sensor::before {
+    @include stitches-sprite(-246px, -100px, 20px, 20px);
+  }
+
+  .sprite-sound::before {
+    @include stitches-sprite(-246px, -130px, 19px, 19px);
+  }
+
+  .sprite-synchronization::before {
+    @include stitches-sprite(-246px, -159px, 25px, 23px);
+  }
+
+  .sprite-tg::before {
+    @include stitches-sprite(-223px, -198px, 49px, 49px);
+  }
+
+  .sprite-vk::before {
+    @include stitches-sprite(-290px, -5px, 49px, 49px);
+  }
+
+  .sprite-wallet::before {
+    @include stitches-sprite(-283px, -64px, 32px, 32px);
+  }
+
+  .sprite-what::before {
+    @include stitches-sprite(-281px, -106px, 49px, 49px);
+  }
+}
+
+@media (min-width: 992px) {
+  [class*="sprite-"]::before {
+    background-image: url(../img/spritesheet-4.png);
+  }
+
+  .sprite-24::before {
+    @include stitches-sprite(-5px, -5px, 53px, 52px);
+  }
+
+  .sprite-android::before {
+    @include stitches-sprite(-68px, -5px, 30px, 36px);
+  }
+
+  .sprite-animation::before {
+    @include stitches-sprite(-108px, -5px, 34px, 34px);
+  }
+
+  .sprite-apple::before {
+    @include stitches-sprite(-152px, -5px, 29px, 36px);
+  }
+
+  .sprite-attention::before {
+    @include stitches-sprite(-191px, -5px, 75px, 65px);
+  }
+
+  .sprite-battery::before {
+    @include stitches-sprite(-5px, -80px, 34px, 34px);
+  }
+
+  .sprite-boxberry::before {
+    @include stitches-sprite(-49px, -80px, 60px, 15px);
+  }
+
+  .sprite-bullet::before {
+    @include stitches-sprite(-119px, -80px, 27px, 22px);
+  }
+
+  .sprite-cdek::before {
+    @include stitches-sprite(-156px, -80px, 55px, 16px);
+  }
+
+  .sprite-charging::before {
+    @include stitches-sprite(-221px, -80px, 52px, 52px);
+  }
+
+  .sprite-charging-02::before {
+    @include stitches-sprite(-5px, -142px, 52px, 52px);
+  }
+
+  .sprite-clock::before {
+    @include stitches-sprite(-67px, -142px, 53px, 52px);
+  }
+
+  .sprite-clock-sm::before {
+    @include stitches-sprite(-276px, -5px, 13px, 13px);
+  }
+
+  .sprite-courier::before {
+    @include stitches-sprite(-130px, -142px, 41px, 41px);
+  }
+
+  .sprite-detector::before {
+    @include stitches-sprite(-181px, -142px, 35px, 35px);
+  }
+
+  .sprite-dhl::before {
+    @include stitches-sprite(-226px, -142px, 56px, 8px);
+  }
+
+  .sprite-dpd::before {
+    @include stitches-sprite(-226px, -160px, 55px, 25px);
+  }
+
+  .sprite-ems::before {
+    @include stitches-sprite(-130px, -195px, 59px, 26px);
+  }
+
+  .sprite-geo::before {
+    @include stitches-sprite(-199px, -195px, 34px, 34px);
+  }
+
+  .sprite-gift::before {
+    @include stitches-sprite(-243px, -195px, 47px, 54px);
+  }
+
+  .sprite-imei::before {
+    @include stitches-sprite(-5px, -259px, 34px, 33px);
+  }
+
+  .sprite-insta::before {
+    @include stitches-sprite(-49px, -259px, 25px, 24px);
+  }
+
+  .sprite-lock::before {
+    @include stitches-sprite(-276px, -28px, 10px, 14px);
+  }
+
+  .sprite-mail::before {
+    @include stitches-sprite(-68px, -52px, 12px, 13px);
+  }
+
+  .sprite-mail-rf::before {
+    @include stitches-sprite(-84px, -259px, 56px, 27px);
+  }
+
+  .sprite-net::before {
+    @include stitches-sprite(-150px, -259px, 34px, 25px);
+  }
+
+  .sprite-noise::before {
+    @include stitches-sprite(-194px, -259px, 33px, 33px);
+  }
+
+  .sprite-not-pay::before {
+    @include stitches-sprite(-237px, -259px, 40px, 40px);
+  }
+
+  .sprite-note::before {
+    @include stitches-sprite(-299px, -5px, 25px, 24px);
+  }
+
+  .sprite-on::before {
+    @include stitches-sprite(-296px, -39px, 35px, 37px);
+  }
+
+  .sprite-phone-3::before {
+    @include stitches-sprite(-283px, -86px, 13px, 14px);
+  }
+
+  .sprite-pin::before {
+    @include stitches-sprite(-306px, -86px, 13px, 13px);
+  }
+
+  .sprite-point::before {
+    @include stitches-sprite(-292px, -110px, 29px, 34px);
+  }
+
+  .sprite-qi::before {
+    @include stitches-sprite(-287px, -259px, 35px, 35px);
+  }
+
+  .sprite-quality::before {
+    @include stitches-sprite(-341px, -5px, 37px, 49px);
+  }
+
+  .sprite-question::before {
+    @include stitches-sprite(-300px, -154px, 75px, 65px);
+  }
+
+  .sprite-sensor::before {
+    @include stitches-sprite(-341px, -64px, 35px, 35px);
+  }
+
+  .sprite-sound::before {
+    @include stitches-sprite(-331px, -109px, 35px, 35px);
+  }
+
+  .sprite-synchronization::before {
+    @include stitches-sprite(-332px, -229px, 37px, 35px);
+  }
+
+  .sprite-tg::before {
+    @include stitches-sprite(-332px, -274px, 25px, 24px);
+  }
+
+  .sprite-vk::before {
+    @include stitches-sprite(-5px, -308px, 25px, 24px);
+  }
+
+  .sprite-wallet::before {
+    @include stitches-sprite(-40px, -308px, 37px, 35px);
+  }
+
+  .sprite-what::before {
+    @include stitches-sprite(-87px, -308px, 25px, 24px);
+  }
+
+  .sprite-vk-circle::before {
+    background-size: 282px 265px;
+    @include stitches-sprite(-132px, -211px, 48px, 48px);
+  }
+
+  .sprite-what-circle::before {
+    background-size: 287px 269px;
+    @include stitches-sprite(-84px, -214px, 48px, 48px);
+  }
+
+  .sprite-tg-circle::before {
+    background-size: 284px 268px;
+    @include stitches-sprite(-234px, -214px, 49px, 49px);
+  }
+
+  .sprite-insta-circle::before {
+    background-size: 287px 269px;
+    @include stitches-sprite(-186px, -215px, 48px, 48px);
+  }
+}

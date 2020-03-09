@@ -1,0 +1,83 @@
+.attention {
+  padding: 30px 0 40px;
+  color: #fff;
+}
+
+.attention-title {
+  text-align: center;
+}
+
+.attention-text {
+  font-size: 14px;
+}
+
+.attention-media {
+  width: 100%;
+  border: 5px solid #000;
+}
+
+.attention-box {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 2px solid $orangeColor;
+}
+
+@media (min-width: 576px) {
+  .attention {
+    background: rgb(32,52,87);
+    background: -moz-linear-gradient(left,  rgba(32,52,87,1) 0%, rgba(62,88,130,1) 50%, rgba(32,52,87,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
+    background: linear-gradient(to right,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#203457', endColorstr='#203457',GradientType=1 );
+  }
+  .attention-title {
+    margin-bottom: 24px;
+  }
+  .attention-text {
+    padding: 0 56px;
+    margin-bottom: 40px;
+  }
+  .attention-media {
+    max-width: 682px;
+    height: 385px;
+    margin: 0 auto 50px;
+    border-width: 5px;
+  }
+  .attention-box {
+    max-width: 726px;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .attention {
+    padding-top: 20px;
+    padding-bottom: 31px;
+    color: #fff;
+    background: rgb(35, 56, 92);
+    background: -moz-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: linear-gradient(to right, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23385c', endColorstr='#23385c', GradientType=1);
+  }
+  .attention-title {
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  .attention-text {
+    margin-bottom: 30px;
+  }
+  .attention-media {
+    margin-bottom: 31px;
+  }
+  .attention-box {
+    max-width: 240px;
+    font-size: 12px;
+    padding: 8px;
+    line-height: 1.6;
+  }
+}

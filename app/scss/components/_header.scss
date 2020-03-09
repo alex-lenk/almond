@@ -1,0 +1,351 @@
+.header__inner {
+  height: 100%;
+  display: flex;
+
+  &::before {
+    width: 216px;
+    background: url(../img/decor/gurl-3.png) no-repeat center bottom;
+    background-size: contain;
+    align-self: flex-end;
+    content: '';
+  }
+
+  &::after {
+    width: 106px;
+    height: 177px;
+    margin-bottom: 17px;
+    background: url(../img/product/airpods-mob.png) no-repeat center;
+    background-size: contain;
+    align-self: flex-end;
+    content: '';
+  }
+}
+
+.header-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.header-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header-title__text {
+  margin-bottom: 2px;
+  font-weight: 600;
+  display: block;
+}
+
+.header-pre-title {
+  margin-bottom: 18px;
+}
+
+.header-price__old {
+  margin-bottom: 3px;
+}
+
+.header-price__old-strikeout {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 58%;
+    left: 0;
+    content: '';
+  }
+}
+
+.header-price__new {
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-price__new-discount {
+  margin-bottom: 3px;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.header-price__new-cost {
+  color: $orangeColor;
+}
+
+.header-call__panel {
+  width: 100%;
+  padding: 0 13px 14px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.header-call {
+  margin: 0 -3px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-call__item {
+  max-width: 50%;
+  flex-basis: 50%;
+  height: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 5px;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit;
+  position: relative;
+  background-color: #47576e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    width: 28px;
+    height: 29px;
+    margin-right: 6px;
+    display: block;
+    flex: none;
+    content: '';
+  }
+}
+
+.header-call__airpods {
+  &::before {
+    background: url(../img/icons-mob/order.png) no-repeat center;
+  }
+}
+
+.header-call__what {
+  &::before {
+    background: url(../img/icons-mob/what-m.png) no-repeat center;
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    color: #fff;
+    background: url(../img/bg/main-bg-blue.jpg) no-repeat top center #14274e;
+  }
+  .header__inner {
+    &::after {
+      width: 154px;
+      height: 298px;
+      margin-bottom: 36px;
+      background-image: url(../img/product/airpods-2.png);
+    }
+
+    &::before {
+      width: 317px;
+    }
+  }
+  .header-content {
+    padding-bottom: 50px;
+  }
+  .header-title {
+    margin-bottom: 5px;
+  }
+  .header-title__text {
+    margin-bottom: 6px;
+  }
+  .header-pre-title {
+    margin-bottom: 30px;
+  }
+  .header-price__new {
+    margin-bottom: 37px;
+  }
+  .header-price__new-cost {
+    letter-spacing: -2px;
+  }
+  .header-price__old {
+    margin-bottom: 5px;
+  }
+  .header-price__old-strikeout::after {
+    background-color: #fff;
+  }
+  .header-call {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    order: 1
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 471px;
+  }
+  .header__inner::before {
+    height: 452px;
+    margin-left: 25px;
+    margin-right: 54px;
+  }
+
+  .header-title {
+    font-size: 43px;
+  }
+
+  .header-title__text {
+    font-size: 26px;
+  }
+
+  .header-pre-title {
+    font-size: 24px;
+  }
+
+  .header-price__new-discount {
+    font-size: 20px;
+  }
+
+  .header-price__new-cost {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-title {
+    font-size: 33px;
+  }
+
+  .header-title__text {
+    font-size: 20px;
+  }
+
+  .header-pre-title {
+    font-size: 21px;
+  }
+  .header-price__old {
+    font-size: 14px;
+  }
+  .header-price__new-cost {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__inner {
+    flex-wrap: wrap;
+
+    &::before {
+      height: 260px;
+      order: 1;
+    }
+
+    &::after {
+      height: 174px;
+      margin-left: 6px;
+      order: 2;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    height: 467px;
+    min-height: 467px;
+    padding-top: 15px;
+    color: #fff;
+    background: url(../img/bg/main-bg-mob.jpg) no-repeat top center #2d3d56;
+    background-size: cover;
+
+    .btn-primary {
+      display: none;
+    }
+  }
+  .header__inner::before {
+    width: 197px;
+    margin-left: 8px;
+    background-image: url(../img/mob/gurl.png);
+  }
+  .header-price__new {
+    margin-left: -5px;
+  }
+  .header-call {
+    z-index: 20;
+    position: relative;
+  }
+  .header-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 359px) {
+  .header__inner::before {
+    width: 65%;
+    margin-left: 0;
+  }
+  .header__inner::after {
+    width: 30%;
+  }
+  .header-call {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .header {
+    //height: calc(100vh - 205px);
+  }
+  .header__inner::before {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__inner::after {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .header {
+    padding-top: 30px;
+
+    .btn-primary {
+      width: 282px;
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    height: 400px;
+  }
+  .header__inner {
+    &::before {
+      height: inherit;
+    }
+
+    &::after {
+      margin-left: 20px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header-content {
+    width: 100%;
+  }
+}
