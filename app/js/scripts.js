@@ -22,7 +22,6 @@ $(document).ready(function () {
         headerCallPanel = $('.header-call__panel'),
         social = $('.social');
 
-
     if (windowWidth < 575) {
         $('#video-reviews').click(function () {
             $('.video-reviews').css('height', 'auto');
@@ -32,6 +31,14 @@ $(document).ready(function () {
             $('.reviews-what').css('height', 'auto');
             $(this).fadeOut();
         });
+
+        var reviewsWhat = $('.reviews-what'),
+            heightReviewsWhatItem = $('.reviews-what__item').height(),
+            heightReviewsWhat = reviewsWhat.outerHeight();
+
+        reviewsWhat.height(heightReviewsWhat);
+        console.log(heightReviewsWhat);
+        console.log(heightReviewsWhatItem);
     } else {
         //$('.nav-bar-stick').css('width', windowWidth);
         $('.social, .scroll-to-top').css('left', windowWidth);

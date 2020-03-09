@@ -94,20 +94,18 @@ gulp.task('fonts', function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
-
+/*
 gulp.task('img', gulp.parallel('img'));
 
 gulp.task('favicon', gulp.parallel('favicon'));
 
 gulp.task('fonts', gulp.parallel('fonts'));
+*/
 
 gulp.task('watch', function () {
     gulp.watch('./app/scss/**/*.scss', gulp.parallel('styles'));
     gulp.watch('./app/js/**/*.js', gulp.parallel('scripts'));
     gulp.watch('./app/view/*.html', gulp.parallel('code'));
-    gulp.watch('./app/img/**/*', gulp.parallel('img'));
-    gulp.watch('./app/favicon/**/*', gulp.parallel('favicon'));
-    gulp.watch('./app/fonts/**/*', gulp.parallel('fonts'));
 });
 
-gulp.task('default', gulp.parallel('img', 'favicon', 'fonts', 'styles', 'scripts', 'code', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('styles', 'scripts', 'code', 'browser-sync', 'watch'));

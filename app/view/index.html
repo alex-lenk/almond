@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AirPods Discount</title>
-    <link rel="stylesheet" href="css/lib.min.css?ver=102">
-    <link rel="stylesheet" href="css/styles.min.css?ver=102">
+    <link rel="stylesheet" href="css/lib.min.css?ver=104">
+    <link rel="stylesheet" href="css/styles.min.css?ver=105">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -347,7 +347,7 @@
             от приобретения в нашем магазине
         </p>
 
-        <div class="video-reviews">
+        <div class="video-reviews show-xs">
             <div class="video-reviews-item">
                 <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
                     <video class='video-js embed-responsive-item' controls preload='auto' poster='img/example/video-03.jpg' data-setup='{}'>
@@ -416,11 +416,44 @@
             </div>
         </div>
 
+        <div class="video-reviews hide-xs">
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-03">
+                    <img src="img/example/video-03.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-04">
+                    <img src="img/example/video-04.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-05">
+                    <img src="img/example/video-05.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-06">
+                    <img src="img/example/video-03.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-07">
+                    <img src="img/example/video-04.jpg" alt="">
+                </div>
+            </div>
+            <div class="video-reviews-item">
+                <div class="video-reviews-item__inner video-play" data-fancybox="html5-video" data-src="#video-08">
+                    <img src="img/example/video-06.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
         <div class="reviews-want btn btn-primary" data-fancybox="" data-src="#modal-02" data-modal="true">хочу такие!</div>
 
-        <div class="reviews-more__video btn-primary" id="video-reviews">
+<!--        <div class="reviews-more__video btn-primary" id="video-reviews">
             <span>показать больше</span>
-        </div>
+        </div>-->
 
         <div class="reviews-what">
             <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
@@ -576,7 +609,12 @@
             <span class="text-bold">AirPods&nbsp;2</span>&nbsp;что есть на&nbsp;данный момент.
         </div>
 
-        <div class="attention-media embed-responsive embed-responsive-16by9">
+
+        <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="#video-09">
+            <img src="img/example/video-02.jpg" alt="">
+        </div>
+
+        <div class="attention-media embed-responsive embed-responsive-16by9 show-xs">
             <video class='video-js embed-responsive-item' controls preload='auto' poster='img/example/video-02.jpg' data-setup='{}'>
                 <source src='https://hitbuy.com/upload/video/mixtech-service-2019-home-appliances+tv.mp4' type='video/mp4'>
                 <p class='vjs-no-js'>
@@ -1115,12 +1153,12 @@
 
 <div class="menu-opened__layer"></div>
 
-<nav class="header-call__panel">
+<!--<nav class="header-call__panel">
     <div class="header-call">
         <a data-fancybox="" href="#modal-02" data-modal="true" class="header-call__airpods header-call__item">Заказать</a>
         <a href="https://api.whatsapp.com/send?phone=79031173754" class="header-call__what header-call__item" rel="nofollow" target="_blank">Написать</a>
     </div>
-</nav>
+</nav>-->
 
 <div class="social">
     <a href="https://vk.com/appleairpodsdiscount" class="social-point vk" rel="nofollow" target="_blank"></a>
@@ -1135,7 +1173,65 @@
     </svg>
 </div>
 
-<script src="js/lib.min.js?ver=101"></script>
-<script src="js/scripts.min.js?ver=101"></script>
+
+
+<video id="video-03" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-home-appliances+tv.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-04" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-smartphone+eco.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-05" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-home-appliances+tv.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-06" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-smartphone+eco.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-07" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-home-appliances+tv.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-08" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-smartphone+eco.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<video id="video-09" class="" controls preload="auto" style="display: none">
+    <source src="https://hitbuy.com/upload/video/mixtech-service-2019-smartphone+eco.mp4" type="video/mp4">
+    <p>
+        Для просмотра этого видео включите JavaScript и рассмотрите возможность обновления веб-браузера до новой версии
+        <a href='https://videojs.com/html5-video-support/' target='_blank' rel="nofollow">поддерживает HTML5 видео</a>
+    </p>
+</video>
+
+<script src="js/lib.min.js?ver=103"></script>
+<script src="js/scripts.min.js?ver=104"></script>
 </body>
 </html>

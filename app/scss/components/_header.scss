@@ -80,6 +80,7 @@
 .header-price__new-cost {
   color: $orangeColor;
 }
+/*
 
 .header-call__panel {
   width: 100%;
@@ -137,6 +138,7 @@
     background: url(../img/icons-mob/what-m.png) no-repeat center;
   }
 }
+*/
 
 @media (min-width: 576px) {
   .header {
@@ -179,9 +181,9 @@
   .header-price__old-strikeout::after {
     background-color: #fff;
   }
-  .header-call {
+/*  .header-call {
     display: none;
-  }
+  }*/
 }
 
 @media (min-width: 768px) {
@@ -279,11 +281,11 @@
   .header-price__new {
     margin-left: -5px;
   }
-  .header-call {
+/*  .header-call {
     z-index: 20;
     position: relative;
   }
-  .header-content {
+  .hea*/der-content {
     width: 100%;
   }
 }
@@ -296,15 +298,12 @@
   .header__inner::after {
     width: 30%;
   }
-  .header-call {
+/*  .header-call {
     font-size: 11px;
-  }
+  }*/
 }
 
 @media (min-width: 375px) and (max-width: 450px) {
-  .header {
-    //height: calc(100vh - 205px);
-  }
   .header__inner::before {
     margin-left: auto;
     margin-right: auto;
