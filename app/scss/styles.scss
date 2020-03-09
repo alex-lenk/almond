@@ -1,11 +1,8 @@
-@import "lib/bootstrap-4.4.1/mixins/clearfix";
 @import "general/mixin";
 @import "general/settings";
+@import "lib/bootstrap-4.4.1/mixins/clearfix";
 @import "general/common";
 @import "general/btn";
-@import "general/sprite";
-@import "components/scrollToTop";
-@import "components/call-form";
 @import "components/nav-bar";
 @import "components/header";
 @import "components/presentation";
@@ -28,10 +25,15 @@
 @import "components/footer";
 @import "components/menu-mob";
 @import "components/modal-view";
+@import "general/sprite";
+@import "components/scrollToTop";
+@import "components/call-form";
 
-.fancybox-navigation .fancybox-button {
-  height: 150px;
-  width: 105px;
+@media (min-width: 767px) {
+  .fancybox-navigation .fancybox-button {
+    height: 150px;
+    width: 105px;
+  }
 }
 
 .social {

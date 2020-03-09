@@ -80,6 +80,7 @@
         opacity: 1
       }
     }
+
     &:active {
       box-shadow: 0 0 0 transparent;
       top: 4px;
@@ -92,6 +93,13 @@
   .btn-primary {
     height: 50px;
     font-size: 18px;
-    box-shadow: 2px 1px 0 #c75021;
+    box-shadow: 2px 2px 0 #c75021;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 359px) {
+  .btn-primary {
+    font-size: 16px
   }
 }

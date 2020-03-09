@@ -111,7 +111,7 @@
   font-weight: 500;
   color: inherit;
   position: relative;
-  background-color: #0468fe;
+  background-color: #47576e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +267,7 @@
     background: url(../img/bg/main-bg-mob.jpg) no-repeat top center #2d3d56;
     background-size: cover;
 
-    .main-btn {
+    .btn-primary {
       display: none;
     }
   }
@@ -319,7 +319,7 @@
   .header {
     padding-top: 30px;
 
-    .main-btn {
+    .btn-primary {
       width: 282px;
       height: 60px;
       font-size: 16px;

@@ -117,7 +117,7 @@
   position: relative;
 
   .form-control {
-    padding-left: 54px;
+    padding-left: 65px;
     border-radius: 35px;
     text-transform: uppercase;
     border: 2px solid $orangeColor;
@@ -259,11 +259,8 @@
   .reviews-container {
     margin-bottom: 33px;
   }
-  .reviews-title {
-    font-weight: 600;
-  }
   .video-reviews {
-    height: 621px;
+    height: 645px;
     overflow: hidden;
     position: relative;
 
@@ -282,6 +279,7 @@
     }
   }
   .video-reviews-item {
+    width: 100%;
     margin-bottom: 15px;
   }
   .video-reviews__signature {
@@ -318,14 +316,14 @@
     margin-bottom: 22px;
 
     .form-control {
-      padding-left: 35px;
+      padding-left: 45px;
       font-size: 10px;
     }
   }
   .reviews-form__icon {
     width: 20px;
     height: 20px;
-    top: 13px;
+    top: 17px;
     left: 16px;
   }
 
@@ -361,6 +359,12 @@
   }
 }
 
+@media (max-width: 374px) {
+  .video-reviews {
+    height: 622px;
+  }
+}
+
 @media (max-width: 359px) {
   .reviews-more__video::after {
     width: 16px;
@@ -370,7 +374,7 @@
 
 @media (min-width: 376px) and (max-width: 450px) {
   .video-reviews {
-    height: 686px;
+    height: 710px;
   }
   .reviews-what {
     height: 1855px;

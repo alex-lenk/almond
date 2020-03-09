@@ -4,6 +4,13 @@
 
 .nav-bar-stick {
   height: inherit;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    display: block;
+    content: '';
+  }
 }
 
 .nav-bar-section {
@@ -148,6 +155,7 @@
   }
 
   .menu-mob {
+    opacity: 1;
     transform: translateX(0);
   }
 
@@ -169,6 +177,8 @@
 
 @media (min-width: 576px) {
   .nav-bar-stick {
+    width: 100vw;
+    padding-right: 15px;
     position: fixed;
     top: 0;
     z-index: 110;
