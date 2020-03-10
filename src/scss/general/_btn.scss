@@ -3,12 +3,12 @@
   height: 60px;
   font-size: 20px;
   white-space: nowrap;
-  box-shadow: 0 3px #dbb536, 0 5px 12px #a7a7a7;
-  background: #efd233;
-  background: -moz-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: -webkit-linear-gradient(top, #efd233 0%, #f5de35 50%, #efd233 100%);
-  background: linear-gradient(to bottom, #efd233 0%, #f5de35 50%, #efd233 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efd233', endColorstr='#efd233', GradientType=0);
+  box-shadow: 0 3px #C47D20, 0 5px 12px #a7a7a7;
+  background: rgb(255, 231, 45);
+  background: -moz-linear-gradient(top, rgba(255, 231, 45, 1) 0%, rgba(249, 157, 28, 1) 50%);
+  background: -webkit-linear-gradient(top, rgba(255, 231, 45, 1) 0%, rgba(249, 157, 28, 1) 50%);
+  background: linear-gradient(to bottom, rgba(255, 231, 45, 1) 0%, rgba(249, 157, 28, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe72d', endColorstr='#f99d1c', GradientType=0);
 
   &:hover {
     box-shadow: 0 1px #dbb536;
