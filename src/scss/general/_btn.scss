@@ -26,14 +26,80 @@
 }
 
 .btn-red {
-  font-size: 22px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   color: #fff;
-  box-shadow: 0 3px #e62b2b;
-  background: #e72d2d;
-  background: -moz-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: -webkit-linear-gradient(top, #e72d2d 0%, #cc1b1b 100%);
-  background: linear-gradient(to bottom, #e72d2d 0%, #cc1b1b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e72d2d', endColorstr='#cc1b1b', GradientType=0);
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1;
+  font-family: $font-family-head;
+  box-shadow: 0 2px 0 #e62b2b, 0 2px 6px 0 #a7a7a7;
+  transition: all .3s;
+
+  &::after,
+  &::before {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: inherit;
+    position: absolute;
+    content: '';
+    transition: opacity .3s;
+  }
+
+  &::before {
+    background: rgb(255, 45, 45);
+    background: -moz-linear-gradient(top, rgba(255, 45, 45, 1) 0%, rgba(185, 37, 40, 1) 63%, rgba(215, 42, 43, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 45, 45, 1) 0%, rgba(185, 37, 40, 1) 63%, rgba(215, 42, 43, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 45, 45, 1) 0%, rgba(185, 37, 40, 1) 63%, rgba(215, 42, 43, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2d2d', endColorstr='#d72a2b', GradientType=0);
+  }
+
+  &::after {
+    opacity: 0;
+    background: rgb(215, 42, 43);
+    background: -moz-linear-gradient(top, rgba(215, 42, 43, 1) 0%, rgba(185, 37, 40, 1) 37%, rgba(255, 45, 45, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(215, 42, 43, 1) 0%, rgba(185, 37, 40, 1) 37%, rgba(255, 45, 45, 1) 100%);
+    background: linear-gradient(to bottom, rgba(215, 42, 43, 1) 0%, rgba(185, 37, 40, 1) 37%, rgba(255, 45, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d72a2b', endColorstr='#ff2d2d', GradientType=0);
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &__arrow::after {
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 0;
+    transition: opacity .3s;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    content: '';
+  }
+
+  &:active {
+    box-shadow: 0 0 0 transparent;
+    transform: translateY(2px);
+  }
 }
 
 .btn-outline {
@@ -95,10 +161,6 @@
 }
 
 @media (min-width: 1100px) {
-  .btn-red:hover {
-    color: #fff;
-    box-shadow: 0 0 #e62b2b;
-  }
   .btn-whats-app,
   .btn-vk {
     transition: opacity .4s;

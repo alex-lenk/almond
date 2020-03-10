@@ -38,6 +38,14 @@ $(document).ready(function () {
         });
     }
 
+    $('.reviews-list__more').click(function () {
+        $('.reviews-list').addClass('reviews-list__show')
+    });
+
+    $('.reviews-what__more').click(function () {
+        $('.reviews-what').addClass('reviews-what__show')
+    });
+
     if ($(window).width() > 1099) {
         $('.portfolio-wrapper').each(function () {
             var portfolioHead = $(this).find('.portfolio-head').html();

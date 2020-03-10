@@ -1,10 +1,14 @@
 .reviews {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #d1e9ff;
+  padding-top: 40px;
+  padding-bottom: 50px;
   overflow: hidden;
   position: relative;
   z-index: 5;
+  background: rgb(209, 233, 255);
+  background: -moz-linear-gradient(left, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
+  background: linear-gradient(to right, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1e9ff', endColorstr='#d1e9ff', GradientType=1);
 
   &::before,
   &::after {
@@ -50,5 +54,92 @@
     background-size: contain;
     background-repeat: no-repeat;
     content: '';
+  }
+}
+
+.reviews-list {
+  padding-left: 0;
+  margin: 0 -3px 47px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews-list__item {
+  width: 25%;
+  margin-bottom: 8px;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .3s;
+
+  &:nth-child(12) ~ .reviews-list__item {
+    display: none;
+  }
+
+  &:hover {
+    opacity: .86;
+  }
+}
+
+.reviews-list__show {
+  .reviews-list__item {
+    display: block !important;
+  }
+
+  + .reviews-more {
+    display: none;
+  }
+}
+
+.reviews-list__more,
+.reviews-what__more {
+  width: 330px;
+  margin: 0 auto;
+}
+
+.reviews-what {
+  padding-left: 0;
+  margin: 0 -3px 47px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews-what__item {
+  width: 25%;
+  margin-bottom: 8px;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .3s;
+
+  img {
+    border: 1px solid #000;
+    transition: border .3s;
+  }
+
+  &:nth-child(16) ~ .reviews-what__item {
+    display: none;
+  }
+
+  &:hover {
+    opacity: .9;
+
+    img {
+      border-color: rgb(255, 45, 45);
+    }
+  }
+}
+
+.reviews-what__show {
+  .reviews-what__item {
+    display: block !important;
+  }
+
+  + .reviews-more {
+    display: none;
   }
 }
