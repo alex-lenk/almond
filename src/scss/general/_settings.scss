@@ -3,8 +3,8 @@
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-base: 'OpenSans', 'PFDinDisplayPro', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-$font-family-head: 'PFDinDisplayPro', 'OpenSans', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+$font-family-base: 'Montserrat', 'PFDinDisplayPro', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+$font-family-head: 'PFDinDisplayPro', 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 $body-color: #333;
 // Grid containers
 //
@@ -78,3 +78,4 @@ $btn-focus-box-shadow: none;
 $btn-box-shadow: none;
 $btn-border-radius: 7px;
 $btn-font-family: $font-family-head;
+$btn-border-width: 0;

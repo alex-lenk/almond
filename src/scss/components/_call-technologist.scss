@@ -44,8 +44,8 @@
 
 @media (min-width: 576px) {
   .call-technologist-container {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .call-technologist-title {
     margin-bottom: 32px;
@@ -78,7 +78,7 @@
       right: -192px;
       z-index: -1;
       position: absolute;
-      background: url(../img/decor/guy-bg.png.jpg) no-repeat right bottom;
+      background: url(../img/decor/guy-bg.jpg) no-repeat right bottom;
       background-size: contain;
       content: '';
     }

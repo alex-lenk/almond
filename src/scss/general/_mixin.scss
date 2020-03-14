@@ -31,3 +31,9 @@
 @function rem($size) {
   @return ($size/16)+rem;
 }
+
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+  width: $width;
+  height: $height;
+  background-position: $x $y;
+}

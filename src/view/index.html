@@ -1,5 +1,24 @@
-@@include('./includes/header.html')
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ремонт квартир в Москве и Подмосковье</title>
 
+    <link rel="stylesheet" href="css/lib.min.css?ver=3">
+    <link rel="stylesheet" href="css/styles.min.css?ver=8">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=NmbNwk2o4n">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=NmbNwk2o4n">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=NmbNwk2o4n">
+    <link rel="manifest" href="/favicon/site.webmanifest?v=NmbNwk2o4n">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=NmbNwk2o4n" color="#ed1c25">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=NmbNwk2o4n">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=NmbNwk2o4n">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="20" id="home">
 <header class="header">
     <div class="header__inner container">
         <div class="header-logo logo">
@@ -11,19 +30,7 @@
         </div>
         <div class="header-info">
             <div class="header-support__left">
-                <a href="https://api.whatsapp.com/send?phone=79687409646" target="_blank" rel="nofollow"
-                   class="header-support__item btn-whats-app">
-                    <svg class="btn-whats-app__icon">
-                        <use xlink:href="img/icons.svg#whatsapp"></use>
-                    </svg>
-                    <span>whatsApp</span>
-                </a>
-                <a href="https://vk.com/alex_lenk" target="_blank" rel="nofollow" class="header-support__item btn-vk">
-                    <svg class="btn-vk__icon">
-                        <use xlink:href="img/icons.svg#vk"></use>
-                    </svg>
-                </a>
-                <a href="#" class="header-support__write-us">Напишите нам</a>
+                Ремонт квартир в Москве и Подмосковье
             </div>
 
             <button type="button" class="menu-toggle">Меню</button>
@@ -41,7 +48,6 @@
     </div>
 </header>
 
-
 <nav class="nav-menu">
     <div class="nav-menu__inner container">
         <ul class="menu list-unstyled" id="navbar" style="padding-left: 155px">
@@ -50,13 +56,12 @@
             <li class="menu-item nav-item"><a href="#three" class="menu-link nav-link">Ремонт под ключ</a></li>
             <li class="menu-item nav-item"><a href="#fourth" class="menu-link nav-link">Ремонт новостройки</a></li>
             <li class="menu-item nav-item"><a href="#fifth" class="menu-link nav-link">Наши работы</a></li>
-            <li class="menu-item nav-item"><a href="#six" class="menu-link nav-link">Наши мастера</a></li>
+            <li class="menu-item nav-item"><a href="#masters" class="menu-link nav-link">Наши мастера</a></li>
             <li class="menu-item nav-item"><a href="#six" class="menu-link nav-link">Вопросы</a></li>
             <li class="menu-item nav-item"><a href="#" class="menu-link nav-link">Стоимость</a></li>
         </ul>
     </div>
 </nav>
-
 
 <section class="main-section">
     <div class="main-section-inner container">
@@ -79,6 +84,102 @@
     </div>
 </section>
 
-
 @@include('./includes/other.html')
-@@include('./includes/footer.html')
+
+<footer class="footer">
+    <div class="footer-inner container">
+        <div class="footer-column">
+            <div class="footer-column__title">УСЛУГИ</div>
+
+            <a href="#" class="footer-link go-anchor">Ремонт квартиры</a>
+            <a href="#" class="footer-link go-anchor">Ремонт под ключ</a>
+            <a href="#" class="footer-link go-anchor">Ремонт новостройки</a>
+            <a href="#" class="footer-link go-anchor">Наши работы</a>
+            <a href="#" class="footer-link go-anchor">Наши мастера</a>
+        </div>
+        <div class="footer-column footer-column__contacts">
+            <div class="footer-column__title">КОНТАКТЫ</div>
+
+            <a href="tel:+74953088322" class="footer-link" rel="nofollow">
+                <svg class="footer-link__icon">
+                    <use xlink:href="img/icons.svg#phone-s"></use>
+                </svg>
+                +7 (495) 308-83-22
+            </a>
+            <a href="mailto:almond@mail.ru" class="footer-link" rel="nofollow">
+                <svg class="footer-link__icon">
+                    <use xlink:href="img/icons.svg#email"></use>
+                </svg>
+                е-mail: almond@mail.ru
+            </a>
+            <div class="footer-link">
+                <svg class="footer-link__icon">
+                    <use xlink:href="img/icons.svg#history"></use>
+                </svg>
+                с 09.00 до 21.00 <br> ежедевно, без выходных
+            </div>
+            <div class="footer-link">
+                <svg class="footer-link__icon">
+                    <use xlink:href="img/icons.svg#location"></use>
+                </svg>
+                Берзарина, д.36, стр.1, этаж 3<br>
+                Бизнес-центр «Берзарина 36»
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-column__title">КОНСУЛЬТАЦИИ И ЗАМЕР</div>
+
+            <a href="#" class="footer-link go-anchor">Замер и Смета Бесплатно - 0 руб.</a>
+            <a href="#" class="footer-link go-anchor">54 мастера из РФ</a>
+            <a href="#" class="footer-link go-anchor">Работаем с 2010 года</a>
+            <a href="#" class="footer-link go-anchor">Предоплата - 0 руб.</a>
+            <a href="#" class="footer-link go-anchor">Поэтапная оплата работ</a>
+            <a href="#" class="footer-link go-anchor">Фиксируем графики</a>
+        </div>
+        <div class="footer-column">
+            <div class="footer-column__title">Города</div>
+
+            <a href="#" class="footer-link go-anchor">Москва</a>
+            <a href="#" class="footer-link go-anchor">Химки</a>
+            <a href="#" class="footer-link go-anchor">Красногорск</a>
+            <a href="#" class="footer-link go-anchor">Одинцово</a>
+            <a href="#" class="footer-link go-anchor">Видное</a>
+            <a href="#" class="footer-link go-anchor">Люберцы</a>
+            <a href="#" class="footer-link go-anchor">Реутов</a>
+            <a href="#" class="footer-link go-anchor">Балашиха</a>
+            <a href="#" class="footer-link go-anchor">Мытищи</a>
+        </div>
+
+        <div class="footer-btn">
+            <div class="btn btn-yellow" data-fancybox="" data-src="#modal-01" data-modal="true">Заказать обратный звонок</div>
+        </div>
+
+        <div class="footer-copy">
+            <div class="footer-copy__contacts">
+                © 2020 «АЛМОНД». ОГРН 1187746049633. ИНН 7725416506. Юридический адрес: 115998, г. Москва, ул. Шаболовка, д. 31, строен. А, офис 211.
+            </div>
+
+            2020. Все права защищены. <span>Пользовательское соглашение и правила.</span>
+        </div>
+    </div>
+</footer>
+
+<div class="social">
+    <a href="https://api.whatsapp.com/send?phone=79031173754" class="social-point whatsapp" rel="nofollow" target="_blank"></a>
+    <a href="tg://resolve?domain=alexlenk" st="link-support-telegram" title="@alexlenk" class="social-point telegram" rel="nofollow" target="_blank"></a>
+</div>
+
+<div class="scroll-to-top">
+    <svg class="scroll-to-top__icon">
+        <use xlink:href="img/icons.svg#arrow"></use>
+    </svg>
+</div>
+
+
+<div class="header-stick"></div>
+
+
+<script src="js/lib.min.js?ver=2"></script>
+<script src="js/scripts.min.js?ver=3"></script>
+</body>
+</html>
