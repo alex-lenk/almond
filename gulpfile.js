@@ -12,7 +12,10 @@ var gulp = require('gulp'),
     rsync = require('gulp-rsync'),
     basePath = require('path'),
     svgmin = require('gulp-svgmin'),
-    svgstore = require('gulp-svgstore');
+    svgstore = require('gulp-svgstore'),
+    imagemin = require('gulp-imagemin'),
+    mozjpeg2 = require('imagemin-mozjpeg'),
+    imageminGuetzli = require('imagemin-guetzli');
 
 
 gulp.task('svgIcons', function () {
@@ -76,6 +79,9 @@ gulp.task('code', function () {
 // img task
 gulp.task('img', function () {
     return gulp.src('./app/img/**/*.*')
+        .pipe(imagemin({
+            progressive: true
+        }))
         .pipe(gulp.dest('./dist/img'))
         .pipe(browserSync.reload({stream: true}))
 });

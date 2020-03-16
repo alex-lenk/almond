@@ -27,11 +27,11 @@
 
 @media (min-width: 576px) {
   .attention {
-    background: rgb(32,52,87);
-    background: -moz-linear-gradient(left,  rgba(32,52,87,1) 0%, rgba(62,88,130,1) 50%, rgba(32,52,87,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
-    background: linear-gradient(to right,  rgba(32,52,87,1) 0%,rgba(62,88,130,1) 50%,rgba(32,52,87,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#203457', endColorstr='#203457',GradientType=1 );
+    background: rgb(32, 52, 87);
+    background: -moz-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: linear-gradient(to right, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203457', endColorstr='#203457', GradientType=1);
   }
   .attention-title {
     margin-bottom: 24px;
@@ -45,6 +45,13 @@
     height: 381px;
     margin: 0 auto 50px;
     border-width: 5px;
+
+    &.video-play::after {
+      width: 90px;
+      height: 90px;
+      margin-left: -45px;
+      margin-top: -45px;
+    }
   }
   .attention-box {
     max-width: 726px;

@@ -35,6 +35,9 @@
 		"gulp-ex-file-include": "^2.0.2",
 		"gulp-path": "latest",
 		"gulp-svgmin": "latest",
-		"gulp-svgstore": "latest"
+		"gulp-svgstore": "latest",
+		"imagemin": "^7.0.1",
+		"imagemin-guetzli": "^2.0.0",
+		"imagemin-mozjpeg": "^8.0.0"
 	}
 }
