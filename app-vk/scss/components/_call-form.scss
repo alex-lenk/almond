@@ -1,5 +1,4 @@
 .call-form {
-  max-width: 290px;
   width: 100%;
   border-radius: 6px;
   outline: 3px solid $orangeColor;
@@ -31,11 +30,6 @@
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
-}
-
-.call-form__text-small {
-  padding-top: 5px;
-  font-size: 11px;
 }
 
 .call-form__text-2 {
@@ -76,7 +70,6 @@
   width: 23px;
   height: 18px;
   fill: #a8a8a8;
-  top: 10px;
   left: 9px;
   position: absolute;
 }
@@ -102,6 +95,9 @@
 }
 
 @media (min-width: 576px) {
+  .call-form {
+    max-width: 290px;
+  }
   .call-form__field {
     height: 40px;
   }
@@ -127,10 +123,20 @@
     margin-bottom: 17px;
     font-size: 27px;
   }
+  .call-form__text-small {
+    padding-top: 5px;
+    font-size: 11px;
+  }
+  .call-form__icon {
+    top: 10px;
+  }
 }
 
 @media (max-width: 575px) {
   .call-form {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 23px 32px 30px;
 
     .btn-primary {
@@ -139,6 +145,16 @@
   }
   .call-form__terms::before {
     margin-top: -4px
+  }
+  .call-form__text-small {
+    padding-top: 11px;
+    font-size: 13px;
+  }
+  .call-form__text {
+    margin-bottom: 6px;
+  }
+  .call-form__icon {
+    top: 16px;
   }
 }
 

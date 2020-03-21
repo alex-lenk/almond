@@ -93,14 +93,8 @@
 @media (max-width: 575px) {
   .btn-primary {
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 2px 2px 0 #c75021;
     overflow: hidden;
-  }
-}
-
-@media (max-width: 359px) {
-  .btn-primary {
-    font-size: 16px
   }
 }

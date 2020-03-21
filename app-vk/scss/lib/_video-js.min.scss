@@ -478,10 +478,6 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-big-play-button {
-  width: 70px;
-  height: 70px;
-  margin-left: -35px;
-  margin-top: -35px;
   display: block;
   position: absolute;
   padding: 0;
@@ -1504,6 +1500,24 @@ video::-webkit-media-text-track-display {
 
 .vjs-track-settings-controls .vjs-default-button {
   margin-right: 1em
+}
+
+@media (min-width: 768px) {
+  .video-js .vjs-big-play-button {
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video-js .vjs-big-play-button {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
 }
 
 @media print {

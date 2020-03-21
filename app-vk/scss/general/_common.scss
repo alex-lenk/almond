@@ -172,3 +172,9 @@ img {
     font-size: 36px;
   }
 }
+
+@media (max-width: 575px) {
+  .form-control {
+    height:50px;
+  }
+}

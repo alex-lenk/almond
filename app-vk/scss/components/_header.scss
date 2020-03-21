@@ -19,7 +19,6 @@
   &::after {
     width: 106px;
     height: 177px;
-    margin-bottom: 17px;
     background: url(../img/product/airpods-mob.png) no-repeat center;
     background-size: contain;
     align-self: flex-end;
@@ -32,7 +31,6 @@
   margin-right: auto;
   padding-bottom: 20px;
   text-align: center;
-  align-self: flex-end;
 }
 
 .header-title {
@@ -52,7 +50,6 @@
 }
 
 .header-price__old {
-  margin-bottom: 3px;
   font-size: 12px;
 }
 
@@ -88,6 +85,12 @@
   color: $orangeColor;
 }
 
+.header-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 576px) {
   .header {
     color: #fff;
@@ -107,6 +110,7 @@
   }
   .header-content {
     padding-bottom: 25px;
+    align-self: flex-end;
   }
   .header-title {
     margin-bottom: 5px;
@@ -129,9 +133,26 @@
   .header-price__old-strikeout::after {
     background-color: #fff;
   }
+
+  .header-form {
+    max-width: 245px;
+
+    .reviews-form__group {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 768px) {
+  .header__inner::after {
+    margin-bottom: 17px;
+  }
   .header-content {
     order: 1
   }
@@ -152,7 +173,7 @@
   }
 
   .header-title__text {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .header-pre-title {
@@ -170,7 +191,7 @@
 
 @media (max-width: 991px) {
   .header-title {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .header-title__text {
@@ -193,12 +214,13 @@
     flex-wrap: wrap;
 
     &::before {
-      height: 260px;
+      height: 271px;
       order: 1;
     }
 
     &::after {
-      height: 174px;
+      height: 180px;
+      margin-bottom: 33px;
       margin-left: 6px;
       order: 2;
     }
@@ -207,26 +229,36 @@
 
 @media (max-width: 575px) {
   .header {
-    height: 467px;
-    min-height: 467px;
-    padding-top: 15px;
+    height: 660px;
+    padding-top: 26px;
     color: #fff;
     background: url(../img/bg/main-bg-mob.jpg) no-repeat top center #2d3d56;
     background-size: cover;
-
-    .btn-primary {
-      display: none;
-    }
   }
   .header__inner::before {
-    width: 197px;
+    width: 205px;
     margin-left: 8px;
     background-image: url(../img/mob/gurl.png);
   }
-  .header-price__new {
-    margin-left: -5px;
+  .header-price__old {
+    margin-bottom: 6px;
   }
- .header-call {
+  .header-price__new {
+    margin-bottom: 30px;
+  }
+  .header-form {
+    max-width: 290px;
+
+    .reviews-form__group {
+      margin-bottom: 17px;
+    }
+
+    .btn-primary {
+      width: 98%;
+    }
+  }
+
+  .header-call {
     z-index: 20;
     position: relative;
   }
