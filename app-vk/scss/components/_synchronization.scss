@@ -1,0 +1,224 @@
+.synchronization {
+  padding-top: 23px;
+  padding-bottom: 25px;
+}
+
+.synchronization-inner {
+  max-width: 754px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &::before {
+    order: 1;
+    background: url(../img/decor/iphone.png) no-repeat center;
+  }
+
+  &::after {
+    order: 3;
+    background: url(../img/decor/samsung.png) no-repeat center;
+  }
+
+  &::before,
+  &::after {
+    background-size: contain;
+    content: '';
+  }
+}
+
+.synchronization-title {
+  width: 100%;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.synchronization-info {
+  padding-top: 22px;
+  position: relative;
+  text-align: center;
+  order: 2;
+}
+
+.synchronization-media:not(.synchronization-media-2) {
+  max-width: 94px;
+  margin: 0 auto 15px;
+}
+
+.synchronization-media-2 {
+  max-width: 116px;
+  margin: 0 auto 8px;
+}
+
+.synchronization-content {
+  &::before,
+  &::after {
+    position: absolute;
+  }
+
+  &::after {
+    background-image: url(../img/spritesheet-m.png);
+    background-repeat: no-repeat;
+    display: block;
+    right: -24px;
+    @include stitches-sprite(-246px, -159px, 25px, 23px);
+    content: '';
+  }
+}
+
+.synchronization-order {
+  border-radius: 8px;
+  border: 2px solid $orangeColor;
+  order: 4;
+  display: flex;
+}
+
+.synchronization-order__content {
+  font-weight: 600;
+}
+
+.synchronization-order__content-head {
+  margin-bottom: 5px;
+  color: $orangeColor;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .synchronization {
+    padding-top: 29px;
+    padding-bottom: 34px;
+    background: rgb(217, 206, 192);
+    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
+  }
+  .synchronization-inner {
+    &::before {
+      width: 165px;
+      height: 332px;
+    }
+
+    &::after {
+      width: 160px;
+      height: 330px;
+    }
+  }
+  .synchronization-info {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+  .synchronization-content {
+    padding-top: 16px;
+    font-size: 12px;
+
+    &::before,
+    &::after {
+      top: 40%;
+    }
+
+    &::before {
+      left: -29px;
+    }
+  }
+  .synchronization-order {
+    max-width: 722px;
+    width: 100%;
+    margin-top: 44px;
+    padding: 13px 23px 11px;
+    align-items: center;
+
+    &::before {
+      margin-right: 19px;
+    }
+  }
+  .synchronization-order__content {
+    font-size: 20px;
+    margin-right: auto;
+    line-height: 1;
+  }
+  .synchronization-order__content-head {
+    font-size: 25px;
+  }
+  .synchronization-media-2 {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .synchronization {
+    background: rgb(217, 206, 192);
+    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
+  }
+  .synchronization-inner {
+    &::before {
+      width: 31%;
+      height: 230px;
+    }
+
+    &::after {
+      width: 31%;
+      height: 230px;
+    }
+  }
+  .synchronization-info {
+    width: 38%;
+  }
+  .synchronization-media {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+  .synchronization-content {
+    width: 270px;
+    margin-left: -60%;
+    padding-top: 29px;
+    line-height: 1.7;
+
+    &::before {
+      left: 1px;
+    }
+
+    &::before,
+    &::after {
+      top: 29%;
+    }
+
+    br {
+      display: none;
+    }
+  }
+  .synchronization-order {
+    margin-top: 22px;
+    padding: 14px 12px 30px;
+    flex-wrap: wrap;
+
+    &::before {
+      margin-right: 8px;
+    }
+
+    .btn-primary {
+      margin-top: 21px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .synchronization-order__content {
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .synchronization-order {
+    justify-content: center;
+  }
+}

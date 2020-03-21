@@ -1,0 +1,29 @@
+.appeal {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .appeal {
+    background-color: #47576e;
+  }
+}
+
+@media (min-width: 768px) {
+  .appeal {
+    padding-top: 27px;
+    padding-bottom: 21px;
+    font-size: 22px;
+    background: rgb(71, 87, 110);
+    background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+    background: linear-gradient(to right, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#47576e', endColorstr='#47576e', GradientType=1);
+  }
+}

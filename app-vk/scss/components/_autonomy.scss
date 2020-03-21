@@ -1,0 +1,75 @@
+.autonomy {
+  padding-top: 13px;
+  padding-bottom: 7px;
+  color: #fff;
+  background: rgb(71, 87, 110);
+  background: -moz-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  background: linear-gradient(to right, rgba(71, 87, 110, 1) 0%, rgba(101, 119, 141, 1) 50%, rgba(71, 87, 110, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#47576e', endColorstr='#47576e', GradientType=1);
+
+  .container {
+    max-width: 824px;
+  }
+}
+
+.autonomy-title {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.autonomy-item {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 10px;
+  }
+}
+
+.autonomy-list {
+  font-size: 13px;
+}
+
+@media (min-width: 576px) {
+  .autonomy {
+    padding-top: 23px;
+    padding-bottom: 20px;
+  }
+  .autonomy-title {
+    margin-bottom: 27px;
+    font-size: 26px;
+  }
+  .autonomy-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .autonomy-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .autonomy {
+    text-align: center;
+    border-top: 1px solid $orangeColor;
+  }
+  .autonomy-list {
+    display: inline-block;
+  }
+  .autonomy-item {
+    font-size: 13px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.choose-inner {
+  max-width: 754px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choose-title {
+  width: 100%;
+  line-height: 1.1;
+}
+
+.choose-card {
+  line-height: 1;
+}
+
+.choose-card__price-old {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.choose-card__price {
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.choose-card__price-cost {
+  font-size: 30px;
+  color: $orangeColor;
+}
+
+@media (min-width: 576px) {
+  .choose {
+    padding-top: 17px;
+    padding-bottom: 31px;
+    background: rgb(217, 206, 192);
+    background: -moz-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    background: linear-gradient(to right, rgba(217, 206, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(217, 206, 192, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9cec0', endColorstr='#d9cec0', GradientType=1);
+  }
+  .choose-title {
+    margin-bottom: 17px;
+  }
+  .choose-card__media {
+    max-width: 185px;
+    min-height: 255px;
+    margin: 0 auto 9px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .choose-card__price-old {
+    margin-bottom: 7px;
+  }
+  .choose-card__price {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  .choose-card__price-cost {
+    font-size: 25px;
+  }
+  .choose-card {
+    width: 50%;
+    padding: 0 35px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .choose {
+    padding-top: 23px;
+    padding-bottom: 30px;
+    color: #fff;
+    background: rgb(35, 56, 92);
+    background: -moz-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: linear-gradient(to right, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23385c', endColorstr='#23385c', GradientType=1);
+  }
+  .choose-title {
+    margin-bottom: 26px;
+  }
+  .choose-card__media {
+    width: 48%;
+    margin: 0 auto 20px;
+  }
+  .choose-card {
+    .btn-primary {
+      max-width: 280px;
+      width: 100%;
+    }
+
+    &:first-of-type {
+      margin-bottom: 62px;
+    }
+  }
+}

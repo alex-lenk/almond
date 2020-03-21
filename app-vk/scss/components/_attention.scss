@@ -1,0 +1,93 @@
+.attention {
+  padding: 26px 0 29px;
+  color: #fff;
+
+  .container {
+    max-width: 850px;
+  }
+}
+
+.attention-title {
+  text-align: center;
+}
+
+.attention-text {
+  font-size: 13px;
+}
+
+.attention-media {
+  width: 100%;
+  border: 5px solid #000;
+}
+
+.attention-box {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 2px solid $orangeColor;
+}
+
+@media (min-width: 576px) {
+  .attention {
+    background: rgb(32, 52, 87);
+    background: -moz-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    background: linear-gradient(to right, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203457', endColorstr='#203457', GradientType=1);
+  }
+  .attention-title {
+    margin-bottom: 13px;
+  }
+  .attention-text {
+    margin-bottom: 23px;
+  }
+  .attention-media {
+    max-width: 500px;
+    height: 283px;
+    margin: 0 auto 33px;
+    border-width: 5px;
+
+    &.video-play::after {
+      width: 90px;
+      height: 90px;
+      margin-left: -45px;
+      margin-top: -45px;
+    }
+  }
+  .attention-box {
+    max-width: 625px;
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .attention {
+    padding-top: 20px;
+    padding-bottom: 31px;
+    color: #fff;
+    background: rgb(35, 56, 92);
+    background: -moz-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    background: linear-gradient(to right, rgba(35, 56, 92, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(35, 56, 92, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23385c', endColorstr='#23385c', GradientType=1);
+  }
+  .attention-title {
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  .attention-text {
+    margin-bottom: 30px;
+  }
+  .attention-media {
+    margin-bottom: 31px;
+  }
+  .attention-box {
+    max-width: 240px;
+    font-size: 12px;
+    padding: 8px;
+    line-height: 1.6;
+  }
+}

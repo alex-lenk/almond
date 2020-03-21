@@ -60,6 +60,8 @@ typings/
 *.iml
 .idea
 build
+build_vk
 source
 dist
+dist_vk
 apple-source

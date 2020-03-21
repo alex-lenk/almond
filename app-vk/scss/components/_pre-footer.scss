@@ -1,0 +1,108 @@
+.pre-footer__inner {
+  display: flex;
+
+  &::before {
+    display: block;
+    background: url(../img/decor/gurl-3.png) no-repeat center;
+    align-self: flex-end;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    content: '';
+  }
+
+  .choose-card__price-old {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    height: 43px;
+  }
+
+  .call-form__terms {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pre-footer {
+    height: 380px;
+    background: url(../img/bg/bg-pre-footer.jpg) no-repeat top center #14274e;
+
+    .call-form {
+      max-width: 300px;
+      flex: none;
+      order: 1;
+      align-self: flex-end;
+      margin-bottom: 21px;
+    }
+  }
+  .pre-footer__inner {
+    height: 100%;
+
+    &::before {
+      width: 253px;
+      height: 345px;
+      flex: none;
+      margin-left: -14px;
+      margin-right: 26px;
+      background-size: contain;
+    }
+
+    &::after {
+      width: 117px;
+      height: 222px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      background-image: url(../img/product/airpods-2.png);
+      background-size: contain;
+      flex: none;
+    }
+
+    .call-form__price {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pre-footer {
+    padding-top: 30px;
+    background: url(../img/bg/bg-pre-footer-mob.jpg) no-repeat center;
+    background-size: cover;
+
+    .call-form {
+      margin-bottom: 35px;
+    }
+  }
+  .pre-footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &::before {
+      width: 197px;
+      height: 265px;
+      margin-right: 15px;
+    }
+
+    &::after {
+      width: 92px;
+      height: 173px;
+      margin-right: 10px;
+      margin-bottom: 17px;
+      background-image: url(../img/product/airpods-05.png);
+    }
+
+    &::before,
+    &::after {
+      order: 1;
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "general/settings";
+@import "general/mixin";
+@import "lib/bootstrap-4.4.1/mixins/clearfix";
+@import "general/common";
+@import "general/btn";
+@import "components/header";
+//@import "components/presentation";
+@import "components/advantages";
+//@import "components/complete";
+@import "components/appeal";
+@import "components/gift";
+@import "components/small-advantage";
+@import "components/reviews";
+@import "components/choose";
+@import "components/autonomy";
+@import "components/synchronization";
+@import "components/attention";
+//@import "components/step";
+//@import "components/payment-after";
+//@import "components/trust-us";
+//@import "components/delivery";
+@import "components/questions";
+@import "components/pre-footer";
+//@import "components/footer";
+@import "components/menu-mob";
+@import "components/modal-view";
+@import "general/sprite";
+//@import "components/scrollToTop";
+@import "components/call-form";
+
+.header-form {
+  max-width: 245px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .header-form {
+    .reviews-form__group {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    .btn-primary {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 767px) {
+  .fancybox-navigation .fancybox-button {
+    height: 150px;
+    width: 105px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hide-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .show-xs {
+    display: none;
+  }
+}
