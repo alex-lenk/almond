@@ -72,10 +72,12 @@
   .footer-inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .footer-column {
-    width: 25%;
-  }
+  .footer-column {}
+  .footer-column__services {}
+  .footer-column__contacts {}
+
   .footer-column__title {
     margin-bottom: 15px;
   }
