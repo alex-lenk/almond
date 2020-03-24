@@ -122,6 +122,9 @@
 }
 
 @media (min-width: 1200px) {
+  .menu {
+    padding-left: 155px
+  }
   .nav-menu .logo {
     height: 0;
     width: 70px;
@@ -189,9 +192,9 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1099px) {
-  .menu-link {
-    font-size: 19px;
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-support__left {
+    margin-right: 30px;
   }
 }
 

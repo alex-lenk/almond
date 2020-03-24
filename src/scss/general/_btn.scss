@@ -86,13 +86,13 @@
 
 .btn-red {
   width: calc(100% - 2px);
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 22px;
-  box-shadow: 2px 3px #840618, 0 4px 10px #a7a7a7;
+  box-shadow: 0 3px #e62b2b, 2px 2px 6px #a7a7a7;
 
   &::before {
     background: rgb(255, 45, 45);

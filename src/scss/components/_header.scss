@@ -81,6 +81,9 @@
   .header-support__left {
     order: 2;
   }
+  .header-support__left-text {
+    display: none;
+  }
   .header-request {
     display: none;
   }
@@ -137,10 +140,12 @@
   }
   .header-phone {
     font-size: 24px;
+    color: #00418b;
   }
   .phone-block-icon {
     width: 22px;
     height: 22px;
+    fill: #00418b;
   }
   .header-support__write-us {
     margin-left: 52px;
@@ -193,6 +198,10 @@
   }
   .header-phone {
     margin-right: 28px;
+  }
+  .header-support__item,
+  .header-support__write-us {
+    display: none;
   }
 }
 
