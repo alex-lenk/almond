@@ -1,6 +1,7 @@
 .section-cost {
-  background: url(../img/bg/bg-third.jpg) no-repeat center top #fff;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: top center;
 }
 
 .section-cost-title {
@@ -14,19 +15,10 @@
 .section-cost-item {
   background-color: #fff;
   font-family: $font-family-head;
-  display: flex;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-bottom: 25px;
-  }
 }
 
 .section-cost-media {
-  padding-top: 3px;
-  padding-bottom: 3px;
   text-align: center;
-  flex: none;
 }
 
 .section-cost-media__image {
@@ -40,15 +32,12 @@
 }
 
 .section-cost-price {
-  padding: 14px 5%;
   font-weight: 700;
   display: flex;
   align-items: center;
 }
 
 .section-cost-price__decor {
-  padding-top: 5px;
-  padding-right: 5px;
   border-radius: 50%;
   background-color: #f3d535;
   display: flex;
@@ -58,22 +47,36 @@
   margin: auto;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 576px) {
+  .section-cost-title {
+    margin-bottom: 42px;
+  }
+  .section-cost-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  .section-cost-media {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    flex: none;
+  }
   .section-cost-price__decor {
     width: 59px;
     height: 59px;
     margin-right: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
   }
-
   .section-cost-price__decor--icon {
     width: 42px;
     height: 42px;
   }
-}
-
-@media (min-width: 576px) {
-  .section-cost-title {
-    margin-bottom: 42px;
+  .section-cost-price {
+    padding: 14px 5%;
   }
 }
 
@@ -81,6 +84,8 @@
   .section-cost {
     padding-top: 53px;
     padding-bottom: 71px;
+    background-image: url(../img/bg/bg-third.jpg);
+    background-size: cover;
   }
   .section-cost-item {
     font-size: 24px;
@@ -104,44 +109,62 @@
   }
 }
 
-@media (max-width: 991px) {
-  .section-cost-item {
-    font-size: 22px;
-  }
-}
-
 @media (max-width: 766px) {
   .section-cost {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .section-cost-item {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    flex-wrap: wrap;
-  }
-  .section-cost-media {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 15px;
-    order: 1;
-  }
-  .section-cost-type {
-    margin-bottom: 25px;
-    text-align: center;
-  }
-  .section-cost-price {
-    width: 100%;
-    justify-content: center;
-    order: 2;
+    background-image: url(../img/bg-m/bg-third-2.jpg);
+    background-size: contain;
   }
 }
 
 @media (max-width: 575px) {
+  .section-cost {
+    background-size: cover;
+  }
   .section-cost-title {
     margin-bottom: 30px;
     font-size: 26px
+  }
+  .section-cost-item {
+    padding: 8px 10px 5px;
+
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+  .section-cost-media {
+    width: 92px;
+    height: 92px;
+    margin-right: 12px;
+    background-color: #fff;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-cost-type {
+    margin: 11px 0 9px;
+    padding-left: 12px;
+  }
+  .section-cost-type__text {
+    text-align: center;
+  }
+  .section-cost-price {
+    padding-top: 8px;
+    padding-left: 21px;
+    border-top: 1px solid #cacaca;
+  }
+  .section-cost-price__decor {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+  .section-cost-price__decor--icon {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -172,6 +195,33 @@
 @media (min-width: 576px) and (max-width: 991px) {
   .section-cost-title {
     font-size: 42px
+  }
+  .section-cost-item {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-cost-item {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .section-cost-media {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    order: 1;
+  }
+  .section-cost-type {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .section-cost-price {
+    width: 100%;
+    justify-content: center;
+    order: 2;
   }
 }
 
