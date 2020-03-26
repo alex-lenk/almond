@@ -27,18 +27,6 @@ var isMobile = {
 $(document).ready(function () {
     $('.phone').inputmask({"mask": "+7 (999) 999-99-99"});
 
-    var windowWidth = $(window).width(),
-        social = $('.social');
-
-    if (windowWidth > 576) {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 350) {
-                social.fadeIn();
-            } else {
-                social.fadeOut();
-            }
-        });
-    }
 
     $('.reviews-list__more').click(function () {
         $('.reviews-list').addClass('reviews-list__show')
@@ -65,23 +53,37 @@ $(document).ready(function () {
     /* END Actions on opening menus on mobile devices  */
 
 
-    /* BEGIN Script scroll to top  */
-    var scrollToTop = $('.scroll-to-top');
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) {
-            scrollToTop.fadeIn();
-        } else {
-            scrollToTop.fadeOut();
-        }
-    });
+    var windowWidth = $(window).width(),
+        social = $('.social');
 
-    scrollToTop.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    });
-    /* END Script scroll to top  */
+    if (windowWidth > 576) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 350) {
+                social.fadeIn();
+            } else {
+                social.fadeOut();
+            }
+        });
+
+
+        /* BEGIN Script scroll to top  */
+        var scrollToTop = $('.scroll-to-top');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 250) {
+                scrollToTop.fadeIn();
+            } else {
+                scrollToTop.fadeOut();
+            }
+        });
+
+        scrollToTop.click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+        /* END Script scroll to top  */
+    }
 
 
     if ($(window).width() > 1099) {

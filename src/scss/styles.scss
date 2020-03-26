@@ -27,60 +27,60 @@
 @import "components/reviews";
 @import "general/sprite";
 
-.social {
-  position: fixed;
-  bottom: 85px;
-  right: 10px;
-  margin-left: -58px;
-  z-index: 30;
-  display: none;
-}
-
-.social-point {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 15px;
-  display: block;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  &.vk {
-    background-image: url(../img/icons/vk.svg);
+@media (min-width: 576px) {
+  .social {
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+    margin-left: -58px;
+    z-index: 30;
+    display: none;
   }
 
-  &.whatsapp {
-    background-image: url(../img/ico/whatsapp.svg);
+  .social-point {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-    &::before {
-      width: 75%;
-      height: 75%;
-      border-radius: 50%;
-      background-color: #fff;
-      top: 6px;
-      left: 7px;
-      position: absolute;
-      z-index: -1;
-      content: '';
+    &.vk {
+      background-image: url(../img/icons/vk.svg);
+    }
+
+    &.whatsapp {
+      background-image: url(../img/ico/whatsapp.svg);
+
+      &::before {
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 6px;
+        left: 7px;
+        position: absolute;
+        z-index: -1;
+        content: '';
+      }
+    }
+
+    &.telegram {
+      background-image: url(../img/ico/telegram.svg);
+    }
+
+    &.instagram {
+      background-image: url(../img/icons/instagram.svg);
     }
   }
 
-  &.telegram {
-    background-image: url(../img/ico/telegram.svg);
+  .social-point__icon {
+    width: 48px;
+    height: 48px;
   }
 
-  &.instagram {
-    background-image: url(../img/icons/instagram.svg);
-  }
-}
-
-.social-point__icon {
-  width: 48px;
-  height: 48px;
-}
-
-@media (min-width: 576px) {
   .show-xs {
     display: none;
   }
