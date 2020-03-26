@@ -50,6 +50,7 @@ img {
 .hide-placeholder {
   @include hidePlaceholder {
     opacity: 1;
+    font-weight: 400;
     transition: opacity 0.3s ease;
   }
 
@@ -170,6 +171,9 @@ img {
     width: 14%;
     height: 6px;
     margin-top: 14px;
+  }
+  .form-control {
+    height: 62px;
   }
 }
 

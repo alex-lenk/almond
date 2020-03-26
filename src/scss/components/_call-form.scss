@@ -1,7 +1,8 @@
 .call-form {
   max-width: 365px;
   width: 100%;
-  padding: 29px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: #fff;
   border-radius: 6px;
   outline: 1px solid #508dc5;
@@ -11,7 +12,7 @@
 
 .call-form__title {
   margin-bottom: 4px;
-  font-size: 21px;
+
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -19,7 +20,6 @@
 }
 
 .call-form__text {
-  margin-bottom: 24px;
   font-size: 14px;
   text-align: center;
 }
@@ -29,29 +29,72 @@
 }
 
 .call-form__icon {
-  width: 32px;
-  height: 32px;
   fill: #a8a8a8;
-  top: 18px;
-  left: 9px;
   position: absolute;
 }
 
-.call-form__field {
-  padding-left: 50px;
-
-  &:focus {
-    box-shadow: none;
-  }
-}
-
-.call-form__btn {
-  margin-top: 20px;
+.call-form__field:focus {
+  box-shadow: none;
 }
 
 .call-form__terms {
-  margin-top: 30px;
   font-size: 10px;
   text-align: center;
   line-height: 1.2;
+}
+
+@media (min-width: 576px) {
+  .call-form {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+  .call-form__title {
+    font-size: 21px;
+  }
+  .call-form__text {
+    margin-bottom: 24px;
+  }
+  .call-form__field {
+    padding-left: 50px;
+  }
+  .call-form__icon {
+    width: 32px;
+    height: 32px;
+    top: 18px;
+    left: 9px;
+  }
+  .call-form__btn {
+    margin-top: 20px;
+  }
+  .call-form__terms {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .call-form {
+    padding-top: 21px;
+    padding-bottom: 23px;
+  }
+  .call-form__title {
+    font-size: 24px;
+  }
+  .call-form__text {
+    margin-bottom: 15px;
+  }
+  .call-form__field {
+    padding-left: 45px;
+  }
+  .call-form__icon {
+    width: 28px;
+    height: 26px;
+    top: 15px;
+    left: 10px;
+  }
+  .call-form__btn {
+    margin-top: 5px;
+  }
+  .call-form__terms {
+    margin-top: 23px;
+  }
 }
