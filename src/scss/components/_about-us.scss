@@ -9,7 +9,6 @@
 .about-us-wrap {
   margin-bottom: 40px;
   position: relative;
-  display: flex;
 
   &::after {
     width: 299px;
@@ -25,49 +24,23 @@
 }
 
 .about-us-content {
-  max-width: 36%;
-  margin-right: auto;
-  font-size: 14px;
-  padding: 19px 22px 0;
   font-weight: 300;
   line-height: 1.4;
-  border: 10px solid #edeeee;
-  position: relative;
-
-  &::after {
-    width: 38px;
-    height: 63px;
-    border-right: 10px solid #edeeee;
-    border-bottom: 10px solid #edeeee;
-    top: 15%;
-    right: -27px;
-    background-color: #fff;
-    transform: rotate(-23deg) skew(10deg, 15deg);
-    position: absolute;
-    content: '';
-  }
+  border: 5px solid #edeeee;
 }
 
-.about-us-director {
-  border-top: 1px solid #dcdcdc;
-  display: flex;
-  
-  &__sign {
-    width: 121px;
-    margin-left: 19px;
-  }
+.about-us-director__sign {
+  width: 121px;
+  margin-left: 19px;
 }
 
 .about-us-director__name {
   padding-top: 5px;
-  font-size: 21px;
   font-weight: 500;
   font-family: $font-family-head;
 }
 
 .about-us-director__post {
-  font-size: 12px;
-  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -129,5 +102,59 @@
     background-size: contain;
     position: absolute;
     content: '';
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-wrap {
+    display: flex;
+  }
+  .about-us-content {
+    max-width: 36%;
+    padding: 19px 22px 0;
+    margin-right: auto;
+    font-size: 14px;
+    border-width: 10px;
+    position: relative;
+
+    &::after {
+      width: 38px;
+      height: 63px;
+      border-right: 10px solid #edeeee;
+      border-bottom: 10px solid #edeeee;
+      top: 15%;
+      right: -27px;
+      background-color: #fff;
+      transform: rotate(-23deg) skew(10deg, 15deg);
+      position: absolute;
+      content: '';
+    }
+  }
+
+  .about-us-director {
+    border-top: 1px solid #dcdcdc;
+    display: flex;
+  }
+
+  .about-us-director__name {
+    font-size: 21px;
+  }
+
+  .about-us-director__post {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us-content {
+    padding: 12px 10px 0 18px;
+    font-size: 13px;
+  }
+  .about-us-director__name {
+    font-size: 16px;
+  }
+  .about-us-director__post {
+    font-size: 10px;
   }
 }
