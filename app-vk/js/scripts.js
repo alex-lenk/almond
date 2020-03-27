@@ -15,6 +15,11 @@ setTimeout(function () {
     $('html').addClass('init-second');
 }, 1500);
 
+/* инитим vkBridge */
+$(document).ready(function () {
+    vkBridge.send('VKWebAppInit');
+});
+/* инитим vkBridge */
 
 $(document).ready(function () {
     var windowWidth = $(window).width(),
