@@ -1,74 +1,154 @@
 .section-schedule {
   padding-bottom: 25px;
-  border-top: 35px solid #fff;
   background: url(../img/bg/bg-fifth.jpg) no-repeat top center;
 }
 
 .section-schedule-inner {
   display: flex;
-  align-items: center;
 }
 
 .section-schedule-text {
-  margin-right: 43px;
   font-weight: 500;
-  font-size: 61px;
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
   font-family: $font-family-head;
 }
 
-.section-schedule-text__big {
-  font-size: 81px;
-}
-
 .section-schedule-operator {
-  max-width: 156px;
   text-align: center;
   color: #fff;
   line-height: 1;
 }
 
 .section-schedule-operator__name {
-  margin-top: 11px;
-  margin-bottom: 5px;
-  font-size: 21px;
   font-family: $font-family-head;
 }
 
 .section-schedule-operator__special {
-  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.section-schedule-form {
-  max-width: 395px;
-  padding: 30px 35px;
-  margin-top: -35px;
-  margin-left: 5%;
-
-  .list-boolean {
-    font-size: 14px;
-  }
-
-  .list-boolean-item {
-    line-height: 1.4;
-  }
-
-  .call-form__btn {
-    margin-top: 15px;
-  }
-
-  .header-phone__icon {
-    width: 34px;
-    height: 34px;
-  }
+.section-schedule-form .list-boolean-item {
+  line-height: 1.4;
 }
 
 .section-schedule-phone {
-  margin-top: 22px;
-  font-size: 36px;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .section-schedule {
+    border-top: 35px solid #fff;
+  }
+  .section-schedule-inner {
+    align-items: center;
+  }
+  .section-schedule-text {
+    margin-right: 43px;
+    font-size: 61px;
+  }
+  .section-schedule-text__big {
+    font-size: 81px;
+  }
+  .section-schedule-operator {
+    max-width: 156px;
+  }
+  .section-schedule-operator__name {
+    margin-top: 11px;
+    margin-bottom: 5px;
+    font-size: 21px;
+  }
+
+  .section-schedule-operator__special {
+    font-size: 14px;
+  }
+  .section-schedule-form {
+    max-width: 395px;
+    margin-top: -35px;
+    margin-left: 5%;
+    padding: 30px 35px;
+
+    .list-boolean {
+      font-size: 14px;
+    }
+
+    .header-phone__icon {
+      width: 34px;
+      height: 34px;
+    }
+
+    .call-form__btn {
+      margin-top: 15px;
+    }
+  }
+  .section-schedule-phone {
+    margin-top: 22px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-schedule {
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+  .section-schedule-inner {
+    flex-wrap: wrap;
+  }
+  .section-schedule-text {
+    font-size: 32px;
+    margin-right: 3%;
+    padding-top: 23px;
+  }
+  .section-schedule-text__big {
+    font-size: 43px;
+  }
+  .section-schedule-operator {
+    max-width: 92px;
+  }
+  .section-schedule-operator__name {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .section-schedule-operator__special {
+    font-size: 10px;
+  }
+  .section-schedule-form {
+    margin-top: 15px;
+
+    .list-boolean {
+      font-size: 12px;
+    }
+
+    .list-boolean-item {
+      padding-left: 20px;
+
+      &::before {
+        width: 14px;
+        height: 14px;
+        top: 0;
+        left: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+
+    .header-phone__icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .call-form__btn {
+      margin-top: 21px;
+    }
+  }
+  .section-schedule-phone {
+    margin-top: 14px;
+    font-size: 30px;
+  }
 }
