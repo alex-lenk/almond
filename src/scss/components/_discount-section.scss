@@ -1,30 +1,12 @@
 .discount-section {
-  padding-top: 31px;
-  padding-bottom: 35px;
   text-align: center;
-  border-top: 25px solid #fff;
   background: url(../img/bg/bg-discount-section.jpg) no-repeat center;
   background-size: cover;
 }
 
 .discount-section-inner {
-  padding-top: 39px;
-  padding-bottom: 25px;
-  border: 10px solid #fed60c;
-  position: relative;
+  border: 7px solid #fed60c;
   background-color: #fff;
-
-  &::after {
-    width: 167px;
-    height: 156px;
-    bottom: 24%;
-    right: 17%;
-    z-index: 5;
-    position: absolute;
-    background: url(../img/decor/arrow-left.png) no-repeat center;
-    background-size: contain;
-    content: '';
-  }
 }
 
 .discount-section-title,
@@ -32,15 +14,6 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: $font-family-head;
-}
-
-.discount-section-title {
-  font-size: 35px;
-}
-
-.discount-section-text {
-  margin-bottom: 40px;
-  font-size: 24px;
 }
 
 .discount-section-stroke {
@@ -59,5 +32,61 @@
   .btn-red {
     width: 100%;
     padding: 11px 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  .discount-section {
+    padding-top: 31px;
+    padding-bottom: 35px;
+    border-top: 25px solid #fff;
+  }
+  .discount-section-inner {
+    padding-top: 39px;
+    padding-bottom: 25px;
+    border-width: 10px;
+    position: relative;
+
+    &::after {
+      width: 167px;
+      height: 156px;
+      bottom: 24%;
+      right: 17%;
+      z-index: 5;
+      position: absolute;
+      background: url(../img/decor/arrow-left.png) no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+  }
+  .discount-section-title {
+    font-size: 35px;
+  }
+  .discount-section-text {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .discount-section {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .discount-section-inner {
+    padding: 13px 15px;
+  }
+  .discount-section-title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.4;
+
+    .text-red {
+      font-weight: 900;
+    }
+  }
+  .discount-section-text {
+    margin-bottom: 20px;
+    line-height: 1.3;
   }
 }
