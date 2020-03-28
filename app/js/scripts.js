@@ -8,8 +8,8 @@ setTimeout(function () {
             img.removeAttribute('data-path');
         };
     });
-    /* END: LazyLoad img */
 }, 500);
+/* END: LazyLoad img */
 
 setTimeout(function () {
     $('html').addClass('init-second');
