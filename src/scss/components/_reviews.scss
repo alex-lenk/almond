@@ -1,32 +1,10 @@
 .reviews {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  overflow: hidden;
-  position: relative;
   z-index: 5;
   background: rgb(209, 233, 255);
   background: -moz-linear-gradient(left, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
   background: -webkit-linear-gradient(left, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
   background: linear-gradient(to right, rgba(209, 233, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(209, 233, 255, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1e9ff', endColorstr='#d1e9ff', GradientType=1);
-
-  &::before,
-  &::after {
-    width: 100%;
-    left: 0;
-    position: absolute;
-    content: '';
-  }
-
-  &::before {
-    height: 85px;
-    top: 110px;
-  }
-
-  &::after {
-    height: 130px;
-    bottom: 0;
-  }
 }
 
 .reviews-title {
@@ -34,8 +12,6 @@
 }
 
 .reviews-pre-title {
-  margin-bottom: 30px;
-  font-size: 21px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: $font-family-head;
@@ -59,7 +35,6 @@
 
 .reviews-list {
   padding-left: 0;
-  margin: 0 -3px 47px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -100,14 +75,12 @@
 
 .reviews-what {
   padding-left: 0;
-  margin: 0 -3px 47px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
 .reviews-what__item {
-  width: 25%;
   margin-bottom: 8px;
   padding-left: 3px;
   padding-right: 3px;
@@ -144,13 +117,44 @@
 }
 
 @media (min-width: 768px) {
-  .reviews-list__item {
+  .reviews {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .reviews-pre-title {
+    margin-bottom: 43px;
+    font-size: 21px;
+  }
+  .reviews-list,
+  .reviews-what {
+    margin: 0 -3px 40px;
+  }
+  .reviews-list__item,
+  .reviews-what__item {
     width: 25%;
+  }
+  .reviews-what {
+    padding-top: 55px;
   }
 }
 
 @media (max-width: 767px) {
-  .reviews-list__item {
+  .reviews {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .reviews-list__item,
+  .reviews-what__item {
     width: 50%;
+  }
+
+  .reviews-list {
+    margin: 0 -3px 20px;
+  }
+  .reviews-what {
+    padding-top: 40px;
+  }
+  .reviews-pre-title {
+    margin-bottom: 20px;
   }
 }

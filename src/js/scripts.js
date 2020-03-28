@@ -43,11 +43,13 @@ $(document).ready(function () {
 
 
     $('.reviews-list__more').click(function () {
-        $('.reviews-list').addClass('reviews-list__show')
+        $('.reviews-list').addClass('reviews-list__show');
+        $(this).hide();
     });
 
     $('.reviews-what__more').click(function () {
-        $('.reviews-what').addClass('reviews-what__show')
+        $('.reviews-what').addClass('reviews-what__show');
+        $(this).hide();
     });
 
     if ($(window).width() > 1099) {
@@ -137,6 +139,12 @@ $(document).ready(function () {
         asNavFor: ".masters-slider",
         arrows: false,
         focusOnSelect: true,
-        infinite: false
+        infinite: false,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4
+            }
+        }]
     });
 });
