@@ -1,20 +1,11 @@
-.about-us {
-  padding-bottom: 0;
-}
-
 .about-us-title {
   margin-bottom: 35px;
 }
 
 .about-us-wrap {
-  margin-bottom: 40px;
   position: relative;
 
   &::after {
-    width: 299px;
-    height: 599px;
-    bottom: -128px;
-    left: 392px;
     z-index: 2;
     position: absolute;
     background: url(../img/decor/prorab.png) no-repeat center bottom;
@@ -29,13 +20,7 @@
   border: 5px solid #edeeee;
 }
 
-.about-us-director__sign {
-  width: 121px;
-  margin-left: 19px;
-}
-
 .about-us-director__name {
-  padding-top: 5px;
   font-weight: 500;
   font-family: $font-family-head;
 }
@@ -45,18 +30,10 @@
 }
 
 .about-us-certificate {
-  padding-top: 8%;
-  padding-right: 15%;
   font-size: 10px;
-  font-weight: 300;
   position: relative;
-  text-align: center;
 
   &::after {
-    width: 202px;
-    height: 271px;
-    top: 57px;
-    right: 47px;
     z-index: -1;
     position: absolute;
     background: url(../img/decor/simbol.png) no-repeat center;
@@ -65,24 +42,8 @@
   }
 }
 
-.about-us-certificate__media {
-  width: 155px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: opacity .3s;
-
-  &:hover {
-    opacity: .9;
-  }
-}
-
 .about-us-quote {
-  max-width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 11px 10px 12px 15px;
   text-align: center;
-  font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
   border: 2px solid $yellowColor;
@@ -92,12 +53,8 @@
   z-index: 5;
 
   &::before {
-    width: 32px;
-    height: 28px;
     border-top: 4px solid #fff;
     border-left: 4px solid #fff;
-    top: -2px;
-    left: -2px;
     background: url(../img/decor/quotation.svg) no-repeat right bottom #fff;
     background-size: contain;
     position: absolute;
@@ -107,7 +64,15 @@
 
 @media (min-width: 768px) {
   .about-us-wrap {
+    margin-bottom: 40px;
     display: flex;
+
+    &::after {
+      width: 299px;
+      height: 599px;
+      bottom: -128px;
+      left: 392px;
+    }
   }
   .about-us-content {
     max-width: 36%;
@@ -130,24 +95,68 @@
       content: '';
     }
   }
-
   .about-us-director {
     border-top: 1px solid #dcdcdc;
     display: flex;
   }
-
   .about-us-director__name {
+    padding-top: 5px;
     font-size: 21px;
   }
-
   .about-us-director__post {
     font-size: 12px;
     font-weight: 300;
   }
+  .about-us-director__sign {
+    width: 121px;
+    margin-left: 19px;
+  }
+  .about-us-certificate {
+    padding-top: 8%;
+    padding-right: 15%;
+    font-weight: 300;
+    text-align: center;
+
+    &::after {
+      width: 202px;
+      height: 271px;
+      top: 57px;
+      right: 47px;
+    }
+  }
+  .about-us-certificate__media {
+    width: 155px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+  .about-us-quote {
+    max-width: 40%;
+    padding: 11px 10px 12px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+
+    &::before {
+      width: 32px;
+      height: 28px;
+      top: -2px;
+      left: -2px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
+  .about-us {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .about-us-content {
+    margin-bottom: 20px;
     padding: 12px 10px 0 18px;
     font-size: 13px;
   }
@@ -156,5 +165,39 @@
   }
   .about-us-director__post {
     font-size: 10px;
+  }
+  .about-us-director__sign {
+    width: 74px;
+    margin-left: -3px;
+  }
+  .about-us-certificate__media::after {
+    width: 117px;
+    height: 128px;
+    top: -6px;
+    left: 40px;
+  }
+  .about-us-certificate__media {
+    width: 98px;
+    margin-bottom: 5px;
+  }
+  .about-us-wrap {
+    margin-bottom: 12px;
+
+    &::after {
+      width: 180px;
+      height: 370px;
+      bottom: -69px;
+      right: 0;
+    }
+  }
+  .about-us-quote {
+    padding: 6px 10px 9px 15px;
+
+    &::before {
+      width: 24px;
+      height: 21px;
+      top: -3px;
+      left: -3px;
+    }
   }
 }
