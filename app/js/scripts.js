@@ -2,7 +2,7 @@
 
 /* BEGIN: LazyLoad img */
 setTimeout(function () {
-    [].forEach.call(document.querySelectorAll('img[data-path]'), function (img) {
+    [].forEach.call(document.querySelectorAll('.img__data-path'), function (img) {
         img.setAttribute('src', img.getAttribute('data-path'));
         img.onload = function () {
             img.removeAttribute('data-path');
@@ -22,7 +22,6 @@ $(document).ready(function () {
         headerCallPanel = $('.header-call__panel'),
         social = $('.social');
 
-
     if (windowWidth < 575) {
         $('#video-reviews').click(function () {
             $('.video-reviews').css('height', 'auto');
@@ -32,6 +31,14 @@ $(document).ready(function () {
             $('.reviews-what').css('height', 'auto');
             $(this).fadeOut();
         });
+
+        var reviewsWhat = $('.reviews-what'),
+            heightReviewsWhatItem = $('.reviews-what__item').height(),
+            heightReviewsWhat = reviewsWhat.outerHeight();
+
+        reviewsWhat.height(heightReviewsWhat);
+        console.log(heightReviewsWhat);
+        console.log(heightReviewsWhatItem);
     } else {
         //$('.nav-bar-stick').css('width', windowWidth);
         $('.social, .scroll-to-top').css('left', windowWidth);
@@ -73,6 +80,32 @@ $(document).ready(function () {
     });
     /* END Actions on opening menus on mobile devices  */
 
+    document.ondragstart = noselect;
+    // запрет на перетаскивание
+    document.onselectstart = noselect;
+    // запрет на выделение элементов страницы
+    document.oncontextmenu = noselect;
+
+    // запрет на выведение контекстного меню
+    function noselect() {
+        return false;
+    }
+
+    //запретить на сайте нажатие CTRL+SHIFT+I и F12
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    };
 
     $('.go-anchor').on('click', function (e) {
         e.preventDefault();
