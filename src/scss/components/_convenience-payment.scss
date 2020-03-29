@@ -1,7 +1,4 @@
 .convenience-payment {
-  padding-top: 29px;
-  padding-bottom: 29px;
-  border-top: 30px solid #fff;
   background: url(../img/bg/convenience-payment.jpg) center center / cover no-repeat;
 }
 
@@ -51,4 +48,12 @@
 .convenience-payment-item__text {
   font-weight: 300;
   font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .convenience-payment {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    border-top: 30px solid #fff;
+  }
 }
