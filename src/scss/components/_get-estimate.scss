@@ -81,6 +81,17 @@
 
     .call-form__text {
       margin-bottom: 0;
+
+      &::after {
+        width: 260px;
+        height: 202px;
+        left: 7%;
+        position: relative;
+        display: block;
+        background: url(../img/decor/estimate.jpg) no-repeat center;
+        background-size: contain;
+        content: '';
+      }
     }
   }
   .get-estimate-form {
@@ -95,19 +106,6 @@
       z-index: 5;
       position: absolute;
       background: url(../img/decor-m/arrow-arc.svg) no-repeat center;
-      background-size: contain;
-      content: '';
-    }
-  }
-  .call-form__text {
-
-    &::after {
-      width: 260px;
-      height: 202px;
-      left: 7%;
-      position: relative;
-      display: block;
-      background: url(../img/decor/estimate.jpg) no-repeat center;
       background-size: contain;
       content: '';
     }
