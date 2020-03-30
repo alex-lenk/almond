@@ -58,15 +58,41 @@ $(document).ready(function () {
             $(this).find('.portfolio-head').hide();
             $(this).find('.portfolio-content').prepend(portfolioHead);
         });
+
+
+
+        var headerStick = '.header-stick';
+        var headerStickCurrent = 'header-stick__current';
+        $('.header').clone().appendTo(headerStick);
+        $('.nav-menu').clone().appendTo(headerStick);
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('html').addClass(headerStickCurrent)
+            } else {
+                $('html').removeClass(headerStickCurrent)
+            }
+        });
+    } else {
+        /* BEGIN Actions on opening menus on mobile devices  */
+        var menuToggle = '.menu-toggle';
+        $(menuToggle).click(function () {
+            $('html').toggleClass('menu-opened');
+        });
+
+        $('.menu-switch').click(function () {
+            $('html').toggleClass('menu-opened');
+        });
+        /* END Actions on opening menus on mobile devices  */
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('html').addClass('menu-float')
+            } else {
+                $('html').removeClass('menu-float')
+            }
+        });
     }
-
-
-    /* BEGIN Actions on opening menus on mobile devices  */
-    var menuToggle = '.menu-toggle';
-    $(menuToggle).click(function () {
-        $('html').toggleClass('menu-opened');
-    });
-    /* END Actions on opening menus on mobile devices  */
 
 
     var windowWidth = $(window).width(),
@@ -99,22 +125,6 @@ $(document).ready(function () {
             return false;
         });
         /* END Script scroll to top  */
-    }
-
-
-    if ($(window).width() > 1099) {
-        var headerStick = '.header-stick';
-        var headerStickCurrent = 'header-stick__current';
-        $('.header').clone().appendTo(headerStick);
-        $('.nav-menu').clone().appendTo(headerStick);
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 500) {
-                $('html').addClass(headerStickCurrent)
-            } else {
-                $('html').removeClass(headerStickCurrent)
-            }
-        });
     }
 
 
