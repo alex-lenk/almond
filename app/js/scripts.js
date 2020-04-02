@@ -129,6 +129,12 @@ $(document).ready(function () {
     });
 
 
+    function callback(isModal) {
+
+    }
+
+    if (windowWidth < 575) {
+    }
     $('.form-callback').submit(function () {
         $.ajax({
             type: "POST",
@@ -139,19 +145,34 @@ $(document).ready(function () {
             $('.js-step-2').show();
             $('.form-callback').trigger("reset");
             setTimeout(function () {
-                $('.js-step-2').hide();
+                $.fancybox.close();
             }, 5000);
         });
         return false;
     });
+    $('.form-callback2').submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "./php/sendmail.php",
+            dataType: "html",
+            data: $(this).serialize()
+        }).done(function () {
+            $.fancybox.open({
+                src: '#modal-04',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
 
-    $(".service-maintenance__poster").click(function () {
-
-        var $video = $('#service-maintenance-video'),
-            src = $video.attr('src');
-
-        $video.attr('src', src + '&autoplay=1');
-
-        $('.service-maintenance').addClass('service-maintenance-open');
+            $('.form-callback').trigger("reset");
+            setTimeout(function () {
+                $.fancybox.close();
+                console.info('close!');
+            }, 5000);
+        });
+        return false;
     });
 });

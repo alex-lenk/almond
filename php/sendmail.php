@@ -25,8 +25,8 @@ if (isset($_POST['phone'])) {
 
 if ($_POST['phone'] != "") { //Проверка отправилось ли наше поля name и не пустые ли они
 
-    $to = 'rsk-evrodom@mail.ru';
-    //alexlenk.ru@gmail.com
+    $to = 'alexlenk.ru@gmail.com';
+    //alexlenk.ru@gmail.com rsk-evrodom@mail.ru
 
     $subject = 'Заявка c сайта airpods-stok.ru'; //Заголовок сообщения
     $message = '

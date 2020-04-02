@@ -135,6 +135,10 @@
   font-weight: 500;
 }
 
+#modal-04 .fancybox-button {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .modal-view {
     max-width: 860px;
