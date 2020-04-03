@@ -128,14 +128,9 @@ $(document).ready(function () {
         autoFocus: false
     });
 
-
-    function callback(isModal) {
-
-    }
-
     if (windowWidth < 575) {
     }
-    $('.form-callback').submit(function () {
+    $('.callback-modal').submit(function () {
         $.ajax({
             type: "POST",
             url: "./php/sendmail.php",
@@ -143,14 +138,16 @@ $(document).ready(function () {
             data: $(this).serialize()
         }).done(function () {
             $('.js-step-2').show();
-            $('.form-callback').trigger("reset");
+            $('.callback-modal').trigger("reset");
             setTimeout(function () {
+                $('.js-step-2').hide();
                 $.fancybox.close();
             }, 5000);
         });
         return false;
     });
-    $('.form-callback2').submit(function () {
+
+    $('.callback').submit(function () {
         $.ajax({
             type: "POST",
             url: "./php/sendmail.php",
@@ -167,7 +164,7 @@ $(document).ready(function () {
                 }
             });
 
-            $('.form-callback').trigger("reset");
+            $('.callback').trigger("reset");
             setTimeout(function () {
                 $.fancybox.close();
                 console.info('close!');
