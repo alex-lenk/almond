@@ -14,7 +14,7 @@ if (isset($_POST['formname'])) {
 if (isset($_POST['name'])) {
     $name = $_POST['name'];
 } else {
-    $name = '';
+    $name = 'Безымянный';
 }
 
 if (isset($_POST['phone'])) {
@@ -23,10 +23,9 @@ if (isset($_POST['phone'])) {
     $phone = '';
 }
 
-if ($_POST['phone'] != "") { //Проверка отправилось ли наше поля name и не пустые ли они
 
-    $to = 'alexlenk.ru@gmail.com';
-    //alexlenk.ru@gmail.com rsk-evrodom@mail.ru
+    $to = 'zaiavki.v@gmail.com';
+    //alexlenk.ru@gmail.com
 
     $subject = 'Заявка c сайта airpods-stok.ru'; //Заголовок сообщения
     $message = '
@@ -41,6 +40,6 @@ if ($_POST['phone'] != "") { //Проверка отправилось ли на
                   </body>
                   </html>'; //Текст нащего сообщения можно использовать HTML теги
     $headers = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-    $headers .= "From: ORDER  <email@msk-magna.ru>\r\n"; //Наименование и почта отправителя
-    $res = mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-}
+    $headers .= "From: Заказ наушников  <admin@airpods-stok.ru>\r\n"; //Наименование и почта отправителя
+
+    mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail

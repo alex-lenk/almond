@@ -1,15 +1,56 @@
 'use strict';
 
 /* BEGIN: LazyLoad img */
-setTimeout(function () {
-    [].forEach.call(document.querySelectorAll('.img__data-path'), function (img) {
-        img.setAttribute('src', img.getAttribute('data-path'));
-        img.onload = function () {
-            img.removeAttribute('data-path');
-        };
+registerListener('load', setLazy);
+registerListener('load', lazyLoad);
+registerListener('scroll', lazyLoad);
+
+var lazy = [];
+
+function setLazy() {
+    lazy = document.getElementsByClassName('img__data-path');
+    //console.log('Found ' + lazy.length + ' lazy images');
+}
+
+function lazyLoad() {
+    for (var i = 0; i < lazy.length; i++) {
+        if (isInViewport(lazy[i])) {
+            if (lazy[i].getAttribute('data-path')) {
+                lazy[i].src = lazy[i].getAttribute('data-path');
+                lazy[i].removeAttribute('data-path');
+            }
+        }
+    }
+
+    cleanLazy();
+}
+
+function cleanLazy() {
+    lazy = Array.prototype.filter.call(lazy, function (l) {
+        return l.getAttribute('data-path');
     });
-    /* END: LazyLoad img */
-}, 500);
+}
+
+function isInViewport(el) {
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.bottom >= 0 &&
+        rect.right >= 0 &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function registerListener(event, func) {
+    if (window.addEventListener) {
+        window.addEventListener(event, func)
+    } else {
+        window.attachEvent('on' + event, func)
+    }
+}
+/* END: LazyLoad img */
+
 
 setTimeout(function () {
     $('html').addClass('init-second');
@@ -137,12 +178,12 @@ $(document).ready(function () {
             dataType: "html",
             data: $(this).serialize()
         }).done(function () {
-            $('.js-step-2').show();
+            $('.js-step-thanks').show();
             $('.callback-modal').trigger("reset");
             setTimeout(function () {
-                $('.js-step-2').hide();
+                $('.js-step-thanks').hide();
                 $.fancybox.close();
-            }, 5000);
+            }, 3000);
         });
         return false;
     });
@@ -163,12 +204,11 @@ $(document).ready(function () {
                     }
                 }
             });
-
             $('.callback').trigger("reset");
             setTimeout(function () {
                 $.fancybox.close();
                 console.info('close!');
-            }, 5000);
+            }, 3000);
         });
         return false;
     });

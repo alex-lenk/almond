@@ -1,3 +1,14 @@
+<?
+// определение мобильного устройства
+function check_mobile_device() {
+    $mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser');
+    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    // var_dump($agent);exit;
+    foreach ($mobile_agent_array as $value) {
+        if (strpos($agent, $value) !== false) return true;
+    }
+    return false;
+}?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -347,77 +358,88 @@
             от приобретения в нашем магазине
         </p>
 
-        <div class="video-reviews show-xs">
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_01.html" class="embed-responsive-item" frameborder="0"></iframe>
+        <?
+        // пример использования
+        $is_mobile_device = check_mobile_device();
+        if ($is_mobile_device) {
+            ?>
+            <div class="video-reviews show-xs">
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_01.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_02.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_03.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_04.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_05.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
+                        <iframe src="video_06.html" class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_02.html" class="embed-responsive-item" frameborder="0"></iframe>
+            <?
+        } else {
+            ?>
+            <div class="video-reviews hide-xs">
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_1_maria.mp4">
+                        <img data-path="/img/preview/maria-4.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_2_pavel.mp4">
+                        <img data-path="/img/preview/pavel.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_3_anastasia.mp4">
+                        <img data-path="/img/preview/anastasia-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_4_kristina.mp4">
+                        <img data-path="/img/preview/kristina-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_5_sergey.mp4">
+                        <img data-path="/img/preview/sergey-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
+                </div>
+                <div class="video-reviews-item">
+                    <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_6_lia.mp4">
+                        <img data-path="/img/preview/lia-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_03.html" class="embed-responsive-item" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_04.html" class="embed-responsive-item" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_05.html" class="embed-responsive-item" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner embed-responsive embed-responsive-16by9">
-                    <iframe src="video_06.html" class="embed-responsive-item" frameborder="0"></iframe>
-                </div>
-            </div>
-        </div>
+            <?
+        }
+        ?>
 
-        <div class="video-reviews hide-xs">
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_1_maria.mp4">
-                    <img data-path="/img/preview/maria-4.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_2_pavel.mp4">
-                    <img data-path="/img/preview/pavel.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_3_anastasia.mp4">
-                    <img data-path="/img/preview/anastasia-2.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_4_kristina.mp4">
-                    <img data-path="/img/preview/kristina-2.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_5_sergey.mp4">
-                    <img data-path="/img/preview/sergey-2.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-            <div class="video-reviews-item">
-                <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_6_lia.mp4">
-                    <img data-path="/img/preview/lia-2.jpg" class="img__data-path embed-responsive-item" alt="">
-                </div>
-            </div>
-        </div>
 
         <div class="reviews-want btn btn-primary" data-fancybox="" data-src="#modal-02" data-modal="true">хочу такие!</div>
 
-<!--        <div class="reviews-more__video btn-primary" id="video-reviews">
-            <span>показать больше</span>
-        </div>-->
+        <!--        <div class="reviews-more__video btn-primary" id="video-reviews">
+                    <span>показать больше</span>
+                </div>-->
 
         <div class="reviews-what">
             <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
@@ -576,14 +598,23 @@
             <span class="text-bold">AirPods&nbsp;2</span>&nbsp;что есть на&nbsp;данный момент.
         </div>
 
-
-        <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="/video/apple_discount_7_denis.mp4">
-            <img data-path="img/preview/denis.jpg" class="img__data-path" alt="">
-        </div>
-
-        <div class="attention-media embed-responsive embed-responsive-16by9 show-xs">
-            <iframe src="video_07.html" class="embed-responsive-item" frameborder="0"></iframe>
-        </div>
+        <?
+        // пример использования
+        $is_mobile_device = check_mobile_device();
+        if ($is_mobile_device) {
+            ?>
+            <div class="attention-media embed-responsive embed-responsive-16by9 show-xs">
+                <iframe src="video_07.html" class="embed-responsive-item" frameborder="0"></iframe>
+            </div>
+            <?
+        } else {
+            ?>
+            <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="/video/apple_discount_7_denis.mp4">
+                <img data-path="img/preview/denis.jpg" class="img__data-path" alt="">
+            </div>
+            <?
+        }
+        ?>
 
         <div class="attention-box">
             ИДЕАЛЬНОЕ звучание, КАЧЕСТВЕННАЯ СБОРКА, оригинальная упаковка
@@ -1064,7 +1095,7 @@
             </div>
 
             <form class="modal-view-form callback-modal form-callback">
-                <input id="formname" type="hidden" name="formname" value="Заказ на наушники AirPods PRO">
+                <input id="formname" type="hidden" name="formname" value="Заказ на наушники AirPods">
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-3">Ваше имя</label>
                     <svg class="modal-view-form__icon">
@@ -1166,6 +1197,6 @@
 </div>
 
 <script src="js/lib.min.js?ver=111"></script>
-<script src="js/scripts.min.js?ver=117"></script>
+<script src="js/scripts.min.js?ver=118"></script>
 </body>
 </html>
