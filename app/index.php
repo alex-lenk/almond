@@ -401,32 +401,32 @@ function check_mobile_device() {
             <div class="video-reviews hide-xs">
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_1_maria.mp4">
-                        <img data-path="/img/preview/maria-4.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-01.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_2_pavel.mp4">
-                        <img data-path="/img/preview/pavel.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-02.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_3_anastasia.mp4">
-                        <img data-path="/img/preview/anastasia-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-03.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_4_kristina.mp4">
-                        <img data-path="/img/preview/kristina-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-04.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_5_sergey.mp4">
-                        <img data-path="/img/preview/sergey-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-05.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_6_lia.mp4">
-                        <img data-path="/img/preview/lia-2.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-path="/img/preview/preview-06.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
             </div>
@@ -610,7 +610,7 @@ function check_mobile_device() {
         } else {
             ?>
             <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="/video/apple_discount_7_denis.mp4">
-                <img data-path="img/preview/denis.jpg" class="img__data-path" alt="">
+                <img data-path="img/preview/preview-07.jpg" class="img__data-path" alt="">
             </div>
             <?
         }
