@@ -1,6 +1,9 @@
 .footer {
   padding-top: 26px;
   color: #fff;
+  a:not(:hover) {
+    color: inherit;
+  }
 }
 
 .footer-column {
@@ -30,7 +33,6 @@
 .footer-link {
   margin-bottom: 5px;
   font-size: 12px;
-  color: inherit;
   line-height: 1.4;
   align-self: flex-start;
   display: flex;

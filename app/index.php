@@ -591,11 +591,8 @@ function check_mobile_device() {
         <h2 class="attention-title">Опыт после 6 месяцев эксплуатации</h2>
 
         <div class="attention-text">
-            Наушники <span class="text-bold">AirPods 2</span>&nbsp;в нашем магазине являются 100% качественной сборкой.
-            Мы&nbsp;проверяем качество всех наушников
-            <br>
-            лично перед отправкой, и&nbsp;вы&nbsp;получаете лучшую комплектацию и&nbsp;качество
-            <span class="text-bold">AirPods&nbsp;2</span>&nbsp;что есть на&nbsp;данный момент.
+            Мы&nbsp;попросили одного из&nbsp;наших покупателей дать свою оценку ежедневного пользования наушников
+            <span class="text-bold">AirPods&nbsp;2</span>, спустя полгода после приобретения в&nbsp;нашем магазине.
         </div>
 
         <?

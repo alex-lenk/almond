@@ -1,5 +1,9 @@
-a:hover {
-  text-decoration: none;
+a {
+  transition: color .3s;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
