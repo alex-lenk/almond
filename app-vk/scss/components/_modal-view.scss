@@ -4,8 +4,10 @@
 
 .modal-view {
   width: 100%;
-  display: none;
-  overflow: visible;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
   border-radius: 6px;
 }
 
@@ -135,14 +137,39 @@
   font-weight: 500;
 }
 
+.open-modal {padding-left: 17px;
+  overflow: hidden;
+
+  .modal-view {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 @media (min-width: 576px) {
   .modal-view {
-    max-width: 860px;
-    height: 580px;
-    padding: 47px 35px 33px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    background-color: rgba(#000, .45);
+    transition: all .4s ease-out;
+  }
+  .modal-view-final {
+    max-width: 580px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -290px;
     border-radius: 6px;
     box-shadow: 0 0 13px 0 rgba(136, 136, 136, 0.37);
   }
+
   .modal-view-inner {
     display: flex;
   }
@@ -207,12 +234,12 @@
     top: 24px;
   }
   .modal-view-close {
-    top: -57px;
-    right: -57px;
+    top: -38px;
+    right: -38px;
   }
   .modal-view-close__icon {
-    width: 58px;
-    height: 58px;
+    width: 40px;
+    height: 40px;
     fill: #fff;
   }
   .modal-view-string {
