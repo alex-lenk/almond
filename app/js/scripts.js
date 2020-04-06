@@ -1,56 +1,56 @@
-'use strict';
-
 /* BEGIN: LazyLoad img */
-registerListener('load', setLazy);
-registerListener('load', lazyLoad);
-registerListener('scroll', lazyLoad);
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyloadImages;
 
-var lazy = [];
+    if ("IntersectionObserver" in window) {
+        lazyloadImages = document.querySelectorAll(".img__data-path");
+        var imageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var image = entry.target;
+                    image.src = image.dataset.src;
+                    image.classList.remove("img__data-path");
+                    imageObserver.unobserve(image);
+                }
+            });
+        });
 
-function setLazy() {
-    lazy = document.getElementsByClassName('img__data-path');
-    //console.log('Found ' + lazy.length + ' lazy images');
-}
-
-function lazyLoad() {
-    for (var i = 0; i < lazy.length; i++) {
-        if (isInViewport(lazy[i])) {
-            if (lazy[i].getAttribute('data-path')) {
-                lazy[i].src = lazy[i].getAttribute('data-path');
-                lazy[i].removeAttribute('data-path');
-            }
-        }
-    }
-
-    cleanLazy();
-}
-
-function cleanLazy() {
-    lazy = Array.prototype.filter.call(lazy, function (l) {
-        return l.getAttribute('data-path');
-    });
-}
-
-function isInViewport(el) {
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.bottom >= 0 &&
-        rect.right >= 0 &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function registerListener(event, func) {
-    if (window.addEventListener) {
-        window.addEventListener(event, func)
+        lazyloadImages.forEach(function (image) {
+            imageObserver.observe(image);
+        });
     } else {
-        window.attachEvent('on' + event, func)
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".img__data-path");
+
+        function lazyload() {
+            if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+            }
+
+            lazyloadThrottleTimeout = setTimeout(function () {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function (img) {
+                    if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('img__data-path');
+                    }
+                });
+                if (lazyloadImages.length == 0) {
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
     }
-}
+});
 /* END: LazyLoad img */
 
+'use strict';
 
 setTimeout(function () {
     $('html').addClass('init-second');

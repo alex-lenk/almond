@@ -225,25 +225,25 @@ function check_mobile_device() {
     <ul class="complete-list list-unstyled">
         <li class="complete-item">
             <div class="complete-media">
-                <img data-path="img/complete/complete-01.jpg" class="img__data-path" alt="">
+                <img data-src="/img/complete/complete-01.jpg" class="img__data-path" alt="">
             </div>
             <div class="complete-text">Наушники AirPods 2</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-path="img/complete/complete-02.jpg" class="img__data-path" alt="">
+                <img data-src="/img/complete/complete-02.jpg" class="img__data-path" alt="">
             </div>
             <div class="complete-text">Зарядной чехол</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-path="img/complete/complete-03.jpg" class="img__data-path" alt="">
+                <img data-src="/img/complete/complete-03.jpg" class="img__data-path" alt="">
             </div>
             <div class="complete-text">Кабель Lighting / USB</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-path="img/complete/complete-04.jpg" class="img__data-path" alt="">
+                <img data-src="/img/complete/complete-04.jpg" class="img__data-path" alt="">
             </div>
             <div class="complete-text">Коробка</div>
         </li>
@@ -401,32 +401,32 @@ function check_mobile_device() {
             <div class="video-reviews hide-xs">
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_1_maria.mp4">
-                        <img data-path="/img/preview/preview-01.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-01.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_2_pavel.mp4">
-                        <img data-path="/img/preview/preview-02.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-02.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_3_anastasia.mp4">
-                        <img data-path="/img/preview/preview-03.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-03.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_4_kristina.mp4">
-                        <img data-path="/img/preview/preview-04.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-04.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_5_sergey.mp4">
-                        <img data-path="/img/preview/preview-05.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-05.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_6_lia.mp4">
-                        <img data-path="/img/preview/preview-06.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-06.jpg" class="img__data-path embed-responsive-item" alt="">
                     </div>
                 </div>
             </div>
@@ -442,53 +442,53 @@ function check_mobile_device() {
                 </div>-->
 
         <div class="reviews-what">
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/example/what-021.jpg">
-                <img data-path="img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
+                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
             </div>
         </div>
 
@@ -523,7 +523,7 @@ function check_mobile_device() {
     </div>
 </section>
 
-<section class="choose">
+<section class="choose" id="choose">
     <div class="choose-inner container">
         <h2 class="choose-title">
             Выберите<br>
@@ -532,7 +532,7 @@ function check_mobile_device() {
 
         <div class="choose-card">
             <div class="choose-card__media">
-                <img data-path="img/product/airpods-03.png" class="img__data-path" alt="">
+                <img data-src="/img/product/airpods-03.png" class="img__data-path" alt="">
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>14 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">3 990 руб.</span></div>
@@ -541,7 +541,7 @@ function check_mobile_device() {
 
         <div class="choose-card">
             <div class="choose-card__media">
-                <img data-path="img/product/airpods-04.png" class="img__data-path" alt="">
+                <img data-src="/img/product/airpods-04.png" class="img__data-path" alt="">
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>21 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">6 990 руб.</span></div>
@@ -567,8 +567,8 @@ function check_mobile_device() {
         <h2 class="synchronization-title">Синхронизация</h2>
 
         <div class="synchronization-info">
-            <div class="synchronization-media"><img data-path="img/product/synchronization-01.png" class="img__data-path" alt=""></div>
-            <div class="synchronization-media synchronization-media-2"><img data-path="img/product/synchronization-02.png" class="img__data-path" alt=""></div>
+            <div class="synchronization-media"><img data-src="/img/product/synchronization-01.png" class="img__data-path" alt=""></div>
+            <div class="synchronization-media synchronization-media-2"><img data-src="/img/product/synchronization-02.png" class="img__data-path" alt=""></div>
             <div class="synchronization-content sprite-synchronization">
                 Наушники <span class="text-bold">AirPods 2</span> и <span class="text-bold">Airpods Pro</span> синхронизируются
                 <br>
@@ -592,7 +592,7 @@ function check_mobile_device() {
 
         <div class="attention-text">
             Мы&nbsp;попросили одного из&nbsp;наших покупателей дать свою оценку ежедневного пользования наушников
-            <span class="text-bold">AirPods&nbsp;2</span>, спустя полгода после приобретения в&nbsp;нашем магазине.
+            <span class="text-bold">AirPods&nbsp;2</span>,<br class="hide-xs"> спустя полгода после приобретения в&nbsp;нашем магазине.
         </div>
 
         <?
@@ -607,7 +607,7 @@ function check_mobile_device() {
         } else {
             ?>
             <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="/video/apple_discount_7_denis.mp4">
-                <img data-path="img/preview/preview-07.jpg" class="img__data-path" alt="">
+                <img data-src="/img/preview/preview-07.jpg" class="img__data-path" alt="">
             </div>
             <?
         }
@@ -719,8 +719,8 @@ function check_mobile_device() {
             Мы&nbsp;отправим ваш заказ уже сегодня!
         </p>
         <div class="delivery-box">
-            <div class="delivery-box__media"><img data-path="img/box-01.jpg" class="img__data-path" alt=""></div>
-            <div class="delivery-box__media"><img data-path="img/box-03.jpg" class="img__data-path" alt=""></div>
+            <div class="delivery-box__media"><img data-src="/img/box-01.jpg" class="img__data-path" alt=""></div>
+            <div class="delivery-box__media"><img data-src="/img/box-03.jpg" class="img__data-path" alt=""></div>
         </div>
     </div>
 
@@ -850,12 +850,12 @@ function check_mobile_device() {
         <div class="footer-column">
             <div class="footer-column__title">НАШ МАГАЗИН</div>
 
-            <a href="#" class="footer-link go-anchor">Характеристики</a>
-            <a href="#" class="footer-link go-anchor">Обзор</a>
-            <a href="#" class="footer-link go-anchor">Отзывы</a>
-            <a href="#" class="footer-link go-anchor">AirPods 2</a>
-            <a href="#" class="footer-link go-anchor">AirPods Pro</a>
-            <a href="#" class="footer-link go-anchor">Политика конфиденциальности</a>
+            <a href="#advantages" class="footer-link go-anchor">Характеристики</a>
+            <a href="#attention" class="footer-link go-anchor">Обзор</a>
+            <a href="#review" class="footer-link go-anchor">Отзывы</a>
+            <a href="#choose" class="footer-link go-anchor">AirPods 2</a>
+            <a href="#choose" class="footer-link go-anchor">AirPods Pro</a>
+            <a data-fancybox="" href="#modal-05" data-modal="true" class="footer-link">Политика конфиденциальности</a>
         </div>
         <div class="footer-column">
             <div class="footer-column__title">КОНТАКТЫ</div>
@@ -866,12 +866,12 @@ function check_mobile_device() {
                 </svg>
                 8 800 350 56 47
             </a>
-            <a href="mailto:shop@airpods-stok.ru" class="footer-link" rel="nofollow">
+            <span class="footer-link">
                 <svg class="footer-link__icon">
                     <use xlink:href="img/icons.svg#email"></use>
                 </svg>
-                е-mail: shop@airpods-stok.ru
-            </a>
+                <span style="padding-right: 5px">е-mail: </span> <a href="mailto:shop@airpods-stok.ru" rel="nofollow"> shop@airpods-stok.ru</a>
+            </span>
             <div class="footer-link">
                 <svg class="footer-link__icon">
                     <use xlink:href="img/icons.svg#history"></use>
@@ -888,10 +888,10 @@ function check_mobile_device() {
         <div class="footer-column">
             <div class="footer-column__title">ДОСТАВКА</div>
 
-            <a href="#" class="footer-link go-anchor">Курьером лично в руки</a>
-            <a href="#" class="footer-link go-anchor">Ускоренная  доставка</a>
-            <a href="#" class="footer-link go-anchor">Оплата при получении</a>
-            <a href="#" class="footer-link go-anchor">Доставка 24 часа в сутки</a>
+            <a href="#delivery" class="footer-link go-anchor">Курьером лично в руки</a>
+            <a href="#delivery" class="footer-link go-anchor">Ускоренная  доставка</a>
+            <a href="#delivery" class="footer-link go-anchor">Оплата при получении</a>
+            <a href="#delivery" class="footer-link go-anchor">Доставка 24 часа в сутки</a>
         </div>
         <div class="footer-column">
             <div class="footer-column__title">ПРИСОЕДИНЯЙТЕСЬ</div>
@@ -914,7 +914,7 @@ function check_mobile_device() {
                 115998, г. Москва, ул. Шаболовка, д. 31, строен. А
             </div>
 
-            ©2020. Все права защищены. <span>Пользовательское соглашение и правила.</span>
+            ©2020. Все права защищены. <span data-fancybox="" data-src="#modal-05" data-modal="true">Пользовательское соглашение и&nbsp;правила.</span>
         </div>
     </div>
 </footer>
@@ -922,7 +922,7 @@ function check_mobile_device() {
 <div id="modal-01" class="modal-view">
     <div class="modal-view-inner js-step-1">
         <div class="modal-view__info hide-xs">
-            <img data-path="img/mob/img-03.png" class="img__data-path" alt="">
+            <img data-src="/img/mob/img-03.png" class="img__data-path" alt="">
 
             <div class="modal-view__price-old">
                 Обычная цена: <del>14 990 руб.</del>
@@ -996,7 +996,7 @@ function check_mobile_device() {
 <div id="modal-02" class="modal-view">
     <div class="modal-view-inner js-step-1">
         <div class="modal-view__info hide-xs">
-            <img data-path="img/mob/img-03.png" class="img__data-path" alt="">
+            <img data-src="/img/mob/img-03.png" class="img__data-path" alt="">
 
             <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
             <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span></div>
@@ -1069,7 +1069,7 @@ function check_mobile_device() {
         <div class="modal-view__info hide-xs">
             <br>
             <br>
-            <img data-path="img/product/airpods-06.png" class="img__data-path" alt="">
+            <img data-src="/img/product/airpods-06.png" class="img__data-path" alt="">
 
             <div class="modal-view__price-old">Обычная цена: <del>21 990 руб.</del></div>
             <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">6 990 руб.</span></div>
@@ -1092,7 +1092,7 @@ function check_mobile_device() {
             </div>
 
             <form class="modal-view-form callback-modal form-callback">
-                <input id="formname" type="hidden" name="formname" value="Заказ на наушники AirPods">
+                <input id="formname" type="hidden" name="formname" value="Заказ на наушники AirPods PRO">
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-3">Ваше имя</label>
                     <svg class="modal-view-form__icon">
@@ -1156,6 +1156,40 @@ function check_mobile_device() {
         <svg class="modal-view-close__icon">
             <use xlink:href="img/icons.svg#close"></use>
         </svg>
+    </div>
+</div>
+
+<div id="modal-05" class="modal-view">
+    <div class="modal-view-inner js-step-1">
+        <div class="privacy-policy">
+            <h3>1.Сбор информации</h3>
+            <p>Мы собираем информацию, когда вы регистрируетесь на сайте, заходите на свой аккаунт, совершаете покупку, участвуете в акции и/или выходите из аккаунта. Информация включает ваше имя, адрес электронной почты, номер телефона и данные по кредитной карте.</p>
+            <p>Кроме того, мы автоматически регистрируем ваш компьютер и браузер, включая IP, ПО и аппаратные данные, а также адрес запрашиваемой страницы.</p>
+            <h3>2. Использование информации</h3>
+            <p>Информация, которую мы получаем от вас, может быть использована, чтобы:</p>
+            <ul>
+                <li>Сделать услуги соответствующими вашим индивидуальным запросам</li>
+                <li>Предложить персонализированную рекламу</li>
+                <li>Улучшить наш сайт</li>
+                <li>Улучшить систему поддержки пользователей</li>
+                <li>Связаться с вами по электронной почте</li>
+                <li>Устроить акцию, конкурс или организовать исследование</li>
+            </ul>
+            <h3>3. Защита личных данных при онлайн-продажах</h3>
+            <p>Мы являемся единственным владельцем информации, собранной на данном сайте. Ваши личные данные не будут проданы или каким-либо образом переданы третьим лицам по каким-либо причинам, за исключением необходимых данных для выполнения запроса или транзакции, например, при отправке заказа.</p>
+            <h3>4. Раскрытие информации третьим лицам</h3>
+            <p>Мы не продаем, не обмениваем и не передаем личные данные сторонним компаниям. Это не относится к надежным компаниям, которые помогают нам в работе сайта и ведении бизнеса при условии, что они соглашаются сохранять конфиденциальность информации.</p>
+            <p>Мы готовы делиться информацией, чтобы предотвратить преступления или помочь в их расследовании, если речь идет о подозрении на мошенничество, действиях, физически угрожающих безопасности людей, нарушениях правил использования или в случаях, когда это предусмотрено законом.</p>
+            <p>Неконфиденциальная информация может быть предоставлена другим компаниям в целях маркетинга, рекламы и т.д.</p>
+            <h3>5. Защита информации</h3>
+            <p>Мы используем различные средства безопасности, чтобы гарантировать сохранность ваших личных данных. К вашим услугам самое современное шифрование. VpnMentor также защищает ваши данные в режиме оффлайн. Только те сотрудники, которые работают с конкретным заданием (например, техническая поддержка или проведение оплаты) получают доступ к личным данным. Сервера и компьютеры, на которых записана конфиденциальная информация, находятся в безопасном окружении.</p>
+            <p>Использование файлов «cookie»</p>
+            <p>Наши файлы «cookie» используются для улучшения доступа к сайту и определения повторных посещений. Кроме того, они позволяют отследить наиболее интересующие запросы. Файлы «cookie» не передают никакую конфиденциальную информацию.</p>
+            <h3>6. Отказ от подписки</h3>
+            <p>Мы используем электронную почту, чтобы предоставить вам информацию по вашему заказу, новостям компании, информации по продуктам и т.д. Если вы желаете отказаться от подписки, в каждом письме даны подробные инструкции, как вы можете это сделать.</p>
+            <h3>7. Согласие</h3>
+            <p>Пользуясь услугами нашего сайта, вы автоматически соглашаетесь с нашей политикой конфиденциальности.</p>
+        </div>
     </div>
 </div>
 
