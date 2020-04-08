@@ -899,8 +899,8 @@ function check_mobile_device() {
             <div class="footer-social">
                 <a href="https://vk.com/appleairpodsdiscount" class="footer-link sprite-vk" rel="nofollow" target="_blank"><span class="hide-xs">VKontakte</span></a>
                 <a href="https://www.instagram.com/airpodsrefofficial/" class="footer-link sprite-insta" rel="nofollow" target="_blank"><span class="hide-xs">Instagram</span></a>
-                <a href="https://api.whatsapp.com/send?phone=79031173754" class="footer-link sprite-what" rel="nofollow" target="_blank"><span class="hide-xs">WatsApp</span></a>
-                <a href="tg://resolve?domain=alexlenk" st="link-support-telegram" title="@alexlenk" class="footer-link sprite-tg" rel="nofollow"><span class="hide-xs">Telegram</span></a>
+                <a href="https://api.whatsapp.com/send?phone=79037741881" class="footer-link sprite-what" rel="nofollow" target="_blank"><span class="hide-xs">WatsApp</span></a>
+                <a href="tg://resolve?domain=airpodsdiscount" st="link-support-telegram" title="@airpodsdiscount" class="footer-link sprite-tg" rel="nofollow"><span class="hide-xs">Telegram</span></a>
             </div>
         </div>
 
@@ -1159,6 +1159,7 @@ function check_mobile_device() {
     </div>
 </div>
 
+
 <div id="modal-05" class="modal-view">
     <div class="modal-view-inner js-step-1">
         <div class="privacy-policy">
@@ -1191,7 +1192,14 @@ function check_mobile_device() {
             <p>Пользуясь услугами нашего сайта, вы автоматически соглашаетесь с нашей политикой конфиденциальности.</p>
         </div>
     </div>
+
+    <div data-fancybox-close class="modal-view-close" title="закрыть">
+        <svg class="modal-view-close__icon">
+            <use xlink:href="img/icons.svg#close"></use>
+        </svg>
+    </div>
 </div>
+
 
 <nav class="menu-mob">
     <ul class="menu-mob-list">
@@ -1207,8 +1215,8 @@ function check_mobile_device() {
     <div class="footer-social">
         <a href="https://vk.com/appleairpodsdiscount" class="footer-link sprite-vk" target="_blank"><span class="hide-xs">VKontakte</span></a>
         <a href="https://www.instagram.com/airpodsrefofficial/" class="footer-link sprite-insta" target="_blank"><span class="hide-xs">Instagram</span></a>
-        <a href="https://api.whatsapp.com/send?phone=79031173754" class="footer-link sprite-what" target="_blank"><span class="hide-xs">WatsApp</span></a>
-        <a href="tg://resolve?domain=alexlenk" st="link-support-telegram" title="@alexlenk" class="footer-link sprite-tg"><span class="hide-xs">Telegram</span></a>
+        <a href="https://api.whatsapp.com/send?phone=79037741881" class="footer-link sprite-what" target="_blank"><span class="hide-xs">WatsApp</span></a>
+        <a href="tg://resolve?domain=airpodsdiscount" st="link-support-telegram" title="@airpodsdiscount" class="footer-link sprite-tg"><span class="hide-xs">Telegram</span></a>
     </div>
 </nav>
 
@@ -1216,8 +1224,8 @@ function check_mobile_device() {
 
 <div class="social">
     <a href="https://vk.com/appleairpodsdiscount" class="social-point vk" rel="nofollow" target="_blank"></a>
-    <a href="https://api.whatsapp.com/send?phone=79031173754" class="social-point whatsapp" rel="nofollow" target="_blank"></a>
-    <a href="tg://resolve?domain=alexlenk" st="link-support-telegram" title="@alexlenk" class="social-point telegram" rel="nofollow" target="_blank"></a>
+    <a href="https://api.whatsapp.com/send?phone=79037741881" class="social-point whatsapp" rel="nofollow" target="_blank"></a>
+    <a href="tg://resolve?domain=airpodsdiscount" st="link-support-telegram" title="@airpodsdiscount" class="social-point telegram" rel="nofollow" target="_blank"></a>
     <a href="https://www.instagram.com/airpodsrefofficial/" class="social-point instagram" rel="nofollow" target="_blank"></a>
 </div>
 
