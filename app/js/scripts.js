@@ -3,16 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     var lazyloadImages;
 
     if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".img__data-path");
+        lazyloadImages = document.querySelectorAll(".lazy");
         var imageObserver = new IntersectionObserver(function (entries, observer) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     var image = entry.target;
                     image.src = image.dataset.src;
-                    image.classList.remove("img__data-path");
+                    image.classList.remove("lazy");
                     imageObserver.unobserve(image);
                 }
             });
+        }, {
+            root: document.querySelector("body"),
+            rootMargin: "0px 0px 500px 0px"
         });
 
         lazyloadImages.forEach(function (image) {
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } else {
         var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".img__data-path");
+        lazyloadImages = document.querySelectorAll(".lazy");
 
         function lazyload() {
             if (lazyloadThrottleTimeout) {
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 lazyloadImages.forEach(function (img) {
                     if (img.offsetTop < (window.innerHeight + scrollTop)) {
                         img.src = img.dataset.src;
-                        img.classList.remove('img__data-path');
+                        img.classList.remove('lazy');
                     }
                 });
                 if (lazyloadImages.length == 0) {
@@ -63,25 +66,7 @@ $(document).ready(function () {
         headerCallPanel = $('.header-call__panel'),
         social = $('.social');
 
-    if (windowWidth < 575) {
-        $('#video-reviews').click(function () {
-            $('.video-reviews').css('height', 'auto');
-            $(this).fadeOut();
-        });
-        $('#reviews-what').click(function () {
-            $('.reviews-what').css('height', 'auto');
-            $(this).fadeOut();
-        });
-
-        var reviewsWhat = $('.reviews-what'),
-            heightReviewsWhatItem = $('.reviews-what__item').height(),
-            heightReviewsWhat = reviewsWhat.outerHeight();
-
-        reviewsWhat.height(heightReviewsWhat);
-        console.log(heightReviewsWhat);
-        console.log(heightReviewsWhatItem);
-    } else {
-        //$('.nav-bar-stick').css('width', windowWidth);
+    if (windowWidth > 576) {
         $('.social, .scroll-to-top').css('left', windowWidth);
 
         $(window).scroll(function () {
