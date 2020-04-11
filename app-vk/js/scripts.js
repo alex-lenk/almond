@@ -1,67 +1,14 @@
 'use strict';
 
-/* BEGIN: LazyLoad img */
-registerListener('load', setLazy);
-registerListener('load', lazyLoad);
-registerListener('scroll', lazyLoad);
-
-var lazy = [];
-
-function setLazy() {
-    lazy = document.getElementsByClassName('img__data-path');
-    //console.log('Found ' + lazy.length + ' lazy images');
-}
-
-function lazyLoad() {
-    for (var i = 0; i < lazy.length; i++) {
-        if (isInViewport(lazy[i])) {
-            if (lazy[i].getAttribute('data-path')) {
-                lazy[i].src = lazy[i].getAttribute('data-path');
-                lazy[i].removeAttribute('data-path');
-            }
-        }
-    }
-
-    cleanLazy();
-}
-
-function cleanLazy() {
-    lazy = Array.prototype.filter.call(lazy, function (l) {
-        return l.getAttribute('data-path');
-    });
-}
-
-function isInViewport(el) {
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.bottom >= 0 &&
-        rect.right >= 0 &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function registerListener(event, func) {
-    if (window.addEventListener) {
-        window.addEventListener(event, func)
-    } else {
-        window.attachEvent('on' + event, func)
-    }
-}
-
-/* END: LazyLoad img */
-
-
-setTimeout(function () {
-    $('html').addClass('init-second');
-}, 1500);
-
 /* инитим vkBridge */
 $(document).ready(function () {
     vkBridge.send('VKWebAppInit');
 });
 /* инитим vkBridge */
+
+setTimeout(function () {
+    $('html').addClass('init-second');
+}, 1500);
 
 $(document).ready(function () {
 
@@ -103,7 +50,8 @@ $(document).ready(function () {
     };
 
 
-    $('.phone').inputmask({"mask": "+7 (999) 999-99-99"});
+    //$('.phone').inputmask({"mask": "+7 (999) 999-99-99"});
+    $('.phone').mask("+7 (999) 999-99-99");
 
 
     $('.form-callback').submit(function () {
@@ -124,5 +72,17 @@ $(document).ready(function () {
 
     $('.modal-view-close').click(function () {
         $('body').toggleClass('open-modal');
+    });
+
+
+    var social = $('.social');
+    social.css('left', $(window).width());
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 350) {
+            social.fadeIn();
+        } else {
+            social.fadeOut();
+        }
     });
 });
