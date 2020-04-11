@@ -15,8 +15,8 @@ function check_mobile_device() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AirPods Discount</title>
-    <link rel="stylesheet" href="css/lib.min.css?ver=117">
-    <link rel="stylesheet" href="css/styles.min.css?ver=119">
+    <link rel="stylesheet" href="/css/lib.min.css?ver=117">
+    <link rel="stylesheet" href="/css/styles.min.css?ver=121">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -33,7 +33,7 @@ function check_mobile_device() {
         <div class="nav-bar-section container">
             <a href="/" class="logo">
                 <svg class="logo-icon">
-                    <use xlink:href="img/icons.svg#logo-2"></use>
+                    <use xlink:href="/img/icons.svg#logo-2"></use>
                 </svg>
                 <span class="logo-name">AirPods</span>
                 <span class="logo-discount">Discount</span>
@@ -51,7 +51,7 @@ function check_mobile_device() {
             <div class="phone-call">
                 <a href="tel:88003505647" rel="nofollow" class="phone-call-box">
                     <svg class="phone-call-box__icon">
-                        <use xlink:href="img/icons.svg#phone"></use>
+                        <use xlink:href="/img/icons.svg#phone"></use>
                     </svg>
                     8 800 350 56 47
                 </a>
@@ -225,25 +225,25 @@ function check_mobile_device() {
     <ul class="complete-list list-unstyled">
         <li class="complete-item">
             <div class="complete-media">
-                <img data-src="/img/complete/complete-01.jpg" class="img__data-path" alt="">
+                <img src="/img/complete/complete-01.jpg" alt="">
             </div>
             <div class="complete-text">Наушники AirPods 2</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-src="/img/complete/complete-02.jpg" class="img__data-path" alt="">
+                <img src="/img/complete/complete-02.jpg" alt="">
             </div>
             <div class="complete-text">Зарядной чехол</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-src="/img/complete/complete-03.jpg" class="img__data-path" alt="">
+                <img src="/img/complete/complete-03.jpg" alt="">
             </div>
             <div class="complete-text">Кабель Lighting / USB</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
-                <img data-src="/img/complete/complete-04.jpg" class="img__data-path" alt="">
+                <img src="/img/complete/complete-04.jpg" alt="">
             </div>
             <div class="complete-text">Коробка</div>
         </li>
@@ -299,7 +299,7 @@ function check_mobile_device() {
                 <div class="form-group call-form__group">
                     <label class="sr-only">Ваше имя</label>
                     <svg class="call-form__icon">
-                        <use xlink:href="img/icons.svg#user"></use>
+                        <use xlink:href="/img/icons.svg#user"></use>
                     </svg>
                     <input type="text" name="name" class="call-form__field form-control hide-placeholder" placeholder="Ваше имя" autocomplete="off" required>
                 </div>
@@ -307,7 +307,7 @@ function check_mobile_device() {
                 <div class="form-group call-form__group">
                     <label class="sr-only">Контактный телефон*</label>
                     <svg class="call-form__icon">
-                        <use xlink:href="img/icons.svg#phone-2"></use>
+                        <use xlink:href="/img/icons.svg#phone-2"></use>
                     </svg>
                     <input type="tel" name="phone" class="call-form__field form-control hide-placeholder phone" placeholder="Контактный телефон*" autocomplete="off" required>
                 </div>
@@ -401,32 +401,32 @@ function check_mobile_device() {
             <div class="video-reviews hide-xs">
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_1_maria.mp4">
-                        <img data-src="/img/preview/preview-01.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-01.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_2_pavel.mp4">
-                        <img data-src="/img/preview/preview-02.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-02.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_3_anastasia.mp4">
-                        <img data-src="/img/preview/preview-03.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-03.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_4_kristina.mp4">
-                        <img data-src="/img/preview/preview-04.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-04.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_5_sergey.mp4">
-                        <img data-src="/img/preview/preview-05.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-05.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
                 <div class="video-reviews-item">
                     <div class="video-reviews-item__inner video-play embed-responsive embed-responsive-16by9" data-fancybox="html5-video" data-src="/video/apple_discount_6_lia.mp4">
-                        <img data-src="/img/preview/preview-06.jpg" class="img__data-path embed-responsive-item" alt="">
+                        <img data-src="/img/preview/preview-06.jpg" class="lazy embed-responsive-item" alt="">
                     </div>
                 </div>
             </div>
@@ -437,63 +437,67 @@ function check_mobile_device() {
 
         <div class="reviews-want btn btn-primary" data-fancybox="" data-src="#modal-02" data-modal="true">хочу такие!</div>
 
-        <!--        <div class="reviews-more__video btn-primary" id="video-reviews">
-                    <span>показать больше</span>
-                </div>-->
-
         <div class="reviews-what">
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/1.jpeg">
+                <img data-src="/img/review/1.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/2.jpeg">
+                <img data-src="/img/review/2.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/3.jpeg">
+                <img data-src="/img/review/3.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/4.jpeg">
+                <img data-src="/img/review/4.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/5.jpg">
+                <img data-src="/img/review/5.jpg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/6.jpeg">
+                <img data-src="/img/review/6.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/7.jpg">
+                <img data-src="/img/review/7.jpg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/8.jpeg">
+                <img data-src="/img/review/8.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/9.jpeg">
+                <img data-src="/img/review/9.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/10.jpeg">
+                <img data-src="/img/review/10.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/11.jpg">
+                <img data-src="/img/review/11.jpg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/12.jpeg">
+                <img data-src="/img/review/12.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/13.jpeg">
+                <img data-src="/img/review/13.jpeg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/14.jpg">
+                <img data-src="/img/review/14.jpg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/15.jpg">
+                <img data-src="/img/review/15.jpg" class="lazy" alt="">
             </div>
-            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="/img/example/what-021.jpg">
-                <img data-src="/img/example/what-021.jpg" class="img__data-path" alt="">
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/16.jpeg">
+                <img data-src="/img/review/16.jpeg" class="lazy" alt="">
             </div>
-        </div>
-
-        <div class="reviews-more__video btn-primary" id="reviews-what">
-            <span>показать больше</span>
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/17.jpeg">
+                <img data-src="/img/review/17.jpeg" class="lazy" alt="">
+            </div>
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/18.jpeg">
+                <img data-src="/img/review/18.jpeg" class="lazy" alt="">
+            </div>
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/19.jpeg">
+                <img data-src="/img/review/19.jpeg" class="lazy" alt="">
+            </div>
+            <div class="reviews-what__item" data-fancybox="review-img" data-loop="true" data-src="img/review/20.jpg">
+                <img data-src="/img/review/20.jpg" class="lazy" alt="">
+            </div>
         </div>
     </div>
 
@@ -512,7 +516,7 @@ function check_mobile_device() {
             <div class="form-group reviews-form__group">
                 <label class="sr-only">Контактный телефон*</label>
                 <svg class="reviews-form__icon">
-                    <use xlink:href="img/icons.svg#phone-2"></use>
+                    <use xlink:href="/img/icons.svg#phone-2"></use>
                 </svg>
                 <input type="tel" name="phone" class="form-control hide-placeholder phone" placeholder="Контактный телефон*" autocomplete="off" required>
             </div>
@@ -532,7 +536,7 @@ function check_mobile_device() {
 
         <div class="choose-card">
             <div class="choose-card__media">
-                <img data-src="/img/product/airpods-03.png" class="img__data-path" alt="">
+                <img data-src="/img/product/airpods-03.png" class="lazy" alt="">
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>14 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">3 990 руб.</span></div>
@@ -541,7 +545,7 @@ function check_mobile_device() {
 
         <div class="choose-card">
             <div class="choose-card__media">
-                <img data-src="/img/product/airpods-04.png" class="img__data-path" alt="">
+                <img data-src="/img/product/airpods-04.png" class="lazy" alt="">
             </div>
             <div class="choose-card__price-old">Обычная цена: <del>21 990 руб.</del></div>
             <div class="choose-card__price">Со скидкой: <span class="choose-card__price-cost">6 990 руб.</span></div>
@@ -567,8 +571,8 @@ function check_mobile_device() {
         <h2 class="synchronization-title">Синхронизация</h2>
 
         <div class="synchronization-info">
-            <div class="synchronization-media"><img data-src="/img/product/synchronization-01.png" class="img__data-path" alt=""></div>
-            <div class="synchronization-media synchronization-media-2"><img data-src="/img/product/synchronization-02.png" class="img__data-path" alt=""></div>
+            <div class="synchronization-media"><img data-src="/img/product/synchronization-01.png" class="lazy" alt=""></div>
+            <div class="synchronization-media synchronization-media-2"><img data-src="/img/product/synchronization-02.png" class="lazy" alt=""></div>
             <div class="synchronization-content sprite-synchronization">
                 Наушники <span class="text-bold">AirPods 2</span> и <span class="text-bold">Airpods Pro</span> синхронизируются
                 <br>
@@ -607,7 +611,7 @@ function check_mobile_device() {
         } else {
             ?>
             <div class="attention-media hide-xs video-play" data-fancybox="html5-video-2" data-src="/video/apple_discount_7_denis.mp4">
-                <img data-src="/img/preview/preview-07.jpg" class="img__data-path" alt="">
+                <img data-src="/img/preview/preview-07.jpg" class="lazy" alt="">
             </div>
             <?
         }
@@ -719,8 +723,8 @@ function check_mobile_device() {
             Мы&nbsp;отправим ваш заказ уже сегодня!
         </p>
         <div class="delivery-box">
-            <div class="delivery-box__media"><img data-src="/img/box-01.jpg" class="img__data-path" alt=""></div>
-            <div class="delivery-box__media"><img data-src="/img/box-03.jpg" class="img__data-path" alt=""></div>
+            <div class="delivery-box__media"><img data-src="/img/box-01.jpg" class="lazy" alt=""></div>
+            <div class="delivery-box__media"><img data-src="/img/box-03.jpg" class="lazy" alt=""></div>
         </div>
     </div>
 
@@ -823,7 +827,7 @@ function check_mobile_device() {
             <div class="form-group call-form__group">
                 <label class="sr-only">Ваше имя</label>
                 <svg class="call-form__icon">
-                    <use xlink:href="img/icons.svg#user"></use>
+                    <use xlink:href="/img/icons.svg#user"></use>
                 </svg>
                 <input type="text" name="name" class="call-form__field form-control hide-placeholder" placeholder="Ваше имя" autocomplete="off" required>
             </div>
@@ -831,7 +835,7 @@ function check_mobile_device() {
             <div class="form-group call-form__group">
                 <label class="sr-only">Контактный телефон*</label>
                 <svg class="call-form__icon">
-                    <use xlink:href="img/icons.svg#phone-2"></use>
+                    <use xlink:href="/img/icons.svg#phone-2"></use>
                 </svg>
                 <input type="tel" name="phone" class="call-form__field form-control hide-placeholder phone" placeholder="Контактный телефон*" inputmode="text" autocomplete="off" required>
             </div>
@@ -862,25 +866,25 @@ function check_mobile_device() {
 
             <a href="tel:88003505647" class="footer-link" rel="nofollow">
                 <svg class="footer-link__icon">
-                    <use xlink:href="img/icons.svg#phone-s"></use>
+                    <use xlink:href="/img/icons.svg#phone-s"></use>
                 </svg>
                 8 800 350 56 47
             </a>
             <span class="footer-link">
                 <svg class="footer-link__icon">
-                    <use xlink:href="img/icons.svg#email"></use>
+                    <use xlink:href="/img/icons.svg#email"></use>
                 </svg>
                 <span style="padding-right: 5px">е-mail: </span> <a href="mailto:shop@airpods-stok.ru" rel="nofollow"> shop@airpods-stok.ru</a>
             </span>
             <div class="footer-link">
                 <svg class="footer-link__icon">
-                    <use xlink:href="img/icons.svg#history"></use>
+                    <use xlink:href="/img/icons.svg#history"></use>
                 </svg>
                 с 09:00 до 22:00 <br> ежедневно, без выходных
             </div>
             <div class="footer-link">
                 <svg class="footer-link__icon">
-                    <use xlink:href="img/icons.svg#location"></use>
+                    <use xlink:href="/img/icons.svg#location"></use>
                 </svg>
                 г. Москва, ул. Шаболовка, <br> д. 31, строен. А
             </div>
@@ -922,7 +926,7 @@ function check_mobile_device() {
 <div id="modal-01" class="modal-view">
     <div class="modal-view-inner js-step-1">
         <div class="modal-view__info hide-xs">
-            <img data-src="/img/mob/img-03.png" class="img__data-path" alt="">
+            <img src="/img/mob/img-03.png" alt="">
 
             <div class="modal-view__price-old">
                 Обычная цена: <del>14 990 руб.</del>
@@ -952,7 +956,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-1">Ваше имя</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#user"></use>
+                        <use xlink:href="/img/icons.svg#user"></use>
                     </svg>
                     <input type="text" name="name" class="modal-view-form__field form-control hide-placeholder" id="form-name-1" placeholder="Ваше имя" autocomplete="off" required>
                 </div>
@@ -960,7 +964,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-tel-1">Контактный телефон*</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#phone-2"></use>
+                        <use xlink:href="/img/icons.svg#phone-2"></use>
                     </svg>
                     <input type="tel" name="phone" class="modal-view-form__field form-control hide-placeholder phone" id="form-tel-1" placeholder="Контактный телефон*" inputmode="text" autocomplete="off" required>
                 </div>
@@ -976,7 +980,7 @@ function check_mobile_device() {
 
     <div class="modal-view-final js-step-2 js-step-thanks">
         <svg class="modal-view-final__icon">
-            <use xlink:href="img/icons.svg#check"></use>
+            <use xlink:href="/img/icons.svg#check"></use>
         </svg>
         <div class="modal-view-final__title">
             <div class="modal-view-final__title-lg">Спасибо,</div>
@@ -988,7 +992,7 @@ function check_mobile_device() {
     </div>
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
-            <use xlink:href="img/icons.svg#close"></use>
+            <use xlink:href="/img/icons.svg#close"></use>
         </svg>
     </div>
 </div>
@@ -996,7 +1000,7 @@ function check_mobile_device() {
 <div id="modal-02" class="modal-view">
     <div class="modal-view-inner js-step-1">
         <div class="modal-view__info hide-xs">
-            <img data-src="/img/mob/img-03.png" class="img__data-path" alt="">
+            <img src="/img/mob/img-03.png" alt="">
 
             <div class="modal-view__price-old">Обычная цена: <del>14 990 руб.</del></div>
             <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span></div>
@@ -1022,7 +1026,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-2">Ваше имя</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#user"></use>
+                        <use xlink:href="/img/icons.svg#user"></use>
                     </svg>
                     <input type="text" name="name" class="modal-view-form__field form-control hide-placeholder" id="form-name-2" placeholder="Ваше имя" autocomplete="off" required>
                 </div>
@@ -1030,7 +1034,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-tel-2">Контактный телефон*</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#phone-2"></use>
+                        <use xlink:href="/img/icons.svg#phone-2"></use>
                     </svg>
                     <input type="tel" name="phone" class="modal-view-form__field form-control hide-placeholder phone" id="form-tel-2" placeholder="Контактный телефон*" inputmode="text" autocomplete="off" required>
                 </div>
@@ -1046,7 +1050,7 @@ function check_mobile_device() {
 
     <div class="modal-view-final js-step-2 js-step-thanks">
         <svg class="modal-view-final__icon">
-            <use xlink:href="img/icons.svg#check"></use>
+            <use xlink:href="/img/icons.svg#check"></use>
         </svg>
         <div class="modal-view-final__title">
             <div class="modal-view-final__title-lg">Спасибо,</div>
@@ -1059,7 +1063,7 @@ function check_mobile_device() {
 
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
-            <use xlink:href="img/icons.svg#close"></use>
+            <use xlink:href="/img/icons.svg#close"></use>
         </svg>
     </div>
 </div>
@@ -1069,7 +1073,7 @@ function check_mobile_device() {
         <div class="modal-view__info hide-xs">
             <br>
             <br>
-            <img data-src="/img/product/airpods-06.png" class="img__data-path" alt="">
+            <img src="/img/product/airpods-06.png" alt="">
 
             <div class="modal-view__price-old">Обычная цена: <del>21 990 руб.</del></div>
             <div class="modal-view__price">Со скидкой: <span class="modal-view__price-cost">6 990 руб.</span></div>
@@ -1084,10 +1088,10 @@ function check_mobile_device() {
 
             <div class="show-xs">
                 <div class="modal-view__price-old">
-                    Обычная цена: <del>14 990 руб.</del>
+                    Обычная цена: <del>21 990 руб.</del>
                 </div>
                 <div class="modal-view__price">
-                    Со скидкой: <span class="modal-view__price-cost">3 990 руб.</span>
+                    Со скидкой: <span class="modal-view__price-cost">6 990 руб.</span>
                 </div>
             </div>
 
@@ -1096,7 +1100,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-name-3">Ваше имя</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#user"></use>
+                        <use xlink:href="/img/icons.svg#user"></use>
                     </svg>
                     <input type="text" name="name" class="modal-view-form__field form-control hide-placeholder" id="form-name-3" placeholder="Ваше имя" autocomplete="off" required>
                 </div>
@@ -1104,7 +1108,7 @@ function check_mobile_device() {
                 <div class="modal-view-form__group">
                     <label class="sr-only" for="form-tel-3">Контактный телефон*</label>
                     <svg class="modal-view-form__icon">
-                        <use xlink:href="img/icons.svg#phone-2"></use>
+                        <use xlink:href="/img/icons.svg#phone-2"></use>
                     </svg>
                     <input type="tel" name="phone" class="modal-view-form__field form-control hide-placeholder phone" id="form-tel-3" placeholder="Контактный телефон*" inputmode="text" autocomplete="off" required>
                 </div>
@@ -1120,7 +1124,7 @@ function check_mobile_device() {
 
     <div class="modal-view-final js-step-2 js-step-thanks">
         <svg class="modal-view-final__icon">
-            <use xlink:href="img/icons.svg#check"></use>
+            <use xlink:href="/img/icons.svg#check"></use>
         </svg>
         <div class="modal-view-final__title">
             <div class="modal-view-final__title-lg">Спасибо,</div>
@@ -1133,7 +1137,7 @@ function check_mobile_device() {
 
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
-            <use xlink:href="img/icons.svg#close"></use>
+            <use xlink:href="/img/icons.svg#close"></use>
         </svg>
     </div>
 </div>
@@ -1141,7 +1145,7 @@ function check_mobile_device() {
 <div id="modal-04" class="modal-view">
     <div class="modal-view-final js-step-2" style="display: block">
         <svg class="modal-view-final__icon">
-            <use xlink:href="img/icons.svg#check"></use>
+            <use xlink:href="/img/icons.svg#check"></use>
         </svg>
         <div class="modal-view-final__title">
             <div class="modal-view-final__title-lg">Спасибо,</div>
@@ -1154,7 +1158,7 @@ function check_mobile_device() {
 
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
-            <use xlink:href="img/icons.svg#close"></use>
+            <use xlink:href="/img/icons.svg#close"></use>
         </svg>
     </div>
 </div>
@@ -1195,7 +1199,7 @@ function check_mobile_device() {
 
     <div data-fancybox-close class="modal-view-close" title="закрыть">
         <svg class="modal-view-close__icon">
-            <use xlink:href="img/icons.svg#close"></use>
+            <use xlink:href="/img/icons.svg#close"></use>
         </svg>
     </div>
 </div>
@@ -1231,11 +1235,11 @@ function check_mobile_device() {
 
 <div class="scroll-to-top">
     <svg class="scroll-to-top__icon">
-        <use xlink:href="img/icons.svg#arrow"></use>
+        <use xlink:href="/img/icons.svg#arrow"></use>
     </svg>
 </div>
 
-<script src="js/lib.min.js?ver=111"></script>
-<script src="js/scripts.min.js?ver=118"></script>
+<script src="/js/lib.min.js?ver=111"></script>
+<script src="/js/scripts.min.js?ver=118"></script>
 </body>
 </html>

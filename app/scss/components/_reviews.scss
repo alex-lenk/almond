@@ -327,8 +327,6 @@
   }
 
   .reviews-what {
-    height: 1677px;
-    overflow: hidden;
     padding-top: 28px;
     margin: 18px -5px 10px;
     border-top: 1px solid $orangeColor;
@@ -355,13 +353,6 @@
     margin-bottom: 14px;
   }
 }
-/*
-@media (max-width: 374px) {
-  .video-reviews {
-    height: 622px;
-  }
-}
-*/
 
 @media (max-width: 359px) {
   .reviews-more__video::after {
@@ -371,12 +362,6 @@
 }
 
 @media (min-width: 376px) and (max-width: 450px) {
-/*  .video-reviews {
-    height: 710px;
-  }*/
-  .reviews-what {
-    height: 1855px;
-  }
   .reviews-list {
     font-size: 13px;
   }
