@@ -119,9 +119,6 @@
   .call-form__price-cost {
     font-size: 36px;
   }
-  .call-form__icon {
-    top: 13px;
-  }
   .call-form__text-3 {
     margin-bottom: 17px;
     font-size: 27px;
@@ -138,6 +135,9 @@
   }
   .call-form__terms::before {
     margin-top: -4px
+  }
+  .call-form__icon {
+    top: 13px;
   }
 }
 

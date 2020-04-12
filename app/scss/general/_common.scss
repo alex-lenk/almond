@@ -1,5 +1,9 @@
-a:hover {
-  text-decoration: none;
+a {
+  transition: color .3s;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,7 +145,7 @@ img {
 
 .video-play {
   position: relative;
-  background-color: #333;
+  background-color: #e0e0e0;
 
   &::after {
     top: 50%;
@@ -160,6 +164,7 @@ img {
 @media (min-width: 576px) {
   .form-control {
     height: 50px;
+    font-size: 16px;
   }
 
   .video-play {

@@ -88,13 +88,30 @@
   height: 48px;
 }
 
+.privacy-policy {
+  text-align: left;
+  overflow-y: scroll
+}
+
 @media (max-width: 575px) {
+  .privacy-policy {
+    max-height: 450px;
+    font-size: 13px;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
   .hide-xs {
     display: none;
   }
 }
 
 @media (min-width: 576px) {
+  .privacy-policy {
+    max-height: 546px;
+  }
   .show-xs {
     display: none;
   }

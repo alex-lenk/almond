@@ -27,6 +27,7 @@
 
 @media (min-width: 576px) {
   .attention {
+    text-align: center;
     background: rgb(32, 52, 87);
     background: -moz-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(32, 52, 87, 1) 0%, rgba(62, 88, 130, 1) 50%, rgba(32, 52, 87, 1) 100%);
@@ -34,15 +35,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#203457', endColorstr='#203457', GradientType=1);
   }
   .attention-title {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
   .attention-text {
-    padding: 0 56px;
+    padding: 0 35px;
     margin-bottom: 40px;
+    line-height: 1.6;
+    font-size: 15px;
+    display: inline-block;
   }
   .attention-media {
     max-width: 678px;
-    height: 381px;
+    height: 387px;
     margin: 0 auto 50px;
     border-width: 5px;
 

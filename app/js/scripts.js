@@ -1,15 +1,59 @@
-'use strict';
-
 /* BEGIN: LazyLoad img */
-setTimeout(function () {
-    [].forEach.call(document.querySelectorAll('.img__data-path'), function (img) {
-        img.setAttribute('src', img.getAttribute('data-path'));
-        img.onload = function () {
-            img.removeAttribute('data-path');
-        };
-    });
-    /* END: LazyLoad img */
-}, 500);
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyloadImages;
+
+    if ("IntersectionObserver" in window) {
+        lazyloadImages = document.querySelectorAll(".lazy");
+        var imageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var image = entry.target;
+                    image.src = image.dataset.src;
+                    image.classList.remove("lazy");
+                    imageObserver.unobserve(image);
+                }
+            });
+        }, {
+            root: document.querySelector("body"),
+            rootMargin: "0px 0px 500px 0px"
+        });
+
+        lazyloadImages.forEach(function (image) {
+            imageObserver.observe(image);
+        });
+    } else {
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".lazy");
+
+        function lazyload() {
+            if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+            }
+
+            lazyloadThrottleTimeout = setTimeout(function () {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function (img) {
+                    if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                    }
+                });
+                if (lazyloadImages.length == 0) {
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+    }
+});
+/* END: LazyLoad img */
+
+'use strict';
 
 setTimeout(function () {
     $('html').addClass('init-second');
@@ -22,25 +66,7 @@ $(document).ready(function () {
         headerCallPanel = $('.header-call__panel'),
         social = $('.social');
 
-    if (windowWidth < 575) {
-        $('#video-reviews').click(function () {
-            $('.video-reviews').css('height', 'auto');
-            $(this).fadeOut();
-        });
-        $('#reviews-what').click(function () {
-            $('.reviews-what').css('height', 'auto');
-            $(this).fadeOut();
-        });
-
-        var reviewsWhat = $('.reviews-what'),
-            heightReviewsWhatItem = $('.reviews-what__item').height(),
-            heightReviewsWhat = reviewsWhat.outerHeight();
-
-        reviewsWhat.height(heightReviewsWhat);
-        console.log(heightReviewsWhat);
-        console.log(heightReviewsWhatItem);
-    } else {
-        //$('.nav-bar-stick').css('width', windowWidth);
+    if (windowWidth > 576) {
         $('.social, .scroll-to-top').css('left', windowWidth);
 
         $(window).scroll(function () {
@@ -128,30 +154,47 @@ $(document).ready(function () {
         autoFocus: false
     });
 
-
-    $('.form-callback').submit(function () {
+    if (windowWidth < 575) {
+    }
+    $('.callback-modal').submit(function () {
         $.ajax({
             type: "POST",
             url: "./php/sendmail.php",
             dataType: "html",
             data: $(this).serialize()
         }).done(function () {
-            $('.js-step-2').show();
-            $('.form-callback').trigger("reset");
+            $('.js-step-thanks').show();
+            $('.callback-modal').trigger("reset");
             setTimeout(function () {
-                $('.js-step-2').hide();
-            }, 5000);
+                $('.js-step-thanks').hide();
+                $.fancybox.close();
+            }, 3000);
         });
         return false;
     });
 
-    $(".service-maintenance__poster").click(function () {
-
-        var $video = $('#service-maintenance-video'),
-            src = $video.attr('src');
-
-        $video.attr('src', src + '&autoplay=1');
-
-        $('.service-maintenance').addClass('service-maintenance-open');
+    $('.callback').submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "./php/sendmail.php",
+            dataType: "html",
+            data: $(this).serialize()
+        }).done(function () {
+            $.fancybox.open({
+                src: '#modal-04',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+            $('.callback').trigger("reset");
+            setTimeout(function () {
+                $.fancybox.close();
+                console.info('close!');
+            }, 3000);
+        });
+        return false;
     });
 });
