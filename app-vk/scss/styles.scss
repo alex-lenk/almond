@@ -22,12 +22,14 @@
 
 .social {
   position: fixed;
-  bottom: 0;
   z-index: 30;
   display: none;
 }
 
 .social-point {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
   display: block;
   position: relative;
   background-repeat: no-repeat;
@@ -70,23 +72,15 @@
 
 @media (max-width: 575px) {
   .social {
-    margin-left: -35px;
-  }
-  .social-point {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
+    margin-left: -53px;
+    bottom: 90px;
   }
 }
 
 @media (min-width: 576px) {
   .social {
-    margin-left: -53px;
-  }
-  .social-point {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 15px;
+    margin-left: -60px;
+    bottom: 62px;
   }
 }
 
