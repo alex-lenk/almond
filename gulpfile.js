@@ -50,6 +50,17 @@ gulp.task('app__code', function () {
 
 
 // Local Server
+gulp.task('app__browser-sync', function () {
+    browserSync({
+        server: {
+            baseDir: './dist'
+        },
+        notify: false
+    })
+});
+
+
+// Local Server
 gulp.task('browser-sync', function () {
     browserSync({
         server: {
