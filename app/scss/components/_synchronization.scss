@@ -215,6 +215,15 @@
   }
 }
 
+@media (max-width: 374px) {
+  .synchronization-order__content {
+    font-size: 14px;
+  }
+  .synchronization-order__content-head {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 376px) and (max-width: 450px) {
   .synchronization-order {
     justify-content: center;

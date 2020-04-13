@@ -40,6 +40,15 @@ gulp.task('app__scripts', function () {
 });
 
 
+// APP HTML Live Reload
+gulp.task('app__code', function () {
+    return gulp.src('./app/view/*.html')
+        .pipe(fileinclude())
+        .pipe(gulp.dest('./dist'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+
 // Local Server
 gulp.task('browser-sync', function () {
     browserSync({

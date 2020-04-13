@@ -91,3 +91,14 @@
     }
   }
 }
+
+@media (max-width: 374px) {
+  .pre-footer__inner::before {
+    width: 170px;
+    height: 231px;
+  }
+  .pre-footer__inner::after {
+    width: 85px;
+    height: 160px;
+  }
+}

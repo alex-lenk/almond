@@ -380,3 +380,22 @@
     @include stitches-sprite(-186px, -215px, 48px, 48px);
   }
 }
+
+@media (max-width: 359px) {
+  .footer-link::before {
+    background-image: url(../img/spritesheet-4.png);
+  }
+
+  .sprite-vk::before {
+    @include stitches-sprite(-5px, -308px, 25px, 24px);
+  }
+  .sprite-insta::before {
+    @include stitches-sprite(-49px, -259px, 25px, 24px);
+  }
+  .sprite-what::before {
+    @include stitches-sprite(-87px, -308px, 25px, 24px);
+  }
+  .sprite-tg::before {
+    @include stitches-sprite(-332px, -274px, 25px, 24px);
+  }
+}
