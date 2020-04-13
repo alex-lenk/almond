@@ -1,11 +1,5 @@
 'use strict';
 
-/* инитим vkBridge */
-$(document).ready(function () {
-    vkBridge.send('VKWebAppInit');
-});
-/* инитим vkBridge */
-
 setTimeout(function () {
     $('html').addClass('init-second');
 }, 1500);

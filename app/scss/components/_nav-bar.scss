@@ -294,9 +294,6 @@
 }
 
 @media (max-width: 991px) {
-  .nav-bar-section {
-    padding-top: 13px;
-  }
   .logo {
     width: 245px;
   }
@@ -371,9 +368,10 @@
 
 @media (max-width: 575px) {
   .nav-bar {
-    height: 122px;
+    height: 160px;
   }
   .nav-bar-section {
+    padding-top: 50px;
     padding-bottom: 13px;
   }
   .phone-call {
@@ -390,7 +388,7 @@
   .menu-toggle {
     position: fixed;
     right: 15px;
-    top: 24px;
+    top: 76px;
   }
 }
 
@@ -407,6 +405,12 @@
   }
   .phone-call {
     margin-left: auto
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .nav-bar-section {
+    padding-top: 13px;
   }
 }
 

@@ -15,8 +15,8 @@ function check_mobile_device() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AirPods Discount</title>
-    <link rel="stylesheet" href="/css/lib.min.css?ver=117">
-    <link rel="stylesheet" href="/css/styles.min.css?ver=121">
+    <link rel="stylesheet" href="/css/lib.min.css?ver=119">
+    <link rel="stylesheet" href="/css/styles.min.css?ver=124">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -1239,7 +1239,7 @@ function check_mobile_device() {
     </svg>
 </div>
 
-<script src="/js/lib.min.js?ver=111"></script>
-<script src="/js/scripts.min.js?ver=118"></script>
+<script src="/js/lib.min.js?ver=113"></script>
+<script src="/js/scripts.min.js?ver=120"></script>
 </body>
 </html>

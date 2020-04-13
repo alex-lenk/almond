@@ -18,22 +18,25 @@ var gulp = require('gulp'),
     imageminGuetzli = require('imagemin-guetzli');
 
 
-gulp.task('svgIcons', function () {
-    return gulp
-        .src('./app-vk/img/icons/*.svg')
-        .pipe(svgmin(function (file) {
-            var prefix = basePath.basename(file.relative, basePath.extname(file.relative));
-            return {
-                plugins: [{
-                    cleanupIDs: {
-                        prefix: prefix + '-',
-                        minify: true
-                    }
-                }]
-            }
-        }))
-        .pipe(svgstore())
-        .pipe(gulp.dest('./dist_vk/img/'));
+// APP SCSS Styles
+gulp.task('app__styles', function () {
+    return gulp.src('./app/scss/*.scss')
+        .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
+        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(postcss([autoprefixer()]))
+        .pipe(cleancss({level: {1: {specialComments: 0}}})) // Opt., comment out when debugging
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(browserSync.stream())
+});
+
+// APP JS
+gulp.task('app__scripts', function () {
+    return gulp.src('./app/js/*.js')
+        .pipe(rigger())
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(gulp.dest('./dist/js'))
+        .pipe(browserSync.reload({stream: true}))
 });
 
 
@@ -98,6 +101,25 @@ gulp.task('fonts', function () {
     return gulp.src('./app-vk/fonts/*.*')
         .pipe(gulp.dest('./dist_vk/fonts'))
         .pipe(browserSync.reload({stream: true}))
+});
+
+
+gulp.task('svgIcons', function () {
+    return gulp
+        .src('./app-vk/img/icons/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = basePath.basename(file.relative, basePath.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('./dist_vk/img/'));
 });
 
 

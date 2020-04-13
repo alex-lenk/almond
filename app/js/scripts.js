@@ -1,3 +1,10 @@
+/* инитим vkBridge */
+$(document).ready(function () {
+    vkBridge.send('VKWebAppInit');
+});
+/* инитим vkBridge */
+
+
 /* BEGIN: LazyLoad img */
 document.addEventListener("DOMContentLoaded", function () {
     var lazyloadImages;
@@ -62,39 +69,7 @@ setTimeout(function () {
 
 $(document).ready(function () {
     var windowWidth = $(window).width(),
-        scrollToTop = $('.scroll-to-top'),
-        headerCallPanel = $('.header-call__panel'),
-        social = $('.social');
-
-    if (windowWidth > 576) {
-        $('.social, .scroll-to-top').css('left', windowWidth);
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 350) {
-                social.fadeIn();
-            } else {
-                social.fadeOut();
-            }
-        });
-
-
-        /* BEGIN Script scroll to top  */
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 350) {
-                scrollToTop.fadeIn();
-            } else {
-                scrollToTop.fadeOut();
-            }
-        });
-
-        scrollToTop.click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 400);
-            return false;
-        });
-        /* END Script scroll to top  */
-    }
+        headerCallPanel = $('.header-call__panel');
 
     /* BEGIN Actions on opening menus on mobile devices  */
     var menuToggle = '.menu-toggle';
