@@ -96,6 +96,7 @@
 
 .modal-view-close {
   position: absolute;
+  z-index: 1;
 }
 
 .modal-view-final {
@@ -324,6 +325,10 @@
     margin-bottom: 20px;
     font-size: 16px;
   }
+  .modal-view-final:not(.js-step-thanks) {
+    position: relative;
+  }
+
   .modal-view-final__title-lg {
     font-size: 30px;
   }
@@ -335,6 +340,12 @@
   }
   .modal-view-form__group {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 374px) {
+  .modal-view-final__title-md {
+    font-size: 18px;
   }
 }
 

@@ -16,7 +16,7 @@ function check_mobile_device() {
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AirPods Discount</title>
     <link rel="stylesheet" href="/css/lib.min.css?ver=117">
-    <link rel="stylesheet" href="/css/styles.min.css?ver=121">
+    <link rel="stylesheet" href="/css/styles.min.css?ver=122">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -233,7 +233,7 @@ function check_mobile_device() {
             <div class="complete-media">
                 <img src="/img/complete/complete-02.jpg" alt="">
             </div>
-            <div class="complete-text">Зарядной чехол</div>
+            <div class="complete-text">Зарядной кейс</div>
         </li>
         <li class="complete-item">
             <div class="complete-media">
@@ -592,7 +592,7 @@ function check_mobile_device() {
 
 <section class="attention" id="attention">
     <div class="container">
-        <h2 class="attention-title">Обзор после 6 месяцев эксплуатации</h2>
+        <h2 class="attention-title">Обзор после 6&nbsp;месяцев эксплуатации</h2>
 
         <div class="attention-text">
             Мы&nbsp;попросили одного из&nbsp;наших покупателей дать свою оценку ежедневного пользования наушников
@@ -1240,6 +1240,6 @@ function check_mobile_device() {
 </div>
 
 <script src="/js/lib.min.js?ver=111"></script>
-<script src="/js/scripts.min.js?ver=118"></script>
+<script src="/js/scripts.min.js?ver=119"></script>
 </body>
 </html>

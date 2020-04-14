@@ -154,8 +154,6 @@ $(document).ready(function () {
         autoFocus: false
     });
 
-    if (windowWidth < 575) {
-    }
     $('.callback-modal').submit(function () {
         $.ajax({
             type: "POST",
@@ -182,17 +180,11 @@ $(document).ready(function () {
         }).done(function () {
             $.fancybox.open({
                 src: '#modal-04',
-                type: 'inline',
-                opts: {
-                    afterShow: function (instance, current) {
-                        console.info('done!');
-                    }
-                }
+                type: 'inline'
             });
             $('.callback').trigger("reset");
             setTimeout(function () {
                 $.fancybox.close();
-                console.info('close!');
             }, 3000);
         });
         return false;
