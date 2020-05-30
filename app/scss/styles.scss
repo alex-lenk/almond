@@ -36,57 +36,7 @@
   }
 }
 
-.social {
-  position: fixed;
-  bottom: 85px;
-  margin-left: -58px;
-  z-index: 30;
-  display: none;
-}
 
-.social-point {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 15px;
-  display: block;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  &.vk {
-    background-image: url(../img/icons/vk.svg);
-  }
-
-  &.whatsapp {
-    background-image: url(../img/icons/whatsapp.svg);
-
-    &::before {
-      width: 75%;
-      height: 75%;
-      border-radius: 50%;
-      background-color: #fff;
-      top: 6px;
-      left: 7px;
-      position: absolute;
-      z-index: -1;
-      content: '';
-    }
-  }
-
-  &.telegram {
-    background-image: url(../img/icons/telegram.svg);
-  }
-
-  &.instagram {
-    background-image: url(../img/icons/instagram.svg);
-  }
-}
-
-.social-point__icon {
-  width: 48px;
-  height: 48px;
-}
 
 .privacy-policy {
   text-align: left;
