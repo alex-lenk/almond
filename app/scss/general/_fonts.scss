@@ -1,34 +1,56 @@
 @font-face {
-  font-family: Montserrat;
-  src: url('../fonts/montserrat-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Light.woff') format('woff');
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinTextCondPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-SemiBold.woff') format('woff');
-  font-weight: 600;
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PFDinDisplayPro-Black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }

@@ -1,0 +1,178 @@
+.new-building-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-building-title {
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #0066b2;
+
+  &::after {
+    display: none;
+  }
+}
+
+.new-building-head {
+  text-transform: uppercase;
+  font-family: $font-family-head;
+}
+
+.new-building-price {
+  display: flex;
+  align-items: center;
+}
+
+.new-building-price__text {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: $font-family-head;
+}
+
+.new-building-info {
+  margin-top: auto;
+  padding-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #006fc9;
+  text-align: center;
+  font-family: $font-family-head;
+}
+
+@media (min-width: 768px) {
+  .new-building {
+    border-top: 30px solid #fff;
+  }
+  .new-building-inner {
+    height: 668px;
+    padding-top: 15px;
+    background: url(../img/bg/bg-building.jpg) no-repeat center bottom;
+  }
+  .new-building-content {
+    padding-top: 13px;
+  }
+  .new-building-title {
+    padding: 26px 15px;
+    letter-spacing: 1px;
+  }
+  .new-building-head {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .new-building-price {
+    margin-bottom: 40px;
+  }
+  .new-building-price__text {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .new-building-price__cost {
+    margin-left: 8px;
+  }
+  .new-building-list {
+    max-width: 37%;
+    font-weight: 700;
+  }
+  .new-building-info {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .new-building-inner {
+    padding-top: 5px;
+    background-color: #f7d49a;
+  }
+  .new-building-title {
+    padding: 7px 13% 7px 12%;
+    text-align: left;
+    line-height: 1.3;
+    position: relative;
+    z-index: 3;
+
+    .title-block-bold {
+      text-align: right;
+      display: block;
+    }
+  }
+  .new-building-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      width: 100%;
+      height: 292px;
+      background: url(../img/bg-m/bg-new-building.png) no-repeat bottom center;
+      background-size: cover;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      z-index: 2;
+      content: '';
+    }
+
+    &::after {
+      min-width: 100%;
+      height: 353px;
+      margin: -93px -15px 0;
+      background: url(../img/decor-m/piple.jpg) no-repeat center;
+      display: block;
+      position: relative;
+      z-index: 1;
+      content: '';
+    }
+  }
+  .new-building-head,
+  .new-building-price,
+  .new-building-list {
+    position: relative;
+    z-index: 3;
+  }
+  .new-building-head {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .new-building-price {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .new-building-price__text {
+    font-size: 17px;
+    text-align: center;
+  }
+  .new-building-price__cost {
+    margin-left: 5px;
+    max-width: 102px;
+  }
+  .new-building-list {
+    font-size: 12px;
+
+    .check-list__item {
+      padding-left: 22px;
+
+      &::before {
+        width: 15px;
+        height: 11px;
+        left: 3px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  .new-building-info {
+    position: relative;
+    z-index: 2;
+    background: url(../img/decor-m/bg-new-building-info.png) repeat-x center top;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    margin: -21px -15px 0;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    line-height: 1.3;
+  }
+}

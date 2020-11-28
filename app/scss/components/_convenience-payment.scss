@@ -1,0 +1,94 @@
+.convenience-payment {
+  background: url(../img/bg/convenience-payment.jpg) center center / cover no-repeat;
+}
+
+.convenience-payment-inner {
+  position: relative;
+  background-color: #fff;
+  border: 8px solid $yellowColor;
+}
+
+.convenience-payment-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.convenience-payment-item {
+  list-style: none;
+}
+
+.convenience-payment-item__title {
+  font-weight: 700;
+  color: $blueColor;
+  display: flex;
+  align-items: center;
+}
+
+.convenience-payment-icon {
+  width: 43px;
+  height: 43px;
+  margin-right: 17px;
+}
+
+@media (min-width: 576px) {
+  .convenience-payment-inner {
+    padding: 18px 60px 14px;
+    border-width: 10px
+  }
+  .convenience-payment-title {
+    margin-bottom: 8px;
+  }
+  .convenience-payment-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .convenience-payment-item {
+    max-width: 33%;
+    flex-basis: 33%;
+  }
+  .convenience-payment-item__title {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .convenience-payment-item__text {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .convenience-payment {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    border-top: 30px solid #fff;
+  }
+}
+
+@media (max-width: 575px) {
+  .convenience-payment {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .convenience-payment-inner {
+    padding: 14px 16px 0;
+  }
+  .convenience-payment-item {
+    margin-bottom: 17px;
+  }
+  .convenience-payment-item__title {
+    margin-bottom: 7px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .convenience-payment-item__text {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .convenience-payment-icon {
+    width: 43px;
+    height: 48px;
+    margin-right: 17px;
+  }
+}

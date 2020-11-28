@@ -13,14 +13,21 @@
 @import "bootstrap-4.4.1/utilities/embed";
 
 @import "bootstrap-4.4.1/transitions";
+//@import "bootstrap-4.4.1/popover";
+//@import "bootstrap-4.4.1/tooltip";
+//@import "bootstrap-4.4.1/badge";
+//@import "bootstrap-4.4.1/nav";
+//@import "bootstrap-4.4.1/type";
 @import "bootstrap-4.4.1/modal";
 @import "bootstrap-4.4.1/forms";
+//@import "bootstrap-4.4.1/utilities/flex";
+//@import "bootstrap-4.4.1/buttons";
 @import "bootstrap-4.4.1/close";
-
 
 // Row
 //
 // Rows contain your columns.
+
 
 .row {
   @include make-row();
@@ -36,4 +43,8 @@
 .list-unstyled {
   margin-bottom: 0;
   @include list-unstyled();
+}
+
+.tab-content {
+  padding-top: 25px;
 }

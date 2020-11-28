@@ -1,0 +1,107 @@
+.get-estimate {
+  background: url(../img/bg/bg-fifth.jpg) no-repeat center;
+}
+
+.get-estimate-wrap {
+  position: relative;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .get-estimate {
+    padding-top: 29px;
+    padding-bottom: 27px;
+  }
+  .get-estimate-wrap {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    border: 7px solid $yellowColor;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 767px) {
+  .get-estimate-wrap {
+    &::before,
+    &::after {
+      content: '';
+    }
+
+    &::before {
+      width: 111px;
+      height: 32px;
+      bottom: 82px;
+      left: 47%;
+      opacity: .5;
+      z-index: 5;
+      position: absolute;
+      background: url(../img/decor/arrow.png) no-repeat center;
+      background-size: contain;
+
+    }
+
+    &::after {
+      width: 328px;
+      height: 239px;
+      margin-left: 9%;
+      position: relative;
+      display: block;
+      background: url(../img/decor/estimate.jpg) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .get-estimate-form {
+    position: relative;
+    margin-top: -90px;
+    margin-left: 42px;
+    max-width: 319px;
+  }
+}
+
+@media (max-width: 766px) {
+  .get-estimate-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .get-estimate {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .call-form__text {
+      margin-bottom: 0;
+
+      &::after {
+        width: 260px;
+        height: 202px;
+        left: 7%;
+        position: relative;
+        display: block;
+        background: url(../img/decor/estimate.jpg) no-repeat center;
+        background-size: contain;
+        content: '';
+      }
+    }
+  }
+  .get-estimate-form {
+    position: relative;
+
+    &::before {
+      width: 41px;
+      height: 154px;
+      top: 64px;
+      right: 15px;
+      opacity: .5;
+      z-index: 5;
+      position: absolute;
+      background: url(../img/decor/arrow.png) no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+  }
+}

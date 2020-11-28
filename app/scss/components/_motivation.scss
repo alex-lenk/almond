@@ -1,0 +1,93 @@
+.motivation::after {
+  background: url(../img/decor/notebook-2.jpg) no-repeat center;
+  background-size: contain;
+  content: '';
+}
+
+.motivation-form {
+  background-color: #d1e9f9;
+  position: relative;
+  z-index: 1;
+
+  .call-form__title {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.motivation-form__text {
+  font-weight: 900;
+  color: $blueColor;
+}
+
+@media (min-width: 576px) {
+  .motivation {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    position: relative;
+
+    &::after {
+      width: 895px;
+      height: 527px;
+      position: absolute;
+      bottom: 25px;
+      left: -105px;
+    }
+  }
+  .motivation-title {
+    margin-bottom: 22px;
+  }
+  .motivation-form {
+    max-width: 479px;
+    margin-left: auto;
+    padding: 44px 40px 29px;
+
+    .call-form__title {
+      margin-bottom: 16px;
+    }
+
+    .call-form__text {
+      margin-bottom: 31px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .motivation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      display: block;
+      width: 373px;
+      height: 227px;
+      position: relative;
+      left: -9%;
+      margin-top: -22px;
+    }
+  }
+  .motivation-title {
+    margin-bottom: 0;
+  }
+  .motivation-title__mod {
+    font-weight: 900;
+  }
+  .motivation-form {
+    margin-top: -43px;
+    padding: 28px 23px 33px;
+    order: 1;
+
+    .call-form__title {
+      margin-bottom: 5px;
+    }
+
+    .call-form__text {
+      margin-bottom: 13px;
+      font-size: 12px;
+      letter-spacing: -1px;
+    }
+  }
+}

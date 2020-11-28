@@ -15,6 +15,9 @@
   text-transform: uppercase;
   line-height: 1;
   position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $font-family-head;
 
   &:after {
     width: 107px;
@@ -31,36 +34,18 @@
   margin-bottom: 5px;
   font-size: 12px;
   color: inherit;
-  line-height: 1.4;
   align-self: flex-start;
+}
+
+.footer-column__contacts .footer-link {
+  margin-bottom: 12px;
   display: flex;
-
-  &[class*="sprite"] {
-    display: flex;
-  }
-
-  &::before {
-    margin-top: 3px;
-    margin-right: 6px;
-  }
-
-  &.sprite-vk,
-  &.sprite-insta,
-  &.sprite-tg,
-  &.sprite-what {
-    margin-bottom: 27px;
-    align-items: center;
-
-    &::before {
-      margin-top: 0;
-    }
-  }
+  align-items: center;
 }
 
 .footer-link__icon {
   width: 15px;
   height: 15px;
-  margin-top: 2px;
   margin-right: 5px;
   fill: #fff;
 }
@@ -78,6 +63,10 @@
   border-bottom: 1px solid;
 }
 
+.footer-copy__text-link {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .footer {
     padding-top: 37px;
@@ -87,10 +76,15 @@
   .footer-inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .footer-column {
-    width: 25%;
   }
+  .footer-column__services {
+  }
+  .footer-column__contacts {
+  }
+
   .footer-column__title {
     margin-bottom: 15px;
   }
@@ -101,19 +95,25 @@
     width: 100%;
     margin-top: -40px;
 
-    .btn-primary {
-      width: 205px;
+    .btn {
+      width: 280px;
       height: 42px;
-      font-size: 12px;
-      box-shadow: 1px 3px 0 #9f3707;
+      font-size: 16px;
+      box-shadow: 0 3px #C47D20, 0 6px 15px #151515;
     }
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-    padding-bottom: 60px;
-    background-color: #1e2f50;
+    padding-bottom: 30px;
+    background-color: #2b2e37;
+
+    .btn-yellow {
+      height: 44px;
+      font-size: 16px;
+      box-shadow: 6px 6px 15px #1f232f;
+    }
   }
   .footer-column {
     padding-left: 27px;
@@ -130,29 +130,19 @@
   .footer-link[class*=sprite] {
     margin-bottom: 8px;
   }
-  .footer-social {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
 
-    .footer-link {
-      margin-bottom: 0;
-
-      &:not(:last-child) {
-        margin-right: 27px;
-      }
-
-      &::before {
-        margin-right: 0;
-      }
-    }
-  }
   .footer-btn {
     padding-left: 27px;
     padding-right: 30px;
 
-    .btn-primary {
+    .btn {
       width: 99%;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-copy__text {
+    letter-spacing: -1px;
   }
 }

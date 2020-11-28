@@ -1,0 +1,157 @@
+.supply-materials {
+  background-color: #fff;
+}
+
+.supply-materials-info {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-family: $font-family-head;
+}
+
+.supply-materials-info__num {
+  font-weight: 900;
+}
+
+.supply-materials-list {
+  counter-reset: myCounter;
+  padding-left: 0;
+  list-style: none;
+}
+
+.supply-materials-item__title {
+  font-weight: 700;
+  line-height: 1;
+  color: $blueColor;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $blueColor;
+  }
+}
+
+.supply-materials-item__text {
+  line-height: 1.3;
+}
+
+.supply-materials-media {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .supply-materials {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .supply-materials-title {
+    margin-bottom: 8px;
+  }
+  .supply-materials-info {
+    margin-bottom: 24px;
+  }
+  .supply-materials-info__num {
+    font-size: 54px;
+    margin-right: 10px;
+  }
+  .supply-materials-info__text {
+    font-size: 25px;
+  }
+  .supply-materials-info__text {
+    font-weight: 500;
+  }
+  .supply-materials-list {
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .supply-materials-item {
+    max-width: 33%;
+    flex-basis: 33%;
+  }
+  .supply-materials-item__title {
+    margin-bottom: 10px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      margin-right: 13px;
+      line-height: 36px;
+    }
+  }
+  .supply-materials-item__text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .supply-materials-media {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 767px) {
+  .supply-materials {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .supply-materials-title {
+    margin-bottom: 11px;
+    line-height: 1.3;
+  }
+  .supply-materials-info {
+    margin-bottom: 21px;
+  }
+  .supply-materials-info__num {
+    margin-right: 10px;
+    font-size: 42px;
+  }
+  .supply-materials-info__text {
+    font-weight: 500;
+    text-transform: uppercase;
+
+    .text-yellow {
+      display: inline;
+    }
+  }
+  .supply-materials-list {
+    margin-bottom: 6px;
+  }
+  .supply-materials-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .supply-materials-item__title {
+    margin-bottom: 5px;
+    font-size: 13px;
+
+    &::before {
+      width: 21px;
+      height: 21px;
+      margin-right: 8px;
+      line-height: 21px;
+    }
+  }
+  .supply-materials-item__text {
+    font-size: 12px;
+  }
+  .supply-materials-media {
+  }
+  .supply-materials__product {
+    max-width: 37%;
+    margin-left: -3px;
+    margin-right: 1%;
+  }
+  .supply-materials__car {
+    max-width: 61%;
+  }
+}
+
+@media (max-width: 374px) {
+  .supply-materials-title {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
