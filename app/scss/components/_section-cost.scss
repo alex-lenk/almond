@@ -7,10 +7,6 @@
 
 .section-cost-title {
   color: #fff;
-
-  &::after {
-    margin-top: 15px;
-  }
 }
 
 .section-cost-title__key {
@@ -69,6 +65,10 @@
 @media (min-width: 576px) {
   .section-cost-title {
     margin-bottom: 35px;
+
+    &::after {
+      margin-top: 15px;
+    }
   }
   .section-cost-item {
     display: flex;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .section-cost-item {
     padding-left: 4%;
   }
@@ -133,9 +133,9 @@
 
 @media (max-width: 766px) {
   .section-cost {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url(../img/bg-m/bg-third-2.jpg);
+    padding-top: 18px;
+    padding-bottom: 22px;
+    background-image: url(../img/bg-m/bg-third.png);
     background-size: contain;
   }
 }
@@ -145,8 +145,12 @@
     background-size: cover;
   }
   .section-cost-title {
-    margin-bottom: 30px;
-    font-size: 26px
+    margin-bottom: 18px;
+    line-height: 34px;
+
+    &::after {
+      margin-top: 9px;
+    }
   }
   .section-cost-item {
     padding: 8px 10px 5px;
@@ -214,17 +218,6 @@
   }
 }
 
-/*
-@media (min-width: 576px) and (max-width: 991px) {
-  .section-cost-title {
-    font-size: 42px
-  }
-  .section-cost-item {
-    font-size: 22px;
-  }
-}
-*/
-
 @media (min-width: 576px) and (max-width: 767px) {
   .section-cost-item {
     padding-top: 20px;
@@ -254,17 +247,3 @@
     width: 120px;
   }
 }
-/*
-
-@media (min-width: 992px) and (max-width: 1279px) {
-  .section-cost-media {
-    width: 180px;
-  }
-  .section-cost-price {
-    font-size: 28px;
-  }
-  .section-cost-type {
-    font-size: 28px;
-  }
-}
-*/

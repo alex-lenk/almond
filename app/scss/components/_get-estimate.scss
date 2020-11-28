@@ -1,7 +1,3 @@
-.get-estimate {
-  background: url(../img/bg/bg-fifth.jpg) no-repeat center;
-}
-
 .get-estimate-wrap {
   position: relative;
   display: flex;
@@ -11,6 +7,7 @@
   .get-estimate {
     padding-top: 29px;
     padding-bottom: 27px;
+    background: url(../img/bg/bg-fifth.jpg) no-repeat center;
   }
   .get-estimate-wrap {
     padding-top: 30px;
@@ -52,7 +49,7 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .get-estimate-form {
     position: relative;
     margin-top: -90px;
@@ -69,9 +66,9 @@
 
 @media (max-width: 575px) {
   .get-estimate {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    background: url(../img/bg-m/bg-fifth.jpg) no-repeat center;
 
     .call-form__text {
       margin-bottom: 0;
@@ -79,7 +76,7 @@
       &::after {
         width: 260px;
         height: 202px;
-        left: 7%;
+        left: 5%;
         position: relative;
         display: block;
         background: url(../img/decor/estimate.jpg) no-repeat center;
@@ -93,13 +90,13 @@
 
     &::before {
       width: 41px;
-      height: 154px;
+      height: 148px;
       top: 64px;
-      right: 15px;
+      right: 25px;
       opacity: .5;
       z-index: 5;
       position: absolute;
-      background: url(../img/decor/arrow.png) no-repeat center;
+      background: url(../img/decor-m/arrow.png) no-repeat center;
       background-size: contain;
       content: '';
     }

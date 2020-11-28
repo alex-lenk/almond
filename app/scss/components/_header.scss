@@ -1,22 +1,15 @@
 .header {
-  height: 516px;
-  padding-top: 27px;
   position: relative;
   background: url(../img/bg/bg-header.jpg) no-repeat top center;
 
   &::before {
-    width: 313px;
-    height: 395px;
-    background: url(../img/decor/master.png) no-repeat center;
     position: absolute;
-    right: 11%;
-    bottom: 4%;
     content: '';
   }
 }
 
 .header-title {
-  margin-bottom: 38px;
+  margin-bottom: 20px;
 }
 
 .header-title__price {
@@ -24,11 +17,7 @@
   position: relative;
 
   &::before {
-    width: 185px;
-    height: 51px;
     position: absolute;
-    top: -4px;
-    left: -6px;
     background: url(../img/decor/mazok.png) no-repeat;
     content: '';
   }
@@ -40,10 +29,70 @@
 }
 
 .header-text {
-  margin-bottom: 32px;
-  font-size: 18px;
+  margin-bottom: 24px;
 }
 
 .header-list {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .header {
+    height: 516px;
+    padding-top: 27px;
+
+    &::before {
+      width: 313px;
+      height: 395px;
+      background: url(../img/decor/master.png) no-repeat center;
+      right: 11%;
+      bottom: 4%;
+    }
+  }
+  .header-title {
+    margin-bottom: 38px;
+  }
+  .header-title__price::before {
+    width: 185px;
+    height: 51px;
+    top: -4px;
+    left: -6px;
+  }
+  .header-text {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .header-list {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    height: 580px;
+    padding-top: 21px;
+    background-size: cover;
+
+    &::before {
+      width: 341px;
+      height: 439px;
+      background: url(../img/decor-m/master.png) no-repeat center;
+      right: 0;
+      bottom: 21px;
+    }
+  }
+  .header-title {
+    line-height: 38px;
+  }
+  .header-title__price::before {
+    width: 155px;
+    height: 46px;
+    top: -5px;
+    left: -6px;
+    background-size: contain;
+  }
+  .header-text {
+    line-height: 22px;
+  }
 }

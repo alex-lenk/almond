@@ -20,17 +20,22 @@
 </head>
 <body>
 <header class="header container">
-    <h2 class="header-title title-block title-block-blue">
+    <h2 class="header-title title-block title-block-blue hide-xs">
         <span class="text-extra-bold">Ремонт квартир</span> в новостройке от
         <span class="header-title__price"><span class="header-title__price-val">149 000 руб!</span></span>
     </h2>
+    <h2 class="header-title title-block title-block-blue show-xs">
+        <span class="text-extra-bold">Ремонт новостройки</span><br> от
+        <span class="header-title__price"><span class="header-title__price-val">149 000 руб</span></span>
+    </h2>
+
     <div class="header-text">
-        При заказе с ВКонтакте  до конца недели <span class="text-bold">скидка 10%!</span>
+        При заказе с ВКонтакте  до конца недели <span class="text-bold">скидка&nbsp;10%!</span>
     </div>
 
     <h3>Частная бригада мастеров:</h3>
 
-    <ul class="header-list check-list">
+    <ul class="header-list check-list hide-xs">
         <li class="check-list__item">
             Профессионально занимаемся ремонтом <span class="text-bold">более 15 лет!</span>
         </li>
@@ -48,6 +53,29 @@
         </li>
         <li class="check-list__item">
             Выполняем работу <span class="text-bold">точно в сроки,</span> производим любые объемы.
+        </li>
+    </ul>
+
+    <ul class="header-list check-list show-xs">
+        <li class="check-list__item">
+            Занимаемся ремонтом <br>
+            <span class="text-bold">более 15 лет!</span>
+        </li>
+        <li class="check-list__item">
+            Работаем <span class="text-bold"> без посредников!</span>
+        </li>
+        <li class="check-list__item">
+            Сделаем <span class="text-bold">недорого<br>
+            и четко в сроки!</span>
+        </li>
+        <li class="check-list__item">
+            <span class="text-bold">оплата по факту</span><br>
+            выполненных<br>
+            работ.
+        </li>
+        <li class="check-list__item">
+            Стоимость работ <br>
+            <span class="text-bold">фиксирована</span>
         </li>
     </ul>
 </header>
@@ -137,7 +165,7 @@
         <li class="warranty-list__item">
             <span class="warranty-list__num">01</span>
             <span class="warranty-list__text">
-                Мы создаем с вами общий чат в мессенджере <br> (WhatsApp&nbsp;/&nbsp;Telegram)
+                Мы создаем с вами общий чат в мессенджере <br class="hide-xs"> (WhatsApp&nbsp;/&nbsp;Telegram)
             </span>
         </li>
         <li class="warranty-list__item">
@@ -149,15 +177,15 @@
         <li class="warranty-list__item">
             <span class="warranty-list__num">03</span>
             <span class="warranty-list__text">
-                В&nbsp;чат мы&nbsp;отправляем вам фотоотчеты, акты, планы, чтобы все <br>
-                было в&nbsp;одном&nbsp;месте!
+                В&nbsp;чат мы&nbsp;отправляем вам фотоотчеты, акты, планы, чтобы все <br class="hide-xs">
+                было в&nbsp;одном месте!
             </span>
         </li>
     </ol>
 
     <div class="warranty-bottom">
         <div class="warranty-text">
-            ПОЗВОНИТЕ НАМ — ОТВЕТИМ НА ВСЕ ВАШИ ВОПРОСЫ!
+            ПОЗВОНИТЕ НАМ — ОТВЕТИМ <br class="show-xs"> НА ВСЕ ВАШИ ВОПРОСЫ!
         </div>
         <a href="tel:89000000000" rel="nofollow" class="warranty-phone">8 (900) 000-00-00</a>
     </div>
@@ -168,7 +196,7 @@
     <div class="get-estimate-wrap">
         <form action="/" class="get-estimate-form call-form">
             <h2 class="call-form__title">
-                Получите расчет сметы
+                Получите <br class="show-xs"> расчет сметы
             </h2>
             <div class="call-form__text">
                 с&nbsp;учетом стоимости работ <br> и&nbsp;материалов через <span class="text-bold">30</span>&nbsp;минут
@@ -201,27 +229,9 @@
     </div>
 </section>
 
-<!--
-
-<div class="social">
-    <a href="https://api.whatsapp.com/send?phone=79031173754" class="social-point whatsapp" rel="nofollow" target="_blank"></a>
-    <a href="tg://resolve?domain=alexlenk" st="link-support-telegram" title="@alexlenk" class="social-point telegram" rel="nofollow" target="_blank"></a>
-</div>
-
-<div class="scroll-to-top">
-    <svg class="scroll-to-top__icon">
-        <use xlink:href="img/icons.svg#arrow"></use>
-    </svg>
-</div>
--->
 
 
-<div class="header-stick"></div>
-
-<div class="menu-switch"></div>
-
-
-<script src="js/lib.min.js"></script>
 <script src="js/scripts.min.js"></script>
+<script src="js/browser.min.js"></script>
 </body>
 </html>
