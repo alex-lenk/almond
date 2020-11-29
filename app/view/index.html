@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Ремонт квартир в Москве и Подмосковье</title>
 
-    <link rel="stylesheet" href="css/lib.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.1">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=NmbNwk2o4n">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=NmbNwk2o4n">
@@ -79,7 +78,6 @@
         </li>
     </ul>
 </header>
-
 
 <section class="section-cost container">
     <h2 class="section-cost-title title-block title-block-yellow">
@@ -154,7 +152,6 @@
     </ul>
 </section>
 
-
 <section class="warranty container">
     <h2 class="warranty-title title-block">
         Вы контролируете все этапы ремонта,
@@ -187,14 +184,15 @@
         <div class="warranty-text">
             ПОЗВОНИТЕ НАМ — ОТВЕТИМ <br class="show-xs"> НА ВСЕ ВАШИ ВОПРОСЫ!
         </div>
-        <a href="tel:89000000000" rel="nofollow" class="warranty-phone">8 (900) 000-00-00</a>
+        <a href="tel:89032237447" rel="nofollow" class="warranty-phone">8 (903) 223-74-47</a>
     </div>
 </section>
-
 
 <section class="get-estimate container">
     <div class="get-estimate-wrap">
         <form action="/" class="get-estimate-form call-form">
+            <input type="hidden" name="formname" value="Заказ звонка">
+
             <h2 class="call-form__title">
                 Получите <br class="show-xs"> расчет сметы
             </h2>
@@ -207,8 +205,7 @@
                 <svg class="call-form__icon">
                     <use xlink:href="img/icons.svg#user"></use>
                 </svg>
-                <input type="text" class="call-form__field form-control hide-placeholder" id="call-form__name2"
-                       placeholder="Ваше имя">
+                <input type="text" name="user_name" class="call-form__field form-control hide-placeholder" id="call-form__name2" placeholder="Ваше имя" required>
             </div>
 
             <div class="form-group call-form__group">
@@ -216,7 +213,7 @@
                 <svg class="call-form__icon">
                     <use xlink:href="img/icons.svg#phone"></use>
                 </svg>
-                <input type="tel" class="call-form__field form-control hide-placeholder phone" id="call-form__tel2" placeholder="Контактный телефон*">
+                <input type="tel" name="user_phone" class="call-form__field form-control hide-placeholder phone js-phoneMask" id="call-form__tel2" placeholder="Контактный телефон*" required>
             </div>
 
             <button type="submit" class="call-form__btn btn btn-yellow">Получить расчет сметы</button>
@@ -229,9 +226,23 @@
     </div>
 </section>
 
+<!-- BEGIN: finalModal -->
+<div class="modal-view__wrapper">
+    <div class="modal-thanks">
+        <div class="modal-view-final">
+            <svg class="modal-view-final__icon">
+                <use xlink:href="/img/icons.svg#check"></use>
+            </svg>
+            <div class="modal-view-final__title">Спасибо,</div>
+            <div class="modal-view-final__subtitle">ваша заявка принята!</div>
 
+            <div class="modal-view-close"></div>
+        </div>
+    </div>
+</div>
+<!-- END: finalModal -->
 
-<script src="js/scripts.min.js"></script>
 <script src="js/browser.min.js"></script>
+<script src="js/scripts.min.js?ver=1.0"></script>
 </body>
 </html>

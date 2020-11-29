@@ -31,7 +31,7 @@ gulp.task('browser-sync', function () {
 
 // SCSS Styles
 gulp.task('styles', function () {
-    return gulp.src('./app/scss/**/*.scss')
+    return gulp.src('./app/scss/*.scss')
         .pipe(sass({
             outputStyle: 'expanded'
         }).on("error", notify.onError()))
@@ -62,13 +62,12 @@ gulp.task('html', function () {
 // img task
 gulp.task('img', function () {
     return gulp.src('./app/img/**/*.*')
+        .pipe(imagemin({
+            progressive: true
+        }))
         .pipe(gulp.dest('./dist/img'))
         .pipe(browserSync.reload({stream: true}))
 });
-/*
-*         .pipe(imagemin({
-            progressive: true
-        }))*/
 
 // favicon task
 gulp.task('favicon', function () {
