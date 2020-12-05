@@ -19,7 +19,6 @@
 }
 
 .call-form__text {
-  font-size: 14px;
   text-align: center;
   line-height: 19px;
 }
@@ -54,6 +53,7 @@
   }
   .call-form__text {
     margin-bottom: 16px;
+    font-size: 14px;
   }
   .call-form__field {
     padding-left: 50px;
@@ -78,7 +78,7 @@
     padding-bottom: 26px;
   }
   .call-form__title {
-    line-height: 31px;
+    line-height: 30px;
   }
   .call-form__text {
     margin-bottom: 15px;

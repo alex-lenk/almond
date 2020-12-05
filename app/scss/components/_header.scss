@@ -28,10 +28,6 @@
   z-index: 1;
 }
 
-.header-text {
-  margin-bottom: 24px;
-}
-
 .header-list {
   font-size: 14px;
 }
@@ -44,8 +40,8 @@
     &::before {
       width: 313px;
       height: 395px;
-      background: url(../img/decor/master.png) no-repeat center;
-      right: 11%;
+      background: url(../img/decor/master-01.png) no-repeat center;
+      right: 6%;
       bottom: 4%;
     }
   }
@@ -66,20 +62,23 @@
   .header-list {
     font-size: 12px;
   }
+  .header-text {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 575px) {
   .header {
-    padding-bottom: 60px;
+    padding-bottom: 81px;
     padding-top: 21px;
     background-size: cover;
 
     &::before {
-      width: 341px;
-      height: 439px;
-      background: url(../img/decor-m/master.png) no-repeat center;
+      width: 205px;
+      height: 358px;
+      background: url(../img/decor-m/master-01.png) no-repeat center;
       right: 0;
-      bottom: 21px;
+      bottom: 3px;
     }
   }
   .header-title {
@@ -93,6 +92,7 @@
     background-size: contain;
   }
   .header-text {
+    margin-bottom: 13px;
     line-height: 22px;
   }
 }
