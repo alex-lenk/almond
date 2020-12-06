@@ -42,7 +42,6 @@
   &::after {
     width: 1px;
     position: absolute;
-    background-color: #d7d1c6;
     transform: rotate(9deg);
     content: '';
   }
@@ -127,6 +126,7 @@
       height: 24px;
       top: 4px;
       right: 12px;
+      background-color: #d7d1c6;
     }
   }
   .warranty-list__text {
@@ -218,7 +218,8 @@
     &::after {
       height: 24px;
       top: 3px;
-      right: 8px;
+      right: 7px;
+      background-color: #b3b3b3;
     }
   }
   .warranty-list__text {
@@ -228,6 +229,10 @@
   .warranty-bottom {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .warranty-text {
     margin-bottom: 12px;
@@ -235,11 +240,11 @@
 
     &::before {
       top: 4px;
-      left: 25px;
+      left: -27px;
     }
 
     &::after {
-      right: 40px;
+      right: -12px;
       top: 27px;
     }
   }
