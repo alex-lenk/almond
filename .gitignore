@@ -63,3 +63,4 @@ build
 source
 dist
 apple-source
+package-lock.json

@@ -1,8 +1,9 @@
 {
   "name": "almond",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ремонт новостроек",
   "main": "gulpfile.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,40 +11,49 @@
     "type": "git",
     "url": "git+https://github.com/alex-lenk/almond.git"
   },
-  "author": "",
+  "author": "AlexLenk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alex-lenk/almond/issues"
   },
   "homepage": "https://github.com/alex-lenk/almond#readme",
   "devDependencies": {
-    "@fancyapps/fancybox": "latest",
-    "autoprefixer": "latest",
-    "bootstrap": "latest",
-    "browser-sync": "latest",
-    "del": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-concat": "latest",
-    "gulp-image-resize": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-notify": "latest",
-    "gulp-postcss": "latest",
-    "gulp-rename": "latest",
-    "gulp-rigger": "latest",
-    "gulp-rsync": "0.0.8",
-    "gulp-sass": "latest",
-    "gulp-uglify": "latest",
-    "gulp-util": "latest",
-    "jquery": "latest",
-    "slick-slider": "latest",
-    "gulp-ex-file-include": "latest",
-    "gulp-path": "latest",
-    "gulp-svgmin": "latest",
-    "gulp-svgstore": "latest",
-    "imagemin": "latest",
-    "imagemin-guetzli": "latest",
-    "imagemin-mozjpeg": "latest"
-  }
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-dependents": "^1.2.5",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-zopfli": "^7.0.0",
+    "sass": "^1.52.1",
+    "webpack": "^5.72.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.13",
+    "module": "^1.2.5"
+  },
+  "browserslist": [
+    "last 4 versions",
+    "not dead"
+  ]
 }

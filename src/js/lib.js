@@ -1,9 +1,9 @@
-//= ../../node_modules/jquery/dist/jquery.min.js
+//= lib/jquery-3.6.0.min.js
 //= lib/svgxuse.min.js
 //= lib/bootstrap-4.4.1/util.js
 //= lib/bootstrap-4.4.1/scrollspy.js
 //= lib/stickUp.js
 //= lib/jquery.inputmask.min.js
-//= ../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+//= lib/fancybox.umd.js
 //= lib/video.min.js
 //= lib/slick-1.8.1/slick.min.js
